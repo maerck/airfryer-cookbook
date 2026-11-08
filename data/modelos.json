@@ -1,0 +1,18 @@
+[
+  {
+    "id": "xiaomi-mijia-steam-airfryer-7l",
+    "marca": "Xiaomi",
+    "nome": "Mijia Smart Steam Air Fryer 7 L",
+    "capacidadeL": 7,
+    "potenciaArQuenteW": 1800,
+    "potenciaVaporW": 900,
+    "depositoAguaL": 1.5,
+    "autonomiaVaporMin": 90,
+    "receitasAppFabricante": 100,
+    "ajuste": {
+      "tempoMin": 0,
+      "temperaturaC": 0
+    },
+    "notas": "Modelo de referência deste livro de receitas: as 200 receitas foram concebidas e adaptadas para este equipamento. Sem ajuste de tempos ou temperaturas."
+  }
+]

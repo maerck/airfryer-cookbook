@@ -1,0 +1,29 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import ReceitaDetalhe from "@/components/ReceitaDetalhe";
+import { METODO_CHIP, paramsReceitas, receitaPorId } from "@/lib/data";
+
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
+
+export function generateStaticParams(): { id: string }[] {
+  return paramsReceitas();
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const receita = receitaPorId(Number(id));
+  if (!receita) return { title: "Receita não encontrada · 200 Receitas" };
+  return {
+    title: `${receita.nome} · 200 Receitas · Air Fryer & Vapor`,
+    description: `${receita.emoji} ${receita.nome} — ${METODO_CHIP[receita.metodo]}, ${receita.cat}, ${receita.tempo} min, ${receita.dificuldade}. Receita para air fryer e vapor.`,
+  };
+}
+
+export default async function ReceitaPage({ params }: PageProps) {
+  const { id } = await params;
+  const receita = receitaPorId(Number(id));
+  if (!receita) notFound();
+  return <ReceitaDetalhe receita={receita} />;
+}

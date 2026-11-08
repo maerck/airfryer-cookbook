@@ -1,0 +1,4758 @@
+[
+  {
+    "id": 1,
+    "nome": "Frango assado inteiro com limão e alho",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 60,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 frango pequeno (~1,2 kg — cabe no cesto de 7 L)",
+      "1 limão + 4 dentes de alho",
+      "2 c. sopa de azeite",
+      "1 c. chá de pimentão doce",
+      "Sal, pimenta e tomilho fresco"
+    ],
+    "passos": [
+      "Seca muito bem o frango, dentro e fora (pele seca = pele crocante).",
+      "Mistura o azeite, o alho picado, o pimentão doce, sal e pimenta; esfrega por fora e dentro do frango.",
+      "Recheia a cavidade com o limão cortado ao meio, alho e tomilho; ata as asas junto ao corpo.",
+      "Coze a 180°C durante 40–45 min, virando a meio (com pinças, para não furar a pele).",
+      "Deixa descansar 5 min antes de cortar. Está pronto quando os sumos saem claros."
+    ],
+    "dica": "Se o topo dourar demasiado, cobre com uma folha de alumínio nos últimos 10 min."
+  },
+  {
+    "id": 2,
+    "nome": "Coxas de frango crocantes com páprica",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "8 coxas de frango com pele",
+      "2 c. sopa de azeite",
+      "1 c. chá de alho em pó",
+      "1 c. chá de pimentão doce (páprica)",
+      "Sal e pimenta preta"
+    ],
+    "passos": [
+      "Envolve as coxas no azeite e nos temperos; deixa marinar 15 min se tiver tempo.",
+      "Coloca no cesto com a pele virada para baixo, sem sobrepor.",
+      "Coze a 200°C durante 12 min.",
+      "Vira e coze mais 10–12 min, até a pele estar dourada e estaladiça.",
+      "Confirma que o interior está opaco e os sumos claros."
+    ],
+    "dica": "Não enchas o cesto: em duas camadas as coxas ficam em vez de crocantes."
+  },
+  {
+    "id": 3,
+    "nome": "Asas de frango buffalas",
+    "emoji": "🔥",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "1 kg de asas de frango",
+      "Sal e 1 c. chá de alho em pó",
+      "60 g de manteiga",
+      "4 c. sopa de molho de pimenta (estilo buffalo)",
+      "Iogurte grego + alho para o molho de acompanhar (opcional)"
+    ],
+    "passos": [
+      "Seca bem as asas e tempera com sal e alho em pó.",
+      "Coze a 200°C durante 12 min; vira e coze mais 10–12 min.",
+      "Derrete a manteiga e mistura com o molho de pimenta.",
+      "Envolve as asas no molho e devolve ao cesto por 2–3 min para caramelizar.",
+      "Serve com o molho de iogurte e paus de cenoura."
+    ],
+    "dica": "Asas não precisam de óleo — a própria pele derrete a gordura que as torna crocantes."
+  },
+  {
+    "id": 4,
+    "nome": "Frango piri-piri à portuguesa",
+    "emoji": "🌶️",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "1 kg de coxinhas ou supertas de frango",
+      "3 c. sopa de molho piri-piri (ou massa de pimentão)",
+      "2 dentes de alho picados",
+      "1 c. sopa de azeite",
+      "Sumo de meio limão e sal"
+    ],
+    "passos": [
+      "Mistura o piri-piri, o alho, o azeite, o sumo de limão e o sal; envolve o frango.",
+      "Deixa marinar pelo menos 30 min (de véspera é ainda melhor).",
+      "Coze a 200°C durante 12 min; vira e pincela com a marinada.",
+      "Coze mais 12–15 min até estar dourado e caramelizado nos bordos.",
+      "Serve com limão e uma salada simples."
+    ],
+    "dica": "Grelhar a marinada em contacto com o metal do cesto cria aquele lado 'queimado' saboroso típico do churrasco."
+  },
+  {
+    "id": 5,
+    "nome": "Nuggets de frango caseiros",
+    "emoji": "🧒",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "500 g de peito de frango cortado em tiras grossas",
+      "4 c. sopa de farinha",
+      "2 ovos batidos",
+      "100 g de pão ralado panko",
+      "Sal, alho em pó e pimentão doce"
+    ],
+    "passos": [
+      "Tempera as tiras de frango com sal e alho em pó.",
+      "Passa cada tira pela farinha, depois pelo ovo e por fim pelo panko, pressionando bem.",
+      "Coloca no cesto com um pouco de espaço entre as peças.",
+      "Coze a 200°C durante 10–12 min, virando a meio, até dourar.",
+      "Serve com molho de iogurte com mostarda ou ketchup."
+    ],
+    "dica": "Uma neblina de azeite sobre o panko antes de cozer deixa a crosta ainda mais dourada."
+  },
+  {
+    "id": 6,
+    "nome": "Costeletas de porco com alho e limão",
+    "emoji": "🍋",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 costeletas de porco (~1,5 cm de espessura)",
+      "3 dentes de alho picados",
+      "Raspa e sumo de 1 limão",
+      "1 c. sopa de azeite",
+      "Sal, pimenta e tomilho"
+    ],
+    "passos": [
+      "Envolve as costeletas no azeite, alho, limão, sal, pimenta e tomilho; descansa 15 min.",
+      "Coze a 190°C durante 6–7 min.",
+      "Vira e coze mais 5–6 min (o centro deve ficar levemente rosado para manter suculência).",
+      "Descansa 3 min antes de servir."
+    ],
+    "dica": "Não cozas demasiado — o porco magra resseca depressa. Usa um termómetro: 62–65°C no centro é perfeito."
+  },
+  {
+    "id": 7,
+    "nome": "Entrecosto BBQ com mel",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "800 g de entrecosto de porco cortado em tiras",
+      "4 c. sopa de molho barbecue",
+      "1 c. sopa de mel",
+      "2 dentes de alho picados",
+      "Azeite e sal"
+    ],
+    "passos": [
+      "Corta o entrecosto em tiras que caibam lado a lado no cesto.",
+      "Envolve no azeite, alho e sal; deixa marinar 15 min.",
+      "Coze a 180°C durante 15 min.",
+      "Pincela com o BBQ misturado com mel, vira as tiras e pincela de novo.",
+      "Coze mais 12–15 min até estar caramelizado e dourado."
+    ],
+    "dica": "Coloca um pedaço de papel de alumínio sob o cesto na gaveta: o mel caramela e pinga."
+  },
+  {
+    "id": 8,
+    "nome": "Bife de vaca grelhado",
+    "emoji": "🥩",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 bifes de vaca (~2,5 cm de espessura, chambão ou lombo)",
+      "1 c. sopa de azeite",
+      "Sal grosso e pimenta preta moída na hora"
+    ],
+    "passos": [
+      "Tempera os bifes com sal, pimenta e azeite 15 min antes (à temperatura ambiente).",
+      "Pré-aquece a air fryer 3 min a 200°C.",
+      "Coze 4–5 min por lado para mal passado; 6–7 min por lado para bem passado.",
+      "Descansa os bifes 5 min embrulhados em alumínio antes de cortar.",
+      "Serve com manteiga de ervas por cima (opcional)."
+    ],
+    "dica": "A air fryer sela bem mas faz menos crosta que uma frigideira: termina 30 segundos numa frigideira muito quente se quiseres crosta perfeita."
+  },
+  {
+    "id": 9,
+    "nome": "Alheira assada com ovo",
+    "emoji": "🥓",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "180°C",
+    "ingredientes": [
+      "2 alheiras",
+      "Um fio de azeite",
+      "2 ovos",
+      "Couve lombarda refogada e bolo do caco para servir"
+    ],
+    "passos": [
+      "Pica a pele das alheiras com um garfo para não rebentarem.",
+      "Coloca-as no cesto com um fio de azeite.",
+      "Coze a 180°C durante 12–14 min, virando a meio, até a pele estar dourada.",
+      "Na altura, coze também os ovos numa forminha de silicone ao lado (4–5 min).",
+      "Serve com ovo por cima e couve refogada."
+    ],
+    "dica": "Prato transmontano clássico sem cheiro a fritura — a pele da alheira fica surpreendentemente estaladiça."
+  },
+  {
+    "id": 10,
+    "nome": "Hambúrgueres suculentos",
+    "emoji": "🍔",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "500 g de carne de vaca picada (com alguma gordura)",
+      "Sal e pimenta",
+      "4 fatias de queijo cheddar",
+      "4 pães de hambúrguer",
+      "Alface, tomate e molho a gosto"
+    ],
+    "passos": [
+      "Molda 4 bifes de carne com ~2 cm, sem compactar demasiado; tempera só com sal e pimenta.",
+      "Coze a 190°C durante 8–10 min, virando a meio.",
+      "Coloca o queijo nos últimos 1–2 min para derreter.",
+      "Tosta os pães abertos no cesto 1–2 min.",
+      "Monta com alface, tomate e molho."
+    ],
+    "dica": "Faz um pequeno pressão no centro de cada hambúrguer: evita que bole durante a cozedura."
+  },
+  {
+    "id": 11,
+    "nome": "Picanha fatiada na air fryer",
+    "emoji": "🥩",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "600–800 g de picanha em bifes grossos (~3 cm)",
+      "Sal grosso",
+      "Pimenta preta (opcional)"
+    ],
+    "passos": [
+      "Tempera os bifes apenas com sal grosso (a gordura faz o resto).",
+      "Pré-aquece 3 min a 200°C.",
+      "Coze os bifes 4–5 min por lado para mal passado.",
+      "Descansa 3–4 min antes de fatiar.",
+      "Fatia contra a fibra e serve com farofa ou arroz."
+    ],
+    "dica": "Peça inteira pequena (~800 g): coze 30–35 min a 180°C e termina 5 min a 200°C virada, sempre com a gordura virada para cima."
+  },
+  {
+    "id": 12,
+    "nome": "Peito de frango no vapor (meal prep)",
+    "emoji": "🍗",
+    "metodo": "Vapor",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "2 peitos de frango",
+      "Sal, pimenta e alho em pó",
+      "Rodelas de limão",
+      "Ervas frescas (tomilho ou orégãos)"
+    ],
+    "passos": [
+      "Enche o depósito de água até à marca de 1,5 L.",
+      "Tempera os peitos e coloca-os num prato resistente ao calor com as rodelas de limão e as ervas por cima.",
+      "Coze em modo vapor 16–18 min, até o interior estar opaco.",
+      "Deixa descansar 3 min antes de fatiar.",
+      "Ideal para meal prep: guarda em frascos com legumes e arroz."
+    ],
+    "dica": "O vapor é o segredo do peito de frango suculento — impossível de conseguir no micro-ondas sem secar."
+  },
+  {
+    "id": 13,
+    "nome": "Asas de frango dupla cozedura (vapor + ar)",
+    "emoji": "🍗",
+    "metodo": "Vapor + Ar",
+    "cat": "Carne",
+    "tempo": 35,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "1 kg de asas de frango",
+      "Sal, alho em pó e pimentão doce",
+      "1 c. sopa de azeite"
+    ],
+    "passos": [
+      "Coze as asas em modo vapor durante 10–12 min (ficam tenras e suculentas).",
+      "Escorre o líquido da gaveta e seca bem as asas com papel de cozinha.",
+      "Tempera com sal, alho em pó, pimentão doce e azeite.",
+      "Coze em modo air fryer a 200°C durante 12–15 min, virando a meio, até estaladiças."
+    ],
+    "dica": "É a especialidade desta máquina: vapor primeiro (tenro dentro), ar quente depois (crocante fora) — estilo 'sous vide' rápido."
+  },
+  {
+    "id": 14,
+    "nome": "Pastéis de bacalhau",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 50,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "300 g de bacalhau cozido e desfiado",
+      "2 batatas grandes cozidas e esmagadas",
+      "1 cebola picada + 2 dentes de alho",
+      "Salsa picada e 1 ovo",
+      "Pão ralado + 1 ovo para panar",
+      "Azeite, sal e noz-moscada"
+    ],
+    "passos": [
+      "Refoga a cebola e o alho em azeite até ficar transparente.",
+      "Mistura o bacalhau desfiado, a batata esmagada, a salsa, o ovo e a noz-moscada.",
+      "Deixa arrefecer 15 min e forma os pastéis com duas colheres.",
+      "Passa pelo ovo batido e depois pelo pão ralado.",
+      "Coze a 200°C durante 10–12 min, virando a meio, até dourar."
+    ],
+    "dica": "Versão mais leve do clássico português: fica dourado e crocante com uma fração do óleo da fritura."
+  },
+  {
+    "id": 15,
+    "nome": "Bacalhau com crosta de broa",
+    "emoji": "🍞",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "180°C",
+    "ingredientes": [
+      "2 lombos de bacalhau demolhado",
+      "150 g de miolo de broa esfarelado",
+      "2 dentes de alho picados",
+      "3 c. sopa de azeite",
+      "Coentros picados e pimenta"
+    ],
+    "passos": [
+      "Seca muito bem os lombos com papel de cozinha.",
+      "Mistura a broa com o alho, os coentros, azeite e pimenta.",
+      "Pressiona a mistura sobre a face superior dos lombos, formando uma crosta espessa.",
+      "Coze a 180°C durante 15–18 min, até a crosta dourar e o bacalhau desfazer em lascas.",
+      "Serve com batatas a murro e azeite."
+    ],
+    "dica": "Não adiciones sal — o bacalhau já traz o suficiente do processo de demolha."
+  },
+  {
+    "id": 16,
+    "nome": "Filetes de pescada panados (cornflakes)",
+    "emoji": "🐠",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "500 g de filetes de pescada",
+      "Sumo de limão e sal",
+      "4 c. sopa de farinha",
+      "2 ovos batidos",
+      "80 g de cornflakes triturados"
+    ],
+    "passos": [
+      "Tempera os filetes com limão e sal; deixa 10 min e seca bem.",
+      "Passa pela farinha, ovo e cornflakes, pressionando bem.",
+      "Coloca no cesto sem sobrepor.",
+      "Coze a 200°C durante 10–12 min, virando uma vez com cuidado.",
+      "Serve com tartarrote ou limão."
+    ],
+    "dica": "A trituração de cornflakes dá uma crosta muito mais crocante que o pão ralado normal."
+  },
+  {
+    "id": 17,
+    "nome": "Salmão grelhado com ervas",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "190°C",
+    "ingredientes": [
+      "2 lombos de salmão (com pele)",
+      "1 c. sopa de azeite",
+      "1 limão em rodelas",
+      "Alho picado, tomilho, sal e pimenta"
+    ],
+    "passos": [
+      "Pincela o salmão com azeite e tempera com sal, pimenta e alho.",
+      "Coloca com a pele virada para baixo e rodelas de limão por cima.",
+      "Coze a 190°C durante 10–12 min (12–14 se os lombos forem grossos).",
+      "Está pronto quando desfaz facilmente em lascas."
+    ],
+    "dica": "Salmão a 52–55°C no centro fica perfeito: translúcido no centro, opaco nas pontas."
+  },
+  {
+    "id": 18,
+    "nome": "Sardinhas assadas à portuguesa",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 3,
+    "temp": "200°C",
+    "ingredientes": [
+      "6 sardinhas frescas e limpas",
+      "Sal grosso",
+      "Azeite e limão para servir",
+      "Pão alentejano e salada de tomate para acompanhar"
+    ],
+    "passos": [
+      "Lava e seca muito bem as sardinhas; sal generosamente.",
+      "Coloca no cesto em fila, sem sobrepor.",
+      "Coze a 200°C durante 8–10 min, virando a meio.",
+      "Rega com azeite e sumo de limão.",
+      "Serve sobre fatias de pão (que absorvem o azeite, como manda a tradição)."
+    ],
+    "dica": "Sabor de São João em casa, sem a fumara da brasa — funciona também com cavala e carapau."
+  },
+  {
+    "id": 19,
+    "nome": "Lulas grelhadas com alho e coentros",
+    "emoji": "🦑",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 15,
+    "dificuldade": "Fácil",
+    "doses": 3,
+    "temp": "200°C",
+    "ingredientes": [
+      "500 g de lulas (tubos ou anéis)",
+      "3 dentes de alho picados",
+      "2 c. sopa de azeite",
+      "Coentros picados",
+      "Sumo de limão, sal e pimenta"
+    ],
+    "passos": [
+      "Seca muito bem as lulas (água é inimiga da grelha).",
+      "Envolve no azeite, alho, sal e pimenta.",
+      "Coze a 200°C durante 6–8 min, abanando o cesto a meio.",
+      "Não ultrapasses o tempo: lulas demais = borracha.",
+      "Termina com coentros e limão; serve com batata-doce."
+    ],
+    "dica": "Regra de ouro: lulas ou 2 min ou 8 min — nunca no meio."
+  },
+  {
+    "id": 20,
+    "nome": "Gambas ao alho e limão",
+    "emoji": "🍤",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 10,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "190°C",
+    "ingredientes": [
+      "400 g de gambas descascadas (ou camarão)",
+      "4 dentes de alho fatiados",
+      "4 c. sopa de azeite",
+      "1 malagueta em rodelas (opcional)",
+      "Salsa e sumo de limão"
+    ],
+    "passos": [
+      "Mistura tudo numa taça, envolvendo bem as gambas no azeite e alho.",
+      "Coloca no cesto com todo o azeite.",
+      "Coze a 190°C durante 5–6 min, até as gambas ficarem rosadas.",
+      "Termina com salsa e limão; come mergulhando pão no azeite."
+    ],
+    "dica": "Pronto em minutos — serve como entrada com pão torrado ou sobre massas."
+  },
+  {
+    "id": 21,
+    "nome": "Peixe inteiro no vapor à cantonesa",
+    "emoji": "🐟",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 30,
+    "dificuldade": "Média",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1 dourada ou robalo inteiro (~600–700 g, limpa)",
+      "Gengibre fresco em lâminas",
+      "3 cebolinhos (ou cebolinho/ceivada) cortados",
+      "3 c. sopa de molho de soja",
+      "2 c. sopa de óleo de amendoim ou azeite muito quente"
+    ],
+    "passos": [
+      "Faz 3 golpes diagonais de cada lado do peixe.",
+      "Coloca num prato resistente ao calor com lâminas de gengibre por dentro, por baixo e por cima.",
+      "Coze em modo vapor 12–15 min, até a espinha se soltar facilmente.",
+      "Descarta o líquido da cozedura, cobre o peixe com cebolinho.",
+      "Aquece o óleo até fumegar, verte sobre o peixe e depois adiciona a soja."
+    ],
+    "dica": "Clássico cantonês — a textura sedosa do peixe no vapor não tem equivalente no forno."
+  },
+  {
+    "id": 22,
+    "nome": "Salmão no vapor com limão e gengibre",
+    "emoji": "🐟",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "2 lombos de salmão",
+      "Gengibre ralado e rodelas de limão",
+      "Sal e pimenta",
+      "Molho: 2 c. sopa de soja + 1 c. chá de mel + sumo de limão"
+    ],
+    "passos": [
+      "Tempera o salmão com sal, pimenta e gengibre ralado.",
+      "Coloca num prato com as rodelas de limão por cima.",
+      "Coze em modo vapor 10–12 min.",
+      "Mistura a soja com o mel e o limão e verte sobre o salmão ao servir."
+    ],
+    "dica": "Nada mais saudável: sem gordura adicionada, e o vapor preserva os ómega-3 do salmão."
+  },
+  {
+    "id": 23,
+    "nome": "Ameijoas no vapor com alho e vinho branco",
+    "emoji": "🐚",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 15,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1 kg de ameijoas muito bem lavadas",
+      "4 dentes de alho picados",
+      "100 ml de vinho branco",
+      "Coentros picados",
+      "Azeite e malagueta (opcional)"
+    ],
+    "passos": [
+      "Coloca as ameijoas num prato fundo resistente ao calor.",
+      "Distribui o alho por cima e verte o vinho branco.",
+      "Coze em modo vapor 5–8 min, até abrirem.",
+      "Descarta as que ficarem fechadas.",
+      "Termina com coentros, um fio de azeite e serve com pão."
+    ],
+    "dica": "O vapor abre as ameijoas no seu próprio caldo — mais puro do que a versão de frigideira."
+  },
+  {
+    "id": 24,
+    "nome": "Couve-flor buffalo (nuggets vegetais)",
+    "emoji": "🥦",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 couve-flor cortada em pequenos buquêtês",
+      "100 g de farinha + 120 ml de água (pasta)",
+      "1 c. chá de alho em pó",
+      "80 g de panko",
+      "4 c. sopa de molho de pimenta + 2 c. sopa de manteiga derretida"
+    ],
+    "passos": [
+      "Mistura a farinha, a água, o alho em pó e sal até obter uma pasta espessa.",
+      "Passa cada buquête pela pasta e depois pelo panko.",
+      "Coze a 190°C durante 15–18 min, virando a meio.",
+      "Envolve no molho de pimenta misturado com a manteiga.",
+      "Devolve ao cesto 2–3 min para caramelizar."
+    ],
+    "dica": "Converte até os maiores cépticos: a textura fica incrivelmente próxima das asas de frango."
+  },
+  {
+    "id": 25,
+    "nome": "Tofu crocante com sésamo",
+    "emoji": "🌱",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 3,
+    "temp": "190°C",
+    "ingredientes": [
+      "400 g de tofu firme",
+      "2 c. sopa de molho de soja",
+      "1 c. chá de alho em pó",
+      "2 c. sopa de amido de milho",
+      "1 c. sopa de sésamo"
+    ],
+    "passos": [
+      "Prensa o tofu 10 min com um peso para sair a água; corta em cubos.",
+      "Marina nos cubos com a soja e o alho em pó, 10 min.",
+      "Envolve no amido de milho (fica com uma casca fina que crocanta).",
+      "Coze a 190°C durante 15–18 min, virando a meio.",
+      "Polvilha com sésamo nos últimos 2 min. Serve com molho agridoce ou em bowlos."
+    ],
+    "dica": "Congelar e descongelar o tofu antes muda a textura: fica mais 'carnudo' e absorve melhor os molhos."
+  },
+  {
+    "id": 26,
+    "nome": "Legumes assados mediterrânicos",
+    "emoji": "🍆",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 25,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 courgette em meias-luas",
+      "1 beringela em cubos",
+      "2 pimentos em tiras",
+      "1 cebola em gomos",
+      "Azeite, orégãos, sal e pimenta"
+    ],
+    "passos": [
+      "Corta todos os legumes em pedaços grandes e iguais.",
+      "Envolve generosamente em azeite, orégãos, sal e pimenta.",
+      "Coze a 190°C durante 16–18 min, abanando o cesto a meio.",
+      "Os bordos devem ficar tostados e o interior tenro.",
+      "Serve como acompanhamento ou com couscous para um prato completo."
+    ],
+    "dica": "Sal no fim, não no início — salgar cedo faz os legumes libertarem água e ficarem moles."
+  },
+  {
+    "id": 27,
+    "nome": "Cogumelos inteiros com alho e salsa",
+    "emoji": "🍄",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 3,
+    "temp": "190°C",
+    "ingredientes": [
+      "400 g de cogumelos Paris inteiros (limpos, sem lavar)",
+      "3 dentes de alho picados",
+      "2 c. sopa de azeite",
+      "Salsa picada e tomilho",
+      "Sal e pimenta"
+    ],
+    "passos": [
+      "Limpa os cogumelos com um pano húmido (nunca sob água corrente).",
+      "Envolve no azeite, alho, tomilho, sal e pimenta.",
+      "Coze a 190°C durante 10–12 min, abanando o cesto a meio.",
+      "Termina com salsa fresca e algumas gotas de limão."
+    ],
+    "dica": "Servidos sobre torrus com queijo derretido, são entrada de restaurante."
+  },
+  {
+    "id": 28,
+    "nome": "Espargos com parmesão",
+    "emoji": "🌿",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 10,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 molho de espargos (pontas duras quebradas)",
+      "1 c. sopa de azeite",
+      "Sal e pimenta",
+      "30 g de parmesão ralado",
+      "Raspa de limão (opcional)"
+    ],
+    "passos": [
+      "Envolve os espargos no azeite, sal e pimenta.",
+      "Coze a 190°C durante 7–8 min, até ficarem tenros com pontas tostadas.",
+      "Polvilha o parmesão e coze 1–2 min até derreter.",
+      "Termina com raspa de limão."
+    ],
+    "dica": "Espargos finos cozem em 5–6 min; os grossos precisam de 9–10."
+  },
+  {
+    "id": 29,
+    "nome": "Legumes de primavera no vapor",
+    "emoji": "🥦",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "300 g de brócolos em raminhos",
+      "2 cenouras em palitos",
+      "150 g de feijão-verde",
+      "Sal, azeite e limão"
+    ],
+    "passos": [
+      "Enche o depósito de água (1,5 L dá para 90 min de vapor).",
+      "Coloca os legumes no prato/camada de vapor, sem sobrepor.",
+      "Coze em modo vapor 8–10 min, até ficarem verde-vivos e tenros.",
+      "Tempera com azeite, sal e sumo de limão."
+    ],
+    "dica": "Segundo a própria Xiaomi, este modelo coze 500 g de brócolos em cerca de 8 min — 30% mais rápido que um vaporizador tradicional."
+  },
+  {
+    "id": 30,
+    "nome": "Legumes de raiz no vapor com molho de iogurte",
+    "emoji": "🥕",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "2 batatas-doces em gomos",
+      "2 cenouras em palitos grossos",
+      "1 beterraba em fatias",
+      "Molho: iogurte grego + raspa de limão + hortelã picada + sal"
+    ],
+    "passos": [
+      "Descasca e corta os legumes em pedaços do mesmo tamanho.",
+      "Coze em modo vapor 18–20 min, até um garfo entrar suavemente.",
+      "Mistura o iogurte com o limão, a hortelã e o sal.",
+      "Serve os legumes mornos ou frios com o molho por cima."
+    ],
+    "dica": "A beterraba mancha tudo — coze-a embrulhada em papel de alumínio."
+  },
+  {
+    "id": 31,
+    "nome": "Ovos aveludados à chinesa (steamed eggs)",
+    "emoji": "🥚",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "3 ovos",
+      "250 ml de água ou caldo morno",
+      "1/2 c. chá de sal",
+      "1 c. sopa de molho de soja + cebolinho",
+      "Algumas gotas de óleo de sésamo ou azeite"
+    ],
+    "passos": [
+      "Bate bem os ovos com o líquido e o sal; coa para eliminar bolhas de ar.",
+      "Verte em 2 taças pequenas e cobre com película aderente ou alumínio.",
+      "Coze em modo vapor 10–12 min, até firme mas ainda tremido.",
+      "Tempera com soja, cebolinho e óleo de sésamo."
+    ],
+    "dica": "O segredo da textura sedosa é coar a mistura e cobrir as taças — sem isso ficam com buracos."
+  },
+  {
+    "id": 32,
+    "nome": "Couve-flor inteira vapor + dourada",
+    "emoji": "🥦",
+    "metodo": "Vapor + Ar",
+    "cat": "Vegetariano",
+    "tempo": 35,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Vapor → 190°C",
+    "ingredientes": [
+      "1 couve-flor inteira (limpa, sem folhas)",
+      "2 c. sopa de azeite",
+      "1 c. chá de pimentão doce + 1/2 c. chá de cominhos",
+      "Alho em pó e sal",
+      "Iogurte grego e salsa para servir"
+    ],
+    "passos": [
+      "Coze a couve-flor inteira em modo vapor 10–12 min, até quase tenra.",
+      "Deixa arrefecer 5 min e seca bem a superfície.",
+      "Esfrega com a pasta de azeite e especiarias por todos os lados.",
+      "Coze em modo air fryer a 190°C durante 10–12 min, até dourar.",
+      "Serve inteira à mesa com iogurte e salsa picada."
+    ],
+    "dica": "Prato de efeito com zero esforço: macia dentro, tostada fora."
+  },
+  {
+    "id": 33,
+    "nome": "Batatas fritas clássicas",
+    "emoji": "🍟",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "800 g de batatas em palitos (~1 cm)",
+      "2 c. sopa de azeite",
+      "Sal e páprica (opcional)"
+    ],
+    "passos": [
+      "(Opcional, mas recomendado) Demolha os palitos 30 min em água fria e seca muito bem.",
+      "Envolve no azeite.",
+      "Coze a 200°C durante 18–20 min, abanando o cesto a cada 5–6 min.",
+      "Salga só no fim, fora da máquina."
+    ],
+    "dica": "Batata frita com 2 colheres de azeite em vez de 1 litro de óleo — o motivo nº1 de comprares uma air fryer."
+  },
+  {
+    "id": 34,
+    "nome": "Batatas-doces crocantes",
+    "emoji": "🍠",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 25,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 batatas-doces grandes em meias-luas (~1 cm)",
+      "1,5 c. sopa de azeite",
+      "Sal e pimentão doce"
+    ],
+    "passos": [
+      "Corta as batatas-doces em meias-luas do mesmo tamanho.",
+      "Envolve no azeite e no pimentão doce.",
+      "Coze a 200°C durante 15–18 min, abanando o cesto a meio, até bordos caramelizados."
+    ],
+    "dica": "O açúcar natural da batata-doce queima fácil: se escurecerem cedo, baixa para 190°C."
+  },
+  {
+    "id": 35,
+    "nome": "Batatas a murro com alecrim",
+    "emoji": "🥔",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "700 g de batatinhas pequenas cozidas al dente",
+      "2 c. sopa de azeite",
+      "Alecrim e 2 dentes de alho esmagados",
+      "Sal grosso"
+    ],
+    "passos": [
+      "Coze as batatinhas na panela (ou no modo vapor da máquina, 12–15 min) até al dente.",
+      "Achata cada batatinha com o fundo de um copo — um murro firme que abra a pele.",
+      "Envolve no azeite, alecrim, alho e sal grosso.",
+      "Coze a 200°C durante 10–12 min, até os bordos ficarem crocantes."
+    ],
+    "dica": "Companheira clássica do bacalhau com broa — e o alecrim pode ser por tomilho ou rosmaninho."
+  },
+  {
+    "id": 36,
+    "nome": "Pão de alho estaladiço",
+    "emoji": "🥖",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 baguette ou meio pão alentejano",
+      "60 g de manteiga amolecida",
+      "2–3 dentes de alho espremidos",
+      "Salsa picada",
+      "Queijo mozarela ralado (opcional)"
+    ],
+    "passos": [
+      "Mistura a manteiga com o alho e a salsa.",
+      "Corta o pão em fatias sem separar totalmente (corte em sanfona).",
+      "Barra cada corte generosamente com a manteiga de alho.",
+      "Coze a 180°C durante 6–8 min; com queijo, mais 2 min a derreter."
+    ],
+    "dica": "Embrulha em papel de alumínio se gostares do miolo mais macio; sem alumínio fica tudo crocante."
+  },
+  {
+    "id": 37,
+    "nome": "Milho assado com manteiga e páprica",
+    "emoji": "🌽",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 espigas de milho (cortadas ao meio se forem grandes)",
+      "Manteiga derretida",
+      "Sal e pimentão doce"
+    ],
+    "passos": [
+      "Pincela as espigas com a manteiga e tempera.",
+      "Coze a 200°C durante 12–14 min, virando a meio, até os grãos tostarem."
+    ],
+    "dica": "Grelhado estilo mexicano: termina com queijo cotijo ou parmesão e lima."
+  },
+  {
+    "id": 38,
+    "nome": "Rissóis de camarão",
+    "emoji": "🥟",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "Massa: 150 g de farinha + 250 ml de leite + 30 g de manteiga + sal",
+      "Recheio: 150 g de camarão cozido picado + 3 c. sopa de bechamel + mostarda + salsa",
+      "1 ovo batido + pão ralado para panar"
+    ],
+    "passos": [
+      "Ferve o leite com a manteiga e o sal; adiciona a farinha de uma vez e mexe até formar bola; deixa arrefecer.",
+      "Mistura o camarão com o bechamel, mostarda e salsa.",
+      "Estende a massa fina, corta círculos e coloca recheio no centro.",
+      "Dobra em meia-lua e fecha bem as bordas com um garfo.",
+      "Passa pelo ovo e pão ralado; coze a 190°C durante 10–12 min até dourar."
+    ],
+    "dica": "A massa quente cola nas mãos — trabalha-a com as mãos untadas de azeite."
+  },
+  {
+    "id": 39,
+    "nome": "Siu mai de porco e camarão (dim sum)",
+    "emoji": "🥟",
+    "metodo": "Vapor",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "12 discos de massa wonton",
+      "250 g de carne de porco picada",
+      "100 g de camarão picado",
+      "2 cogumelos shiitake picados",
+      "1 c. sopa de molho de soja + gengibre ralado + 1 clara",
+      "Cebolinho e óleo de sésamo"
+    ],
+    "passos": [
+      "Mistura a carne, o camarão, os cogumelos, a soja, o gengibre e a clara; bate a mistura até ficar pegajosa.",
+      "Coloca 1 colher de recheio no centro de cada disco de massa.",
+      "Forma cestinhas abertas no topo, apertando a base sem fechar.",
+      "Coze em modo vapor 12 min.",
+      "Serve com soja, cebolinho e algumas gotas de óleo de sésamo."
+    ],
+    "dica": "A colheita de dim sum em casa: a massa wonton encontra-se na secção de produtos asiáticos do supermercado."
+  },
+  {
+    "id": 40,
+    "nome": "Gyozas no vapor com molho de soja",
+    "emoji": "🥟",
+    "metodo": "Vapor",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "12 gyozas (congeladas ou frescas, de supermercado)",
+      "2 c. sopa de molho de soja",
+      "Vinagre de arroz ou sumo de limão",
+      "Gengibre em lâminas e cebolinho"
+    ],
+    "passos": [
+      "Forra o prato de vapor com papel vegetal furado (para não colar).",
+      "Coze as gyozas em modo vapor 8–10 min, até a massa ficar translúcida.",
+      "Mistura a soja com o vinagre e o gengibre; serve de molho."
+    ],
+    "dica": "Para estilo 'potstickers': depois do vapor, 2 min na frigideira para dourar a base."
+  },
+  {
+    "id": 41,
+    "nome": "Pães bao de porco (baozi)",
+    "emoji": "🫓",
+    "metodo": "Vapor",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 120,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "Massa: 300 g de farinha de trigo + 1 c. chá de levedura seca + 1 c. sopa de açúcar + 150 ml de água morna",
+      "Recheio: 200 g de carne de porco picada + cebolinho + soja + gengibre + óleo de sésamo"
+    ],
+    "passos": [
+      "Amassa a farinha, a levedura, o açúcar e a água 10 min até ficar lisa; deixa levedar 1 hora (podes usar o modo de fermentação da air fryer, ~40°C).",
+      "Mistura os ingredientes do recheio.",
+      "Estende 12 discos de massa, coloca recheio e fecha franzindo o topo.",
+      "Deixa levedar mais 20 min.",
+      "Coze em modo vapor 12–15 min. Não abras a tampa durante a cozedura."
+    ],
+    "dica": "Fica uma nuvem dentro. Podes rechear com frango, legumes salteados ou doce de feijão (versão doce)."
+  },
+  {
+    "id": 42,
+    "nome": "Cenouras glaceadas (vapor + ar)",
+    "emoji": "🥕",
+    "metodo": "Vapor + Ar",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "500 g de cenouras pequenas (ou cortadas ao comprimento)",
+      "1 c. sopa de manteiga",
+      "1 c. sopa de mel",
+      "Sal e tomilho"
+    ],
+    "passos": [
+      "Coze as cenouras em modo vapor 8 min, até quase tenras.",
+      "Escorre e seca bem.",
+      "Envolve na manteiga derretida com o mel, sal e tomilho.",
+      "Coze em modo air fryer a 200°C durante 6–8 min, até o mel caramelizar."
+    ],
+    "dica": "O caramel começa a doce na sua forma mais simples — combina com assados de carne ou um iogurte com hortelã."
+  },
+  {
+    "id": 43,
+    "nome": "Pastéis de nata rápidos de massa folhada",
+    "emoji": "🥮",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 placa de massa folhada (reta da secção de refrigerados)",
+      "200 ml de natas + 100 ml de leite",
+      "2 ovos + 1 gema",
+      "100 g de açúcar",
+      "1 c. chá de farinha de amido ou farinha + casca de limão"
+    ],
+    "passos": [
+      "Aquece as natas, o leite, o açúcar e a casca de limão até dissolver o açúcar.",
+      "Mistura os ovos batidos com o amido; adiciona o líquido quente em fio, mexendo; volta ao lume 1–2 min até engrossar. Deixa arrefecer.",
+      "Corta círculos de massa e forra forminhas de queques bem untadas.",
+      "Enche 3/4 com o creme.",
+      "Coze a 190°C durante 12–15 min, até a massa subir e o creme ganhar pintas tostadas.",
+      "Polvilha com canela e açúcar em pó."
+    ],
+    "dica": "Versão caseira honesta: a crosta fica crocante e o creme sedoso — sem a caloria da fritura das pastelarias."
+  },
+  {
+    "id": 44,
+    "nome": "Fatias douradas (french toast)",
+    "emoji": "🍞",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 fatias grossas de pão de brioche ou pão de véspera",
+      "2 ovos + 120 ml de leite",
+      "1 c. sopa de açúcar + canela",
+      "Manteiga (para o cesto)",
+      "Mel ou fruta para servir"
+    ],
+    "passos": [
+      "Bate os ovos com o leite, o açúcar e a canela.",
+      "Passa as fatias pela mistura, 20 segundos de cada lado (não encharques).",
+      "Coloca no cesto untado com manteiga.",
+      "Coze a 180°C durante 4 min por lado, até dourar.",
+      "Serve com mel e frutos vermelhos."
+    ],
+    "dica": "Pão de véspera absorve melhor o creme sem se desfazer — nunca uses pão fresco."
+  },
+  {
+    "id": 45,
+    "nome": "Bolo de iogurte na air fryer",
+    "emoji": "🍰",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 50,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "1 iogurte natural (125 g) — e usa o copo como medida",
+      "2 medidas (do copo) de açúcar",
+      "3 medidas de farinha",
+      "1/2 medida de óleo",
+      "3 ovos + 1 c. chá de fermento",
+      "Raspa de limão"
+    ],
+    "passos": [
+      "Bate os ovos com o açúcar e a raspa de limão até esbranquiçar.",
+      "Adiciona o iogurte, o óleo, depois a farinha peneirada com o fermento.",
+      "Unta e forra uma forma de bolo que caiba no cesto de 7 L.",
+      "Coze a 160°C durante 30–35 min; faz o teste do palito.",
+      "Polvilha com açúcar em pó quando arrefecer."
+    ],
+    "dica": "Parte com chocolate: junta 2 c. sopa de cacau à farinha e pepitas de chocolate."
+  },
+  {
+    "id": 46,
+    "nome": "Brownie de chocolate",
+    "emoji": "🍫",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "150 g de chocolate negro (70%)",
+      "100 g de manteiga",
+      "120 g de açúcar",
+      "2 ovos",
+      "60 g de farinha",
+      "Nozes picadas (opcional) e uma pitada de sal"
+    ],
+    "passos": [
+      "Derrete o chocolate com a manteiga (micro-ondas, 30 em 30 segundos).",
+      "Bate os ovos com o açúcar até ficarem claros; incorpora o chocolate derretido.",
+      "Adiciona a farinha e o sal; envolve as nozes.",
+      "Verte para uma forma pequena untada e coze a 160°C durante 18–22 min.",
+      "O centro deve sair húmido no palito — é assim que um brownie deve ser."
+    ],
+    "dica": "Serve morno com uma bola de gelado de baunilha: a sobremesa de 5 estrelas."
+  },
+  {
+    "id": 47,
+    "nome": "Maçãs assadas com canela e nozes",
+    "emoji": "🍎",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 25,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 maçãs (Bravo de Esmolfe ou Golden)",
+      "2 c. sopa de mel",
+      "Canela a gosto",
+      "Nozes ou amêndoas picadas",
+      "1 noz de manteiga (opcional)"
+    ],
+    "passos": [
+      "Retira o caroço das maçãs com um descaroçador (sem furar o fundo).",
+      "Recheia cada uma com mel, canela, nozes e uma noz de manteiga.",
+      "Coze a 180°C durante 15–18 min, até a pele rugas e a polpa ficar tenra.",
+      "Serve mornas com iogurte grego ou gelado."
+    ],
+    "dica": "Sobremesa de outono de 10 minutos de esforço e uma casa com cheiro a canela."
+  },
+  {
+    "id": 48,
+    "nome": "Camembert assado com mel e tomilho",
+    "emoji": "🧀",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 queijo camembert (sem a caixa de madeira)",
+      "1 c. sopa de mel",
+      "Tomilho fresco",
+      "1 dente de alho (opcional)",
+      "Tostas, pão de uva ou frutos secos para servir"
+    ],
+    "passos": [
+      "Faz uns cortes em grelha na superfície do queijo e espreme o alho para dentro.",
+      "Rega com mel e cobre com tomilho.",
+      "Coloca num pedaço de papel de alumínio ou forminha.",
+      "Coze a 180°C durante 10–12 min, até ficar mole e a borbulhar.",
+      "Serve imediatamente com tostas — come em 10 min, antes de endurecer."
+    ],
+    "dica": "Entrada de dinner party com 3 ingredientes e custo de 5 euros."
+  },
+  {
+    "id": 49,
+    "nome": "Pudim de ovos no vapor",
+    "emoji": "🍮",
+    "metodo": "Vapor",
+    "cat": "Doces",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "Caramelo: 100 g de açúcar + 2 c. sopa de água",
+      "3 ovos",
+      "250 ml de leite",
+      "80 g de açúcar",
+      "Raspa de limão ou um pau de canela"
+    ],
+    "passos": [
+      "Faz o caramelo com o açúcar e a água até ficar âmbar; forra uma forma pequena e deixa endurecer.",
+      "Bate os ovos com o açúcar e a raspa de limão; adiciona o leite morno aos poucos.",
+      "Verte para a forma caramelizada e cobre com alumínio.",
+      "Coze em modo vapor 25–30 min, até firme.",
+      "Arrefece e desenforma — o caramelo escorre por cima como deve ser."
+    ],
+    "dica": "O vapor cozinha o pudim suavemente, sem a casca de ovo revessada que o forno muitas vezes dá."
+  },
+  {
+    "id": 50,
+    "nome": "Peras no vapor com mel e canela",
+    "emoji": "🍐",
+    "metodo": "Vapor",
+    "cat": "Doces",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "4 peras firmes cortadas ao meio e descaroçadas",
+      "2 c. sopa de mel",
+      "Canela",
+      "Nozes ou amêndoas laminadas",
+      "Iogurte grego para servir (opcional)"
+    ],
+    "passos": [
+      "Coloca as metades de pera num prato de vapor com a parte cortada para cima.",
+      "Drizzle de mel sobre cada uma e polvilha com canela.",
+      "Coze em modo vapor 15–18 min, até a polpa ceder ao garfo.",
+      "Serve mornas com as nozes e iogurte."
+    ],
+    "dica": "Sobremesa leve e saudável: o vapor intensifica a doçura natural da fruta."
+  },
+  {
+    "id": 51,
+    "nome": "Almôndegas de carne com molho de tomate",
+    "emoji": "🧆",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "500 g de carne picada (vaca ou mistura vaca/porco)",
+      "1 ovo + 3 c. sopa de pão ralado",
+      "1 cebola ralada + 2 dentes de alho",
+      "Salsa picada, sal e pimenta",
+      "400 g de polpa de tomate + orégãos"
+    ],
+    "passos": [
+      "Mistura a carne com o ovo, o pão ralado, a cebola, o alho e a salsa; forma bolas de ~4 cm.",
+      "Coze a 190°C durante 10–12 min, virando a meio, até dourarem.",
+      "Numa travessa pequena que caiba no cesto, cobre as almôndegas com a polpa de tomate temperada.",
+      "Volta à air fryer por mais 5 min, para o molho apurar.",
+      "Serve com espaguete ou pão."
+    ],
+    "dica": "Polvilha com parmesão nos últimos 2 min para gratinar."
+  },
+  {
+    "id": 52,
+    "nome": "Croquetes de carne à portuguesa",
+    "emoji": "🥟",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "300 g de sobras de carne assada ou cozida, picadas",
+      "1 cebola picada + 2 dentes de alho",
+      "40 g de manteiga + 40 g de farinha + 300 ml de leite",
+      "Salsa picada, sal e noz-moscada",
+      "1 ovo batido + pão ralado para panar"
+    ],
+    "passos": [
+      "Refoga a cebola e o alho; adiciona a carne picada e reserva.",
+      "Faz um bechamel: derrete a manteiga, junta a farinha, mexe e adiciona o leite quente até engrossar.",
+      "Incorpora a carne e a salsa; tempera e deixa arrefecer 1 hora no frigorífico.",
+      "Forma os croquetes com duas colheres e passa por ovo e pão ralado.",
+      "Coze a 190°C durante 10–12 min, virando a meio, até dourar."
+    ],
+    "dica": "Massa bem fria é o segredo para moldar sem colar."
+  },
+  {
+    "id": 53,
+    "nome": "Frango karaage (japonês)",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "600 g de coxas de frango sem pele em cubos",
+      "3 c. sopa de molho de soja + 1 c. sopa de mirin ou vinho branco",
+      "1 c. sopa de gengibre ralado + 2 dentes de alho",
+      "Farinha + amido de milho em partes iguais para panar",
+      "Lima e maionese japonesa para servir"
+    ],
+    "passos": [
+      "Marina o frango na soja, mirin, gengibre e alho durante 30 min.",
+      "Escorre e envolve os cubos na mistura de farinha e amido.",
+      "Coze a 190°C durante 12–14 min, virando a meio, até ficar dourado e crocante.",
+      "Serve com gomos de lima e maionese japonesa."
+    ],
+    "dica": "A dupla farinha + amido é o que dá a crocância leve típica do karaage."
+  },
+  {
+    "id": 54,
+    "nome": "Frango tandoori",
+    "emoji": "🍛",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 kg de frango em pedaços sem pele",
+      "150 g de iogurte natural",
+      "2 c. sopa de especiarias tandoori (ou mistura de pimentão doce, cominhos, curcuma e gengibre)",
+      "3 dentes de alho espremido + gengibre ralado",
+      "Sal e sumo de limão"
+    ],
+    "passos": [
+      "Mistura o iogurte com as especiarias, o alho, o gengibre, o sal e o limão.",
+      "Envolve o frango completamente e marina no mínimo 2 horas (de véspera é ideal).",
+      "Coze a 190°C durante 20–25 min, virando a meio, até dourar.",
+      "Serve com iogurte natural, limão e arroz basmati."
+    ],
+    "dica": "Uma pitada de colorau fumado dá o tom vermelho-alaranjado clássico."
+  },
+  {
+    "id": 55,
+    "nome": "Frango com mel e mostarda",
+    "emoji": "🍯",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "8 coxas de frango (com ou sem pele)",
+      "2 c. sopa de mel",
+      "2 c. sopa de mostarda Dijon",
+      "2 dentes de alho + tomilho",
+      "Azeite, sal e pimenta"
+    ],
+    "passos": [
+      "Mistura o mel, a mostarda, o alho, o azeite, o sal e a pimenta; envolve o frango e descansa 20 min.",
+      "Coze a 190°C durante 12 min.",
+      "Vira, pincela com o restante da marinada e coze mais 12–15 min.",
+      "Nos últimos 2 min, pincela com um pouco mais de mel para brilhar."
+    ],
+    "dica": "O mel queima depressa — pincela só no final."
+  },
+  {
+    "id": 56,
+    "nome": "Peitos de frango panados",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 peitos de frango abertos em bifes finos (escalopes)",
+      "Farinha + 2 ovos batidos + panko",
+      "Sal, alho em pó e pimentão doce",
+      "Neblina de azeite"
+    ],
+    "passos": [
+      "Bate os bifes finos entre filme transparente até ficarem com ~1 cm.",
+      "Tempera com sal, alho em pó e pimentão doce.",
+      "Pana: farinha → ovo → panko, pressionando bem.",
+      "Coze a 200°C durante 10–12 min, virando a meio, até dourar."
+    ],
+    "dica": "Escalopes finos cozem rápido e nunca secam — perfeitos para crianças."
+  },
+  {
+    "id": 57,
+    "nome": "Cordon bleu de frango",
+    "emoji": "🧀",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 bifes finos de peito de frango",
+      "4 fatias de fiambre + 4 fatias de queijo suave",
+      "Farinha + 2 ovos + panko",
+      "Palitos de madeira",
+      "Sal e pimenta"
+    ],
+    "passos": [
+      "Tempera os bifes e coloca uma fatia de fiambre e uma de queijo em cada um.",
+      "Enrola e fecha com palitos.",
+      "Pana cada rolo: farinha → ovo → panko.",
+      "Coze a 190°C durante 15–18 min, virando a meio, até dourar e o queijo derreter.",
+      "Retira os palitos antes de servir."
+    ],
+    "dica": "Dois palitos cruzados seguram melhor o rolo durante a cozedura."
+  },
+  {
+    "id": 58,
+    "nome": "Lombinho de porco com mel e mostarda",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 lombinho de porco (~600 g)",
+      "2 c. sopa de mel + 2 c. sopa de mostarda",
+      "3 dentes de alho",
+      "Azeite, sal, pimenta e tomilho"
+    ],
+    "passos": [
+      "Esfrega o lombinho com o mel, a mostarda, o alho, o azeite, o sal e o tomilho.",
+      "Coze a 180°C durante 30–35 min, virando a meio e pincelando com os sucos.",
+      "Está pronto a 63–65°C no centro.",
+      "Descansa 5 min embrulhado em alumínio e fatia em medalhões."
+    ],
+    "dica": "Sobras frias em fatias finas são óptimas em sandes do dia seguinte."
+  },
+  {
+    "id": 59,
+    "nome": "Costeletas de borrego com alecrim",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "8 costeletas pequenas de borrego",
+      "3 dentes de alho esmagados",
+      "Azeite, alecrim fresco",
+      "Sal, pimenta e limão"
+    ],
+    "passos": [
+      "Envolve as costeletas no azeite, alho, alecrim, sal e pimenta; descansa 15 min.",
+      "Coze a 190°C durante 5–6 min por lado.",
+      "Descansa 3 min e serve com limão.",
+      "Acompanha com batatinhas e legumes assados."
+    ],
+    "dica": "O borrego fica rosa no centro — é assim que se come."
+  },
+  {
+    "id": 60,
+    "nome": "Espetadas de vaca com pimento e cebola",
+    "emoji": "🍢",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "600 g de carne de vaca em cubos de 3 cm",
+      "1 pimento vermelho + 1 cebola em quadrados",
+      "Azeite, alho em pó, orégãos",
+      "Sal e pimenta"
+    ],
+    "passos": [
+      "Monta as espetadas alternando carne, pimento e cebola.",
+      "Envolve no azeite e temperos.",
+      "Coze a 200°C durante 10–12 min, virando a meio, para mal passado.",
+      "Serve com arroz ou pão pita e molho de iogurte."
+    ],
+    "dica": "Não enchas demasiado os espetos: o calor precisa de circular."
+  },
+  {
+    "id": 61,
+    "nome": "Carne de vinha d'alhos assada",
+    "emoji": "🍷",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 50,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "800 g de carne de porco (cachaço) em cubos grandes",
+      "4 dentes de alho esmagados",
+      "100 ml de vinho branco",
+      "1 c. sopa de massa de pimentão",
+      "1 folha de louro, sal e azeite"
+    ],
+    "passos": [
+      "Marina a carne no vinho, alho, pimentão, louro e sal, no mínimo 2 horas.",
+      "Escorre (reserva a marinada) e coze a 180°C durante 25–30 min, virando e pincelando com a marinada.",
+      "Nos últimos 5 min sobe para 200°C para dourar.",
+      "Serve com batatas e couve — prato de festa tradicional."
+    ],
+    "dica": "Este é o tempero do Natal português, adaptado ao cesto."
+  },
+  {
+    "id": 62,
+    "nome": "Bifes de peru com limão e orégãos",
+    "emoji": "🦃",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 bifes de peru",
+      "2 dentes de alho",
+      "Azeite, raspa e sumo de limão",
+      "Orégãos, sal e pimenta"
+    ],
+    "passos": [
+      "Envolve os bifes no azeite, alho, limão, orégãos, sal e pimenta.",
+      "Coze a 190°C durante 6–7 min por lado.",
+      "Descansa 2 min antes de servir."
+    ],
+    "dica": "O peru é magro: não cozas além do ponto ou fica seco."
+  },
+  {
+    "id": 63,
+    "nome": "Salsichas envoltas em bacon",
+    "emoji": "🌭",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": ["8 salsichas tipo frankfurt", "8 fatias de bacon", "Mostarda para servir"],
+    "passos": [
+      "Enrola cada salsicha numa fatia de bacon, prendendo com um palito.",
+      "Coze a 200°C durante 10–12 min, virando a meio, até o bacon ficar crocante.",
+      "Serve com mostarda — petisco ou lanche."
+    ],
+    "dica": "Versão festive: envolve em massa de folhado em vez de bacon."
+  },
+  {
+    "id": 64,
+    "nome": "Chouriço assado com mel e mostarda",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 chouriço de carne",
+      "1 c. sopa de mel + 1 c. sopa de mostarda",
+      "Um fio de azeite"
+    ],
+    "passos": [
+      "Corta o chouriço em rodelas grossas (~2 cm).",
+      "Envolve na mistura de mel e mostarda.",
+      "Coze a 190°C durante 8–10 min, virando a meio, até dourar."
+    ],
+    "dica": "A entrada que desaparece primeiro de qualquer mesa de petiscos."
+  },
+  {
+    "id": 65,
+    "nome": "Polvo à lagareiro",
+    "emoji": "🐙",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "1 polvo pequeno já cozido (comprado cozido ou cozido por ti)",
+      "Azeite generoso + 4 dentes de alho",
+      "Sal grosso",
+      "Batatas a murro para acompanhar"
+    ],
+    "passos": [
+      "Seca muito bem o polvo cozido com papel de cozinha.",
+      "Coze a 200°C durante 15–20 min, até os braços tostarem e as pontas enrolarem.",
+      "Cobre com azeite cru e alho fatiado.",
+      "Serve com batatas a murro e couve, à moda do Minho."
+    ],
+    "dica": "Congela o polvo cru 2 dias antes de o cozer: a congelação amacia as fibras."
+  },
+  {
+    "id": 66,
+    "nome": "Asas de frango com alho e parmesão",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "1 kg de asas de frango",
+      "4 dentes de alho picados",
+      "3 c. sopa de parmesão ralado",
+      "Azeite, salsa picada, sal"
+    ],
+    "passos": [
+      "Coze as asas a 200°C durante 12 min; vira e coze mais 10–12 min.",
+      "Entretanto mistura o alho com o azeite, o parmesão e a salsa.",
+      "Envolve as asas quentes na mistura e serve logo."
+    ],
+    "dica": "Estilo americano 'garlic parmesan' — sem molho picante, mas igualmente viciante."
+  },
+  {
+    "id": 67,
+    "nome": "Barriga de porco assada com especiarias",
+    "emoji": "🥓",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 75,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "200°C",
+    "ingredientes": [
+      "800 g de barriga de porco com pele",
+      "Sal grosso",
+      "1 c. sopa de pimentão doce + 1 c. chá de cominhos + alho em pó",
+      "Azeite"
+    ],
+    "passos": [
+      "Risca a pele em losangos com uma faca afiada, sem cortar a carne.",
+      "Salga generosamente a pele e deixa repousar 30 min; seca bem com papel.",
+      "Esfrega a carne (não a pele) com azeite e especiarias.",
+      "Coze com a pele para cima a 200°C durante 30–35 min, até a pele estalar.",
+      "Descansa 10 min antes de fatiar."
+    ],
+    "dica": "Pele seca = crackling. Passa um secador de cabelo 1 min se tiveres pressa."
+  },
+  {
+    "id": 68,
+    "nome": "Febras de porco com mostarda e alho",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 febras de porco (bifes do lombo)",
+      "2 c. sopa de mostarda",
+      "3 dentes de alho",
+      "Azeite, sal, pimenta e tomilho"
+    ],
+    "passos": [
+      "Envolve as febras na mostarda, alho, azeite e temperos; descansa 15 min.",
+      "Coze a 190°C durante 6–7 min por lado.",
+      "Descansa 3 min e serve com puré ou arroz."
+    ],
+    "dica": "A mostarda forma uma crosta saborosa quando assa."
+  },
+  {
+    "id": 69,
+    "nome": "Tiras de frango grelhadas (meal prep)",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "500 g de peitos de frango em tiras",
+      "Azeite, sal, pimenta",
+      "Alho em pó e pimentão doce"
+    ],
+    "passos": [
+      "Tempera as tiras com azeite e especiaturas.",
+      "Coze a 200°C durante 8–10 min, abanando o cesto a meio.",
+      "Guarda em frascos com arroz e legumes para almoços da semana.",
+      "Reaquece 3–4 min na própria air fryer."
+    ],
+    "dica": "Base perfeita para wraps, saladas e bowls de treino."
+  },
+  {
+    "id": 70,
+    "nome": "Bitoques de porco com molho de mostarda",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 bitoques (bifes finos de porco batidos)",
+      "2 c. sopa de mostarda",
+      "3 dentes de alho",
+      "Natas ou iogurte grego para o molho",
+      "Sal, pimenta e azeite"
+    ],
+    "passos": [
+      "Tempera os bitoques com alho, azeite, sal e pimenta.",
+      "Coze a 190°C durante 5–6 min por lado.",
+      "Mistura as natas (ou iogurte) com a mostarda e um pouco dos sucos da cozedura.",
+      "Serve o molho frio por cima dos bitoques quentes, com ovo estrelado ao lado."
+    ],
+    "dica": "Prato de tasca em minutos: bitoque, molho, ovo e batata frita."
+  },
+  {
+    "id": 71,
+    "nome": "Rosbife na air fryer",
+    "emoji": "🥩",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 90,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 peça de lombo ou alcatra de vaca (~1 kg)",
+      "Sal, pimenta preta e alho",
+      "1 c. sopa de mostarda"
+    ],
+    "passos": [
+      "Tempera a peça com sal, pimenta, alho e mostarda, de véspera.",
+      "Coze a 180°C durante 40–45 min, virando a meio.",
+      "Está pronto a 58°C no centro (mal passado).",
+      "Descansa 10 min e fatia o mais fino possível.",
+      "Sobras = sandes de rosbife no dia seguinte."
+    ],
+    "dica": "7 L é o tamanho ideal: uma peça de 1 kg assa sem secar."
+  },
+  {
+    "id": 72,
+    "nome": "Entremeada com limão e orégãos",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "600 g de entremeada de porco em pedaços",
+      "Raspa e sumo de 1 limão",
+      "Alho, orégãos, azeite e sal"
+    ],
+    "passos": [
+      "Tempera a entremeada com limão, alho, orégãos e azeite; descansa 15 min.",
+      "Coze a 200°C durante 12–15 min, virando a meio, até dourar.",
+      "Rega com sumo de limão no fim."
+    ],
+    "dica": "Corte muito popular na churrascada portuguesa — aqui sem fumo nem labaredas."
+  },
+  {
+    "id": 73,
+    "nome": "Frango shawarma",
+    "emoji": "🌯",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "600 g de frango desossado em tiras grossas",
+      "1 c. sopa de cominhos + 1 c. sopa de pimentão doce + 1/2 c. chá de curcuma + canela",
+      "3 dentes de alho + azeite + vinagre",
+      "Pão pita e molho de iogurte com pepino e alho"
+    ],
+    "passos": [
+      "Mistura as especiarias com o alho, azeite e um fio de vinagre; envolve o frango.",
+      "Marina 30 min.",
+      "Coze a 200°C durante 12–15 min, abanando o cesto a meio, até tostar.",
+      "Serve no pão pita com molho de iogurte, tomate e pepino."
+    ],
+    "dica": "O toque de canela é o que separa um shawarma de um simples frango especiado."
+  },
+  {
+    "id": 74,
+    "nome": "Coxinhas de frango (brasileiras)",
+    "emoji": "🍗",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "200°C",
+    "ingredientes": [
+      "Massa: 250 ml de caldo de galinha + 60 g de manteiga + 200 g de farinha",
+      "Recheio: 200 g de frango cozido desfiado + 2 c. sopa de requeijão",
+      "1 ovo batido + panko"
+    ],
+    "passos": [
+      "Ferve o caldo com a manteiga, junta a farinha de uma vez e mexe até soltar da panela; deixa arrefecer.",
+      "Mistura o frango com o requeijão.",
+      "Com as mãos untadas de azeite, molda gotas: uma bolinha de massa, recheio no centro, fecha e alonga a ponta.",
+      "Passa por ovo e panko.",
+      "Coze a 200°C durante 12–15 min, virando, até dourar."
+    ],
+    "dica": "Clássico brasileiro em versão leve — a forma de gota é obrigatória para efeito."
+  },
+  {
+    "id": 75,
+    "nome": "Pernil de porco assado",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 120,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "170°C",
+    "ingredientes": [
+      "1 pernil pequeno (~1,2 kg, cabe no cesto de 7 L)",
+      "6 dentes de alho + 1 c. sopa de massa de pimentão",
+      "100 ml de vinho branco + azeite",
+      "Sal, pimenta e 2 folhas de louro"
+    ],
+    "passos": [
+      "Esfrega o pernil com o alho, pimentão, azeite, sal e louro; marina 2 horas.",
+      "Coze a 170°C durante 80–90 min, virando duas vezes e pincelando com o vinho.",
+      "Sobe para 200°C nos últimos 10 min para dourar.",
+      "Descansa 10 min antes de fatiar."
+    ],
+    "dica": "Domingo em família sem ligar o forno grande."
+  },
+  {
+    "id": 76,
+    "nome": "Secretos de porco preto com sal grosso",
+    "emoji": "🍖",
+    "metodo": "Air Fryer",
+    "cat": "Carne",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": ["600 g de secretos de porco preto", "Flor de sal e pimenta preta", "Azeite"],
+    "passos": [
+      "Tempera só na hora de cozer (sal antes tira humidade).",
+      "Coze a 200°C durante 8–10 min, virando uma única vez.",
+      "Descansa 3 min e serve com arroz malandrinho ou salada."
+    ],
+    "dica": "Corte do Alentejo com gordura infiltrada: suculento por natureza, não precisa de marinada."
+  },
+  {
+    "id": 77,
+    "nome": "Postas de bacalhau grelhadas com azeite e alho",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "3 postas de bacalhau demolhado",
+      "4 c. sopa de azeite + 3 dentes de alho",
+      "Pimenta e coentros ou salsa",
+      "Batatas cozidas para acompanhar"
+    ],
+    "passos": [
+      "Seca muito bem as postas com papel de cozinha.",
+      "Envolve no azeite e pimenta (o bacalhau já tem sal).",
+      "Coze a 190°C durante 12–15 min, virando com espátula a meio.",
+      "Ao servir, rega com azeite com alho cru fatiado e coentros."
+    ],
+    "dica": "Grelhado clássico de Natal ou Semana Santa, sem cheiro na casa toda."
+  },
+  {
+    "id": 78,
+    "nome": "Atum selado com sésamo (tataki)",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 15,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 lombos de atum fresco (~3 cm de altura)",
+      "2 c. sopa de molho de soja",
+      "3 c. sopa de sésamo (branco e preto)",
+      "Molho de soja e lima para servir"
+    ],
+    "passos": [
+      "Passa o atum pela soja e depois envolve no sésamo em toda a volta.",
+      "Pré-aquece a 200°C e coze apenas 1,5–2 min por lado — o centro tem de ficar rosado.",
+      "Fatia em bocados grossos e serve com soja e lima."
+    ],
+    "dica": "Menos é mais: atum bem passado vira papelão. Cuida do relógio."
+  },
+  {
+    "id": 79,
+    "nome": "Peixe-espada preta com manteiga de limão",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 postas de peixe-espada preta",
+      "60 g de manteiga + raspa e sumo de 1 limão",
+      "Alho e salsa picados",
+      "Sal e pimenta"
+    ],
+    "passos": [
+      "Tempera as postas com sal e pimenta.",
+      "Coze a 190°C durante 8–10 min, virando a meio.",
+      "Derrete a manteiga com o limão, alho e salsa e rega ao servir."
+    ],
+    "dica": "O clássico da Madeira com fritura trocada por grelha limpa."
+  },
+  {
+    "id": 80,
+    "nome": "Dourada grelhada com limão e ervas",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 douradas limpas e arranhadas",
+      "Sal grosso",
+      "Azeite, 1 limão em rodelas, alho",
+      "Ervas a gosto (tomilho, louro)"
+    ],
+    "passos": [
+      "Seca bem as douradas e faz 2 golpes de cada lado; esfrega com sal grosso.",
+      "Recheia a cavidade com rodelas de limão, alho e ervas.",
+      "Coze a 200°C durante 8–10 min por lado, até a espinha se soltar.",
+      "Rega com azeite e serve inteira."
+    ],
+    "dica": "Duas douradas médias cabem lado a lado no cesto de 7 L."
+  },
+  {
+    "id": 81,
+    "nome": "Camarão panado (popcorn shrimp)",
+    "emoji": "🍤",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de camarão descascado e limpo",
+      "Farinha + 2 ovos batidos + panko",
+      "Alho em pó e pimentão doce",
+      "Molho cocktail: ketchup + maionese + lima"
+    ],
+    "passos": [
+      "Tempera o camarão com alho em pó e pimentão.",
+      "Pana: farinha → ovo → panko.",
+      "Coze a 200°C durante 6–8 min, virando a meio.",
+      "Serve com molho cocktail (ketchup, maionese e um toque de whisky ou lima)."
+    ],
+    "dica": "Petisco de cinema em versão leve."
+  },
+  {
+    "id": 82,
+    "nome": "Croquetes de peixe",
+    "emoji": "🥟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "300 g de pescada cozida e desfiada",
+      "40 g de manteiga + 40 g de farinha + 300 ml de leite",
+      "1 cebola picada + salsa",
+      "Noz-moscada, sal, pimenta",
+      "1 ovo + pão ralado para panar"
+    ],
+    "passos": [
+      "Refoga a cebola; faz um bechamel com a manteiga, farinha e leite.",
+      "Incorpora o peixe desfiado e a salsa; tempera e deixa arrefecer 1 hora.",
+      "Forma croquetes e pana (ovo + pão ralado).",
+      "Coze a 190°C durante 10–12 min até dourar."
+    ],
+    "dica": "Boa solução para sobras de peixe cozido."
+  },
+  {
+    "id": 83,
+    "nome": "Dedos de peixe caseiros",
+    "emoji": "🐠",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "500 g de filetes de pescada em tiras grossas",
+      "Sumo de limão e sal",
+      "Farinha + 2 ovos + panko"
+    ],
+    "passos": [
+      "Tempera as tiras com limão e sal; seca bem.",
+      "Pana: farinha → ovo → panko.",
+      "Coze a 200°C durante 10–12 min, virando a meio.",
+      "Serve com limão e tártaro."
+    ],
+    "dica": "Muito mais peixe e muito menos pão do que os congelados do supermercado."
+  },
+  {
+    "id": 84,
+    "nome": "Lulas panadas",
+    "emoji": "🦑",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "500 g de lulas em anéis",
+      "Farinha de milho (ou farinha de trigo + panko)",
+      "Sal e pimenta",
+      "Limão e salsa"
+    ],
+    "passos": [
+      "Seca muito bem as lulas e tempera.",
+      "Envolve na farinha de milho, sacudindo o excesso.",
+      "Coze a 200°C durante 8–10 min, abanando o cesto a meio.",
+      "Serve com limão — petisco de praia."
+    ],
+    "dica": "Farinha de milho dá a crocância crocante das 'ruivas' do sul."
+  },
+  {
+    "id": 85,
+    "nome": "Lulas recheadas com chouriço",
+    "emoji": "🦑",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "8 lulas médias limpas (tubos inteiros)",
+      "100 g de chouriço picado + miolo das próprias lulas",
+      "1 cebola + 2 dentes de alho + polpa de tomate",
+      "Azeite, salsa e palitos"
+    ],
+    "passos": [
+      "Refoga cebola e alho; adiciona o chouriço e os miolos picados; deixa arrefecer.",
+      "Recheia cada lula até 2/3 e fecha com um palito.",
+      "Coloca numa travessa pequena com um pouco de polpa de tomate na base.",
+      "Coze a 190°C durante 18–20 min.",
+      "Serve com arroz branco e salsa."
+    ],
+    "dica": "O palito sai fácil depois de assado — avisa os convidados."
+  },
+  {
+    "id": 86,
+    "nome": "Cavala grelhada com mostarda",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": ["4 cavalas limpas", "2 c. sopa de mostarda", "Sumo de limão + azeite", "Sal"],
+    "passos": [
+      "Mistura a mostarda com o limão e azeite; barra as cavalas dentro e fora.",
+      "Coze a 200°C durante 10–12 min, virando uma vez.",
+      "Serve com pão e salada de tomate."
+    ],
+    "dica": "Peixe azul rico em ómega-3, normalmente barato e subestimado."
+  },
+  {
+    "id": 87,
+    "nome": "Truta com amêndoas",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "190°C",
+    "ingredientes": [
+      "2 trutas abertas ao meio (borboleta)",
+      "40 g de amêndoas laminadas",
+      "40 g de manteiga",
+      "Limão, salsa, sal e azeite"
+    ],
+    "passos": [
+      "Tosta as amêndoas na air fryer 2–3 min a 190°C; reserva.",
+      "Tempera as trutas abertas com sal e azeite.",
+      "Coze a 190°C durante 8–10 min, até a carne opacar.",
+      "Derrete a manteiga, junta as amêndoas e o limão e cobre as trutas."
+    ],
+    "dica": "Truta fica pronta num instante — não te afastes do cesto."
+  },
+  {
+    "id": 88,
+    "nome": "Hambúrgueres de salmão",
+    "emoji": "🍔",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "400 g de salmão picado à faca (sem pele)",
+      "2 c. sopa de pão ralado + 1 ovo",
+      "Coentros picados, gengibre ralado, alho",
+      "Sal e lima",
+      "Pão de hambúrguer e maionese de lima"
+    ],
+    "passos": [
+      "Mistura o salmão com o ovo, o pão ralado, os coentros, o gengibre e o alho.",
+      "Forma 4 hambúrgueres e refrigera 15 min para firmar.",
+      "Coze a 190°C durante 10–12 min, virando a meio.",
+      "Serve no pão com maionese de lima e rúcula."
+    ],
+    "dica": "Picar à faca em vez de usar picada dá textura de verdade."
+  },
+  {
+    "id": 89,
+    "nome": "Pataniscas de bacalhau",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 35,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "200 g de bacalhau cozido e desfiado",
+      "150 g de farinha + 250 ml de água gelada + 2 ovos",
+      "1 cebola picada + salsa",
+      "Pimenta e sal",
+      "Azeite"
+    ],
+    "passos": [
+      "Faz uma massa líquida espessa com farinha, ovos e água; tempera com pimenta.",
+      "Incorpora o bacalhau desfiado, a cebola e a salsa.",
+      "Colheradas da massa no cesto untado com azeite, achatando cada uma.",
+      "Coze a 190°C durante 8–10 min, virando a meio, até dourar."
+    ],
+    "dica": "A patanisca da avó, sem fritura submersa — o cesto faz o trabalho."
+  },
+  {
+    "id": 90,
+    "nome": "Empanadas de atum",
+    "emoji": "🥟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "Massa: 250 g de farinha + 60 g de manteiga + 1 ovo + água morna + sal",
+      "Recheio: 2 latas de atum + 1 ovo cozido + azeitonas + tomate pelado picado",
+      "Cebola refogada e cominhos"
+    ],
+    "passos": [
+      "Amassa a farinha com a manteiga, o ovo e água até formar bola; deixa 30 min no frio.",
+      "Mistura os ingredientes do recheio.",
+      "Estende a massa, corta círculos e recheia a meio; fecha em meia-lua apertando com um garfo.",
+      "Coze a 190°C durante 12–15 min até dourar."
+    ],
+    "dica": "Ficam óptimas frias para lancheiras — faz o lote completo."
+  },
+  {
+    "id": 91,
+    "nome": "Espetadas de camarão e ananás",
+    "emoji": "🍢",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de camarão grande descascado",
+      "1/2 ananás em cubos grandes",
+      "Azeite, alho, pimentão doce",
+      "Mel e lima para finalizar"
+    ],
+    "passos": [
+      "Monta as espetadas alternando camarão e ananás.",
+      "Envolve no azeite com alho e pimentão.",
+      "Coze a 200°C durante 8–10 min, virando a meio.",
+      "Rega com mel e lima ao sair."
+    ],
+    "dica": "Doce + salgado com toque tropical — prato de jantar de verão."
+  },
+  {
+    "id": 92,
+    "nome": "Carapaus com massa de pimentão",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "6 carapaus médios limpos",
+      "2 c. sopa de massa de pimentão",
+      "Alho picado + azeite",
+      "Sal grosso e limão"
+    ],
+    "passos": [
+      "Mistura a massa de pimentão com o azeite e o alho; barra os carapaus.",
+      "Coze a 200°C durante 10–12 min, virando uma vez.",
+      "Serve com pão alentejano para molhar os sucos."
+    ],
+    "dica": "Peixe de noites de praia, sem fumo nem grelha suja."
+  },
+  {
+    "id": 93,
+    "nome": "Salmão com crosta de ervas",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "190°C",
+    "ingredientes": [
+      "2 lombos de salmão",
+      "4 c. sopa de pão ralado",
+      "Salsa e coentros picados + 1 dente de alho",
+      "Azeite e mostarda",
+      "Sal e pimenta"
+    ],
+    "passos": [
+      "Seca os lombos e barra a face superior com mostarda.",
+      "Mistura o pão ralado com as ervas, o alho e azeite; pressiona sobre o salmão.",
+      "Coze a 190°C durante 10–12 min, sem virar, até a crosta dourar."
+    ],
+    "dica": "A mostarda cola a crosta e acrescenta acidez — não salta esse passo."
+  },
+  {
+    "id": 94,
+    "nome": "Gratinado de bacalhau com natas",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 50,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "300 g de bacalhau cozido e desfiado",
+      "400 g de batata palito (frita primeiro na air fryer)",
+      "200 ml de natas + 1 cebola + noz-moscada",
+      "Queijo mozarela ralado",
+      "Azeite e pimenta"
+    ],
+    "passos": [
+      "Frita as batatas palito a 200°C durante 12–15 min e reserva.",
+      "Refoga a cebola, adiciona o bacalhau e as natas; tempera.",
+      "Numa travessa pequena que caiba no cesto, mistura com as batatas e cobre com queijo.",
+      "Coze a 180°C durante 15–18 min, até borbulhar e dourar."
+    ],
+    "dica": "O conforto do bacalhau com natas numa fração do tempo do forno."
+  },
+  {
+    "id": 95,
+    "nome": "Solha com manteiga e alcaparras",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 filetes de solha",
+      "50 g de manteiga",
+      "2 c. sopa de alcaparras",
+      "Limão, salsa, sal e pimenta"
+    ],
+    "passos": [
+      "Seca os filetes e tempera com sal e pimenta.",
+      "Coze a 190°C durante 8–10 min, virando com cuidado (a solha desfaz-se fácil).",
+      "Derrete a manteiga com as alcaparras e o limão e rega ao servir."
+    ],
+    "dica": "Peixe leve de digestão — jantar de semana elegante sem esforço."
+  },
+  {
+    "id": 96,
+    "nome": "Camarão em crosta de coco",
+    "emoji": "🍤",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de camarão grande descascado",
+      "Farinha + 2 ovos batidos",
+      "100 g de coco ralado",
+      "Molho doce-picante: mel + malagueta + lima"
+    ],
+    "passos": [
+      "Pana: farinha → ovo → coco ralado, pressionando bem.",
+      "Coze a 200°C durante 8–10 min, virando a meio, até o coco tostar.",
+      "Serve com o molho de mel e lima."
+    ],
+    "dica": "O coco torra depressa — vigia os últimos 2 min."
+  },
+  {
+    "id": 97,
+    "nome": "Espetadas de salmão e curgete",
+    "emoji": "🍢",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de salmão em cubos grandes",
+      "1 curgete em rodelas grossas",
+      "Azeite, limão, alho e ervas",
+      "Iogurte grego + limão para o molho"
+    ],
+    "passos": [
+      "Monta as espetadas alternando salmão e curgete.",
+      "Envolve no azeite, alho e raspa de limão.",
+      "Coze a 200°C durante 8–10 min, virando a meio — salmão mal passado no centro.",
+      "Serve com o molho de iogurte."
+    ],
+    "dica": "Jantar leve de 20 minutos que parece de restaurante."
+  },
+  {
+    "id": 98,
+    "nome": "Espetadas de marisco",
+    "emoji": "🍢",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "300 g de camarão grande + 300 g de lulas em cubos",
+      "1 pimento em quadrados",
+      "Azeite, alho, coentros e limão"
+    ],
+    "passos": [
+      "Monta as espetadas alternando camarão, lulas e pimento.",
+      "Envolve no azeite com alho e coentros.",
+      "Coze a 200°C durante 8–10 min, virando a meio — cuidado para não cozer demais.",
+      "Serve com arroz de limão ou simplesmente pão."
+    ],
+    "dica": "Marisco coze em segundos: erra sempre para menos tempo."
+  },
+  {
+    "id": 99,
+    "nome": "Lombos de bacalhau com cebola caramelizada",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "2 lombos de bacalhau demolhado",
+      "2 cebolas em rodelas",
+      "1 c. chá de mel + azeite",
+      "1 folha de louro, azeitonas pretas"
+    ],
+    "passos": [
+      "Carameliza as cebolas com azeite e mel numa frigideira, 10 min.",
+      "Cobre os lombos secos com as cebolas e as azeitonas.",
+      "Coze a 180°C durante 15–18 min, até o bacalhau desfazer em lascas."
+    ],
+    "dica": "A doçura da cebola contrasta com o salgado do bacalhau."
+  },
+  {
+    "id": 100,
+    "nome": "Bifes de bacalhau panados",
+    "emoji": "🐟",
+    "metodo": "Air Fryer",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "4 bifes de bacalhau demolhado (postas finas)",
+      "2 ovos batidos + pão ralado",
+      "Azeite, pimenta e limão"
+    ],
+    "passos": [
+      "Seca muito bem os bifes (toalha de papel, sem medo).",
+      "Passa por ovo e pão ralado.",
+      "Coze a 200°C durante 10–12 min, virando a meio.",
+      "Serve com puré de batata e azeite."
+    ],
+    "dica": "Musculo inteiro panado — textura completamente diferente dos pastéis de bacalhau."
+  },
+  {
+    "id": 101,
+    "nome": "Bifes de beringela panados",
+    "emoji": "🍆",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 beringela grande em fatias de 1 cm",
+      "Sal para desenchar",
+      "Farinha + 2 ovos + panko",
+      "Mozarela e tomate para gratinar (opcional)"
+    ],
+    "passos": [
+      "Salga as fatias e deixa 20 min; seca a água que sair (remove o amargo).",
+      "Pana: farinha → ovo → panko.",
+      "Coze a 190°C durante 12–14 min, virando a meio.",
+      "Queres versão parmigiana? Adiciona molho de tomate e queijo e volta 3–4 min."
+    ],
+    "dica": "A beringela é uma esponja: seca-a bem antes de panar."
+  },
+  {
+    "id": 102,
+    "nome": "Courgettes recheadas com queijo e tomate",
+    "emoji": "🥒",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 courgettes cortadas ao meio no comprimento",
+      "150 g de queijo creme ou requeijão",
+      "2 tomates picados + alho + orégãos",
+      "Queijo ralado para gratinar"
+    ],
+    "passos": [
+      "Escava o miolo das courgettes com uma colher, deixando borda de 1/2 cm; pica o miolo.",
+      "Mistura o miolo com o queijo creme, tomate, alho e orégãos.",
+      "Recheia as metades e cobre com queijo ralado.",
+      "Coze a 180°C durante 15–18 min, até gratinar."
+    ],
+    "dica": "Serve com salada como prato leve de verão."
+  },
+  {
+    "id": 103,
+    "nome": "Pimentos recheados com arroz e cogumelos",
+    "emoji": "🫑",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 50,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 pimentos grandes (inteiros, sem tampo e sementes)",
+      "250 g de arroz cozido (sobras servem)",
+      "200 g de cogumelos salteados + cebola",
+      "Queijo ralado + azeite + orégãos"
+    ],
+    "passos": [
+      "Pré-coze os pimentos vazios a 190°C durante 5 min.",
+      "Mistura o arroz com os cogumelos salteados e temperos.",
+      "Enche os pimentos e cobre com queijo.",
+      "Coze a 190°C durante 12–15 min, até o queijo derreter e borbulhar."
+    ],
+    "dica": "Ficam de pé sozinhos se cortares uma rodela fina da base."
+  },
+  {
+    "id": 104,
+    "nome": "Portobello recheado com queijo",
+    "emoji": "🍄",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 25,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 cogumelos portobello grandes (sem pés)",
+      "Azeite + alho espremido",
+      "Queijo mozarela ou gorgonzola",
+      "Orégãos e pimenta"
+    ],
+    "passos": [
+      "Limpa os chapéus e esfrega com azeite e alho.",
+      "Coloca com as guelras para cima e cobre com queijo.",
+      "Coze a 190°C durante 10–12 min, até o queijo derreter.",
+      "Serve como entrada ou num pão de hambúrguer com rúcula."
+    ],
+    "dica": "O portobello assado substitui a carne no hambúrguer sem ninguém reclamar."
+  },
+  {
+    "id": 105,
+    "nome": "Couve-de-bruxelas com mel e mostarda",
+    "emoji": "🥬",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de couve-de-bruxelas cortadas ao meio",
+      "1 c. sopa de mel + 1 c. sopa de mostarda",
+      "Azeite, sal e pimenta"
+    ],
+    "passos": [
+      "Envolve as couves no azeite, sal e pimenta.",
+      "Coze a 200°C durante 12–14 min, abanando o cesto a meio, até as folhas exteriores tostarem.",
+      "Envolve no mel com mostarda ao sair."
+    ],
+    "dica": "Quem diz que não gosta de couve-de-bruxelas nunca a provou caramelizada."
+  },
+  {
+    "id": 106,
+    "nome": "Brócolos assados com alho e limão",
+    "emoji": "🥦",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de brócolos em raminhos pequenos",
+      "3 dentes de alho fatiados",
+      "Azeite, sal e raspa de limão"
+    ],
+    "passos": [
+      "Envolve os brócolos no azeite com o alho.",
+      "Coze a 200°C durante 10–12 min, abanando a meio, até as pontas tostarem.",
+      "Tempera com raspa de limão e sal."
+    ],
+    "dica": "Assado fica crocante fora e tenro dentro — nada a ver com o cozido."
+  },
+  {
+    "id": 107,
+    "nome": "Curgete crocante com parmesão",
+    "emoji": "🥒",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 curgetes em meias-luas de 1 cm",
+      "50 g de parmesão ralado + 3 c. sopa de panko",
+      "Azeite, sal e pimenta"
+    ],
+    "passos": [
+      "Envolve as curgetes no azeite e temperos.",
+      "Mistura o parmesão com o panko e cobre as rodelas.",
+      "Coze a 200°C durante 10–12 min, virando a meio, até dourar."
+    ],
+    "dica": "Não deixes água no fundo: curgete liberta humidade, serve logo."
+  },
+  {
+    "id": 108,
+    "nome": "Beterraba assada com mel",
+    "emoji": "🥕",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "3 beterrabas em cubos",
+      "Azeite, sal e tomilho",
+      "1 c. sopa de mel",
+      "Queijo chêvre para servir (opcional)"
+    ],
+    "passos": [
+      "Envolve os cubos no azeite, sal e tomilho.",
+      "Coze a 190°C durante 25–30 min, abanando a meio.",
+      "Nos últimos 5 min, adiciona o mel.",
+      "Serve morna com chêvre desfeito por cima."
+    ],
+    "dica": "Assar concentra o doce da beterraba — nada de água a ferver."
+  },
+  {
+    "id": 109,
+    "nome": "Abóbora caramelizada",
+    "emoji": "🎃",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "600 g de abóbora (menina ou butternut) em cubos",
+      "Azeite + 1 c. sopa de mel",
+      "Pimentão doce, sal e canela (uma pitada)"
+    ],
+    "passos": [
+      "Envolve os cubos no azeite, mel e especiarias.",
+      "Coze a 200°C durante 20–25 min, abanando o cesto a meio, até as bordas caramelizarem.",
+      "Serve com iogurte grego e sementes de abóbora tostadas."
+    ],
+    "dica": "O contraste doce-salgado faz esta abóbora desaparecer da travessa."
+  },
+  {
+    "id": 110,
+    "nome": "Falafel crocante",
+    "emoji": "🧆",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "250 g de grão-de-bico cru demolhado de véspera (NÃO cozido)",
+      "1 cebola + 3 dentes de alho",
+      "Coentros e salsa picados",
+      "1 c. chá de cominhos + sal + pimenta",
+      "2 c. sopa de farinha de grão"
+    ],
+    "passos": [
+      "Tritura o grão demolhado com a cebola, alho, ervas e especiarias até formar massa grossa.",
+      "Junta a farinha e forma bolinhas achatadas.",
+      "Coze a 200°C durante 12–15 min, virando a meio.",
+      "Serve no pão pita com molho de tahine e salada."
+    ],
+    "dica": "Grão cozido = falafel pastoso; grão demolhado cru é a textura certa."
+  },
+  {
+    "id": 111,
+    "nome": "Croquetes de espinafres",
+    "emoji": "🥬",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "300 g de espinafres salteados e bem escorridos",
+      "40 g de manteiga + 40 g de farinha + 250 ml de leite",
+      "Noz-moscada, sal e queijo ralado",
+      "1 ovo + pão ralado para panar"
+    ],
+    "passos": [
+      "Faz um bechamel e incorpora os espinafres picados e o queijo.",
+      "Deixa arrefecer 1 hora até moldável.",
+      "Forma croquetes e pana (ovo + pão ralado).",
+      "Coze a 190°C durante 10–12 min até dourar."
+    ],
+    "dica": "Espinafres com água a mais rebentam a massa — escorre mesmo bem."
+  },
+  {
+    "id": 112,
+    "nome": "Hambúrgueres de feijão preto",
+    "emoji": "🍔",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "400 g de feijão preto cozido e escorrido",
+      "1/2 cebola + 2 dentes de alho",
+      "1 c. chá de cominhos + pimentão doce",
+      "3 c. sopa de aveia ou pão ralado",
+      "Fio de azeite"
+    ],
+    "passos": [
+      "Tritura metade do feijão e mistura com o resto inteiro (textura).",
+      "Adiciona cebola picada, alho, especiarias e aveia até formar massa moldável.",
+      "Forma 4 hambúrgueres e refrigera 20 min.",
+      "Coze a 190°C durante 12–15 min, virando com cuidado."
+    ],
+    "dica": "Ficam firmes por fora e cremosos por dentro — não os esmagues no pão."
+  },
+  {
+    "id": 113,
+    "nome": "Tortilha espanhola na air fryer",
+    "emoji": "🍳",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "160°C",
+    "ingredientes": [
+      "3 batatas pré-cozidas em rodelas finas",
+      "1 cebola em rodelas",
+      "6 ovos",
+      "Sal e azeite"
+    ],
+    "passos": [
+      "Envolve as batatas e cebola em azeite e sal e coze a 180°C por 10 min.",
+      "Bate os ovos com sal e junta as batatas amolecidas.",
+      "Verte tudo para uma forma pequena untada e cobre com alumínio.",
+      "Coze a 160°C durante 20–25 min, até o centro firme.",
+      "Desenforma morna ou fria, em fatias."
+    ],
+    "dica": "A tortilha morna derrete na boca — deixa arrefecer 10 min antes de cortar."
+  },
+  {
+    "id": 114,
+    "nome": "Quiche de espinafres e feta",
+    "emoji": "🥧",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "170°C",
+    "ingredientes": [
+      "1 placa de massa folhada (ou quebrada)",
+      "200 g de espinafres salteados",
+      "100 g de queijo feta esfarelado",
+      "3 ovos + 150 ml de natas",
+      "Noz-moscada, sal e pimenta"
+    ],
+    "passos": [
+      "Forra uma forma de fundo removível pequena com a massa e pica o fundo com um garfo.",
+      "Distribui os espinafres e o feta.",
+      "Bate os ovos com as natas e temperos e verte sobre o recheio.",
+      "Coze a 170°C durante 25–30 min, até dourar e firme ao toque."
+    ],
+    "dica": "Boa fria para lancheiras e piqueniques."
+  },
+  {
+    "id": 115,
+    "nome": "Quesadillas de queijo e feijão",
+    "emoji": "🌮",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "4 tortillas de trigo",
+      "200 g de queijo ralado (cheddar/mozarela)",
+      "1 lata de feijão preto escorrido e temperado com cominhos",
+      "Milho e coentros (opcional)"
+    ],
+    "passos": [
+      "Espalha queijo, feijão e milho em metade de cada tortilla e dobra ao meio.",
+      "Coze a 200°C durante 6–8 min, virando a meio, até tostar e o queijo derreter.",
+      "Corta em triângulos e serve com molho de iogurte ou guacamole."
+    ],
+    "dica": "Jantar de crianças em minutos — e cada um escolhe o seu recheio."
+  },
+  {
+    "id": 116,
+    "nome": "Pimentos de Padrón",
+    "emoji": "🫑",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 10,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": ["300 g de pimentos de Padrón", "Azeite generoso", "Sal grosso"],
+    "passos": [
+      "Envolve os pimentos no azeite.",
+      "Coze a 200°C durante 6–8 min, abanando o cesto, até borbulharem e tostarem.",
+      "Salga com sal grosso e serve como petisco."
+    ],
+    "dica": "Uns pican, outros não — é parte do jogo galego."
+  },
+  {
+    "id": 117,
+    "nome": "Tomate-cereja confitado",
+    "emoji": "🍅",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 50,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "150°C",
+    "ingredientes": [
+      "500 g de tomate-cereja",
+      "Azeite generoso + 2 dentes de alho",
+      "Tomilho + sal"
+    ],
+    "passos": [
+      "Envolve os tomates no azeite com o alho, o tomilho e o sal.",
+      "Coze a 150°C durante 40–45 min, até murcharem e concentrarem o doce.",
+      "Guarda submersos em azeite, no frigorífico, até 1 semana."
+    ],
+    "dica": "Doce, concentrado, em cima de bruschetta, massa ou queijo fresco."
+  },
+  {
+    "id": 118,
+    "nome": "Baba ganoush (creme de beringela)",
+    "emoji": "🍆",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 beringelas médias",
+      "3 c. sopa de tahine",
+      "1 dente de alho + sumo de 1 limão",
+      "Azeite, sal e cominhos"
+    ],
+    "passos": [
+      "Pica as beringelas com um garfo e coze inteiras a 200°C durante 25–30 min, até colapsarem.",
+      "Abre, retira a polpa e deixa escorrer 10 min.",
+      "Tritura com tahine, alho, limão, azeite e sal até ficar cremoso.",
+      "Serve com azeite e cominhos por cima, com pão pita."
+    ],
+    "dica": "A beringela assada dá um fumado profundo impossível de obter cozida."
+  },
+  {
+    "id": 119,
+    "nome": "Couve-roxa assada com cominhos",
+    "emoji": "🥬",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "1/2 couve-roxa em gomos finos",
+      "Azeite + vinagre de vinho tinto",
+      "Cominhos, sal e 1 c. chá de mel"
+    ],
+    "passos": [
+      "Envolve os gomos no azeite, cominhos, sal e mel.",
+      "Coze a 200°C durante 15–18 min, até as bordas queimar levemente (no bom sentido).",
+      "Termina com vinagre ao sair."
+    ],
+    "dica": "O vinagre no fim acorda toda a doçura da couve."
+  },
+  {
+    "id": 120,
+    "nome": "Feijão-verde assado com amêndoas",
+    "emoji": "🫛",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de feijão-verde (pontas cortadas)",
+      "2 c. sopa de amêndoas laminadas",
+      "Azeite, alho, limão e sal"
+    ],
+    "passos": [
+      "Envolve o feijão-verde no azeite e alho.",
+      "Coze a 200°C durante 8 min.",
+      "Adiciona as amêndoas e coze mais 3–4 min, até tostarem.",
+      "Termina com raspa de limão."
+    ],
+    "dica": "Versão elegante do clássico francês 'amandel vert' — prato de festa leve."
+  },
+  {
+    "id": 121,
+    "nome": "Chips de couve (kale crisps)",
+    "emoji": "🥬",
+    "metodo": "Air Fryer",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "150°C",
+    "ingredientes": [
+      "1 molho de couve frisada (kale) em folhas do tamanho de um chip",
+      "1 c. sopa de azeite",
+      "Sal e pimentão doce (páprica)"
+    ],
+    "passos": [
+      "Seca muito bem as folhas e envolve levemente no azeite (folha a folha).",
+      "Coze a 150°C durante 10–12 min, até estaladiças mas ainda verdes.",
+      "Salga ao sair e come imediatamente."
+    ],
+    "dica": "Azeite a mais = folhas moles. Massagem com um fio por folha é o segredo."
+  },
+  {
+    "id": 122,
+    "nome": "Gomos de batata com páprica",
+    "emoji": "🥔",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "700 g de batatas em gomos grossos",
+      "2 c. sopa de azeite",
+      "Pimentão doce (páprica), sal e orégãos"
+    ],
+    "passos": [
+      "Envolve os gomos no azeite e especiarias (demolha 30 min antes para mais crocância).",
+      "Coze a 200°C durante 18–20 min, abanando o cesto a cada 5–6 min.",
+      "Salga ao sair e serve com maionese ou aioli."
+    ],
+    "dica": "O acompanhamento universal: servem com tudo, de bifes a ovos."
+  },
+  {
+    "id": 123,
+    "nome": "Batatas hasselback",
+    "emoji": "🥔",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "8 batatas médias de pele fina",
+      "Azeite ou manteiga",
+      "Alho + alecrim + sal grosso",
+      "Queijo ralado (opcional)"
+    ],
+    "passos": [
+      "Faz cortes finos em cada batata, sem ir até ao fundo (apoia numa colher de pau como guia).",
+      "Pincela com azeite por dentro das fendas.",
+      "Coze a 200°C durante 25–30 min, pincelando a meio.",
+      "Nos últimos 5 min, adiciona alho, alecrim e queijo nas fendas."
+    ],
+    "dica": "O efeito leque abre com o calor: prato de restaurante com esforço mínimo."
+  },
+  {
+    "id": 124,
+    "nome": "Croutons de alho",
+    "emoji": "🥖",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 fatias de pão de véspera em cubos",
+      "3 c. sopa de azeite",
+      "1 c. chá de alho em pó + sal"
+    ],
+    "passos": [
+      "Envolve os cubos no azeite com o alho em pó e sal.",
+      "Coze a 180°C durante 6–8 min, abanando o cesto a meio, até dourar e estar crocante.",
+      "Deixa arrefecer e guarda num frasco até 3 dias."
+    ],
+    "dica": "Nenhuma salada sobrevive à mediocridade com croutons de alho caseiros."
+  },
+  {
+    "id": 125,
+    "nome": "Nachos com queijo",
+    "emoji": "🧀",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "200 g de tortilla chips",
+      "150 g de queijo cheddar ralado",
+      "1 tomate picado + 1 malagueta em rodelas",
+      "Coentros e natas azedas para servir"
+    ],
+    "passos": [
+      "Espalha os chips numa travessa que caiba no cesto.",
+      "Cobre com queijo, tomate e malagueta.",
+      "Coze a 180°C durante 5–6 min, até o queijo derreter e borbulhar.",
+      "Serve imediatamente com coentros e natas."
+    ],
+    "dica": "O queijo derrete em minutos — não cozes além ou os chips queimam."
+  },
+  {
+    "id": 126,
+    "nome": "Amêndoas tostadas com páprica",
+    "emoji": "🥜",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "200 g de amêndoas cruas",
+      "1 c. chá de azeite",
+      "Pimentão doce, sal e uma pitada de mel (opcional)"
+    ],
+    "passos": [
+      "Envolve as amêndoas no azeite e temperos.",
+      "Coze a 160°C durante 8–10 min, abanando o cesto a meio.",
+      "Deixa arrefecer — crocantes ficam só depois de frias."
+    ],
+    "dica": "Aperitivo de 3 ingredientes que desaparece antes do jantar."
+  },
+  {
+    "id": 127,
+    "nome": "Pão de queijo brasileiro",
+    "emoji": "🧀",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "250 g de polvilho azedo (ou mix pronto de pão de queijo)",
+      "2 ovos + 100 ml de leite + 50 ml de óleo",
+      "150 g de queijo minas ou parmesão ralado",
+      "1/2 c. chá de sal"
+    ],
+    "passos": [
+      "Escalda o polvilho com o leite e o óleo quentes; mexe e deixa amornar.",
+      "Adiciona os ovos e o queijo; amassa até formar bola.",
+      "Forma bolinhas e coloca no cesto espaçadas.",
+      "Coze a 180°C durante 15–18 min, até inflarem e dourarem levemente.",
+      "Serve quentes — têm de comer-se ao sair."
+    ],
+    "dica": "Sem glúten por natureza: polvilho é fécula de mandioca."
+  },
+  {
+    "id": 128,
+    "nome": "Empadas de galinha",
+    "emoji": "🥧",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "Massa: 250 g de farinha + 125 g de manteiga + 1 ovo + água fria",
+      "Recheio: 200 g de frango cozido desfiado + cebolada + 2 c. sopa de bechamel",
+      "Gema para pincelar"
+    ],
+    "passos": [
+      "Amassa a farinha com a manteiga, o ovo e água; deixa 30 min no frio.",
+      "Refoga cebola e mistura o frango com o bechamel.",
+      "Forra forminhas de queque untadas com a massa, enche e fecha.",
+      "Pincela com gema e coze a 180°C durante 15–18 min."
+    ],
+    "dica": "Congela cruas: coze direto do congelador com +5 min."
+  },
+  {
+    "id": 129,
+    "nome": "Focaccia de alecrim",
+    "emoji": "🍞",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 120,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "300 g de farinha T65 + 1 c. chá de levedura seca",
+      "220 ml de água morna + 1 c. sopa de azeite",
+      "1 c. chá de sal + 1 c. chá de açúcar",
+      "Alecrim, azeite e flor de sal para finalizar"
+    ],
+    "passos": [
+      "Amassa tudo 8 min até ficar lisa e elástica (ou usa o modo de fermentação da air fryer a ~40°C para levedar 1 hora).",
+      "Estende numa forma pequena untada com azeite; deixa levedar mais 30 min.",
+      "Com os dedos, faz covas na massa e rega com azeite; espalha o alecrim e a flor de sal.",
+      "Coze a 180°C durante 18–20 min, até dourar."
+    ],
+    "dica": "Serve morna com azeite — ou cortada ao meio como pão de sandes."
+  },
+  {
+    "id": 130,
+    "nome": "Paus de queijo",
+    "emoji": "🧀",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "1 placa de massa folhada",
+      "100 g de queijo ralado (emmental ou gruyère)",
+      "1 gema batida + sementes de sésamo",
+      "Pimenta preta (opcional)"
+    ],
+    "passos": [
+      "Polvilha a massa com o queijo e corta em tiras; torce cada uma.",
+      "Pincela com gema e polvilha sésamo.",
+      "Coze a 190°C durante 8–10 min, até dourar e inflar."
+    ],
+    "dica": "Aperitivo 'faux effort' para chegar à mesa com pão de queijo torcido."
+  },
+  {
+    "id": 131,
+    "nome": "Cabeças de alho assadas",
+    "emoji": "🧄",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 40,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": ["3 cabeças de alho", "Azeite + sal", "Pão tostado para servir"],
+    "passos": [
+      "Corta o topo de cada cabeça para expor os dentes.",
+      "Rega com azeite e sal; envolve em alumínio (frouxo).",
+      "Coze a 190°C durante 25–30 min, até os dentes ficarem dourados e cremosos.",
+      "Espreme o puré diretamente sobre tostas."
+    ],
+    "dica": "O alho assado perde a picância e torna-se doce e cremoso como manteiga."
+  },
+  {
+    "id": 132,
+    "nome": "Palitos de polenta crocante",
+    "emoji": "🥔",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "200 g de fuba de milho (polenta)",
+      "800 ml de água ou caldo + sal",
+      "30 g de parmesão ralado",
+      "Azeite e pimenta"
+    ],
+    "passos": [
+      "Coze a polenta na água a ferver, mexendo 15 min; tempera com parmesão.",
+      "Verte para uma travesa untada e deixa firmar 30 min (fria).",
+      "Corta em palitos e envolve no azeite.",
+      "Coze a 200°C durante 12–15 min, virando a meio, até dourar."
+    ],
+    "dica": "Os palitos italianos que substituem as batatas fritas com mais estilo."
+  },
+  {
+    "id": 133,
+    "nome": "Grão-de-bico assado crocante",
+    "emoji": "🌰",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "400 g de grão-de-bico cozido, muito bem escorrido e seco",
+      "1 c. sopa de azeite",
+      "1 c. chá de cominhos + pimentão doce + sal"
+    ],
+    "passos": [
+      "Seca o grão com um pano (água = sem crocância).",
+      "Envolve no azeite e especiarias.",
+      "Coze a 200°C durante 15–18 min, abanando o cesto a meio, até estalar.",
+      "Salga e come como snack ou espalha em saladas."
+    ],
+    "dica": "Proteína crocante de snack — o substituto saudável dos chips."
+  },
+  {
+    "id": 134,
+    "nome": "Pizza na air fryer",
+    "emoji": "🍕",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "200°C",
+    "ingredientes": [
+      "1 bola de massa de pizza (fresca ou caseira)",
+      "Molho de tomate + mozarela",
+      "Recheios a gosto (fiambre, cogumelos, rúcula…)"
+    ],
+    "passos": [
+      "Estende a massa até ~20 cm (o tamanho da base do cesto de 7 L).",
+      "Cobre com molho, queijo e recheios — sem exagerar, o centro precisa cozer.",
+      "Coze a 200°C durante 10–12 min, até a borda inflar e dourar.",
+      "A rúcula e os frios vão crus, por cima, ao sair."
+    ],
+    "dica": "A base fica crocante como forno a lenha — só podes fazer uma pequena de cada vez."
+  },
+  {
+    "id": 135,
+    "nome": "Bruschettas de tomate",
+    "emoji": "🍅",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 baguette em fatias grossas",
+      "3 tomates maduros picados, sem sementes",
+      "Alho, manjericão, azeite e sal"
+    ],
+    "passos": [
+      "Tosta as fatias a 180°C durante 3–4 min e esfrega-as com alho cru.",
+      "Mistura o tomate com azeite, sal e manjericão.",
+      "Cobre as tostas e finaliza com um fio de azeite."
+    ],
+    "dica": "O alho cru esfregado no pão quente é o gesto que muda tudo."
+  },
+  {
+    "id": 136,
+    "nome": "Samosas de vegetais",
+    "emoji": "🥟",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "Massa: 200 g de farinha + 60 ml de água + 2 c. sopa de azeite + sal",
+      "Recheio: 2 batatas cozidas em cubos + 100 g de ervilhas",
+      "1 c. chá de curcuma + cominhos + gengibre + malagueta",
+      "Coentros e sumo de limão"
+    ],
+    "passos": [
+      "Amassa a massa até ficar firme; deixa 20 min a descansar.",
+      "Salteia o recheio com as especiarias e os coentros.",
+      "Estende a massa fina, corta círculos e forma triângulos fechando bem as bordas.",
+      "Coze a 190°C durante 12–15 min, virando, até dourar."
+    ],
+    "dica": "Molho de iogurte com hortelã e menta: mergulha sem culpa."
+  },
+  {
+    "id": 137,
+    "nome": "Rolos primavera crocantes",
+    "emoji": "🌯",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "8 folhas de massa para rolos primavera (frescas ou congeladas, descongeladas)",
+      "Recheio: 200 g de couve chinesa + 2 cenouras raladas + cogumelos + molho de soja",
+      "Água para colar",
+      "Óleo de sésamo ou azeite para pincelar"
+    ],
+    "passos": [
+      "Salteia os vegetais em tiras com a soja, 3–4 min; deixa escorrer e arrefecer.",
+      "Enrola apertado, colando as bordas com água.",
+      "Pincela com óleo de sésamo.",
+      "Coze a 190°C durante 10–12 min, virando a meio, até a massa ficar estaladiça e dourada."
+    ],
+    "dica": "Versão congelada de supermercado também funciona: 8 min a 190°C direto do congelador."
+  },
+  {
+    "id": 138,
+    "nome": "Croque monsieur",
+    "emoji": "🥪",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 fatias de pão de brioche ou de forma",
+      "Fiambre e queijo gruyère em fatias",
+      "Bechamel espesso + mostarda",
+      "Queijo ralado para o topo"
+    ],
+    "passos": [
+      "Barra o pão com mostarda, monta fiambre + queijo e fecha.",
+      "Cobre com bechamel e queijo ralado.",
+      "Coze a 180°C durante 8–10 min, até o topo gratinar e dourar."
+    ],
+    "dica": "O clássico parisiense de cafés, agora lanche de domingo à noite."
+  },
+  {
+    "id": 139,
+    "nome": "Chips de batata-doce",
+    "emoji": "🍠",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "150°C",
+    "ingredientes": ["2 batatas-doces em fatias de 2 mm (mandolina)", "1 c. sopa de azeite", "Sal"],
+    "passos": [
+      "Envolve as fatias no azeite, uma a uma se precisares.",
+      "Coze a 150°C durante 15–20 min, em duas camadas no máximo, abanando a meio.",
+      "Salga só depois de frias e crocantes."
+    ],
+    "dica": "Paciência com a temperatura baixa: a 200°C queimam antes de secar."
+  },
+  {
+    "id": 140,
+    "nome": "Aros de cebola panados",
+    "emoji": "🧅",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "2 cebolas grandes em rodelas de 1 cm, separadas em aros",
+      "150 ml de leite",
+      "100 g de farinha + 1 c. chá de pimentão doce + sal",
+      "Azeite em neblina"
+    ],
+    "passos": [
+      "Demolha os aros no leite 15 min.",
+      "Envolve na farinha temperada, sacudindo o excesso.",
+      "Coze a 200°C durante 8–10 min, virando a meio, até dourar."
+    ],
+    "dica": "Acompanhamento de hambúrguer que rouba o lugar ao protagonista."
+  },
+  {
+    "id": 141,
+    "nome": "Feta empanado com mel",
+    "emoji": "🧀",
+    "metodo": "Air Fryer",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "200 g de queijo feta em fatias grossas e bem secas",
+      "Farinha + 1 ovo + sésamo e panko",
+      "Mel e sésamo para finalizar"
+    ],
+    "passos": [
+      "Pana as fatias: farinha → ovo → mistura de panko com sésamo.",
+      "Coze a 200°C durante 8–10 min, até dourar.",
+      "Rega com mel e serve com tostas e tomate-cereja."
+    ],
+    "dica": "Mezze de entrada: quente e cremoso por dentro, crocante por fora."
+  },
+  {
+    "id": 142,
+    "nome": "Cookies de chocolate",
+    "emoji": "🍪",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "100 g de manteiga + 100 g de açúcar mascavado",
+      "1 ovo + 1 c. chá de baunilha",
+      "180 g de farinha + 1/2 c. chá de fermento",
+      "100 g de pepitas de chocolate"
+    ],
+    "passos": [
+      "Bate a manteiga com o açúcar; adiciona o ovo e a baunilha.",
+      "Incorpora a farinha com o fermento e as pepitas.",
+      "Bolas de massa no cesto espaçadas (espalham ao cozer).",
+      "Coze a 180°C durante 8–10 min — saem moles e firam ao arrefecer."
+    ],
+    "dica": "Cookies dourados por fora e cremosos por dentro, de 15 em 15 minutos."
+  },
+  {
+    "id": 143,
+    "nome": "Bolo de laranja",
+    "emoji": "🍊",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 50,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "3 ovos + 150 g de açúcar",
+      "Raspa e sumo de 2 laranjas",
+      "150 g de farinha + 1 c. chá de fermento",
+      "80 ml de óleo"
+    ],
+    "passos": [
+      "Bate os ovos com o açúcar e a raspa até esbranquiçar.",
+      "Adiciona o óleo e o sumo, depois a farinha com o fermento.",
+      "Verte para uma forma pequena untada.",
+      "Coze a 160°C durante 30–35 min; teste do palito."
+    ],
+    "dica": "Calda de laranja (sumo + açúcar) espetada no bolo quente transforma-o."
+  },
+  {
+    "id": 144,
+    "nome": "Bolo de cenoura",
+    "emoji": "🥕",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 55,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "3 ovos + 150 g de açúcar",
+      "200 g de cenoura ralada",
+      "180 g de farinha + 1 c. chá de fermento",
+      "80 ml de óleo + canela",
+      "Cobertura: queijo creme + açúcar (opcional)"
+    ],
+    "passos": [
+      "Bate os ovos com o açúcar; adiciona o óleo e a cenoura.",
+      "Incorpora a farinha, o fermento e a canela.",
+      "Coze numa forma pequena a 160°C durante 35–40 min.",
+      "Depois de frio, cobre com o creme de queijo."
+    ],
+    "dica": "Humidade natural da cenoura = bolo que não seca."
+  },
+  {
+    "id": 145,
+    "nome": "Tarte de maçã com folhada",
+    "emoji": "🥧",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 placa de massa folhada",
+      "4 maçãs em laminas finas",
+      "2 c. sopa de açúcar + canela",
+      "Manteiga e geleia de albricoque para brilhar"
+    ],
+    "passos": [
+      "Forra o fundo de uma forma pequena com a folhada e pica com um garfo.",
+      "Dispõe as lâminas de maçã em espiral; polvilha com açúcar e canela e nozes de manteiga.",
+      "Coze a 180°C durante 20–25 min, até a folhada dourar.",
+      "Pincela com geleia aquecida para o brilho de pastelaria."
+    ],
+    "dica": "Meia hora de trabalho para uma tarte que parece de loja."
+  },
+  {
+    "id": 146,
+    "nome": "Donuts de massa folhada",
+    "emoji": "🍩",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 placa de massa folhada",
+      "Açúcar e canela para envolver",
+      "Geleia ou nutella para rechear (opcional)"
+    ],
+    "passos": [
+      "Corta anéis com um copo e um gargalo de garrafa (guarda os centros para mini-donuts).",
+      "Coze a 180°C durante 10–12 min, até inflar e dourar.",
+      "Envolve quentes no açúcar com canela.",
+      "Recheia com geleia usando um saco de pasteleiro com bico fino."
+    ],
+    "dica": "Os 'donuts holes' (centros) cozem mais rápido — retira-os 3 min antes."
+  },
+  {
+    "id": 147,
+    "nome": "Churros de air fryer",
+    "emoji": "🥨",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 40,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "190°C",
+    "ingredientes": [
+      "150 ml de água + 50 g de manteiga + 1 c. sopa de açúcar + sal",
+      "120 g de farinha + 1 ovo",
+      "Açúcar e canela para envolver",
+      "Chocolate derretido para mergulhar"
+    ],
+    "passos": [
+      "Ferve a água com a manteiga e o açúcar; junta a farinha de uma vez e mexe até formar bola; deixa amornar.",
+      "Incorpora o ovo e mete a massa num saco de pasteleiro.",
+      "Serpentinas de massa sobre papel vegetal no cesto, com 5 cm de folga entre elas.",
+      "Coze a 190°C durante 10–12 min, virando a meio.",
+      "Envolve em açúcar e canela e serve com chocolate quente para mergulhar."
+    ],
+    "dica": "Cruza as serpentinas: os churros não podem tocar entre si ou colam."
+  },
+  {
+    "id": 148,
+    "nome": "Muffins de mirtilo",
+    "emoji": "🧁",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "170°C",
+    "ingredientes": [
+      "200 g de farinha + 100 g de açúcar + 1 c. chá de fermento",
+      "1 ovo + 100 ml de iogurte natural + 60 ml de óleo",
+      "150 g de mirtilos (frescos ou congelados)"
+    ],
+    "passos": [
+      "Mistura os secos; noutro, os líquidos e o ovo.",
+      "Junta tudo sem trabalhar demasiado e dobra os mirtilos.",
+      "Enche forminhas de queque até 3/4.",
+      "Coze a 170°C durante 18–20 min, até dourar por cima."
+    ],
+    "dica": "Massa de muffin trabalhada demais fica borracha — mistura com poucos movimentos."
+  },
+  {
+    "id": 149,
+    "nome": "Cheesecake individual",
+    "emoji": "🍰",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "150°C",
+    "ingredientes": [
+      "100 g de bolacha triturada + 50 g de manteiga (base)",
+      "250 g de queijo creme + 60 g de açúcar",
+      "2 ovos + raspa de limão + 1 c. chá de baunilha"
+    ],
+    "passos": [
+      "Mistura a bolacha com a manteiga e prensa no fundo de 4 forminhas.",
+      "Bate o queijo com o açúcar, os ovos, a baunilha e o limão até cremoso.",
+      "Verte sobre as bases.",
+      "Coze a 150°C durante 18–20 min, até as bordas firmarem e o centro tremer pouco.",
+      "Fria 2 horas no frigorífico; finaliza com fruta ou coulis."
+    ],
+    "dica": "O centro tremido ao sair é o ponto certo — endurece ao arrefecer."
+  },
+  {
+    "id": 150,
+    "nome": "Bananas com chocolate (barquinhos)",
+    "emoji": "🍌",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 bananas com casca",
+      "60 g de chocolate negro em quadradinhos",
+      "Marshmallows (opcional)"
+    ],
+    "passos": [
+      "Abre cada banana ao comprimento pela casca, sem a atravessar.",
+      "Espeta pedaços de chocolate e marshmallows dentro.",
+      "Embrulha em alumínio e coze a 180°C durante 8–10 min.",
+      "Serve na própria casca, com colher."
+    ],
+    "dica": "Sobremesa de acampamento em versão de cozinha — as crianças fazem as suas."
+  },
+  {
+    "id": 151,
+    "nome": "Ananás grelhado com canela e coco",
+    "emoji": "🍍",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": [
+      "1 ananás em rodelas grossas (sem casca e núcleo)",
+      "2 c. sopa de açúcar mascavado + canela",
+      "Coco ralado e gelado de baunilha para servir"
+    ],
+    "passos": [
+      "Polvilha as rodelas com açúcar e canela.",
+      "Coze a 200°C durante 8–10 min, virando a meio, até caramelizar.",
+      "Serve com coco ralado tostado e uma bola de gelado."
+    ],
+    "dica": "O calor intensifica o doce do ananás — sobremesa leve de verão."
+  },
+  {
+    "id": 152,
+    "nome": "Crème brûlée",
+    "emoji": "🍮",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "150°C",
+    "ingredientes": [
+      "400 ml de natas + 1 vagem de baunilha",
+      "4 gemas + 60 g de açúcar",
+      "2 c. sopa de açúcar para caramelizar"
+    ],
+    "passos": [
+      "Aquece as natas com a baunilha; mistura nas gemas batidas com o açúcar (sem ferver).",
+      "Verte para 4 ramequins e cobre com alumínio.",
+      "Coze a 150°C durante 20–25 min, até firmar nas bordas e tremer no centro.",
+      "Fria 3 horas; polvilha açúcar e doura com o maçarico (ou 2 min no máximo da air fryer, bem vigiado)."
+    ],
+    "dica": "A crosta de caramelo deve estalar sob a colher — é metade da graça."
+  },
+  {
+    "id": 153,
+    "nome": "Chips de maçã",
+    "emoji": "🍎",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "150°C",
+    "ingredientes": [
+      "3 maçãs em fatias de 2 mm (mandolina), sem sementes",
+      "Canela e 1 c. sopa de açúcar"
+    ],
+    "passos": [
+      "Envolve as fatias na mistura de açúcar e canela.",
+      "Coze a 150°C durante 20–25 min, em duas camadas no máximo, virando a meio.",
+      "Deixa arrefecer fora do cesto: ficam crocantes ao secar."
+    ],
+    "dica": "Snack doce sem culpa, boa para lancheiras e caminhadas."
+  },
+  {
+    "id": 154,
+    "nome": "Granola caseira",
+    "emoji": "🥣",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 8,
+    "temp": "160°C",
+    "ingredientes": [
+      "200 g de flocos de aveia",
+      "50 g de frutos secos picados + 30 g de sementes",
+      "3 c. sopa de mel + 2 c. sopa de óleo de coco ou azeite suave",
+      "Coco ralado e 1 pitada de sal"
+    ],
+    "passos": [
+      "Envolve tudo bem no mel e óleo.",
+      "Coze a 160°C durante 15–18 min, mexendo a cada 5 min.",
+      "Deixa arrefecer completamente — aí fica crocante.",
+      "Junta frutos secos desidratados ao servir, com iogurte e fruta."
+    ],
+    "dica": "Mexe pouco e fica em agregados; mexe muito e vira farofa torrada."
+  },
+  {
+    "id": 155,
+    "nome": "Bolinhos de coco",
+    "emoji": "🥥",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "170°C",
+    "ingredientes": [
+      "200 g de coco ralado",
+      "1 lata de leite condensado (397 g)",
+      "2 ovos",
+      "1 c. chá de baunilha"
+    ],
+    "passos": [
+      "Mistura o coco com o leite condensado, os ovos e a baunilha.",
+      "Forma montinhos com duas colheres no cesto forrado com papel vegetal.",
+      "Coze a 170°C durante 15–18 min, até dourar as pontas.",
+      "Serve frios — firmam ao arrefecer."
+    ],
+    "dica": "Doce de festa de três ingredientes, sem forno grande ligado."
+  },
+  {
+    "id": 156,
+    "nome": "Bolo de banana com nozes",
+    "emoji": "🍌",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 55,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "3 bananas bem maduras, esmagadas",
+      "2 ovos + 120 g de açúcar mascavado",
+      "180 g de farinha + 1 c. chá de fermento + canela",
+      "80 ml de óleo + 80 g de nozes picadas"
+    ],
+    "passos": [
+      "Bate os ovos com o açúcar; junta as bananas e o óleo.",
+      "Incorpora a farinha, fermento e canela; dobra as nozes.",
+      "Coze numa forma pequena a 160°C durante 35–40 min."
+    ],
+    "dica": "Quanto mais maduras (e feias) as bananas, mais doce e húmido o bolo."
+  },
+  {
+    "id": 157,
+    "nome": "Tarte de amêndoa (frangipane)",
+    "emoji": "🥧",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 50,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "170°C",
+    "ingredientes": [
+      "1 massa quebrada pronta (ou folhada)",
+      "150 g de amêndoa ralada + 100 g de açúcar",
+      "100 g de manteiga amolecida + 2 ovos",
+      "Amêndoas laminadas para o topo e geleia de albricoque"
+    ],
+    "passos": [
+      "Bate a manteiga com o açúcar; junta os ovos e a amêndoa ralada.",
+      "Forra uma forma pequena com a massa e verte o frangipane.",
+      "Cobre com amêndoas laminadas.",
+      "Coze a 170°C durante 25–30 min, até dourar.",
+      "Pincela com geleia aquecida para brilhar."
+    ],
+    "dica": "Doce conventual português num cesto — sobremesa de romaria."
+  },
+  {
+    "id": 158,
+    "nome": "Scones de passas",
+    "emoji": "🫓",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "250 g de farinha + 2 c. chá de fermento + sal",
+      "50 g de manteiga fria em cubos",
+      "40 g de açúcar + 80 g de passas",
+      "150 ml de leite"
+    ],
+    "passos": [
+      "Mistura a farinha com a manteiga com as pontas dos dedos até areia.",
+      "Adiciona açúcar, passas e leite; junta sem amassar.",
+      "Forma discos de 3 cm de altura.",
+      "Coze a 180°C durante 15–18 min, até dourar.",
+      "Serve mornos com manteiga e geleia."
+    ],
+    "dica": "Não amasses: scone bom é trabalhado o mínimo possível."
+  },
+  {
+    "id": 159,
+    "nome": "Blondies de manteiga de amendoim",
+    "emoji": "🍪",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "150 g de manteiga de amendoim",
+      "100 g de açúcar mascavado + 1 ovo",
+      "120 g de farinha + 1/2 c. chá de fermento",
+      "Pepitas de chocolate branco ou preto"
+    ],
+    "passos": [
+      "Bate a manteiga de amendoim com o açúcar e o ovo.",
+      "Incorpora a farinha e as pepitas.",
+      "Verte para uma forma pequena untada.",
+      "Coze a 160°C durante 18–22 min — centro húmido de propósito."
+    ],
+    "dica": "O primo loiro do brownie, com proteína extra do amendoim."
+  },
+  {
+    "id": 160,
+    "nome": "Crumble de maçã individual",
+    "emoji": "🥧",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "180°C",
+    "ingredientes": [
+      "4 maçãs em cubos + canela + 1 c. sopa de açúcar",
+      "Crumble: 80 g de farinha + 50 g de aveia + 60 g de manteiga fria + 50 g de açúcar"
+    ],
+    "passos": [
+      "Distribui as maçãs por 4 forminhas e polvilha com açúcar e canela.",
+      "Mistura os ingredientes do crumble com as pontas dos dedos até granulado.",
+      "Cobre as maçãs generosamente.",
+      "Coze a 180°C durante 18–20 min, até o crumble dourar e borbulhar.",
+      "Serve com nata ou gelado."
+    ],
+    "dica": "O crumble extra congela bem — guarda para a próxima crise de doce."
+  },
+  {
+    "id": 161,
+    "nome": "Bolachas de aveia e mel",
+    "emoji": "🍪",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "170°C",
+    "ingredientes": [
+      "150 g de flocos de aveia",
+      "80 g de mel + 60 g de manteiga derretida",
+      "1 ovo + 1 c. chá de canela"
+    ],
+    "passos": [
+      "Mistura tudo e deixa 10 min a aveia hidratar.",
+      "Colheradas no cesto forrado, achatadas.",
+      "Coze a 170°C durante 10–12 min, até dourar.",
+      "Deixa firmar fora antes de tirar (saem moles)."
+    ],
+    "dica": "Bolacha de lanche com ingredientes de armário de cozinha."
+  },
+  {
+    "id": 162,
+    "nome": "Pêssegos assados com mel e amêndoas",
+    "emoji": "🍑",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "190°C",
+    "ingredientes": [
+      "4 pêssegos cortados ao meio e sem caroço",
+      "1 c. sopa de mel + manteiga",
+      "Amêndoas laminadas",
+      "Iogurte grego para servir"
+    ],
+    "passos": [
+      "Coloca as metades num prato de calor com uma noz de manteiga e mel no centro.",
+      "Polvilha com amêndoas.",
+      "Coze a 190°C durante 10–12 min, até amolecerem e as amêndoas tostarem.",
+      "Serve mornos com iogurte grego."
+    ],
+    "dica": "Versão elegante com pêssegos em calda no inverno."
+  },
+  {
+    "id": 163,
+    "nome": "Espirais de canela (cinnamon rolls)",
+    "emoji": "🥐",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "180°C",
+    "ingredientes": [
+      "1 placa de massa folhada",
+      "30 g de manteiga mole + 60 g de açúcar mascavado + canela",
+      "Glacé: açúcar em pó + leite"
+    ],
+    "passos": [
+      "Barra a folhada com manteiga e cobre com açúcar e canela.",
+      "Enrola apertado pelo lado comprido e corta 8 espirais.",
+      "Coloca no cesto forrado com folga entre elas.",
+      "Coze a 180°C durante 15–18 min, até dourar e caramelizar.",
+      "Rega com glacé (açúcar em pó + um fio de leite)."
+    ],
+    "dica": "O açúcar mascavado carameliza com a folhada e cria xarope no fundo."
+  },
+  {
+    "id": 164,
+    "nome": "Pão-de-ló",
+    "emoji": "🍰",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "150°C",
+    "ingredientes": [
+      "4 ovos + 120 g de açúcar",
+      "90 g de farinha",
+      "Raspa de 1/2 limão",
+      "Forma alta pequena, bem untada"
+    ],
+    "passos": [
+      "Bate os ovos com o açúcar e a raspa, 8–10 min, até triplicar e esbranquiçar (é o segredo).",
+      "Envolve a farinha peneirada com movimentos suaves.",
+      "Verte para a forma e coze a 150°C durante 25–30 min, sem abrir a meio.",
+      "Serve com doce de ovos ou fruta."
+    ],
+    "dica": "O clássico de Ovar: ar de esponja que se desfaz na boca."
+  },
+  {
+    "id": 165,
+    "nome": "Bolo de mel e nozes",
+    "emoji": "🍯",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 60,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "150°C",
+    "ingredientes": [
+      "150 g de mel + 100 g de açúcar",
+      "3 ovos + 100 ml de óleo",
+      "220 g de farinha + 1 c. chá de fermento",
+      "1 c. chá de canela + cravinho + noz-moscada",
+      "150 g de nozes picadas"
+    ],
+    "passos": [
+      "Aquece o mel com o açúcar até derreter; deixa amornar.",
+      "Bate os ovos e junta o mel e o óleo.",
+      "Incorpora a farinha com as especiarias e o fermento; dobra as nozes.",
+      "Coze numa forma pequena a 150°C durante 40–45 min.",
+      "Fica melhor no dia seguinte — e no outro também."
+    ],
+    "dica": "Tradição do Algarve e da Madeira, sem forno a lenha."
+  },
+  {
+    "id": 166,
+    "nome": "Tarte de requeijão com canela",
+    "emoji": "🥧",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 55,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "1 massa quebrada",
+      "2 requeijões (~400 g)",
+      "3 ovos + 120 g de açúcar",
+      "Canela e raspa de limão"
+    ],
+    "passos": [
+      "Forra uma forma pequena com a massa.",
+      "Bate o requeijão com o açúcar, os ovos, a canela e a raspa até cremoso.",
+      "Verte para a forma.",
+      "Coze a 160°C durante 30–35 min, até firme e dourado.",
+      "Polvilha com canela e açúcar ao servir."
+    ],
+    "dica": "Doce da Serra da Estrela aproveitando o requeijão que sobra da época."
+  },
+  {
+    "id": 167,
+    "nome": "Castanhas assadas",
+    "emoji": "🌰",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "200°C",
+    "ingredientes": ["500 g de castanhas frescas", "Água para demolhar", "Sal (opcional)"],
+    "passos": [
+      "Corta uma cruz na casca de cada castanha (obrigatório, ou explodem).",
+      "Demolha em água 15 min; escorre.",
+      "Coze a 200°C durante 15–20 min, abanando o cesto a meio.",
+      "Descasca quente — fria a casca interna cola."
+    ],
+    "dica": "São João caseiro sem panela de assar castanhas — e sem fumo."
+  },
+  {
+    "id": 168,
+    "nome": "Bolachas de manteiga (shortbread)",
+    "emoji": "🍪",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "150 g de manteiga fria em cubos",
+      "200 g de farinha + 60 g de açúcar em pó",
+      "1 pitada de sal",
+      "Açúcar para polvilhar"
+    ],
+    "passos": [
+      "Mistura a farinha, o açúcar e o sal; envolve a manteiga até formar massa (sem líquidos).",
+      "Estende 1 cm e corta retângulos ou círculos.",
+      "Coze a 160°C durante 12–15 min — devem sair claras, não tostadas.",
+      "Polvilha com açúcar ao arrefecer."
+    ],
+    "dica": "Bolacha escocesa de 3 ingredientes: manteiga de qualidade é tudo."
+  },
+  {
+    "id": 169,
+    "nome": "Toucinho do céu",
+    "emoji": "🥮",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 50,
+    "dificuldade": "Média",
+    "doses": 8,
+    "temp": "160°C",
+    "ingredientes": [
+      "200 g de açúcar + 100 ml de água",
+      "150 g de amêndoa ralada",
+      "5 gemas + 2 ovos",
+      "Canela e raspa de limão"
+    ],
+    "passos": [
+      "Faz uma calda com o açúcar e a água (5 min); junta a amêndoa fora do lume.",
+      "Deixa amornar e incorpora os ovos batidos com as gemas, a canela e o limão.",
+      "Verte para uma forma pequena untada e forrada com papel.",
+      "Coze a 160°C durante 30–35 min, até firme.",
+      "Frio, corta em quadrados e polvilha com canela."
+    ],
+    "dica": "Doce conventual de ovos e amêndoa — a versão original levava banha (daí o nome); esta não."
+  },
+  {
+    "id": 170,
+    "nome": "Bolo de nozes com café",
+    "emoji": "🍰",
+    "metodo": "Air Fryer",
+    "cat": "Doces",
+    "tempo": 55,
+    "dificuldade": "Fácil",
+    "doses": 6,
+    "temp": "160°C",
+    "ingredientes": [
+      "3 ovos + 130 g de açúcar mascavado",
+      "100 ml de café forte (frio) + 80 ml de óleo",
+      "180 g de farinha + 1 c. chá de fermento",
+      "120 g de nozes picadas + 1 c. chá de canela"
+    ],
+    "passos": [
+      "Bate os ovos com o açúcar; junta o café e o óleo.",
+      "Incorpora a farinha, o fermento e a canela; dobra as nozes.",
+      "Coze numa forma pequena a 160°C durante 35–40 min.",
+      "Cobertura: natas batidas com café ou apenas açúcar em pó."
+    ],
+    "dica": "O café intensifica o sabor a noz — truque antigo de pastelaria."
+  },
+  {
+    "id": 171,
+    "nome": "Ovos escalfados no vapor",
+    "emoji": "🥚",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "2 ovos frescos",
+      "Copinhos de silicone untados",
+      "Vinagre (uma gota em cada copo)",
+      "Tostas e molho holandês para servir (opcional)"
+    ],
+    "passos": [
+      "Unta os copinhos e coloca um ovo em cada.",
+      "Coze em modo vapor 6–8 min, até a clara firmar e a gema tremer.",
+      "Desmolda sobre tostas.",
+      "Perfeitos para Eggs Benedict caseiro."
+    ],
+    "dica": "O vapor escalfa sem a agitação da água — o ovo sai limpo e perfeito."
+  },
+  {
+    "id": 172,
+    "nome": "Filetes de pescada no vapor com legumes",
+    "emoji": "🐟",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "4 filetes de pescada",
+      "1 cenoura + 1 curgete em palitos",
+      "Limão, sal e azeite",
+      "Molho de iogurte com alho (opcional)"
+    ],
+    "passos": [
+      "Coloca os legumes no prato de vapor e os filetes por cima, temperados com sal e limão.",
+      "Coze em modo vapor 10–12 min.",
+      "Rega com azeite cru e serve com o molho de iogurte."
+    ],
+    "dica": "Peixe + legumes numa só operação: jantar leve com uma única louça suja."
+  },
+  {
+    "id": 173,
+    "nome": "Postas de bacalhau no vapor com azeite e alho",
+    "emoji": "🐟",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "3 postas de bacalhau demolhado",
+      "4 c. sopa de azeite + 3 dentes de alho",
+      "Coentros e pimenta",
+      "Batatas cozidas à parte"
+    ],
+    "passos": [
+      "Coloca as postas num prato resistente ao calor.",
+      "Coze em modo vapor 12–15 min, até desfazer em lascas.",
+      "Ao servir, rega com azeite com alho cru fatiado e coentros."
+    ],
+    "dica": "O vapor conserva toda a humidade: bacalhau que nunca seca, nem nas pontas."
+  },
+  {
+    "id": 174,
+    "nome": "Couve lombarda no vapor",
+    "emoji": "🥬",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1/2 couve lombarda em fatias de 1 cm",
+      "Manteiga ou azeite",
+      "Cominhos, sal e noz-moscada"
+    ],
+    "passos": [
+      "Coloca as fatias no prato de vapor sem sobrepor muito.",
+      "Coze em modo vapor 8–10 min, até tenras mas ainda com mordida.",
+      "Tempera com manteiga, cominhos, sal e noz-moscada."
+    ],
+    "dica": "Os cominhos são o par clássico da lombarda (e ajudam a digestão)."
+  },
+  {
+    "id": 175,
+    "nome": "Espargos no vapor com manteiga de limão",
+    "emoji": "🌿",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 10,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1 molho de espargos (pontas duras removidas)",
+      "30 g de manteiga",
+      "Raspa e sumo de limão + sal"
+    ],
+    "passos": [
+      "Coze os espargos em modo vapor 4–6 min (finos) ou 6–8 min (grossos).",
+      "Derrete a manteiga com o limão.",
+      "Rega ao servir — verde-vivo e crocante."
+    ],
+    "dica": "Espargos ao vapor mantêm a cor e o crocante que a água a ferver destrói."
+  },
+  {
+    "id": 176,
+    "nome": "Milho no vapor",
+    "emoji": "🌽",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "4 espigas de milho (frescas ou congeladas)",
+      "Manteiga e sal",
+      "Páprica ou pimentão doce (opcional)"
+    ],
+    "passos": [
+      "Coloca as espigas no prato de vapor.",
+      "Coze em modo vapor 10–12 min, até os grãos ficarem tenros e doces.",
+      "Barra com manteiga e sal."
+    ],
+    "dica": "O vapor realça a doçura natural — não precisa de sal nem de água com sal."
+  },
+  {
+    "id": 177,
+    "nome": "Jiaozi de vegetais (ravióis chineses)",
+    "emoji": "🥟",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "20 discos de massa wonton",
+      "200 g de couve chinesa picada + 1 cenoura ralada",
+      "100 g de cogumelos picados + cebolinho",
+      "Molho de soja + gengibre + 1 fio de óleo de sésamo"
+    ],
+    "passos": [
+      "Mistura os vegetais com a soja, o gengibre e o óleo de sésamo.",
+      "Coloca uma colher de chá no centro de cada disco e fecha em meia-lua, apertando as bordas.",
+      "Forra o prato de vapor com papel ou folhas de couve e coloca os jiaozi sem tocarem.",
+      "Coze em modo vapor 10 min.",
+      "Serve com molho de soja e vinagre de arroz."
+    ],
+    "dica": "Congela crus em camadas com farinha: coze direto do congelador com +3 min."
+  },
+  {
+    "id": 178,
+    "nome": "Mantou (pãezinhos de vapor)",
+    "emoji": "🫓",
+    "metodo": "Vapor",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 120,
+    "dificuldade": "Média",
+    "doses": 6,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "300 g de farinha de trigo (T65)",
+      "5 g de levedura seca + 1 c. sopa de açúcar",
+      "150 ml de água morna",
+      "1 pitada de sal"
+    ],
+    "passos": [
+      "Amassa tudo 8–10 min até lisa; deixa levedar 1 hora (ou no modo de fermentação da air fryer).",
+      "Forma bolinhas ou tranças simples.",
+      "Deixa levedar mais 20 min.",
+      "Coze em modo vapor 12–15 min, sem abrir a tampa durante a cozedura.",
+      "Serve com pratos de molho, no lugar do pão."
+    ],
+    "dica": "Pão chinês de nuvem: neutral e fofo, feito para mergulhar em molhos."
+  },
+  {
+    "id": 179,
+    "nome": "Tofu ao vapor com soja e gengibre",
+    "emoji": "🌱",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 3,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "400 g de tofu firme em fatias grossas",
+      "2 c. sopa de molho de soja",
+      "1 c. sopa de gengibre ralado + cebolinho",
+      "1 c. sopa de óleo de sésamo (ou azeite quente)"
+    ],
+    "passos": [
+      "Coloca as fatias de tofu num prato de calor.",
+      "Coze em modo vapor 8 min.",
+      "Cobre com a soja, o gengibre e o cebolinho.",
+      "Aquece o óleo até fumegar e verte por cima — vai ouvir o estalido."
+    ],
+    "dica": "O vapor deixa o tofu sedoso e quente sem o secar — base perfeita para molhos."
+  },
+  {
+    "id": 180,
+    "nome": "Costelas de porco no vapor com feijão preto",
+    "emoji": "🍖",
+    "metodo": "Vapor",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "600 g de costeletas de porco pequenas (estilo dim sum, cortadas em bocados de um só trinco)",
+      "1 c. sopa de feijão preto fermentado (douchi) ou 1 c. chá de missô",
+      "2 c. sopa de molho de soja + gengibre ralado + alho",
+      "1 c. chá de amido de milho + pimenta"
+    ],
+    "passos": [
+      "Mistura as costelas com todos os ingredientes e marina 20 min.",
+      "Distribui num prato de calor em camada única.",
+      "Coze em modo vapor 25–30 min, até a carne se soltar do osso.",
+      "Polvilha com cebolinho e serve com arroz."
+    ],
+    "dica": "Clássico de dim sum: o vapor longo deixa a carne soltar-se do osso."
+  },
+  {
+    "id": 181,
+    "nome": "Mexilhões no vapor com tomate e vinho",
+    "emoji": "🐚",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 20,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1 kg de mexilhões limpos e bem lavados",
+      "200 g de polpa de tomate + 2 dentes de alho",
+      "100 ml de vinho branco",
+      "Coentros e azeite"
+    ],
+    "passos": [
+      "Espalha os mexilhões num prato fundo de calor.",
+      "Distribui a polpa de tomate com o alho e verte o vinho.",
+      "Coze em modo vapor 5–7 min, até abrirem.",
+      "Descarta os fechados; termina com coentros e azeite."
+    ],
+    "dica": "Serve com esparguete: o caldo do fundo é metade do prato."
+  },
+  {
+    "id": 182,
+    "nome": "Robalo no vapor com vinho branco e legumes",
+    "emoji": "🐟",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 30,
+    "dificuldade": "Média",
+    "doses": 2,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1 robalo inteiro limpo (~600 g)",
+      "1/2 copo de vinho branco",
+      "Rodelas de limão + alho + tomilho",
+      "Cenoura e curgete em palitos finos"
+    ],
+    "passos": [
+      "Coloca a camada de legumes no prato e o peixe por cima.",
+      "Recheia e cobre com limão, alho e tomilho; verte o vinho.",
+      "Coze em modo vapor 15–18 min, até a espinha se soltar.",
+      "Serve no próprio prato, com o caldo."
+    ],
+    "dica": "Versão europeia do peixe ao vapor: mais delicada que a chinesa, igualmente sedosa."
+  },
+  {
+    "id": 183,
+    "nome": "Frango no vapor com cogumelos shiitake",
+    "emoji": "🍄",
+    "metodo": "Vapor",
+    "cat": "Carne",
+    "tempo": 35,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "4 coxas de frango sem pele e sem osso (ou peitos)",
+      "150 g de cogumelos shiitake em fatias",
+      "2 c. sopa de molho de soja + gengibre ralado + alho",
+      "1 c. chá de óleo de sésamo + cebolinho"
+    ],
+    "passos": [
+      "Envolve o frango na soja, gengibre e alho; deixa 15 min.",
+      "Coloca num prato de calor com os shiitake por cima.",
+      "Coze em modo vapor 15–18 min, até o interior estar opaco.",
+      "Termina com óleo de sésamo e cebolinho; serve com arroz."
+    ],
+    "dica": "O caldo que se forma no prato é sopa de graça — aproveita-o no arroz."
+  },
+  {
+    "id": 184,
+    "nome": "Feijão-verde no vapor com amêndoas",
+    "emoji": "🫛",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 15,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "400 g de feijão-verde",
+      "20 g de amêndoas laminadas",
+      "Manteiga, sal e raspa de limão"
+    ],
+    "passos": [
+      "Coze o feijão-verde em modo vapor 6–8 min, até verde-vivo e tenro.",
+      "Tosta as amêndoas 2 min (podes aproveitar o mesmo ciclo).",
+      "Envolve com manteiga, amêndoas e raspa de limão."
+    ],
+    "dica": "O vapor preserva a cor verde-primavilha que a fervura apaga."
+  },
+  {
+    "id": 185,
+    "nome": "Beringela ao vapor estilo chinês com molho de alho",
+    "emoji": "🍆",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "2 beringelas compridas em tiras ao comprimento",
+      "4 dentes de alho picados",
+      "2 c. sopa de molho de soja + 1 de vinagre de arroz",
+      "Coentros + 2 c. sopa de óleo quente"
+    ],
+    "passos": [
+      "Coze as tiras de beringela em modo vapor 10–12 min, até muito macias.",
+      "Dispõe num prato e cobre com alho, soja, vinagre e coentros.",
+      "Aquece o óleo até fumegar e verte por cima.",
+      "Serve morna ou à temperatura, como entrada chinesa."
+    ],
+    "dica": "Beringela macia e sedosa, não gordurosa — o vapor evita a esponja de óleo."
+  },
+  {
+    "id": 186,
+    "nome": "Batata-doce no vapor",
+    "emoji": "🍠",
+    "metodo": "Vapor",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "2–3 batatas-doces em gomos grandes",
+      "Manteiga, canela e sal",
+      "Mel (opcional)"
+    ],
+    "passos": [
+      "Coze os gomos em modo vapor 18–20 min, até um garfo entrar suavemente.",
+      "Serve com manteiga, uma pitada de canela e sal — ou mel na versão doce.",
+      "Base perfeita para bowls e meal prep da semana."
+    ],
+    "dica": "Sem casca queimada e sem forno: o melhor de assar com a simplicidade do cozido."
+  },
+  {
+    "id": 187,
+    "nome": "Almôndegas de porco no vapor com soja e gengibre",
+    "emoji": "🧆",
+    "metodo": "Vapor",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "400 g de carne de porco picada",
+      "1 c. sopa de gengibre ralado + 2 dentes de alho",
+      "2 c. sopa de molho de soja + 1 clara",
+      "1 c. sopa de amido de milho + cebolinho"
+    ],
+    "passos": [
+      "Mistura tudo e bate a massa contra a taça até ficar pegajosa.",
+      "Forma bolas e coloca em papel vegetal no prato de vapor.",
+      "Coze em modo vapor 12–14 min.",
+      "Serve com arroz e o próprio caldo que se formou."
+    ],
+    "dica": "Estilo chinês: mais leve que a almôndega frita, mas igualmente saborosa."
+  },
+  {
+    "id": 188,
+    "nome": "Polvo no vapor com alho e azeite",
+    "emoji": "🐙",
+    "metodo": "Vapor",
+    "cat": "Peixe & Marisco",
+    "tempo": 70,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Modo vapor",
+    "ingredientes": [
+      "1 polvo pequeno (~1 kg), congelado e descongelado",
+      "1 folha de louro",
+      "Azeite generoso + 4 dentes de alho",
+      "Coentros e limão"
+    ],
+    "passos": [
+      "Enche o depósito de água (1,5 L chega para os 90 min máximos).",
+      "Coloca o polvo num prato de calor com o louro.",
+      "Coze em modo vapor 45–60 min, até um garfo entrar na base dos braços sem resistência.",
+      "Corta os braços e cobre com azeite, alho cru e coentros.",
+      "Sobras: fica óptimo na salada de polvo do dia seguinte."
+    ],
+    "dica": "Congela o polvo cru antes: amacia as fibras e poupa metade do tempo de cozedura."
+  },
+  {
+    "id": 189,
+    "nome": "Salmão teriyaki (vapor + ar)",
+    "emoji": "🐟",
+    "metodo": "Vapor + Ar",
+    "cat": "Peixe & Marisco",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 2,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "2 lombos de salmão",
+      "4 c. sopa de molho teriyaki (ou soja + mel + mirin)",
+      "Sésamo e cebolinho"
+    ],
+    "passos": [
+      "Coze os lombos em modo vapor 8 min (ficam tenros e suculentos).",
+      "Pincela com o molho teriyaki de ambos os lados.",
+      "Muda para modo air fryer a 200°C por 4–5 min, até glacear e dourar.",
+      "Polvilha com sésamo e cebolinho."
+    ],
+    "dica": "Vapor primeiro = interior sedoso; ar depois = glaceado dourado. O melhor dos dois mundos."
+  },
+  {
+    "id": 190,
+    "nome": "Peito de frango: vapor + dourado (meal prep premium)",
+    "emoji": "🍗",
+    "metodo": "Vapor + Ar",
+    "cat": "Carne",
+    "tempo": 30,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": ["2 peitos de frango", "Sal, pimenta, alho em pó e pimentão doce", "Azeite"],
+    "passos": [
+      "Coze os peitos em modo vapor 12 min, até quase feitos.",
+      "Seca-os bem e tempera com as especiarias e azeite.",
+      "Doura em modo air fryer a 200°C durante 6–8 min.",
+      "Succulento por dentro, tostado por fora — para bowls e saladas da semana."
+    ],
+    "dica": "A dupla cozedura resolve o problema nº1 do peito de frango: o interior seco."
+  },
+  {
+    "id": 191,
+    "nome": "Couve-de-bruxelas: vapor + assada",
+    "emoji": "🥬",
+    "metodo": "Vapor + Ar",
+    "cat": "Vegetariano",
+    "tempo": 25,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": ["400 g de couve-de-bruxelas", "Azeite + sal", "Queijo parmesão (opcional)"],
+    "passos": [
+      "Coze as couves em modo vapor 5 min, até quase tenras.",
+      "Escorre e seca bem; envolve no azeite e sal.",
+      "Assa em modo air fryer a 200°C durante 8–10 min, até as folhas exteriores ficarem estaladiças.",
+      "Polvilha com parmesão ao servir."
+    ],
+    "dica": "Sem a panela de água a ferver: tudo acontece na mesma máquina."
+  },
+  {
+    "id": 192,
+    "nome": "Brócolos: vapor + alho tostado",
+    "emoji": "🥦",
+    "metodo": "Vapor + Ar",
+    "cat": "Vegetariano",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "400 g de brócolos em raminhos",
+      "3 dentes de alho fatiados + azeite",
+      "Amêndoas laminadas + limão"
+    ],
+    "passos": [
+      "Coze os brócolos em modo vapor 5–6 min, até verde-vivo.",
+      "Escorre bem, seca e envolve no azeite com o alho.",
+      "Tosta em modo air fryer a 200°C durante 4–5 min, com as amêndoas.",
+      "Termina com raspa de limão."
+    ],
+    "dica": "Verde dentro, tostado fora — o brócolo que até os miúdos comem."
+  },
+  {
+    "id": 193,
+    "nome": "Batatas a murro 100% na máquina",
+    "emoji": "🥔",
+    "metodo": "Vapor + Ar",
+    "cat": "Acompanhamentos & Lanches",
+    "tempo": 40,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "700 g de batatinhas pequenas",
+      "Azeite + alecrim + 2 dentes de alho",
+      "Sal grosso"
+    ],
+    "passos": [
+      "Coze as batatinhas em modo vapor 15–18 min, até al dente.",
+      "Achata cada uma com o fundo de um copo (o murro).",
+      "Envolve no azeite, alecrim, alho e sal grosso.",
+      "Doura em modo air fryer a 200°C durante 10–12 min, até os bordos estaladiços."
+    ],
+    "dica": "Sem panela suja: a versão anterior precisava de fogão, esta não sai do cesto."
+  },
+  {
+    "id": 194,
+    "nome": "Beringela dengaku (vapor + missô)",
+    "emoji": "🍆",
+    "metodo": "Vapor + Ar",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "2 beringelas compridas cortadas ao meio no comprimento",
+      "2 c. sopa de missô + 1 c. sopa de mel + 1 c. chá de molho de soja",
+      "Óleo de sésamo e sésamo tostado"
+    ],
+    "passos": [
+      "Coze as metades em modo vapor 8–10 min, até a polpa ceder.",
+      "Risca a polpa em grelha com uma faca.",
+      "Barra com a mistura de missô, mel e soja.",
+      "Glacea em modo air fryer a 200°C durante 5–6 min, até dourar e borbulhar.",
+      "Termina com óleo de sésamo e sésamo."
+    ],
+    "dica": "Prato japonês de izakaya: doce, salgado e fumado ao mesmo tempo."
+  },
+  {
+    "id": 195,
+    "nome": "Batata-doce: vapor + crosta de mel",
+    "emoji": "🍠",
+    "metodo": "Vapor + Ar",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "3 batatas-doces em gomos",
+      "1 c. sopa de mel + 1 c. sopa de azeite",
+      "Sal e pimentão doce"
+    ],
+    "passos": [
+      "Coze os gomos em modo vapor 10 min, até quase tenros.",
+      "Envolve no mel, azeite, sal e pimentão.",
+      "Carameliza em modo air fryer a 200°C durante 8–10 min, até as bordas dourarem."
+    ],
+    "dica": "O vapor garante o miolo macio; o ar quente faz a crosta que o forno demora o dobro."
+  },
+  {
+    "id": 196,
+    "nome": "Entrecosto BBQ dupla cozedura (vapor + ar)",
+    "emoji": "🍖",
+    "metodo": "Vapor + Ar",
+    "cat": "Carne",
+    "tempo": 45,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "800 g de entrecosto em tiras",
+      "4 c. sopa de molho barbecue + 1 c. sopa de mel",
+      "Sal e alho"
+    ],
+    "passos": [
+      "Coze o entrecosto em modo vapor 15 min (tenro por dentro).",
+      "Escorre e seca muito bem.",
+      "Envolve no barbecue com mel e sal.",
+      "Carameliza em modo air fryer a 200°C durante 10–12 min, virando a meio."
+    ],
+    "dica": "Carne a soltar-se do osso estilo low-and-smoke, em 45 minutos."
+  },
+  {
+    "id": 197,
+    "nome": "Lombos de bacalhau: vapor + dourado em azeite",
+    "emoji": "🐟",
+    "metodo": "Vapor + Ar",
+    "cat": "Peixe & Marisco",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "2 lombos de bacalhau demolhado",
+      "Azeite + alho + pimenta",
+      "Coentros e limão"
+    ],
+    "passos": [
+      "Coze os lombos em modo vapor 10 min, até quase desfazer em lascas.",
+      "Secca bem e envolve num fio generoso de azeite.",
+      "Doura em modo air fryer a 200°C durante 4–5 min por lado, até a superfície tostar.",
+      "Termina com alho cru, coentros e limão."
+    ],
+    "dica": "O bacalhau fica tão suculento como à lagareiro, com metade do azeite."
+  },
+  {
+    "id": 198,
+    "nome": "Tofu: vapor + crocante com molho de soja e gengibre",
+    "emoji": "🌱",
+    "metodo": "Vapor + Ar",
+    "cat": "Vegetariano",
+    "tempo": 30,
+    "dificuldade": "Fácil",
+    "doses": 3,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "400 g de tofu firme em cubos",
+      "2 c. sopa de amido de milho",
+      "Molho: soja + gengibre ralado + mel + alho",
+      "Cebolinho e sésamo"
+    ],
+    "passos": [
+      "Coze os cubos de tofu em modo vapor 6 min (aquece por dentro e fica sedoso).",
+      "Seca-os bem e envolve no amido de milho.",
+      "Crocanta em modo air fryer a 200°C durante 10–12 min, virando.",
+      "Aquece o molho e envolve; termina com cebolinho e sésamo."
+    ],
+    "dica": "Interior de nuvem, casca de vidro — a textura impossível num só método."
+  },
+  {
+    "id": 199,
+    "nome": "Bananas caramelizadas (vapor + ar)",
+    "emoji": "🍌",
+    "metodo": "Vapor + Ar",
+    "cat": "Doces",
+    "tempo": 20,
+    "dificuldade": "Muito fácil",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "4 bananas cortadas ao meio no comprimento",
+      "2 c. sopa de açúcar mascavado + canela",
+      "Iogurte grego ou gelado para servir"
+    ],
+    "passos": [
+      "Coze as metades em modo vapor 4 min, até amaciarem.",
+      "Polvilha com o açúcar mascavado e canela.",
+      "Carameliza em modo air fryer a 200°C durante 4–5 min, até o açúcar borbulhar.",
+      "Serve mornas com iogurte ou gelado."
+    ],
+    "dica": "Banana quente e doce com cobertura crocante — sobremesa de hotel de spa."
+  },
+  {
+    "id": 200,
+    "nome": "Frango inteiro húmido e crocante (vapor + ar)",
+    "emoji": "🍗",
+    "metodo": "Vapor + Ar",
+    "cat": "Carne",
+    "tempo": 75,
+    "dificuldade": "Média",
+    "doses": 4,
+    "temp": "Vapor → 200°C",
+    "ingredientes": [
+      "1 frango pequeno (~1,2 kg)",
+      "2 c. sopa de manteiga mole + alho + pimentão doce",
+      "Sal, pimenta, tomilho e limão"
+    ],
+    "passos": [
+      "Esfrega o frango com a manteiga, alho, pimentão, sal e pimenta; recheia com limão e tomilho.",
+      "Coze em modo vapor 20 min (a pele fica feia, mas a carne fica incrível).",
+      "Secca muito bem a pele com papel de cozinha — quanto mais seca, mais crocante fica.",
+      "Doura em modo air fryer a 200°C durante 25–30 min, virando a meio, até a pele estar dourada e estaladiça.",
+      "Descansa 5 min antes de cortar."
+    ],
+    "dica": "O prato-showcase desta máquina: suculento como assado no vapor, crocante como da rotisserie."
+  }
+]
