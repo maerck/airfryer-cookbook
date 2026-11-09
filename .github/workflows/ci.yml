@@ -21,7 +21,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # packageManager (pnpm@10.34.9) em package.json tem precedência — sem input "version"
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v4
