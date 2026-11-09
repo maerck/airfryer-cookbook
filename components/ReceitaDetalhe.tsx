@@ -348,9 +348,8 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
                       {marcados.length}/{r.ingredientes.length}
                     </span>
                   </h2>
-                  <div
+                  <fieldset
                     className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white dark:border-stone-700 dark:bg-stone-900 print:hidden"
-                    role="group"
                     aria-label="Ajustar doses"
                   >
                     <button
@@ -374,7 +373,7 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
                     >
                       <Plus className="h-4 w-4" aria-hidden />
                     </button>
-                  </div>
+                  </fieldset>
                 </div>
                 <ul className="mt-2 space-y-1.5 text-sm">
                   {ingredientes.map((ing, i) => {
