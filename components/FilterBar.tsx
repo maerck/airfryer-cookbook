@@ -12,10 +12,10 @@ const TEMPOS_MAX = [15, 30, 45, 60] as const;
 const ATRASO_PESQUISA_MS = 200;
 
 const ORDENACOES: readonly { valor: Ordem; rotulo: string }[] = [
-  { valor: "padrao", rotulo: "Padr\u00e3o" },
+  { valor: "padrao", rotulo: "Padrão" },
   { valor: "tempo", rotulo: "Tempo (crescente)" },
   { valor: "tempo-desc", rotulo: "Tempo (decrescente)" },
-  { valor: "nome", rotulo: "Nome (A\u2013Z)" },
+  { valor: "nome", rotulo: "Nome (A–Z)" },
   { valor: "dificuldade", rotulo: "Dificuldade" },
 ];
 
@@ -145,8 +145,7 @@ export default function FilterBar({
             onClick={onSurpreendeMe}
             className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-amber-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-700 sm:min-h-0"
           >
-            <Dices className="h-4 w-4" aria-hidden /> <span aria-hidden>\ud83c\udfb2</span>{" "}
-            Surpreende-me
+            <Dices className="h-4 w-4" aria-hidden /> <span aria-hidden>🎲</span> Surpreende-me
           </button>
           <p
             role="status"
@@ -220,7 +219,7 @@ export default function FilterBar({
             aria-pressed={estado.soFavoritas}
             className={`${chipBase} ${estado.soFavoritas ? chipAtivo : chipInativo}`}
           >
-            <span aria-hidden>\u2b50</span> S\u00f3 favoritas ({totalFavoritas})
+            <span aria-hidden>⭐</span> Só favoritas ({totalFavoritas})
           </button>
           <button
             type="button"
@@ -228,7 +227,7 @@ export default function FilterBar({
             aria-pressed={modoTenho}
             className={`${chipBase} ${modoTenho ? chipAtivo : chipInativo}`}
           >
-            <span aria-hidden>\ud83e\uddfa</span> O que tenho em casa
+            <span aria-hidden>🧺</span> O que tenho em casa
           </button>
         </div>
         <div className={rail}>
@@ -256,7 +255,7 @@ export default function FilterBar({
               aria-pressed={estado.dif === d}
               className={`${chipBase} ${estado.dif === d ? chipAtivo : chipInativo}`}
             >
-              <span aria-hidden>\ud83c\udfaf</span> {d}
+              <span aria-hidden>🎯</span> {d}
             </button>
           ))}
           <span className={separador} aria-hidden />
@@ -268,7 +267,7 @@ export default function FilterBar({
               aria-pressed={estado.tempoMax === t}
               className={`${chipBase} ${estado.tempoMax === t ? chipAtivo : chipInativo}`}
             >
-              <span aria-hidden>\u23f1</span> \u2264{t} min
+              <span aria-hidden>⏱</span> ≤{t} min
             </button>
           ))}
           {filtrosAtivos && (
@@ -317,7 +316,7 @@ export default function FilterBar({
                 aria-pressed={soCompletas}
                 className={`${chipBase} ${soCompletas ? chipAtivo : chipInativo}`}
               >
-                <span aria-hidden>\u2714</span> S\u00f3 receitas completas
+                <span aria-hidden>✔</span> Só receitas completas
               </button>
             </div>
             {tenho.length > 0 && (
@@ -341,8 +340,7 @@ export default function FilterBar({
               </div>
             )}
             <p className="text-xs text-stone-500 dark:text-stone-400">
-              As receitas s\u00e3o ordenadas pela quantidade de ingredientes que j\u00e1 tens em
-              casa.
+              As receitas são ordenadas pela quantidade de ingredientes que já tens em casa.
             </p>
           </div>
         )}
