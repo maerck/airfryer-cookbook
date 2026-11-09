@@ -12,6 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return rotas.map((rota) => ({
     url: new URL(rota, SITE_URL).toString(),
-    lastModified: new Date(),
   }));
 }

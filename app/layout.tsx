@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import RegisterSW from "@/components/RegisterSW";
 import ThemeProvider from "@/components/ThemeProvider";
 import WebMCPTools from "@/components/WebMCPTools";
 import "./globals.css";
@@ -16,10 +17,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_PT",
   },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1c1917",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f5f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#1c1917" },
+  ],
   width: "device-width",
   initialScale: 1,
 };
@@ -30,6 +37,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <body className="bg-stone-100 text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100">
         <ThemeProvider>
           <WebMCPTools />
+          <RegisterSW />
           {children}
         </ThemeProvider>
       </body>
