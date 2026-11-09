@@ -7,11 +7,14 @@ import { paramsReceitas, RECEITAS, receitaPorId, TOTAL_RECEITAS } from "@/lib/da
 import { normalizar } from "@/lib/filters";
 import { agregarListaCompras, contarListaCompras, textoListaCompras } from "@/lib/shopping";
 import {
+  componentesIngrediente,
   contemTermo,
   ingredienteCoberto,
   listarIngredientesUnicos,
+  listarNomesIngredientes,
   normalizarTenho,
   pontuarReceita,
+  singularizar,
   sugerirReceitas,
 } from "@/lib/suggest";
 import type { Receita } from "@/lib/types";
@@ -100,6 +103,100 @@ describe("contemTermo / ingredienteCoberto (matching difuso)", () => {
     expect(ingredienteCoberto("sal q.b.", tenho)).toBe(false);
     const tenhoExato = normalizarTenho(["sal q.b."]);
     expect(ingredienteCoberto("Sal q.b.", tenhoExato)).toBe(true);
+  });
+});
+
+describe("linhas compostas, alternativas e plurais", () => {
+  it("decompõe a linha em componentes e ignora parênteses, rótulos e descritores", () => {
+    expect(componentesIngrediente("Sal, pimenta e tomilho fresco")).toEqual([
+      ["sal"],
+      ["pimenta"],
+      ["tomilho fresco"],
+    ]);
+    expect(componentesIngrediente("300 g de bacalhau cozido e desfiado")).toEqual([
+      ["300 g de bacalhau cozido"],
+    ]);
+    expect(componentesIngrediente("Raspa e sumo de 1 limão")).toEqual([["sumo de 1 limao"]]);
+    expect(componentesIngrediente("Pimenta e coentros ou salsa")).toEqual([
+      ["pimenta"],
+      ["coentros", "salsa"],
+    ]);
+    expect(componentesIngrediente("Molho: 2 c. sopa de soja + 1 c. chá de mel")).toEqual([
+      ["2 c. sopa de soja"],
+      ["1 c. cha de mel"],
+    ]);
+    expect(componentesIngrediente("1 frango pequeno (~1,2 kg — cabe no cesto de 7 L)")).toEqual([
+      ["1 frango pequeno"],
+    ]);
+  });
+
+  it("uma linha composta só conta quando todos os componentes estão em casa", () => {
+    const linha = "Sal, pimenta e tomilho fresco";
+    expect(ingredienteCoberto(linha, normalizarTenho(["sal"]))).toBe(false);
+    expect(ingredienteCoberto(linha, normalizarTenho(["sal", "pimenta"]))).toBe(false);
+    expect(ingredienteCoberto(linha, normalizarTenho(["sal", "pimenta", "tomilho"]))).toBe(true);
+    // a linha completa (formato antigo do autocompletar) continua a cobrir-se a si própria
+    expect(ingredienteCoberto(linha, normalizarTenho([linha]))).toBe(true);
+  });
+
+  it("qualquer alternativa de um 'ou' serve", () => {
+    const linha = "Pimenta e coentros ou salsa";
+    expect(ingredienteCoberto(linha, normalizarTenho(["pimenta", "salsa"]))).toBe(true);
+    expect(ingredienteCoberto(linha, normalizarTenho(["pimenta"]))).toBe(false);
+  });
+
+  it("tolera singular/plural nos dois sentidos", () => {
+    expect(singularizar("2 ovos")).toBe("2 ovo");
+    expect(singularizar("limoes")).toBe("limao");
+    expect(singularizar("colheres")).toBe("colher");
+    expect(ingredienteCoberto("2 ovos", normalizarTenho(["ovo"]))).toBe(true);
+    expect(ingredienteCoberto("1 ovo", normalizarTenho(["ovos"]))).toBe(true);
+    expect(ingredienteCoberto("2 limões", normalizarTenho(["limão"]))).toBe(true);
+    expect(ingredienteCoberto("150 g de salmão", normalizarTenho(["sal"]))).toBe(false);
+  });
+
+  it("sem nada em casa, nada está coberto", () => {
+    expect(ingredienteCoberto("sal q.b.", normalizarTenho([]))).toBe(false);
+  });
+});
+
+describe("listarNomesIngredientes (autocompletar)", () => {
+  const nomes = listarNomesIngredientes(RECEITAS);
+
+  it("devolve nomes sem quantidades nem unidades, únicos e ordenados em pt-PT", () => {
+    expect(nomes).toContain("azeite");
+    expect(nomes).toContain("sal");
+    expect(nomes).toContain("ovo");
+    expect(nomes.every((n) => !/^\d/.test(n) && n.trim() === n && n.length >= 3)).toBe(true);
+    expect(new Set(nomes).size).toBe(nomes.length);
+    expect(nomes).toEqual([...nomes].sort((a, b) => a.localeCompare(b, "pt-PT")));
+  });
+
+  it("cada nome sugerido cobre ingredientes de pelo menos uma receita", () => {
+    for (const nome of nomes) {
+      const tenho = normalizarTenho([nome]);
+      const usado = RECEITAS.some((r) =>
+        r.ingredientes.some((ing) =>
+          componentesIngrediente(ing).some((alts) =>
+            alts.some((alt) => ingredienteCoberto(alt, tenho)),
+          ),
+        ),
+      );
+      expect(usado, nome).toBe(true);
+    }
+  });
+
+  it("extrai o nome de linhas com quantidade, unidade e descritor", () => {
+    const receita = (id: number, ingredientes: string[]): Receita => ({
+      ...fixture,
+      id,
+      ingredientes,
+    });
+    const lista = listarNomesIngredientes([
+      receita(1, ["2 c. sopa de azeite", "3 ovos", "200 g de queijo ralado"]),
+      receita(2, ["Azeite e sal", "1 ovo batido", "Queijo para gratinar"]),
+    ]);
+    expect(lista).toEqual(["azeite", "ovo", "queijo"]);
   });
 });
 
@@ -222,7 +319,14 @@ describe("textoListaCompras", () => {
 describe("SSR das novas páginas de M3", () => {
   it("ReceitaDetalhe mostra a receita completa com os passos e a dica", () => {
     const html = semComentarios(
-      renderToString(createElement(ReceitaDetalhe, { receita: fixture })),
+      renderToString(
+        createElement(ReceitaDetalhe, {
+          receita: fixture,
+          anterior: { id: 899, nome: "Receita anterior" },
+          seguinte: { id: 901, nome: "Receita seguinte" },
+          totalReceitas: 200,
+        }),
+      ),
     );
     expect(html).toContain("Esparguete com salmão");
     expect(html).toContain("⏱ 20 min");
@@ -233,6 +337,11 @@ describe("SSR das novas páginas de M3", () => {
     expect(html).toContain("💡 Dica");
     expect(html).toContain("Imprimir");
     expect(html).toContain('href="/"');
+    // navegação e total chegam por props (o componente não importa o dataset)
+    expect(html).toContain('href="/receita/899"');
+    expect(html).toContain("← Receita anterior");
+    expect(html).toContain("Receita seguinte →");
+    expect(html).toContain("Ver as 200 receitas");
   });
 
   it("ListaComprasClient (sem hidratação) mostra o estado vazio em pt-PT", () => {

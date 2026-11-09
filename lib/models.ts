@@ -30,12 +30,23 @@ export function ajustarTemperatura(temp: string, deltaC: number): string {
 export interface ReceitaAjustada {
   tempo: number; // minutes, clamped to >= 1
   temp: string;
+  /**
+   * Aviso a mostrar junto dos passos quando o modelo tem ajuste. O texto dos passos não é
+   * reescrito: mistura temperaturas de cozedura com temperaturas internas do alimento
+   * ("pronto a 74°C") e tempos parciais, que não podem ser deslocados às cegas.
+   */
+  notaPassos?: string;
 }
 
 export function aplicarAjusteModelo(receita: Receita, modelo: ModeloAirfryer): ReceitaAjustada {
   return {
     tempo: Math.max(1, receita.tempo + modelo.ajuste.tempoMin),
     temp: ajustarTemperatura(receita.temp, modelo.ajuste.temperaturaC),
+    ...(temAjuste(modelo)
+      ? {
+          notaPassos: `Os tempos e temperaturas escritos nos passos são os da receita original. Com o modelo ${modelo.nome}, aplica o ajuste à cozedura: ${ajusteDescricao(modelo.ajuste)}.`,
+        }
+      : {}),
   };
 }
 

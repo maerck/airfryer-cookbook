@@ -39,7 +39,7 @@ describe("Header com o modelo padrão (SSR)", () => {
 });
 
 describe("Página /modelos (SSR com modelo padrão)", () => {
-  const html = semComentarios(renderToString(createElement(ModelosClient)));
+  const html = semComentarios(renderToString(createElement(ModelosClient, { totalReceitas: 200 })));
 
   it("lista o modelo Xiaomi como ativo por defeito", () => {
     expect(html).toContain("Modelos de airfryer");

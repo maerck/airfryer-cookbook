@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ReceitaDetalhe from "@/components/ReceitaDetalhe";
-import { METODO_CHIP, paramsReceitas, receitaPorId } from "@/lib/data";
+import {
+  METODO_CHIP,
+  paramsReceitas,
+  receitaPorId,
+  TOTAL_RECEITAS,
+  vizinhasDaReceita,
+} from "@/lib/data";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -28,5 +34,13 @@ export default async function ReceitaPage({ params }: PageProps) {
   const { id } = await params;
   const receita = receitaPorId(Number(id));
   if (!receita) notFound();
-  return <ReceitaDetalhe receita={receita} />;
+  const { anterior, seguinte } = vizinhasDaReceita(receita.id);
+  return (
+    <ReceitaDetalhe
+      receita={receita}
+      anterior={anterior && { id: anterior.id, nome: anterior.nome }}
+      seguinte={seguinte && { id: seguinte.id, nome: seguinte.nome }}
+      totalReceitas={TOTAL_RECEITAS}
+    />
+  );
 }

@@ -2,12 +2,11 @@
 
 import { ChevronUp, UtensilsCrossed } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { Suspense, useCallback, useEffect, useMemo, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import EmptyState from "@/components/EmptyState";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import FilterBar from "@/components/FilterBar";
 import Header from "@/components/Header";
-import ReceitasSkeleton from "@/components/ReceitasSkeleton";
 import RecipeCard from "@/components/RecipeCard";
 import { contarPorMetodo, RECEITAS } from "@/lib/data";
 import {
@@ -28,27 +27,36 @@ import {
   lerModeloAtivoId,
 } from "@/lib/storage";
 import {
-  listarIngredientesUnicos,
+  listarNomesIngredientes,
   normalizarTenho,
   type Sugestao,
   sugerirReceitas,
 } from "@/lib/suggest";
 import type { ModeloAirfryer } from "@/lib/types";
 
+/** Sem filtros — o estado com que o HTML estático é gerado. */
+const SEM_PARAMS = new URLSearchParams();
+
 export default function Page() {
   return (
     <ErrorBoundary>
-      <Suspense fallback={<ReceitasSkeleton />}>
-        <Explorer />
+      {/* useSearchParams obriga esta fronteira a renderizar no cliente. O fallback é o próprio
+          explorador sem filtros, para o HTML estático já trazer o cabeçalho e as primeiras
+          receitas (SEO e primeiro ecrã) em vez de só "A carregar…". */}
+      <Suspense fallback={<Explorer searchParams={SEM_PARAMS} />}>
+        <ExplorerComURL />
       </Suspense>
     </ErrorBoundary>
   );
 }
 
-function Explorer() {
+function ExplorerComURL() {
+  return <Explorer searchParams={useSearchParams()} />;
+}
+
+function Explorer({ searchParams }: { searchParams: Pick<URLSearchParams, "get"> }) {
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   const estado = useMemo(() => lerEstadoDeParams(searchParams), [searchParams]);
 
@@ -115,9 +123,17 @@ function Explorer() {
     if (hidratado) guardarModeloAtivoId(modelo.id);
   }, [modelo, hidratado]);
 
+  // Estado mais recente pedido ao router: a URL atualiza-se de forma assíncrona, por isso dois
+  // pedidos seguidos (ex.: pesquisa + chip) têm de partir um do outro e não da URL antiga.
+  const estadoPedido = useRef(estado);
+  useEffect(() => {
+    estadoPedido.current = estado;
+  }, [estado]);
+
   const atualizarEstado = useCallback(
     (patch: Partial<EstadoFiltroURL>) => {
-      const novo = { ...estado, ...patch };
+      const novo = { ...estadoPedido.current, ...patch };
+      estadoPedido.current = novo;
       const params = new URLSearchParams();
       for (const [chave, valor] of Object.entries(estadoParaParams(novo))) {
         params.set(chave, valor);
@@ -125,7 +141,7 @@ function Explorer() {
       const qs = params.toString();
       router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
     },
-    [estado, pathname, router],
+    [pathname, router],
   );
 
   const limparFiltros = useCallback(() => {
@@ -141,7 +157,7 @@ function Explorer() {
     [estado, favoritas],
   );
 
-  const ingredientesDisponiveis = useMemo(() => listarIngredientesUnicos(RECEITAS), []);
+  const ingredientesDisponiveis = useMemo(() => listarNomesIngredientes(RECEITAS), []);
 
   const tenhoNormalizado = useMemo(() => normalizarTenho(tenho), [tenho]);
 
@@ -222,7 +238,7 @@ function Explorer() {
         contagemMetodos={contagemMetodos}
         totalFavoritas={favoritas.size}
         totalListaCompras={totalListaCompras}
-        aMostrar={visualizacao.length}
+        aMostrar={base.length}
         onLimparFiltros={limparFiltros}
         onSurpreendeMe={surpreendeMe}
         modoTenho={modoTenho}

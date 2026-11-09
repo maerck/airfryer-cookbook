@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* O tema escuro nunca se aplica na impressão: o papel é branco e os fundos não são impressos. */
+@custom-variant dark {
+  @media not print {
+    &:where(.dark, .dark *) {
+      @slot;
+    }
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -31,6 +38,11 @@ html {
 }
 
 @media print {
+  html {
+    /* biome-ignore lint/complexity/noImportantStyles: o next-themes define color-scheme em estilo inline */
+    color-scheme: light !important;
+  }
+
   body {
     background: white;
   }

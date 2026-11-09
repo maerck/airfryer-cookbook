@@ -3,10 +3,11 @@ import type { ReactNode } from "react";
 import RegisterSW from "@/components/RegisterSW";
 import ThemeProvider from "@/components/ThemeProvider";
 import WebMCPTools from "@/components/WebMCPTools";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(SITE_URL),
   title: "200 Receitas · Air Fryer & Vapor",
   description:
     "200 receitas em português europeu concebidas para a Xiaomi Mijia Smart Steam Air Fryer 7 L — ar quente, vapor e modo combinado. Filtra por método ou categoria, guarda as favoritas e marca os ingredientes.",

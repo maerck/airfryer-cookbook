@@ -4,11 +4,11 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ModelCard from "@/components/ModelCard";
-import { TOTAL_RECEITAS } from "@/lib/data";
+
 import { encontrarModelo, MODELO_PADRAO, MODELOS } from "@/lib/models";
 import { guardarModeloAtivoId, lerModeloAtivoId } from "@/lib/storage";
 
-export default function ModelosClient() {
+export default function ModelosClient({ totalReceitas }: { totalReceitas: number }) {
   const [modeloAtivoId, setModeloAtivoId] = useState<string>(MODELO_PADRAO.id);
   const [hidratado, setHidratado] = useState(false);
 
@@ -61,7 +61,7 @@ export default function ModelosClient() {
             href="/"
             className="underline decoration-stone-300 underline-offset-2 hover:text-stone-700 dark:decoration-stone-700 dark:hover:text-stone-200"
           >
-            Ver as {TOTAL_RECEITAS} receitas
+            Ver as {totalReceitas} receitas
           </Link>{" "}
           ajustadas ao modelo ativo.
         </p>

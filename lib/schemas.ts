@@ -1,15 +1,11 @@
 import { z } from "zod";
+// extensão .ts explícita: este módulo também é carregado diretamente pelo Node (scripts/check-data.ts)
+import { CATEGORIAS, DIFICULDADES, METODOS } from "./constants.ts";
 import type { ModeloAirfryer, Receita } from "./types";
 
-export const metodoSchema = z.enum(["Air Fryer", "Vapor", "Vapor + Ar"]);
-export const categoriaSchema = z.enum([
-  "Carne",
-  "Peixe & Marisco",
-  "Vegetariano",
-  "Acompanhamentos & Lanches",
-  "Doces",
-]);
-export const dificuldadeSchema = z.enum(["Muito fácil", "Fácil", "Média"]);
+export const metodoSchema = z.enum(METODOS);
+export const categoriaSchema = z.enum(CATEGORIAS);
+export const dificuldadeSchema = z.enum(DIFICULDADES);
 
 export const receitaSchema = z.object({
   id: z.number().int().positive(),

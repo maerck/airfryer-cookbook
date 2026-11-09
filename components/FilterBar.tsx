@@ -2,19 +2,14 @@
 
 import { ChefHat, Dices, Plus, Search, ShoppingCart, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
-import {
-  CATEGORIAS,
-  DIFICULDADES,
-  METODO_CHIP,
-  METODO_EMOJI,
-  METODOS,
-  TOTAL_RECEITAS,
-} from "@/lib/data";
+import { useEffect, useRef, useState } from "react";
+import { CATEGORIAS, DIFICULDADES, METODO_CHIP, METODO_EMOJI, METODOS } from "@/lib/constants";
+import { TOTAL_RECEITAS } from "@/lib/data";
 import type { EstadoFiltroURL, MetodoFiltro, Ordem } from "@/lib/filters";
 import type { Categoria, Dificuldade, Metodo } from "@/lib/types";
 
 const TEMPOS_MAX = [15, 30, 45, 60] as const;
+const ATRASO_PESQUISA_MS = 200;
 
 const ORDENACOES: readonly { valor: Ordem; rotulo: string }[] = [
   { valor: "padrao", rotulo: "Padr\u00e3o" },
@@ -73,6 +68,44 @@ export default function FilterBar({
 }: FilterBarProps) {
   const [textoTenho, setTextoTenho] = useState("");
 
+  // A pesquisa tem estado local: a URL atualiza-se de forma assíncrona e, se o campo dependesse
+  // dela, o cursor saltava e perdiam-se teclas. A URL é sincronizada com um pequeno atraso.
+  const [q, setQ] = useState(estado.q);
+  const qEnviado = useRef(estado.q);
+  const temporizador = useRef<number | null>(null);
+  const onEstadoChangeRef = useRef(onEstadoChange);
+  useEffect(() => {
+    onEstadoChangeRef.current = onEstadoChange;
+  }, [onEstadoChange]);
+
+  // A URL mudou por fora (Limpar filtros, voltar atrás no histórico) → repõe o campo.
+  useEffect(() => {
+    const enviado = qEnviado.current;
+    const igual = estado.q === enviado || (estado.q.trim() === "" && enviado.trim() === "");
+    if (igual) return;
+    if (temporizador.current !== null) window.clearTimeout(temporizador.current);
+    temporizador.current = null;
+    qEnviado.current = estado.q;
+    setQ(estado.q);
+  }, [estado.q]);
+
+  useEffect(
+    () => () => {
+      if (temporizador.current !== null) window.clearTimeout(temporizador.current);
+    },
+    [],
+  );
+
+  const aoPesquisar = (valor: string) => {
+    setQ(valor);
+    if (temporizador.current !== null) window.clearTimeout(temporizador.current);
+    temporizador.current = window.setTimeout(() => {
+      temporizador.current = null;
+      qEnviado.current = valor;
+      onEstadoChangeRef.current({ q: valor });
+    }, ATRASO_PESQUISA_MS);
+  };
+
   const filtrosAtivos =
     estado.q.trim() !== "" ||
     estado.metodo !== "Todos" ||
@@ -100,9 +133,9 @@ export default function FilterBar({
             <input
               id="campo-pesquisa"
               type="search"
-              value={estado.q}
-              onChange={(e) => onEstadoChange({ q: e.target.value })}
-              placeholder="\ud83d\udd0d Procurar por nome ou ingrediente\u2026"
+              value={q}
+              onChange={(e) => aoPesquisar(e.target.value)}
+              placeholder="🔍 Procurar por nome ou ingrediente…"
               aria-label="Procurar por nome ou ingrediente"
               className="min-h-11 w-full rounded-full border border-stone-200 bg-white py-2 pl-9 pr-3 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500 dark:focus:border-stone-500 sm:min-h-0"
             />
@@ -262,7 +295,7 @@ export default function FilterBar({
                   }
                 }}
                 list="lista-ingredientes-disponiveis"
-                placeholder="Ingrediente que tens em casa\u2026"
+                placeholder="Ingrediente que tens em casa…"
                 aria-label="Ingrediente que tens em casa"
                 className="min-h-11 min-w-56 flex-1 rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500"
               />

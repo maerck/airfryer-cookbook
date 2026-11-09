@@ -148,3 +148,20 @@ describe("temAjuste", () => {
     expect(temAjuste(modeloFake({ ajuste: { tempoMin: 2, temperaturaC: 0 } }))).toBe(true);
   });
 });
+
+describe("aplicarAjusteModelo — aviso junto dos passos", () => {
+  const receita = RECEITAS[0];
+  if (!receita) throw new Error("dataset vazio");
+
+  it("sem ajuste não há aviso", () => {
+    expect(aplicarAjusteModelo(receita, MODELO_PADRAO).notaPassos).toBeUndefined();
+  });
+
+  it("com ajuste, o aviso nomeia o modelo e o ajuste a aplicar", () => {
+    const modelo = modeloFake({ nome: "Outra 5 L", ajuste: { tempoMin: 5, temperaturaC: -10 } });
+    const nota = aplicarAjusteModelo(receita, modelo).notaPassos;
+    expect(nota).toContain("Outra 5 L");
+    expect(nota).toContain("+5 min");
+    expect(nota).toContain("-10 °C");
+  });
+});

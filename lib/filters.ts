@@ -1,8 +1,20 @@
-import { DIFICULDADE_ORDEM } from "./data";
+import {
+  CATEGORIAS,
+  DIFICULDADE_ORDEM,
+  DIFICULDADES,
+  METODOS,
+  ORDENS,
+  type Ordem,
+} from "./constants";
 import type { Categoria, Dificuldade, Metodo, Receita } from "./types";
 
+export type { Ordem };
 export type MetodoFiltro = Metodo | "Todos";
-export type Ordem = "padrao" | "tempo" | "tempo-desc" | "nome" | "dificuldade";
+
+/** Verdadeiro (e estreita o tipo) se `valor` for um dos valores da enumeração. */
+export function pertence<T extends string>(valores: readonly T[], valor: string): valor is T {
+  return (valores as readonly string[]).includes(valor);
+}
 
 export interface EstadoFiltroURL {
   q: string;
@@ -32,16 +44,6 @@ interface ParamsLike {
   get(name: string): string | null;
 }
 
-const METODOS_VALIDOS: readonly string[] = ["Air Fryer", "Vapor", "Vapor + Ar"];
-const CATEGORIAS_VALIDAS: readonly string[] = [
-  "Carne",
-  "Peixe & Marisco",
-  "Vegetariano",
-  "Acompanhamentos & Lanches",
-  "Doces",
-];
-const DIFICULDADES_VALIDAS: readonly string[] = ["Muito fácil", "Fácil", "Média"];
-const ORDENACOES_VALIDAS: readonly string[] = ["tempo", "tempo-desc", "nome", "dificuldade"];
 const TEMPO_MAX_LIMITE = 9999;
 
 export function lerEstadoDeParams(params: ParamsLike): EstadoFiltroURL {
@@ -54,14 +56,13 @@ export function lerEstadoDeParams(params: ParamsLike): EstadoFiltroURL {
   const ordRaw = params.get("ord") ?? "padrao";
   return {
     q,
-    metodo: METODOS_VALIDOS.includes(metodoRaw) ? (metodoRaw as Metodo) : "Todos",
-    cat: catRaw && CATEGORIAS_VALIDAS.includes(catRaw) ? (catRaw as Categoria) : null,
-    dif: difRaw && DIFICULDADES_VALIDAS.includes(difRaw) ? (difRaw as Dificuldade) : null,
+    metodo: pertence(METODOS, metodoRaw) ? metodoRaw : "Todos",
+    cat: catRaw && pertence(CATEGORIAS, catRaw) ? catRaw : null,
+    dif: difRaw && pertence(DIFICULDADES, difRaw) ? difRaw : null,
     tempoMax: Number.isInteger(tmax) && tmax > 0 && tmax <= TEMPO_MAX_LIMITE ? tmax : null,
     soFavoritas: params.get("fav") === "1",
     // "1" era o valor antigo de ord (ordenar por tempo) — mantém compatibilidade
-    ordem:
-      ordRaw === "1" ? "tempo" : ORDENACOES_VALIDAS.includes(ordRaw) ? (ordRaw as Ordem) : "padrao",
+    ordem: ordRaw === "1" ? "tempo" : pertence(ORDENS, ordRaw) ? ordRaw : "padrao",
   };
 }
 
