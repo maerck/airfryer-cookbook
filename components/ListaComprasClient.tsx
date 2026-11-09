@@ -78,7 +78,7 @@ export default function ListaComprasClient() {
           </p>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl px-4 py-6">
+      <main id="conteudo" className="mx-auto max-w-6xl px-4 py-6">
         {itens.length === 0 ? (
           <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-stone-300 bg-white/60 px-6 py-16 text-center dark:border-stone-700 dark:bg-stone-900/60">
             <ShoppingCart className="h-8 w-8 text-stone-400" aria-hidden />

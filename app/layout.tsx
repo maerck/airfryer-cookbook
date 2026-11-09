@@ -35,6 +35,12 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="pt" suppressHydrationWarning>
       <body className="bg-stone-100 text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100">
+        <a
+          href="#conteudo"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-amber-600 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white"
+        >
+          Saltar para o conteúdo
+        </a>
         <ThemeProvider>
           <WebMCPTools />
           <RegisterSW />

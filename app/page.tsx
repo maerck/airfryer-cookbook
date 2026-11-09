@@ -223,6 +223,7 @@ function Explorer() {
         totalFavoritas={favoritas.size}
         totalListaCompras={totalListaCompras}
         aMostrar={visualizacao.length}
+        onLimparFiltros={limparFiltros}
         onSurpreendeMe={surpreendeMe}
         modoTenho={modoTenho}
         onToggleModoTenho={() => setModoTenho((v) => !v)}
@@ -233,7 +234,7 @@ function Explorer() {
         onToggleSoCompletas={() => setSoCompletas((v) => !v)}
         ingredientesDisponiveis={ingredientesDisponiveis}
       />
-      <main className="mx-auto max-w-6xl px-4 py-6">
+      <main id="conteudo" className="mx-auto max-w-6xl px-4 py-6">
         {visualizacao.length === 0 ? (
           <div className="grid gap-4">
             <EmptyState onLimpar={limparFiltros} />

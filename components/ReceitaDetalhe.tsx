@@ -1,10 +1,22 @@
 "use client";
 
-import { ArrowLeft, ChefHat, ChevronLeft, ChevronRight, Printer, Timer, X } from "lucide-react";
+import {
+  ArrowLeft,
+  ChefHat,
+  ChevronLeft,
+  ChevronRight,
+  Minus,
+  Plus,
+  Printer,
+  Share2,
+  Timer,
+  X,
+} from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { extrairMinutosDoPasso, formatarDuracao } from "@/lib/cook";
 import { CORES_CAT, CORES_METODO, METODO_EMOJI, RECEITAS, TOTAL_RECEITAS } from "@/lib/data";
+import { escalarIngredientes } from "@/lib/doses";
 import { aplicarAjusteModelo, encontrarModelo, MODELO_PADRAO, temAjuste } from "@/lib/models";
 import {
   guardarFavoritas,
@@ -28,6 +40,8 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
   const [passoAtual, setPassoAtual] = useState(0);
   const [segundos, setSegundos] = useState<number | null>(null);
   const [timerAtivo, setTimerAtivo] = useState(false);
+  const [dosesAtuais, setDosesAtuais] = useState(r.doses);
+  const [copiado, setCopiado] = useState(false);
 
   useEffect(() => {
     setModelo(encontrarModelo(lerModeloAtivoId()));
@@ -116,6 +130,28 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
     setTimerAtivo(true);
   };
 
+  const fatorDoses = dosesAtuais / r.doses;
+  const ingredientes = escalarIngredientes(r.ingredientes, fatorDoses);
+
+  const partilhar = async () => {
+    const url = window.location.href;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: document.title, text: `${r.emoji} ${r.nome}`, url });
+        return;
+      } catch {
+        return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopiado(true);
+      window.setTimeout(() => setCopiado(false), 2000);
+    } catch {
+      // clipboard indisponível — sem ação
+    }
+  };
+
   const ajustada = aplicarAjusteModelo(r, modelo);
 
   const indiceAtual = RECEITAS.findIndex((x) => x.id === r.id);
@@ -135,7 +171,7 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
           </Link>
         </div>
       </header>
-      <main className="mx-auto max-w-4xl px-4 py-6">
+      <main id="conteudo" className="mx-auto max-w-4xl px-4 py-6">
         <article className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div className="flex items-start gap-3">
@@ -167,7 +203,7 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
                     🌡 {ajustada.temp}
                   </span>
                   <span className="rounded-full border border-stone-200 bg-stone-50 px-2 py-0.5 text-stone-600 dark:border-stone-700 dark:bg-stone-800/60 dark:text-stone-300">
-                    🍽 {r.doses} doses
+                    🍽 {dosesAtuais} doses
                   </span>
                   {temAjuste(modelo) && (
                     <span
@@ -189,6 +225,13 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
                 className="flex h-11 w-11 items-center justify-center rounded-full text-2xl leading-none transition-transform hover:scale-110"
               >
                 <span aria-hidden>{favorita ? "⭐" : "☆"}</span>
+              </button>
+              <button
+                type="button"
+                onClick={partilhar}
+                className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/20"
+              >
+                <Share2 className="h-4 w-4" aria-hidden /> {copiado ? "Copiado!" : "Partilhar"}
               </button>
               <button
                 type="button"
@@ -298,14 +341,42 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
           ) : (
             <div className="mt-6 grid gap-6 border-t border-stone-100 pt-6 dark:border-stone-800 md:grid-cols-2">
               <section aria-label="Ingredientes">
-                <h2 className="text-sm font-semibold text-stone-800 dark:text-stone-200">
-                  🧺 Ingredientes{" "}
-                  <span className="ml-1 font-normal text-stone-500 dark:text-stone-400">
-                    {marcados.length}/{r.ingredientes.length}
-                  </span>
-                </h2>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h2 className="text-sm font-semibold text-stone-800 dark:text-stone-200">
+                    🧺 Ingredientes{" "}
+                    <span className="ml-1 font-normal text-stone-500 dark:text-stone-400">
+                      {marcados.length}/{r.ingredientes.length}
+                    </span>
+                  </h2>
+                  <fieldset
+                    className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white dark:border-stone-700 dark:bg-stone-900 print:hidden"
+                    aria-label="Ajustar doses"
+                  >
+                    <button
+                      type="button"
+                      onClick={() => setDosesAtuais((d) => Math.max(1, d - 1))}
+                      disabled={dosesAtuais <= 1}
+                      aria-label="Diminuir doses"
+                      className="flex h-11 w-11 items-center justify-center rounded-full text-stone-600 transition-colors hover:bg-stone-100 disabled:opacity-40 dark:text-stone-300 dark:hover:bg-stone-800"
+                    >
+                      <Minus className="h-4 w-4" aria-hidden />
+                    </button>
+                    <span className="min-w-14 text-center text-sm font-semibold tabular-nums text-stone-800 dark:text-stone-200">
+                      {dosesAtuais} doses
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setDosesAtuais((d) => Math.min(24, d + 1))}
+                      disabled={dosesAtuais >= 24}
+                      aria-label="Aumentar doses"
+                      className="flex h-11 w-11 items-center justify-center rounded-full text-stone-600 transition-colors hover:bg-stone-100 disabled:opacity-40 dark:text-stone-300 dark:hover:bg-stone-800"
+                    >
+                      <Plus className="h-4 w-4" aria-hidden />
+                    </button>
+                  </fieldset>
+                </div>
                 <ul className="mt-2 space-y-1.5 text-sm">
-                  {r.ingredientes.map((ing, i) => {
+                  {ingredientes.map((ing, i) => {
                     const marcado = marcados.includes(i);
                     return (
                       <li key={i}>
