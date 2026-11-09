@@ -15,6 +15,8 @@ updates:
         update-types:
           - minor
           - patch
+    # lucide-react fica de fora de propósito: o AGENTS.md não fixa a sua versão,
+    # por isso os majors chegam em PRs próprios (a CI valida).
     ignore:
       - dependency-name: next
         update-types: ["version-update:semver-major"]

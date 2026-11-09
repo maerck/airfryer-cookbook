@@ -2,15 +2,15 @@
 
 Todas as alterações relevantes deste projeto ficam registadas neste ficheiro.
 
-O formato segue o [Keep a Changelog](https://keepachangelog.com/pt-PT/1.1.0/) e o projeto usa
-[Versionamento Semântico](https://semver.org/lang/pt-PT/).
+O formato segue o [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) e o projeto usa
+[Versionamento Semântico](https://semver.org/).
 
 ## [Unreleased]
 
-## [1.0.0] — 2026-11-09
+## [1.0.0] - 2026-11-09
 
 Primeira versão pública: explorador de 200 receitas para a Xiaomi Mijia Smart Steam Air Fryer 7 L
-(M1–M9).
+(M1–M9 e revisões de 2026-11-09).
 
 ### Adicionado
 
@@ -29,6 +29,10 @@ Primeira versão pública: explorador de 200 receitas para a Xiaomi Mijia Smart 
   carregamento.
 - Acessibilidade e mobile: skip link, `aria-pressed`/`aria-live`, alvos de toque de 44 px, rails de
   filtros com scroll, `prefers-reduced-motion`.
+- Filtro "⭐ Só favoritas" e favoritas nos cards, "🎲 Surpreende-me", renderização progressiva
+  com "Mostrar mais", "Voltar ao topo", atalho "/" para a pesquisa e chip "Limpar filtros".
+- Aviso em pt-PT junto dos passos quando o modelo ativo tem ajuste (os passos mostram os valores
+  da receita original).
 - Ferramentas WebMCP só de leitura para agentes de IA no navegador (`search_recipes`,
   `get_recipe`, `suggest_recipes`, `list_filters`).
 - Publicação: licença MIT, README com runbook, CI (lint, typecheck, test, build, check:data),
@@ -42,7 +46,10 @@ Primeira versão pública: explorador de 200 receitas para a Xiaomi Mijia Smart 
 ### Corrigido
 
 - Contador de receitas mostra o total filtrado e o badge da lista de compras atualiza em direto.
-- Tema escuro desligado na impressão; WebMCP volta a registar após `unregister`.
+- Tema escuro desligado na impressão; WebMCP volta a registar após `unregister` e já não regista
+  ferramentas em duplicado.
+- Caracteres reais nas etiquetas da barra de filtros (em vez de escapes unicode literais, PR #4).
+- Pesquisa com estado local e sincronização da URL com atraso.
 - "Tenho em casa" exige todos os componentes da linha, aceita "ou" e plurais.
 
 [Unreleased]: https://github.com/maerck/airfryer-cookbook/compare/v1.0.0...HEAD
