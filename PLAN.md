@@ -27,7 +27,7 @@ Updated at the end of every session (framework §4 session protocol).
 | Revisão 2026-11-09 — correções                                   | Done    | 2026-11-09 | contador mostra o total filtrado; badge da lista de compras atualiza em direto; tema escuro desligado na impressão; pesquisa com estado local + sync da URL com atraso; WebMCP volta a registar após unregister; "tenho em casa" exige todos os componentes da linha, aceita "ou" e plurais, autocompletar por nome de ingrediente; 98/98 vitest                                                                                                                                                                                                                                                                                       |
 | Revisão 2026-11-09 — correções 7–13                              | Done    | 2026-11-09 | home com cabeçalho + 24 receitas no HTML estático (fallback do Suspense = explorador sem filtros); dataset fora do bundle de `/receita/[id]` e `/modelos` (vizinhas/total por props, WebMCP carregado só com `modelContext`); `lib/site.ts` (fallback Vercel + aviso no build), `/lista-compras` fora do sitemap; `lib/constants.ts` como fonte única das enumerações; aviso pt-PT junto dos passos quando o modelo tem ajuste ("Os tempos e temperaturas escritos nos passos são os da receita original. Com o modelo {nome}, aplica o ajuste à cozedura: {ajuste}."); `"type": "module"`, `Zone.Identifier` removido; 106/106 vitest |
 | Revisão do framework + housekeeping                              | Done    | 2026-11-09 | plugin `agent-framework` 1.9.1 confirmado (= upstream); AGENTS.md §9–§11 com nomes por ferramenta e as 13 personas (PR #5); branches fundidas apagadas no local e no remoto; M10–M17 planeados                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| M10 — Fundações de release                                       | Planned | 2026-11-09 | Dependabot, URL de produção, CHANGELOG + `v1.0.0`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| M10 — Fundações de release                                       | Done    | 2026-11-09 | PR #7: Dependabot, CHANGELOG, `version` 1.0.0, URL de produção no README/AGENTS.md; release `v1.0.0` em `981201b` (CI verde); falta o dono ativar "Automatically delete head branches"                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | M11 — Testes automáticos a11y + smoke                            | Planned | 2026-11-09 | axe + smoke por rota em Vitest                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | M12 — Um ficheiro por receita + modelos mais ricos               | Planned | 2026-11-09 | `data/recipes/<id>.json`, ajuste por método                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | M13 — Atualização semanal (fontes abertas + Mistral)             | Planned | 2026-11-09 | só em GitHub Actions; PR revisto pelo dono; depende de M12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -197,22 +197,23 @@ pela ordem. Tudo o que não é M13 continua sem backend, sem chaves e só com `l
 
 #### Tasks
 
-- [ ] Dependabot (`.github/dependabot.yml`): ecossistemas `npm` e `github-actions`, semanal, PRs
+- [x] Dependabot (`.github/dependabot.yml`): ecossistemas `npm` e `github-actions`, semanal, PRs
   agrupados (minor + patch num só PR, majors à parte), dentro das versões de `toolchain-standards`
   (nunca saltar um major fixado em AGENTS.md §4)
-- [ ] Verificar o deploy de produção na Vercel: domínio, `NEXT_PUBLIC_SITE_URL` definido em
+- [x] Verificar o deploy de produção na Vercel: domínio, `NEXT_PUBLIC_SITE_URL` definido em
   Production, sitemap/robots/OG com o URL certo; URL de produção no `README.md` e em AGENTS.md §2
-- [ ] `CHANGELOG.md` (formato Keep a Changelog) com M1–M9 resumidos como `1.0.0`; `version` do
+- [x] `CHANGELOG.md` (formato Keep a Changelog) com M1–M9 resumidos como `1.0.0`; `version` do
   `package.json` alinhada com a tag
-- [ ] Tag `v1.0.0` + GitHub Release com as notas do CHANGELOG (persona `release-manager`, skill
+- [x] Tag `v1.0.0` + GitHub Release com as notas do CHANGELOG (persona `release-manager`, skill
   `release-flow`); README explica como fazer o próximo release
 - [ ] O dono ativa "Automatically delete head branches" nas definições do repositório no GitHub
 
 #### Acceptance criteria
 
-- [ ] O separador Dependabot do GitHub mostra os dois ecossistemas sem erros de configuração
-- [ ] `/sitemap.xml`, `/robots.txt` e a OG image em produção usam o domínio de produção
-- [ ] Release `v1.0.0` publicado; CI verde no commit etiquetado
+- [x] O separador Dependabot do GitHub mostra os dois ecossistemas sem erros de configuração
+  (verificação `.github/dependabot.yml` do GitHub verde no PR #7)
+- [x] `/sitemap.xml`, `/robots.txt` e a OG image em produção usam o domínio de produção
+- [x] Release `v1.0.0` publicado; CI verde no commit etiquetado (`981201b`, run 42710782959)
 
 ### M11 — Testes automáticos de acessibilidade e smoke
 
