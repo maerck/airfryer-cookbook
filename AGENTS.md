@@ -97,37 +97,46 @@ Fixed stack — do not substitute:
 
 ## 9. Skills
 
-Resolution: local `skills/<name>/SKILL.md` → plugin `agentFramework:<name>` →
-canonical URL. Plugin skills are provided by the installed plugin; load them by
-their namespaced name unless a local override exists.
+Resolution: local `skills/<name>/SKILL.md` → installed plugin → canonical URL.
+Names below are bare; the plugin prefix depends on the tool: Claude Code
+`agent-framework:<name>`, Vibe `agentFramework:<name>`, Copilot `.github/skills/<name>`.
 
-| Skill                                  | Load when                              |
-| -------------------------------------- | -------------------------------------- |
-| `agentFramework:testing`               | Running or adding tests (Vitest)       |
-| `agentFramework:toolchain-standards`   | Touching dependencies or lockfiles     |
-| `agentFramework:dependency-management` | Bumping dependencies                   |
-| `agentFramework:documentation`         | Writing or restructuring docs          |
-| `agentFramework:cicd-framework`        | Creating/editing `.github/workflows/*` |
-| `agentFramework:parallel-agents`       | Delegating work to a sub-agent         |
+| Skill                   | Load when                              |
+| ----------------------- | -------------------------------------- |
+| `testing`               | Running or adding tests (Vitest)       |
+| `toolchain-standards`   | Touching dependencies or lockfiles     |
+| `dependency-management` | Bumping dependencies                   |
+| `documentation`         | Writing or restructuring docs          |
+| `cicd-framework`        | Creating/editing `.github/workflows/*` |
+| `parallel-agents`       | Delegating work to a sub-agent         |
 
 ## 10. Agents (personas)
 
-Resolution: `agents/<name>.md` (repo override) → plugin subagent
-`agentFramework:<name>` → canonical URL. Thin wrappers live in
-`.github/agents/<name>.agent.md`.
+Resolution: `agents/<name>.md` (repo override) → plugin subagent (same prefixes as §9)
+→ canonical URL. Thin wrappers for all 13 live in `.github/agents/<name>.agent.md`.
 
-| Persona         | Role                                |
-| --------------- | ----------------------------------- |
-| `implementer`   | Feature implementation in this repo |
-| `test-author`   | Writing Vitest suites               |
-| `code-reviewer` | Read-only review of changes         |
+| Persona              | Role                                                |
+| -------------------- | --------------------------------------------------- |
+| `implementer`        | Feature implementation in this repo                 |
+| `test-author`        | Writing Vitest suites                               |
+| `code-reviewer`      | Read-only review of changes                         |
+| `architect`          | Plans cross-cutting changes before code (read-only) |
+| `planner`            | Proposes PLAN.md milestones (read-only)             |
+| `security-auditor`   | Read-only security review (external input, storage) |
+| `ci-doctor`          | Diagnoses failing CI / Vercel deploys               |
+| `dependency-aligner` | Aligns the toolchain to the family standard         |
+| `housekeeper`        | Sync, worktree/branch cleanup, lockfile hygiene     |
+| `framework-auditor`  | Read-only framework conformance audit               |
+| `onboarder`          | Framework adoption (already done here)              |
+| `release-manager`    | Tagged releases (no published packages here)        |
+| `db-migrator`        | Not applicable — no database (invariant 4)          |
 
 ## 11. Task routing
 
 - Implementing a PLAN.md milestone → `implementer` persona + this AGENTS.md + PLAN.md
-- Adding/running tests → load `agentFramework:testing`
-- Dependency or lockfile changes → load `agentFramework:toolchain-standards` + `dependency-management`
-- New `.github/workflows` files → load `agentFramework:cicd-framework`
+- Adding/running tests → load `testing`
+- Dependency or lockfile changes → load `toolchain-standards` + `dependency-management`
+- New `.github/workflows` files → load `cicd-framework`
 - Delegating work to a sub-agent → `parallel-agents` playbook
 
 ## 12. Cross-repo
