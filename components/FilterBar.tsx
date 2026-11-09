@@ -295,7 +295,7 @@ export default function FilterBar({
                   }
                 }}
                 list="lista-ingredientes-disponiveis"
-                placeholder="Ingrediente que tens em casa\u2026"
+                placeholder="Ingrediente que tens em casa…"
                 aria-label="Ingrediente que tens em casa"
                 className="min-h-11 min-w-56 flex-1 rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500"
               />
