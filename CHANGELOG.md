@@ -7,6 +7,22 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) e o p
 
 ## [Unreleased]
 
+### Adicionado
+
+- Testes automáticos de acessibilidade (M11): `axe-core` sobre o HTML SSR de `/`, `/modelos`,
+  `/lista-compras`, `/receita/1` e da página 404 (ambiente jsdom no Vitest, só devDependencies),
+  sem violações `serious`/`critical`/`moderate` por rota; `pnpm test:a11y` corre só estes testes.
+- Testes de smoke por rota em Vitest (`__tests__/smoke.test.ts`): idioma/título/skip link de todas
+  as rotas, contador "A mostrar N de N", 24 cards + "Mostrar mais" na home, ligações do cabeçalho
+  e, em `/receita/1`, modo cozinhar e doseador.
+
+### Corrigido
+
+- Landmarks e nomes acessíveis (M11, detetados pelo axe): a barra de filtros passou a
+  `<section aria-label="Filtros e pesquisa">`, a página 404 passou a ter `<main id="conteudo">`
+  com `<h1>`, o select "Ordenar:" perdeu o `aria-label` redundante (o `<label>` já dá o nome) e o
+  doseador de doses usa `<legend className="sr-only">Ajustar doses</legend>`.
+
 ## [1.0.0] - 2026-11-09
 
 Primeira versão pública: explorador de 200 receitas para a Xiaomi Mijia Smart Steam Air Fryer 7 L

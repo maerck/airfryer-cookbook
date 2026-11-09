@@ -28,7 +28,7 @@ Updated at the end of every session (framework §4 session protocol).
 | Revisão 2026-11-09 — correções 7–13                              | Done    | 2026-11-09 | home com cabeçalho + 24 receitas no HTML estático (fallback do Suspense = explorador sem filtros); dataset fora do bundle de `/receita/[id]` e `/modelos` (vizinhas/total por props, WebMCP carregado só com `modelContext`); `lib/site.ts` (fallback Vercel + aviso no build), `/lista-compras` fora do sitemap; `lib/constants.ts` como fonte única das enumerações; aviso pt-PT junto dos passos quando o modelo tem ajuste ("Os tempos e temperaturas escritos nos passos são os da receita original. Com o modelo {nome}, aplica o ajuste à cozedura: {ajuste}."); `"type": "module"`, `Zone.Identifier` removido; 106/106 vitest |
 | Revisão do framework + housekeeping                              | Done    | 2026-11-09 | plugin `agent-framework` 1.9.1 confirmado (= upstream); AGENTS.md §9–§11 com nomes por ferramenta e as 13 personas (PR #5); branches fundidas apagadas no local e no remoto; M10–M17 planeados                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | M10 — Fundações de release                                       | Done    | 2026-11-09 | PR #7: Dependabot, CHANGELOG, `version` 1.0.0, URL de produção no README/AGENTS.md; release `v1.0.0` em `981201b` (CI verde); PR #11 fundida; "Automatically delete head branches" ativado via API (`delete_branch_on_merge: true`); PRs #8–#10 do Dependabot fundidas; branches fundidas apagadas no local e no remoto                                                                                                                                                                                                                                                                                                                |
-| M11 — Testes automáticos a11y + smoke                            | Planned | 2026-11-09 | axe + smoke por rota em Vitest                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| M11 — Testes automáticos a11y + smoke                            | Done    | 2026-11-09 | axe (jsdom) sem violações serious/critical/moderate em `/`, `/modelos`, `/lista-compras`, `/receita/1` e 404; smoke por rota; 140/140 vitest; correções de landmarks detetadas pelo axe; `pnpm test:a11y`; README/CHANGELOG/AGENTS.md atualizados                                                                                                                                                                                                                                                                                                                                                                                      |
 | M12 — Um ficheiro por receita + modelos mais ricos               | Planned | 2026-11-09 | `data/recipes/<id>.json`, ajuste por método                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | M13 — Atualização semanal (fontes abertas + Mistral)             | Planned | 2026-11-09 | só em GitHub Actions; PR revisto pelo dono; depende de M12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | M14 — Exportar/importar os meus dados                            | Planned | 2026-11-09 | backup JSON + favoritas por link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -219,20 +219,32 @@ pela ordem. Tudo o que não é M13 continua sem backend, sem chaves e só com `l
 
 #### Tasks
 
-- [ ] `axe-core` + ambiente DOM do Vitest (`jsdom`) como devDependencies (aprovadas segundo
+- [x] `axe-core` + ambiente DOM do Vitest (`jsdom`) como devDependencies (aprovadas segundo
   `toolchain-standards`); axe corre sobre o HTML SSR de `/`, `/modelos`, `/lista-compras`,
   `/receita/1` e not-found
-- [ ] Smoke por rota em Vitest, a substituir as verificações manuais de M3/M6/M8: título e
+- [x] Smoke por rota em Vitest, a substituir as verificações manuais de M3/M6/M8: título e
   subtítulo, contador "A mostrar N de N", 24 cards iniciais + "Mostrar mais", ligações do cabeçalho,
   modo cozinhar e doseador em `/receita/1`
-- [ ] README: o que os testes cobrem e como correr só os de acessibilidade
+- [x] README: o que os testes cobrem e como correr só os de acessibilidade (`pnpm test:a11y`)
 
 #### Acceptance criteria
 
-- [ ] Zero violações axe `serious`/`critical` em todas as rotas; as `moderate` corrigidas ou
-  justificadas no PR
-- [ ] `vitest run`, `tsc --noEmit`, `biome check` verdes; a CI corre os testes novos sem passo extra
-- [ ] Vitest continua o único test runner (sem Playwright/Jest — AGENTS.md §4)
+- [x] Zero violações axe `serious`/`critical` em todas as rotas; as `moderate` corrigidas (ver notas)
+- [x] `vitest run`, `tsc --noEmit`, `biome check` verdes; a CI corre os testes novos sem passo extra
+- [x] Vitest continua o único test runner (sem Playwright/Jest — AGENTS.md §4)
+
+Notas M11 (2026-11-09): `axe-core` ^4.14.0 + `jsdom` ^31.0.0 como devDependencies.
+`__tests__/helpers/rotas.ts` renderiza o layout raiz + a página de cada rota com
+`next/link`/`next/navigation` mockados e injeta o `<title>` lido dos metadados exportados pela rota.
+`a11y.test.ts` corre em ambiente jsdom (docblock `@vitest-environment`) e falha com qualquer violação
+`serious`/`critical`/`moderate`; `color-contrast` (o jsdom não aplica CSS) e
+`label-content-name-mismatch` (só o botão de favorito, cujo conteúdo visível é o emoji decorativo em
+`<span aria-hidden>`) ficam `incomplete` — justificadas no teste, nunca violações. `smoke.test.ts`
+cobre as verificações manuais de M3/M6/M8. Correções detetadas pelo axe: a FilterBar passou a
+`<section aria-label="Filtros e pesquisa">` (string pt-PT nova registada aqui), a página 404 passou a
+`<main id="conteudo">` com `<h1>`, o select "Ordenar:" perdeu o `aria-label` redundante (o `<label>`
+já dá o nome acessível) e o doseador de doses usa `<legend className="sr-only">Ajustar doses</legend>`.
+Resultado: 140/140 vitest, `tsc`/`biome` limpos, `next build` OK (210 páginas), `check:data` OK.
 
 ### M12 — Dados: um ficheiro por receita + modelos mais ricos
 

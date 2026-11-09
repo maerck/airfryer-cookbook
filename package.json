@@ -13,6 +13,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "test:a11y": "vitest run __tests__/a11y.test.ts",
     "check:data": "node --experimental-strip-types scripts/check-data.ts",
     "lint": "biome check .",
     "lint:fix": "biome check --write ."
@@ -31,6 +32,8 @@
     "@types/node": "^22.20.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "axe-core": "^4.14.0",
+    "jsdom": "^31.0.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
     "vitest": "^5.0.5"
