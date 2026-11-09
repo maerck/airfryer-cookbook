@@ -358,10 +358,8 @@ export default function ReceitaDetalhe({
                       {marcados.length}/{r.ingredientes.length}
                     </span>
                   </h2>
-                  <fieldset
-                    className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white dark:border-stone-700 dark:bg-stone-900 print:hidden"
-                    aria-label="Ajustar doses"
-                  >
+                  <fieldset className="inline-flex items-center gap-1 rounded-full border border-stone-200 bg-white dark:border-stone-700 dark:bg-stone-900 print:hidden">
+                    <legend className="sr-only">Ajustar doses</legend>
                     <button
                       type="button"
                       onClick={() => setDosesAtuais((d) => Math.max(1, d - 1))}

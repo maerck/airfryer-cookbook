@@ -29,6 +29,7 @@ Fixed stack — do not substitute:
   `next-themes` `^0.4.6` (dark mode, M3)
 - pnpm `10.34.9` exact (`packageManager`), one committed `pnpm-lock.yaml`
 - Vitest `^5.0.5` (only test runner), Biome `^2.6.4` (lint/format), zod `^4.6.7` at trust boundaries
+- Test-only devDependencies for the a11y suite (M11): `axe-core` + `jsdom` — Vitest remains the only test runner
 - No backend, no database, no auth; persistence via `localStorage` only
 - Note: the handoff's acceptance criteria additionally require `npm install && npm run dev`
   to run clean — verified with npm, but pnpm remains the committed package manager
@@ -57,7 +58,7 @@ Fixed stack — do not substitute:
 | `components/`            | `Header.tsx`, `HeaderNav.tsx`, `FilterBar.tsx`, `RecipeCard.tsx`, `EmptyState.tsx`, `ErrorBoundary.tsx`, `ModelosClient.tsx`, `ModelCard.tsx`, `ListaComprasClient.tsx`, `ReceitaDetalhe.tsx`, `ThemeProvider.tsx`, `ThemeToggle.tsx`, `WebMCPTools.tsx`, `ReceitasSkeleton.tsx`, `RegisterSW.tsx`           |
 | `public/sw.js`           | Service worker (PWA offline): app-shell cache, network-first navigations with offline fallback; `app/manifest.ts` gera o web manifest                                                                                                                                                                        |
 | `scripts/`               | `check-data.ts` — valida `data/*.json` contra `lib/schemas.ts` (`pnpm check:data`)                                                                                                                                                                                                                           |
-| `__tests__/`             | Vitest suite (structural data tests + filter logic + model adjustment + suggest/shopping/SSR)                                                                                                                                                                                                                |
+| `__tests__/`             | Vitest suite: data/logic/SSR tests + per-route smoke (`smoke.test.ts`) + axe a11y over SSR HTML (`a11y.test.ts`, jsdom env; `pnpm test:a11y`); shared route renderer in `__tests__/helpers/rotas.ts`                                                                                                         |
 | `.github/workflows/`     | `ci.yml` — CI canónica do framework (lint → typecheck → test → build → check:data)                                                                                                                                                                                                                           |
 | `.github/dependabot.yml` | Dependabot semanal (`npm` + `github-actions`; minor/patch agrupados; sem majors do stack fixado)                                                                                                                                                                                                             |
 | root                     | `README.md` (runbook incl. dados e releases), `CHANGELOG.md` (Keep a Changelog; versão = `package.json`), `LICENSE` (MIT), `PLAN.md`                                                                                                                                                                         |
@@ -71,6 +72,7 @@ Fixed stack — do not substitute:
 | Production build | `pnpm build`                                           |
 | Typecheck        | `pnpm exec tsc --noEmit`                               |
 | Tests            | `pnpm test` (Vitest, run mode)                         |
+| A11y tests only  | `pnpm test:a11y` (axe over SSR HTML, jsdom env)        |
 | Check data       | `pnpm check:data` (valida `data/*.json` + resumo)      |
 | Lint/format      | `pnpm exec biome check --write .`                      |
 

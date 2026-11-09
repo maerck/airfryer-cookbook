@@ -25,9 +25,31 @@ Requer Node 22+. O gestor de pacotes commitado é o pnpm (`packageManager` em `p
 | `pnpm dev`        | dev server (Turbopack)                                     |
 | `pnpm build`      | build de produção                                          |
 | `pnpm test`       | suite Vitest (`vitest run`)                                |
+| `pnpm test:a11y`  | só os testes de acessibilidade (axe) — `a11y.test.ts`      |
 | `pnpm typecheck`  | `tsc --noEmit`                                             |
 | `pnpm lint`       | Biome (check)                                              |
 | `pnpm check:data` | valida `data/*.json` contra os schemas e imprime um resumo |
+
+## Testes
+
+A suite (`pnpm test`, Vitest — o único test runner) cobre:
+
+- **Dados e lógica pura** (`data`, `models`, `copy`, `site`, `filters`, `m3`, `cook`, `doses`,
+  `webmcp`): validação estrutural dos datasets, filtros/ordenação/URL, ajuste por modelo,
+  "tenho em casa", lista de compras, temporizador do modo cozinhar, doseador e ferramentas WebMCP.
+- **SSR** (`ssr`, `m3`): componentes e páginas renderizados com `renderToString`.
+- **Smoke por rota** (`__tests__/smoke.test.ts`): o HTML SSR de `/`, `/modelos`, `/lista-compras`,
+  `/receita/1` e da página de erro tem idioma `pt`, `<title>` dos metadados da rota, skip link com
+  alvo; a home mostra o contador "A mostrar N de N", os 24 cards iniciais + "Mostrar mais" e as
+  ligações do cabeçalho; `/receita/1` mostra o modo cozinhar e o doseador.
+- **Acessibilidade** (`__tests__/a11y.test.ts`): o axe-core corre sobre o HTML SSR de cada rota
+  (ambiente jsdom) e o teste falha com qualquer violação `serious`/`critical` (e `moderate`).
+  Corre só os de acessibilidade com `pnpm test:a11y`; um ficheiro só: `pnpm test __tests__/smoke.test.ts`.
+  Nota: no jsdom não há folhas de estilo, por isso `color-contrast` fica "incomplete" (justificado
+  no teste) — o contraste real vem das classes Tailwind.
+
+As rotas são renderizadas para HTML por `__tests__/helpers/rotas.ts` (layout raiz + página, com
+`next/link`/`next/navigation` mockados e o `<title>` lido dos metadados exportados).
 
 ## Atualizar os dados (re-upload periódico)
 

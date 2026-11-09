@@ -122,7 +122,10 @@ export default function FilterBar({
   };
 
   return (
-    <div className="sticky top-0 z-20 border-b border-stone-200 bg-stone-100/90 backdrop-blur dark:border-stone-800 dark:bg-stone-950/90">
+    <section
+      aria-label="Filtros e pesquisa"
+      className="sticky top-0 z-20 border-b border-stone-200 bg-stone-100/90 backdrop-blur dark:border-stone-800 dark:bg-stone-950/90"
+    >
       <div className="mx-auto max-w-6xl space-y-1.5 px-4 py-2 sm:space-y-2 sm:py-3">
         <div className="flex flex-wrap items-center gap-2">
           <div className="relative min-w-56 flex-1">
@@ -236,7 +239,6 @@ export default function FilterBar({
             <select
               value={estado.ordem}
               onChange={(e) => onEstadoChange({ ordem: e.target.value as Ordem })}
-              aria-label="Ordenar receitas"
               className="min-h-11 rounded-full border border-stone-200 bg-white px-3 py-2 text-sm text-stone-700 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 sm:min-h-0 sm:py-1"
             >
               {ORDENACOES.map((o) => (
@@ -345,6 +347,6 @@ export default function FilterBar({
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
