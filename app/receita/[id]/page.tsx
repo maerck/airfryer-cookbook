@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${receita.nome} · 200 Receitas · Air Fryer & Vapor`,
     description: `${receita.emoji} ${receita.nome} — ${METODO_CHIP[receita.metodo]}, ${receita.cat}, ${receita.tempo} min, ${receita.dificuldade}. Receita para air fryer e vapor.`,
+    alternates: {
+      canonical: `/receita/${id}`,
+    },
   };
 }
 

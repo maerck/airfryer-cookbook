@@ -13,6 +13,30 @@ html {
   scroll-behavior: smooth;
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-amber-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    /* biome-ignore lint/complexity/noImportantStyles: padrão recomendado para anular transições/assistivas em prefers-reduced-motion */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: padrão recomendado para prefers-reduced-motion */
+    animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: padrão recomendado para prefers-reduced-motion */
+    transition-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: padrão recomendado para prefers-reduced-motion */
+    scroll-behavior: auto !important;
+  }
+}
+
 @media print {
   html {
     /* biome-ignore lint/complexity/noImportantStyles: o next-themes define color-scheme em estilo inline */

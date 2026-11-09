@@ -43,7 +43,7 @@ export default function ModelosClient({ totalReceitas }: { totalReceitas: number
           </p>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl px-4 py-6">
+      <main id="conteudo" className="mx-auto max-w-6xl px-4 py-6">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {MODELOS.map((m) => (
             <ModelCard

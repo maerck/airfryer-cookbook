@@ -12,6 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const rotas = ["", "/modelos", ...paramsReceitas().map((p) => `/receita/${p.id}`)];
   return rotas.map((rota) => ({
     url: new URL(rota, SITE_URL).toString(),
-    lastModified: new Date(),
   }));
 }
