@@ -4,6 +4,7 @@ Explorador de receitas (página única, pt-PT) para a **Xiaomi Mijia Smart Steam
 ar quente, vapor e modo combinado. Sem backend, sem base de dados, sem contas: os favoritos, os
 ingredientes marcados e o modelo ativo ficam em `localStorage`.
 
+- **Produção:** https://airfryer-cookbook.vercel.app
 - **App:** `/` (explorador) · `/modelos` · `/lista-compras` · `/receita/[id]` (SSG, imprimível)
 - **Dados:** `data/recipes.json` (receitas) e `data/modelos.json` (modelos) — validados com zod
   em `lib/schemas.ts`
@@ -84,6 +85,17 @@ __tests__/      suite Vitest
 ```
 
 Ver `PLAN.md` para o plano/spec e `AGENTS.md` para as regras do repositório.
+
+## Releases
+
+1. Em `CHANGELOG.md`, move o conteúdo de `[Unreleased]` para uma secção nova `[X.Y.Z] — AAAA-MM-DD`
+   e atualiza as ligações no fim do ficheiro.
+2. Atualiza `version` em `package.json` para `X.Y.Z`.
+3. Faz merge para `main` (via PR, com a CI verde).
+4. Cria a tag `vX.Y.Z` nesse commit e o GitHub Release com as notas copiadas do CHANGELOG.
+
+O Dependabot (`.github/dependabot.yml`) abre semanalmente PRs agrupados (minor + patch) para `npm` e
+`github-actions`; majors do stack fixado nunca são propostos.
 
 ## Licença
 
