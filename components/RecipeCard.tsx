@@ -75,7 +75,7 @@ export default function RecipeCard({
         <span className={`rounded-full border px-2 py-0.5 font-medium ${CORES_CAT[r.cat]}`}>
           {r.cat}
         </span>
-        <span className="rounded-full border border-stone-200 bg-stone-50 px-2 py-0.5 text-stone-600 dark:border-stone-700 dark:bg-stone-800/60 dark:text-stone-300">
+        <span className="rounded-full border border-amber-300 bg-amber-100 px-2 py-0.5 font-semibold text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
           ⏱ {ajustada.tempo} min
         </span>
         <span className="rounded-full border border-stone-200 bg-stone-50 px-2 py-0.5 text-stone-600 dark:border-stone-700 dark:bg-stone-800/60 dark:text-stone-300">

@@ -11,17 +11,18 @@ immutable dataset `data/recipes.json` (200 recipes).
 
 Updated at the end of every session (framework §4 session protocol).
 
-| Milestone                                  | Status | Date       | Notes                                                                                                                                                                                                                       |
-| ------------------------------------------ | ------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Framework install (plugin mode)            | Done   | 2026-11-08 | `init-project.sh --mode plugin`; `check-framework.sh --root-only` 17/0 pass                                                                                                                                                 |
-| M1 — Phase 1: Next.js port                 | Done   | 2026-11-08 | All tasks + acceptance criteria green: tsc clean, 24/24 vitest, next build OK, biome clean, framework 17/17                                                                                                                 |
-| M2 — Modelos de airfryer                   | Done   | 2026-11-08 | `/modelos` + modelo ativo em localStorage + ajuste por modelo; 47/47 vitest, build OK, biome/tsc clean                                                                                                                      |
-| M3 — Phase 2 ideas                         | Done   | 2026-11-08 | `/receita/[id]` SSG (200 págs) + impressão, `/lista-compras`, dark mode (next-themes), modo "tenho em casa"; 64/64 vitest, build OK, biome/tsc clean, framework 17/17                                                       |
-| Revisão pós-M3 (backlog M4–M6)             | Done   | 2026-11-08 | IA/backend rejeitada pelo dono (sem backend, sem chaves); backlog de release pública + atualizações de dados + UX registado abaixo                                                                                          |
-| M4 — Release pública                       | Done   | 2026-11-08 | LICENSE MIT, README com runbook, CI `ci.yml`, sitemap/robots/OG image, metadataBase+OG; build OK                                                                                                                            |
-| M5 — Atualização periódica dos dados       | Done   | 2026-11-08 | schemas em `lib/schemas.ts` (dataset pode crescer), `pnpm check:data`, testes de dados estruturais, strings "200" Dinâmicas; 74/74 vitest                                                                                   |
-| M6 — UX                                    | Done   | 2026-11-08 | ordem/dif/tempoMax, matching difuso "tenho em casa", renderização progressiva, checkboxes+⭐+prev/next em `/receita/[id]`, imprimir/copiar lista, badge no header, back-to-top, atalho "/"                                  |
-| M7 — WebMCP (ferramentas p/ agentes de IA) | Done   | 2026-11-08 | `lib/webmcp.ts` + `WebMCPTools.tsx` no layout: 4 ferramentas só de leitura em `document.modelContext`/`navigator.modelContext` (search_recipes, get_recipe, suggest_recipes, list_filters); no-op sem suporte; 86/86 vitest |
+| Milestone                                            | Status | Date       | Notes                                                                                                                                                                                                                       |
+| ---------------------------------------------------- | ------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Framework install (plugin mode)                      | Done   | 2026-11-08 | `init-project.sh --mode plugin`; `check-framework.sh --root-only` 17/0 pass                                                                                                                                                 |
+| M1 — Phase 1: Next.js port                           | Done   | 2026-11-08 | All tasks + acceptance criteria green: tsc clean, 24/24 vitest, next build OK, biome clean, framework 17/17                                                                                                                 |
+| M2 — Modelos de airfryer                             | Done   | 2026-11-08 | `/modelos` + modelo ativo em localStorage + ajuste por modelo; 47/47 vitest, build OK, biome/tsc clean                                                                                                                      |
+| M3 — Phase 2 ideas                                   | Done   | 2026-11-08 | `/receita/[id]` SSG (200 págs) + impressão, `/lista-compras`, dark mode (next-themes), modo "tenho em casa"; 64/64 vitest, build OK, biome/tsc clean, framework 17/17                                                       |
+| Revisão pós-M3 (backlog M4–M6)                       | Done   | 2026-11-08 | IA/backend rejeitada pelo dono (sem backend, sem chaves); backlog de release pública + atualizações de dados + UX registado abaixo                                                                                          |
+| M4 — Release pública                                 | Done   | 2026-11-08 | LICENSE MIT, README com runbook, CI `ci.yml`, sitemap/robots/OG image, metadataBase+OG; build OK                                                                                                                            |
+| M5 — Atualização periódica dos dados                 | Done   | 2026-11-08 | schemas em `lib/schemas.ts` (dataset pode crescer), `pnpm check:data`, testes de dados estruturais, strings "200" Dinâmicas; 74/74 vitest                                                                                   |
+| M6 — UX                                              | Done   | 2026-11-08 | ordem/dif/tempoMax, matching difuso "tenho em casa", renderização progressiva, checkboxes+⭐+prev/next em `/receita/[id]`, imprimir/copiar lista, badge no header, back-to-top, atalho "/"                                  |
+| M7 — WebMCP (ferramentas p/ agentes de IA)           | Done   | 2026-11-08 | `lib/webmcp.ts` + `WebMCPTools.tsx` no layout: 4 ferramentas só de leitura em `document.modelContext`/`navigator.modelContext` (search_recipes, get_recipe, suggest_recipes, list_filters); no-op sem suporte; 86/86 vitest |
+| M8 — UX da análise UI/UX (mobile/a11y/PWA/cook mode) | Done   | 2026-11-09 | Ver detalhes abaixo                                                                                                                                                                                                         |
 
 ## Milestones
 
@@ -133,6 +134,29 @@ active model's ajuste is non-zero. `data/recipes.json` stays untouched.
 - [x] Dev smoke: `/` mostra 200 cards, `/?metodo=Vapor` mostra 30, `/receita/1..200` OK,
   `/receita/999` → not-found pt-PT, `/lista-compras` e `/modelos` OK
 - [x] `data/recipes.json` e `data/modelos.json` intocados; copy pt-PT; sem `any`; localStorage only
+
+### M8 — Melhorias da análise UI/UX (2026-11-09, PR #1)
+
+Segunda ronda da análise UI/UX (desktop + mobile, a11y, performance), depois do deploy de preview.
+
+#### Tasks
+
+- [x] Toolbar mobile em rails horizontais com scroll (`flex-nowrap overflow-x-auto` abaixo de `sm`); alvos de toque de 44px em chips/pesquisa/select/botões/ícones (`min-h-11`/`h-11 w-11`, compacto a partir de `sm`)
+- [x] `aria-pressed` em todos os chips de filtro; `role="status"`/`aria-live="polite"` no contador "A mostrar N de 200"; emoji decorativos em `<span aria-hidden>`; opções do select "Ordenar:" sem emoji
+- [x] Links compactos (ícone + badge) para `/lista-compras` e `/modelos` na barra fixa; hero compacto em mobile (`py-6 sm:py-10`); FAB voltar-ao-topo à esquerda em mobile
+- [x] `theme-color` duplo via `media="(prefers-color-scheme: …)"`; anel `focus-visible` unificado (amber); guarda `prefers-reduced-motion` em `globals.css`
+- [x] Esqueletos de grelha no carregamento (`components/ReceitasSkeleton.tsx`, usado no `Suspense` de `/` e em `loading.tsx`)
+- [x] SEO: URL do sitemap à prova de barra final (`robots.ts`), `lastmod` removido do sitemap, canonical em `/` e `/receita/[id]`
+- [x] PWA: `app/manifest.ts` (standalone, pt, ícone SVG) + `public/sw.js` (cache do shell, navegação network-first com fallback offline) + `components/RegisterSW.tsx` no layout
+- [x] Modo cozinhar em `/receita/[id]`: passo a passo com texto grande, temporizador por passo (`lib/cook.ts`: `extrairMinutosDoPasso`/`formatarDuracao`), wake lock de ecrã (feature-detected), vibração ao terminar; strings pt-PT: "Modo cozinhar", "Passo X de Y", "Iniciar temporizador (N min)", "Cancelar temporizador", "Terminado!", "Anterior", "Seguinte", "Concluir", "Sair"
+- [x] Hierarquia visual: chip de tempo em âmbar (mais forte) nos cards e no detalhe
+- [x] Testes `__tests__/cook.test.ts` (extração de minutos incl. intervalos "10–12 min" e horas,Boundary do dataset real; formatação mm:ss/h:mm:ss)
+
+#### Acceptance criteria
+
+- [x] `vitest run` green (incl. `cook.test.ts`); `tsc --noEmit` e `biome check` limpos; `next build` OK (manifest + sw servidos)
+- [x] Sem novas dependências; sem backend; persistência só em `localStorage`; dados intocados
+- [x] CI do PR #1 verde (lint → typecheck → test → build → check:data) e preview Vercel OK
 
 ## Out of scope
 
