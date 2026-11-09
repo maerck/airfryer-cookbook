@@ -3,7 +3,7 @@
 import { ArrowLeft, Printer } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { CORES_CAT, CORES_METODO, METODO_EMOJI, RECEITAS, TOTAL_RECEITAS } from "@/lib/data";
+import { CORES_CAT, CORES_METODO, METODO_EMOJI } from "@/lib/constants";
 import { aplicarAjusteModelo, encontrarModelo, MODELO_PADRAO, temAjuste } from "@/lib/models";
 import {
   guardarFavoritas,
@@ -14,11 +14,26 @@ import {
 } from "@/lib/storage";
 import type { ModeloAirfryer, Receita } from "@/lib/types";
 
-interface ReceitaDetalheProps {
-  receita: Receita;
+interface ReceitaVizinha {
+  id: number;
+  nome: string;
 }
 
-export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
+// A página (servidor) passa as vizinhas e o total: este componente cliente não importa o
+// dataset, para as páginas de receita não carregarem as receitas todas.
+interface ReceitaDetalheProps {
+  receita: Receita;
+  anterior?: ReceitaVizinha;
+  seguinte?: ReceitaVizinha;
+  totalReceitas: number;
+}
+
+export default function ReceitaDetalhe({
+  receita: r,
+  anterior,
+  seguinte,
+  totalReceitas,
+}: ReceitaDetalheProps) {
   const [modelo, setModelo] = useState<ModeloAirfryer>(MODELO_PADRAO);
   const [favorita, setFavorita] = useState(false);
   const [marcados, setMarcados] = useState<number[]>([]);
@@ -58,11 +73,6 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
   };
 
   const ajustada = aplicarAjusteModelo(r, modelo);
-
-  const indiceAtual = RECEITAS.findIndex((x) => x.id === r.id);
-  const anterior = indiceAtual > 0 ? RECEITAS[indiceAtual - 1] : undefined;
-  const seguinte =
-    indiceAtual >= 0 && indiceAtual < RECEITAS.length - 1 ? RECEITAS[indiceAtual + 1] : undefined;
 
   return (
     <div className="min-h-screen">
@@ -177,6 +187,11 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
               <h2 className="text-sm font-semibold text-stone-800 dark:text-stone-200">
                 👨‍🍳 Passos
               </h2>
+              {ajustada.notaPassos && (
+                <p className="mt-2 rounded-xl border border-amber-300 bg-amber-50 p-2.5 text-xs text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
+                  ⚙️ {ajustada.notaPassos}
+                </p>
+              )}
               <ol className="mt-2 space-y-2">
                 {r.passos.map((passo, i) => (
                   <li
@@ -228,7 +243,7 @@ export default function ReceitaDetalhe({ receita: r }: ReceitaDetalheProps) {
             href="/"
             className="underline decoration-stone-300 underline-offset-2 hover:text-stone-700 dark:decoration-stone-700 dark:hover:text-stone-200"
           >
-            Ver as {TOTAL_RECEITAS} receitas
+            Ver as {totalReceitas} receitas
           </Link>
         </p>
       </main>

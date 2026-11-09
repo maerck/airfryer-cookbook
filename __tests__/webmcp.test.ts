@@ -220,6 +220,42 @@ describe("WebMCP — registo", () => {
     expect(removidos).toEqual(["search_recipes", "get_recipe", "suggest_recipes", "list_filters"]);
   });
 
+  it("volta a registar depois do unregister (remount do React StrictMode)", () => {
+    const ativas = new Set<string>();
+    const mock: ModelContextLike = {
+      registerTool: (t) => {
+        if (ativas.has(t.name)) throw new Error("Duplicate tool name");
+        ativas.add(t.name);
+        return undefined;
+      },
+      unregisterTool: (name) => {
+        ativas.delete(name);
+      },
+    };
+    const unregister1 = registrarFerramentasWebMCP(mock);
+    unregister1();
+    expect(ativas.size).toBe(0);
+    const unregister2 = registrarFerramentasWebMCP(mock);
+    expect(ativas.size).toBe(4);
+    unregister1(); // o cleanup antigo não pode remover o registo novo
+    expect(ativas.size).toBe(4);
+    unregister2();
+    expect(ativas.size).toBe(0);
+  });
+
+  it("sem forma de remover, um segundo registo não duplica", () => {
+    let chamadas = 0;
+    const mock: ModelContextLike = {
+      registerTool: () => {
+        chamadas += 1;
+        return undefined;
+      },
+    };
+    registrarFerramentasWebMCP(mock)();
+    registrarFerramentasWebMCP(mock);
+    expect(chamadas).toBe(4);
+  });
+
   it("as ferramentas registadas executam via execute", async () => {
     const r = await FERRAMENTAS_WEBMCP[1]?.execute({ id: 2 });
     expect(r?.isError).toBeFalsy();

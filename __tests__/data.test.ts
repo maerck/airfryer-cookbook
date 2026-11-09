@@ -109,3 +109,25 @@ describe("validarReceitas / validarModelos (o dataset pode crescer além de 200)
     expect(() => validarModelos([{ ...modelo, id: "ID INVÁLIDO" }])).toThrow(/inválido/);
   });
 });
+
+describe("fonte única das enumerações e navegação entre receitas", () => {
+  it("os schemas zod usam exatamente as listas de lib/constants", async () => {
+    const c = await import("@/lib/constants");
+    const s = await import("@/lib/schemas");
+    expect(s.metodoSchema.options).toEqual([...c.METODOS]);
+    expect(s.categoriaSchema.options).toEqual([...c.CATEGORIAS]);
+    expect(s.dificuldadeSchema.options).toEqual([...c.DIFICULDADES]);
+  });
+
+  it("vizinhasDaReceita devolve a anterior e a seguinte pela ordem do dataset", async () => {
+    const { RECEITAS, vizinhasDaReceita } = await import("@/lib/data");
+    const primeira = RECEITAS[0];
+    const segunda = RECEITAS[1];
+    const ultima = RECEITAS[RECEITAS.length - 1];
+    if (!primeira || !segunda || !ultima) throw new Error("dataset demasiado pequeno");
+    expect(vizinhasDaReceita(primeira.id)).toEqual({ anterior: undefined, seguinte: segunda });
+    expect(vizinhasDaReceita(segunda.id).anterior).toBe(primeira);
+    expect(vizinhasDaReceita(ultima.id).seguinte).toBeUndefined();
+    expect(vizinhasDaReceita(-1)).toEqual({});
+  });
+});

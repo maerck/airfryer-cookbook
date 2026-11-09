@@ -1,6 +1,7 @@
 const CHAVE_FAVORITAS = "af200:favoritas";
 const CHAVE_INGREDIENTES = "af200:ingredientes";
 const CHAVE_MODELO_ATIVO = "af200:modelo-ativo";
+const EVENTO_INGREDIENTES = "af200:ingredientes-alterados";
 
 function lerJSON(chave: string): unknown {
   try {
@@ -42,9 +43,26 @@ export function lerIngredientesMarcados(): Record<number, number[]> {
 export function guardarIngredientesMarcados(marcados: Record<number, number[]>): void {
   try {
     localStorage.setItem(CHAVE_INGREDIENTES, JSON.stringify(marcados));
+    window.dispatchEvent(new Event(EVENTO_INGREDIENTES));
   } catch {
     // localStorage indisponível — ignora
   }
+}
+
+/**
+ * Chama `aoMudar` sempre que os ingredientes marcados mudam — nesta página (evento próprio) ou
+ * noutro separador (evento `storage`). Devolve a função para cancelar a subscrição.
+ */
+export function subscreverIngredientesMarcados(aoMudar: () => void): () => void {
+  const aoStorage = (e: StorageEvent) => {
+    if (e.key === null || e.key === CHAVE_INGREDIENTES) aoMudar();
+  };
+  window.addEventListener(EVENTO_INGREDIENTES, aoMudar);
+  window.addEventListener("storage", aoStorage);
+  return () => {
+    window.removeEventListener(EVENTO_INGREDIENTES, aoMudar);
+    window.removeEventListener("storage", aoStorage);
+  };
 }
 
 export function lerModeloAtivoId(): string | null {

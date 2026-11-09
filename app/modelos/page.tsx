@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ModelosClient from "@/components/ModelosClient";
+import { TOTAL_RECEITAS } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Modelos de airfryer · 200 Receitas · Air Fryer & Vapor",
@@ -8,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function ModelosPage() {
-  return <ModelosClient />;
+  return <ModelosClient totalReceitas={TOTAL_RECEITAS} />;
 }

@@ -1,13 +1,7 @@
-export type Metodo = "Air Fryer" | "Vapor" | "Vapor + Ar";
+import type { Categoria, Dificuldade, Metodo } from "./constants.ts";
 
-export type Categoria =
-  | "Carne"
-  | "Peixe & Marisco"
-  | "Vegetariano"
-  | "Acompanhamentos & Lanches"
-  | "Doces";
-
-export type Dificuldade = "Muito fácil" | "Fácil" | "Média";
+// Os valores possíveis vivem em lib/constants.ts (fonte única); aqui só se reexportam os tipos.
+export type { Categoria, Dificuldade, Metodo };
 
 export interface Receita {
   id: number; // inteiro positivo único, sequencial a partir de 1 (o dataset pode crescer)

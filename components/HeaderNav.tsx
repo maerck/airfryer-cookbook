@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
 import { contarListaCompras } from "@/lib/shopping";
-import { lerIngredientesMarcados } from "@/lib/storage";
+import { lerIngredientesMarcados, subscreverIngredientesMarcados } from "@/lib/storage";
 
 /** Links do cabeçalho + contador de itens da lista de compras (só após hidratação). */
 export default function HeaderNav() {
@@ -12,8 +12,10 @@ export default function HeaderNav() {
   const [hidratado, setHidratado] = useState(false);
 
   useEffect(() => {
-    setItensLista(contarListaCompras(lerIngredientesMarcados()));
+    const atualizar = () => setItensLista(contarListaCompras(lerIngredientesMarcados()));
+    atualizar();
     setHidratado(true);
+    return subscreverIngredientesMarcados(atualizar);
   }, []);
 
   return (

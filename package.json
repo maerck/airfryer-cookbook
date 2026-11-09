@@ -2,6 +2,7 @@
   "name": "airfryer-cookbook",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@10.34.9",
   "engines": {
     "node": ">=22"
@@ -12,7 +13,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "check:data": "node scripts/check-data.ts",
+    "check:data": "node --experimental-strip-types scripts/check-data.ts",
     "lint": "biome check .",
     "lint:fix": "biome check --write ."
   },

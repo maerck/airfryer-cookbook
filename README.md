@@ -48,7 +48,8 @@ Os agentes nunca alteram o conteúdo dos ficheiros de dados — só o dono, por 
 
 Recomendado: **Vercel** (importar o repositório; deteta Next.js automaticamente; build
 `pnpm build`). Definir a variável de ambiente `NEXT_PUBLIC_SITE_URL` com o URL de produção —
-é usada no `sitemap.xml`, `robots.txt` e metadados Open Graph.
+é usada no `sitemap.xml`, `robots.txt` e metadados Open Graph. Se faltar, na Vercel usa-se o
+domínio de produção do projeto; fora da Vercel o build avisa e os URLs ficam em `localhost`.
 
 Sem analytics nem tracking: o estado do utilizador vive apenas no `localStorage` do navegador.
 
@@ -76,7 +77,7 @@ do bundle — o código de registo (`lib/webmcp.ts`) funciona igual com ambos.
 app/            rotas App Router (+ sitemap.ts, robots.ts, opengraph-image.tsx)
 components/     componentes de UI (Header, FilterBar, RecipeCard, …)
 lib/            data.ts/models.ts (datasets validados), filters.ts, suggest.ts, shopping.ts,
-                storage.ts, schemas.ts, types.ts
+                storage.ts, schemas.ts, types.ts, constants.ts (enumerações, fonte única), site.ts
 scripts/        check-data.ts (validação dos datasets)
 data/           recipes.json + modelos.json (só o dono altera, por re-upload)
 __tests__/      suite Vitest

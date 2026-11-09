@@ -1,16 +1,14 @@
+import { CATEGORIAS, DIFICULDADES, METODOS, ORDENS } from "./constants";
 import {
-  CATEGORIAS,
   contarPorCategoria,
   contarPorMetodo,
-  DIFICULDADES,
-  METODOS,
   RECEITAS,
   receitaPorId,
   TOTAL_RECEITAS,
 } from "./data";
-import { type EstadoFiltro, filtrarReceitas, type MetodoFiltro, type Ordem } from "./filters";
+import { type EstadoFiltro, filtrarReceitas, type MetodoFiltro, pertence } from "./filters";
 import { normalizarTenho, sugerirReceitas } from "./suggest";
-import type { Categoria, Dificuldade, Metodo, Receita } from "./types";
+import type { Receita } from "./types";
 
 /**
  * WebMCP — expõe ferramentas só de leitura sobre as receitas a agentes de IA no navegador.
@@ -90,21 +88,15 @@ function resumoReceita(r: Receita) {
 function searchRecipes(args: Record<string, unknown>): WebMCPResult {
   const q = comoTexto(args.q);
   const metodoRaw = comoTexto(args.metodo) || "Todos";
-  const metodo: MetodoFiltro = (METODOS as readonly string[]).includes(metodoRaw)
-    ? (metodoRaw as Metodo)
-    : "Todos";
+  const metodo: MetodoFiltro = pertence(METODOS, metodoRaw) ? metodoRaw : "Todos";
   const catRaw = comoTexto(args.cat);
-  const cat = (CATEGORIAS as readonly string[]).includes(catRaw) ? (catRaw as Categoria) : null;
+  const cat = pertence(CATEGORIAS, catRaw) ? catRaw : null;
   const difRaw = comoTexto(args.dificuldade);
-  const dif = (DIFICULDADES as readonly string[]).includes(difRaw) ? (difRaw as Dificuldade) : null;
+  const dif = pertence(DIFICULDADES, difRaw) ? difRaw : null;
   const tempoMax = comoInteiro(args.tempoMax);
   if (tempoMax !== null && tempoMax <= 0) return erro("tempoMax tem de ser um inteiro positivo.");
   const ordemRaw = comoTexto(args.ordem) || "padrao";
-  const ordem: Ordem = (["padrao", "tempo", "tempo-desc", "nome", "dificuldade"] as const).includes(
-    ordemRaw as Ordem,
-  )
-    ? (ordemRaw as Ordem)
-    : "padrao";
+  const ordem = pertence(ORDENS, ordemRaw) ? ordemRaw : "padrao";
 
   const estado: EstadoFiltro = {
     q,
@@ -200,7 +192,7 @@ export const FERRAMENTAS_WEBMCP: WebMCPToolDef[] = [
         cat: { type: "string", enum: [...CATEGORIAS] },
         dificuldade: { type: "string", enum: [...DIFICULDADES] },
         tempoMax: { type: "integer", minimum: 1, description: "Tempo máximo em minutos." },
-        ordem: { type: "string", enum: ["padrao", "tempo", "tempo-desc", "nome", "dificuldade"] },
+        ordem: { type: "string", enum: [...ORDENS] },
       },
     },
     annotations: ANNOTATIONS,
@@ -263,41 +255,47 @@ export function registrarFerramentasWebMCP(modelContext?: ModelContextLike): () 
   const alvo = modelContext ?? resolverModelContext();
   if (!alvo || typeof alvo.registerTool !== "function") return () => {};
   const registados = nomesRegistados();
-  const unregistadores: Array<() => void> = [];
+  const unregistadores = new Map<string, () => void>();
+  const novas: string[] = [];
+  const guardarUnregister = (nome: string, devolvido: unknown) => {
+    if (typeof devolvido === "function") {
+      unregistadores.set(nome, devolvido as () => void);
+    } else if (typeof alvo.unregisterTool === "function") {
+      const unregisterTool = alvo.unregisterTool.bind(alvo);
+      unregistadores.set(nome, () => unregisterTool(nome));
+    }
+  };
   const registar = (ferramenta: WebMCPToolDef) => {
     if (registados.has(ferramenta.name)) return; // remount/HMR não duplica (o navegador rejeita nomes duplicados)
     try {
       const r = alvo.registerTool(ferramenta);
       registados.add(ferramenta.name);
+      novas.push(ferramenta.name);
       if (r && typeof (r as Promise<unknown>).then === "function") {
         // registerTool assíncrono: unregister chega quando a promise resolve
         (r as Promise<unknown>).then(
-          (unreg) => {
-            if (typeof unreg === "function") unregistadores.push(unreg as () => void);
-            else if (typeof alvo.unregisterTool === "function") {
-              const unregisterTool = alvo.unregisterTool.bind(alvo);
-              unregistadores.push(() => unregisterTool(ferramenta.name));
-            }
-          },
+          (unreg) => guardarUnregister(ferramenta.name, unreg),
           (erro) => {
             registados.delete(ferramenta.name);
             console.error(`[webmcp] registerTool falhou para "${ferramenta.name}":`, erro);
           },
         );
-      } else if (typeof r === "function") {
-        unregistadores.push(r as () => void);
-      } else if (typeof alvo.unregisterTool === "function") {
-        const unregisterTool = alvo.unregisterTool.bind(alvo);
-        unregistadores.push(() => unregisterTool(ferramenta.name));
+      } else {
+        guardarUnregister(ferramenta.name, r);
       }
     } catch (erro) {
       console.error(`[webmcp] registerTool falhou para "${ferramenta.name}":`, erro);
     }
   };
   for (const ferramenta of FERRAMENTAS_WEBMCP) registar(ferramenta);
-  console.info(`[webmcp] ferramentas registadas: ${[...registados].join(", ")}`);
+  if (novas.length > 0) console.info(`[webmcp] ferramentas registadas: ${novas.join(", ")}`);
   return () => {
-    // unregister real, mas o dedupe por documento mantém-se (o navegador rejeita duplicados)
-    for (const u of unregistadores) u();
+    // Só sai do dedupe o que foi mesmo removido do navegador: assim um remount (StrictMode)
+    // volta a registar, e o que não pôde ser removido não é registado em duplicado.
+    for (const [nome, unregister] of unregistadores) {
+      unregister();
+      registados.delete(nome);
+    }
+    unregistadores.clear();
   };
 }

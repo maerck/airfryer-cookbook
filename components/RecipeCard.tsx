@@ -2,7 +2,7 @@
 
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
-import { CORES_CAT, CORES_METODO, METODO_EMOJI } from "@/lib/data";
+import { CORES_CAT, CORES_METODO, METODO_EMOJI } from "@/lib/constants";
 import { ajusteDescricao, aplicarAjusteModelo, temAjuste } from "@/lib/models";
 import type { ModeloAirfryer, Receita } from "@/lib/types";
 
@@ -141,6 +141,11 @@ export default function RecipeCard({
             <h3 className="mt-3 text-sm font-semibold text-stone-800 dark:text-stone-200">
               👨‍🍳 Passos
             </h3>
+            {ajustada.notaPassos && (
+              <p className="mt-2 rounded-xl border border-amber-300 bg-amber-50 p-2.5 text-xs text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
+                ⚙️ {ajustada.notaPassos}
+              </p>
+            )}
             <ol className="mt-2 space-y-2">
               {r.passos.map((passo, i) => (
                 <li

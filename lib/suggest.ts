@@ -29,13 +29,120 @@ export function contemTermo(texto: string, termo: string): boolean {
   return re.test(texto);
 }
 
-/** Um ingrediente conta como "em casa" se for igual, ou conter/ser contido pelo termo. */
+/**
+ * Singulariza (aproximadamente) cada palavra de um texto já normalizado, para o plural não
+ * impedir o match: "ovos" → "ovo", "limoes" → "limao", "colheres" → "colher".
+ */
+export function singularizar(texto: string): string {
+  return texto.replace(/\p{L}{4,}/gu, (p) => {
+    if (p.endsWith("oes") || p.endsWith("aes")) return `${p.slice(0, -3)}ao`;
+    if (p.endsWith("ns")) return `${p.slice(0, -2)}m`;
+    if (/[rz]es$/.test(p)) return p.slice(0, -2);
+    if (p.endsWith("s")) return p.slice(0, -1);
+    return p;
+  });
+}
+
+/** Fragmentos que descrevem o ingrediente anterior em vez de serem um ingrediente. */
+const DESCRITOR =
+  /^(?:muito\s+)?(?:bem\s+)?(?:sem\s|usa\s|temperad|\S+(?:ad|id)[oa]s?$|limp[oa]s?$|sec[oa]s?$)/u;
+const FRAGMENTOS_IGNORADOS: ReadonlySet<string> = new Set(["raspa", "sumo", "palitos"]);
+const SEPARADOR = /\s\+\s|,\s+|\s+e\s+/;
+
+function semParentesesNemRotulo(texto: string): string {
+  return texto
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/^[^:]{1,25}:\s*/, "")
+    .trim();
+}
+
+function eIngrediente(fragmentoNormalizado: string): boolean {
+  return (
+    fragmentoNormalizado !== "" &&
+    !FRAGMENTOS_IGNORADOS.has(fragmentoNormalizado) &&
+    !DESCRITOR.test(fragmentoNormalizado)
+  );
+}
+
+/**
+ * Decompõe uma linha de ingredientes nos seus componentes: "Sal, pimenta e tomilho fresco" são
+ * três ingredientes e todos têm de estar em casa. Cada componente é uma lista de alternativas
+ * ("coentros ou salsa"). Parênteses, rótulos ("Molho: …") e descritores ("… e desfiado") saem.
+ * Devolve texto normalizado (sem acentos, minúsculas).
+ */
+export function componentesIngrediente(ingrediente: string): string[][] {
+  const limpo = semParentesesNemRotulo(normalizar(ingrediente));
+  const componentes = limpo
+    .split(SEPARADOR)
+    .map((f) => f.replace(/[\s—–-]+$/u, "").trim())
+    .filter(eIngrediente)
+    .map((f) =>
+      f
+        .split(/\s+ou\s+/)
+        .map((alt) => alt.trim())
+        .filter((alt) => alt !== ""),
+    )
+    .filter((alts) => alts.length > 0);
+  return componentes.length > 0 ? componentes : [[limpo]];
+}
+
+/**
+ * Uma linha de ingredientes conta como "em casa" se todos os seus componentes estiverem
+ * cobertos (qualquer alternativa serve), por igualdade ou por palavras completas — com
+ * tolerância a singular/plural.
+ */
 export function ingredienteCoberto(ingrediente: string, tenho: TenhoEmCasa): boolean {
-  const norm = normalizar(ingrediente);
-  for (const t of tenho) {
-    if (norm === t || contemTermo(norm, t) || contemTermo(t, norm)) return true;
+  if (tenho.size === 0) return false;
+  const termos = [...tenho].map(singularizar);
+  return componentesIngrediente(ingrediente).every((alts) =>
+    alts.some((alt) => {
+      const alvo = singularizar(alt);
+      return termos.some((t) => alvo === t || contemTermo(alvo, t) || contemTermo(t, alvo));
+    }),
+  );
+}
+
+const QUANTIDADE = /^(?:(?:uma?|meia|meio|algumas?|alguns)\s+)?(?:[\d½¼¾.,/~≈–-]+\s*)*/u;
+const UNIDADE =
+  /^(?:c\.\s*(?:sopa|ch[aá]|caf[eé]|sobremesa)|kg|g|ml|dl|cl|l|dentes?|fatias?|folhas?|pitadas?|latas?|embalagens?|placas?|discos?|medidas?|raminhos?|ramos?|fios?|gotas?|copos?|ch[aá]venas?|pacotes?|rodelas?|tiras?|cubos?|punhados?)\s+(?:d[eao]s?\s+)?/u;
+const FINAL =
+  /\s+(?:para\s|a gosto|q\.?\s?b\.?|em\s|com\s|sem\s|cortad|picad|ralad|cozid|esmagad|fatiad|espremid|amolecid|derretid|batid|descascad|demolhad|saltead|laminad|generos|mole$|fri[oa]s?$|pequen|grandes?\b|comprid|firmes?$).*$/u;
+
+/**
+ * Nomes de ingredientes (sem quantidades nem unidades) para o autocompletar "tenho em casa":
+ * "2 c. sopa de azeite" → "azeite". Só entram nomes usados em pelo menos duas receitas,
+ * ordenados em pt-PT.
+ */
+export function listarNomesIngredientes(receitas: readonly Receita[]): string[] {
+  const porChave = new Map<string, { nome: string; receitas: Set<number> }>();
+  for (const r of receitas) {
+    for (const ing of r.ingredientes) {
+      const fragmentos = semParentesesNemRotulo(ing.toLowerCase()).split(
+        /\s\+\s|,\s+|\s+e\s+|\s+ou\s+/,
+      );
+      for (const fragmento of fragmentos) {
+        const f = fragmento.trim();
+        if (!eIngrediente(normalizar(f))) continue;
+        const nome = f
+          .replace(QUANTIDADE, "")
+          .replace(UNIDADE, "")
+          .replace(FINAL, "")
+          .replace(/\s[\d½¼¾]+\s/gu, " ") // "sumo de 1 limão" → "sumo de limão"
+          .trim();
+        const chave = singularizar(normalizar(nome));
+        if (chave.length < 3) continue;
+        const entrada = porChave.get(chave) ?? { nome, receitas: new Set<number>() };
+        // entre "ovo" e "ovos" mostra a forma mais curta
+        if (nome.length < entrada.nome.length) entrada.nome = nome;
+        entrada.receitas.add(r.id);
+        porChave.set(chave, entrada);
+      }
+    }
   }
-  return false;
+  return [...porChave.values()]
+    .filter((e) => e.receitas.size >= 2)
+    .map((e) => e.nome)
+    .sort((a, b) => a.localeCompare(b, "pt-PT"));
 }
 
 /** Ingredientes únicos do dataset, ordenados em pt-PT — para o autocompletar "tenho em casa". */
