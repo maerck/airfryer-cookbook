@@ -23,6 +23,7 @@ Updated at the end of every session (framework §4 session protocol).
 | M6 — UX                                              | Done   | 2026-11-08 | ordem/dif/tempoMax, matching difuso "tenho em casa", renderização progressiva, checkboxes+⭐+prev/next em `/receita/[id]`, imprimir/copiar lista, badge no header, back-to-top, atalho "/"                                  |
 | M7 — WebMCP (ferramentas p/ agentes de IA)           | Done   | 2026-11-08 | `lib/webmcp.ts` + `WebMCPTools.tsx` no layout: 4 ferramentas só de leitura em `document.modelContext`/`navigator.modelContext` (search_recipes, get_recipe, suggest_recipes, list_filters); no-op sem suporte; 86/86 vitest |
 | M8 — UX da análise UI/UX (mobile/a11y/PWA/cook mode) | Done   | 2026-11-09 | Ver detalhes abaixo                                                                                                                                                                                                         |
+| M9 — Ronda 3 de UX (skip link, limpar filtros, partilhar, doses) | Done   | 2026-11-09 | Ver detalhes abaixo |
 
 ## Milestones
 
@@ -157,6 +158,23 @@ Segunda ronda da análise UI/UX (desktop + mobile, a11y, performance), depois do
 - [x] `vitest run` green (incl. `cook.test.ts`); `tsc --noEmit` e `biome check` limpos; `next build` OK (manifest + sw servidos)
 - [x] Sem novas dependências; sem backend; persistência só em `localStorage`; dados intocados
 - [x] CI do PR #1 verde (lint → typecheck → test → build → check:data) e preview Vercel OK
+
+### M9 — Ronda 3 de UX (2026-11-09, depois do merge do PR #1)
+
+#### Tasks
+
+- [x] Skip link "Saltar para o conteúdo" no layout + `id="conteudo"` nos `<main>` de todas as rotas
+- [x] Chip "Limpar filtros" (âmbar) na barra fixa quando há filtros ativos (`FilterBar` + `onLimparFiltros`)
+- [x] Botão "Partilhar" em `/receita/[id]` (`navigator.share` com fallback para clipboard + "Copiado!")
+- [x] Doseador de doses em `/receita/[id]` (1–24 doses): `lib/doses.ts` escala só o número inicial do
+  ingrediente (decimais pt-PT, frações "1/2", intervalos "2–3"); números no meio do texto ficam intactos
+  (ex.: "cesto de 7 L"); strings pt-PT: "Ajustar doses", "Diminuir doses", "Aumentar doses", "N doses"
+- [x] Testes `__tests__/doses.test.ts` (incl. invariantes sobre o dataset real)
+
+#### Acceptance criteria
+
+- [x] `vitest run` green; `tsc --noEmit` e `biome check` limpos; `next build` OK
+- [x] Sem novas dependências; dados intocados; persistência só em `localStorage`
 
 ## Out of scope
 

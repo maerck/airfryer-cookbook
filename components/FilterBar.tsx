@@ -31,6 +31,7 @@ interface FilterBarProps {
   totalFavoritas: number;
   totalListaCompras: number;
   aMostrar: number;
+  onLimparFiltros: () => void;
   onSurpreendeMe: () => void;
   modoTenho: boolean;
   onToggleModoTenho: () => void;
@@ -59,6 +60,7 @@ export default function FilterBar({
   totalFavoritas,
   totalListaCompras,
   aMostrar,
+  onLimparFiltros,
   onSurpreendeMe,
   modoTenho,
   onToggleModoTenho,
@@ -70,6 +72,15 @@ export default function FilterBar({
   ingredientesDisponiveis,
 }: FilterBarProps) {
   const [textoTenho, setTextoTenho] = useState("");
+
+  const filtrosAtivos =
+    estado.q.trim() !== "" ||
+    estado.metodo !== "Todos" ||
+    estado.cat !== null ||
+    estado.dif !== null ||
+    estado.tempoMax !== null ||
+    estado.soFavoritas ||
+    estado.ordem !== "padrao";
 
   const adicionarTenho = () => {
     const t = textoTenho.trim();
@@ -227,6 +238,15 @@ export default function FilterBar({
               <span aria-hidden>\u23f1</span> \u2264{t} min
             </button>
           ))}
+          {filtrosAtivos && (
+            <button
+              type="button"
+              onClick={onLimparFiltros}
+              className={`${chipBase} border-amber-300 bg-amber-100 font-medium text-amber-900 hover:border-amber-500 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200 dark:hover:border-amber-700`}
+            >
+              <X className="h-4 w-4" aria-hidden /> Limpar filtros
+            </button>
+          )}
         </div>
         {modoTenho && (
           <div className="space-y-2 rounded-2xl border border-stone-200 bg-white/70 p-3 dark:border-stone-800 dark:bg-stone-900/70">
