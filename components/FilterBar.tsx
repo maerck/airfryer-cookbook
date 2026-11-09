@@ -1,6 +1,7 @@
 "use client";
 
-import { Dices, Plus, Search, X } from "lucide-react";
+import { ChefHat, Dices, Plus, Search, ShoppingCart, X } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import {
   CATEGORIAS,
@@ -16,11 +17,11 @@ import type { Categoria, Dificuldade, Metodo } from "@/lib/types";
 const TEMPOS_MAX = [15, 30, 45, 60] as const;
 
 const ORDENACOES: readonly { valor: Ordem; rotulo: string }[] = [
-  { valor: "padrao", rotulo: "Padrão" },
-  { valor: "tempo", rotulo: "⏱ Tempo (crescente)" },
-  { valor: "tempo-desc", rotulo: "⏱ Tempo (decrescente)" },
-  { valor: "nome", rotulo: "🔤 Nome (A–Z)" },
-  { valor: "dificuldade", rotulo: "🎯 Dificuldade" },
+  { valor: "padrao", rotulo: "Padr\u00e3o" },
+  { valor: "tempo", rotulo: "Tempo (crescente)" },
+  { valor: "tempo-desc", rotulo: "Tempo (decrescente)" },
+  { valor: "nome", rotulo: "Nome (A\u2013Z)" },
+  { valor: "dificuldade", rotulo: "Dificuldade" },
 ];
 
 interface FilterBarProps {
@@ -28,6 +29,7 @@ interface FilterBarProps {
   onEstadoChange: (patch: Partial<EstadoFiltroURL>) => void;
   contagemMetodos: Record<Metodo, number>;
   totalFavoritas: number;
+  totalListaCompras: number;
   aMostrar: number;
   onSurpreendeMe: () => void;
   modoTenho: boolean;
@@ -40,17 +42,22 @@ interface FilterBarProps {
   ingredientesDisponiveis: string[];
 }
 
-const chipBase = "rounded-full border px-3 py-1 text-sm transition-colors";
+const chipBase =
+  "min-h-11 shrink-0 whitespace-nowrap rounded-full border px-3 py-1 text-sm transition-colors sm:min-h-0";
 const chipAtivo =
   "border-stone-900 bg-stone-900 text-white dark:border-stone-100 dark:bg-stone-100 dark:text-stone-900";
 const chipInativo =
   "border-stone-200 bg-white text-stone-600 hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-stone-500";
+const rail =
+  "flex flex-nowrap items-center gap-1.5 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] sm:flex-wrap sm:overflow-x-visible [&::-webkit-scrollbar]:hidden";
+const separador = "mx-1 hidden h-5 w-px shrink-0 bg-stone-300 dark:bg-stone-700 sm:block";
 
 export default function FilterBar({
   estado,
   onEstadoChange,
   contagemMetodos,
   totalFavoritas,
+  totalListaCompras,
   aMostrar,
   onSurpreendeMe,
   modoTenho,
@@ -72,7 +79,7 @@ export default function FilterBar({
 
   return (
     <div className="sticky top-0 z-20 border-b border-stone-200 bg-stone-100/90 backdrop-blur dark:border-stone-800 dark:bg-stone-950/90">
-      <div className="mx-auto max-w-6xl space-y-2 px-4 py-3">
+      <div className="mx-auto max-w-6xl space-y-1.5 px-4 py-2 sm:space-y-2 sm:py-3">
         <div className="flex flex-wrap items-center gap-2">
           <div className="relative min-w-56 flex-1">
             <Search
@@ -84,27 +91,56 @@ export default function FilterBar({
               type="search"
               value={estado.q}
               onChange={(e) => onEstadoChange({ q: e.target.value })}
-              placeholder="🔍 Procurar por nome ou ingrediente…"
+              placeholder="\ud83d\udd0d Procurar por nome ou ingrediente\u2026"
               aria-label="Procurar por nome ou ingrediente"
-              className="w-full rounded-full border border-stone-200 bg-white py-2 pl-9 pr-3 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500 dark:focus:border-stone-500"
+              className="min-h-11 w-full rounded-full border border-stone-200 bg-white py-2 pl-9 pr-3 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500 dark:focus:border-stone-500 sm:min-h-0"
             />
           </div>
           <button
             type="button"
             onClick={onSurpreendeMe}
-            className="inline-flex items-center gap-1.5 rounded-full bg-amber-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-700"
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-amber-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-700 sm:min-h-0"
           >
-            <Dices className="h-4 w-4" aria-hidden /> 🎲 Surpreende-me
+            <Dices className="h-4 w-4" aria-hidden /> <span aria-hidden>\ud83c\udfb2</span>{" "}
+            Surpreende-me
           </button>
-          <p className="text-sm text-stone-500 dark:text-stone-400">
+          <p
+            role="status"
+            aria-live="polite"
+            className="text-sm text-stone-500 dark:text-stone-400"
+          >
             A mostrar <strong className="text-stone-900 dark:text-stone-100">{aMostrar}</strong> de{" "}
             {TOTAL_RECEITAS} receitas
           </p>
+          <div className="flex items-center gap-1.5">
+            <Link
+              href="/lista-compras"
+              aria-label={`Lista de compras${totalListaCompras > 0 ? ` (${totalListaCompras} itens)` : ""}`}
+              title="Lista de compras"
+              className="relative flex h-11 w-11 items-center justify-center rounded-full border border-stone-200 bg-white text-stone-600 transition-colors hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-stone-500"
+            >
+              <ShoppingCart className="h-5 w-5" aria-hidden />
+              {totalListaCompras > 0 && (
+                <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-amber-500 px-1 text-xs font-semibold text-stone-950">
+                  {totalListaCompras}
+                </span>
+              )}
+            </Link>
+            <Link
+              href="/modelos"
+              aria-label="Modelos de airfryer"
+              title="Modelos"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-stone-200 bg-white text-stone-600 transition-colors hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-stone-500"
+            >
+              <ChefHat className="h-5 w-5" aria-hidden />
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className={rail}>
           <button
             type="button"
             onClick={() => onEstadoChange({ metodo: "Todos" })}
+            aria-pressed={estado.metodo === "Todos"}
             className={`${chipBase} ${estado.metodo === "Todos" ? chipAtivo : chipInativo}`}
           >
             Todos ({TOTAL_RECEITAS})
@@ -114,33 +150,33 @@ export default function FilterBar({
               key={m}
               type="button"
               onClick={() => onEstadoChange({ metodo: m as MetodoFiltro })}
+              aria-pressed={estado.metodo === m}
               className={`${chipBase} ${estado.metodo === m ? chipAtivo : chipInativo}`}
             >
-              {METODO_EMOJI[m]} {METODO_CHIP[m]} ({contagemMetodos[m]})
+              <span aria-hidden>{METODO_EMOJI[m]}</span> {METODO_CHIP[m]} ({contagemMetodos[m]})
             </button>
           ))}
         </div>
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className={rail}>
           {CATEGORIAS.map((c: Categoria) => (
             <button
               key={c}
               type="button"
               onClick={() => onEstadoChange({ cat: estado.cat === c ? null : c })}
+              aria-pressed={estado.cat === c}
               className={`${chipBase} ${estado.cat === c ? chipAtivo : chipInativo}`}
             >
               {c}
             </button>
           ))}
-          <span
-            className="mx-1 hidden h-5 w-px bg-stone-300 dark:bg-stone-700 sm:block"
-            aria-hidden
-          />
+          <span className={separador} aria-hidden />
           <button
             type="button"
             onClick={() => onEstadoChange({ soFavoritas: !estado.soFavoritas })}
+            aria-pressed={estado.soFavoritas}
             className={`${chipBase} ${estado.soFavoritas ? chipAtivo : chipInativo}`}
           >
-            ⭐ Só favoritas ({totalFavoritas})
+            <span aria-hidden>\u2b50</span> S\u00f3 favoritas ({totalFavoritas})
           </button>
           <button
             type="button"
@@ -148,17 +184,17 @@ export default function FilterBar({
             aria-pressed={modoTenho}
             className={`${chipBase} ${modoTenho ? chipAtivo : chipInativo}`}
           >
-            🧺 O que tenho em casa
+            <span aria-hidden>\ud83e\uddfa</span> O que tenho em casa
           </button>
         </div>
-        <div className="flex flex-wrap items-center gap-1.5">
-          <label className="flex items-center gap-1.5 text-sm text-stone-500 dark:text-stone-400">
+        <div className={rail}>
+          <label className="flex shrink-0 items-center gap-1.5 text-sm text-stone-500 dark:text-stone-400">
             Ordenar:
             <select
               value={estado.ordem}
               onChange={(e) => onEstadoChange({ ordem: e.target.value as Ordem })}
               aria-label="Ordenar receitas"
-              className="rounded-full border border-stone-200 bg-white px-3 py-1 text-sm text-stone-700 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200"
+              className="min-h-11 rounded-full border border-stone-200 bg-white px-3 py-2 text-sm text-stone-700 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 sm:min-h-0 sm:py-1"
             >
               {ORDENACOES.map((o) => (
                 <option key={o.valor} value={o.valor}>
@@ -167,32 +203,28 @@ export default function FilterBar({
               ))}
             </select>
           </label>
-          <span
-            className="mx-1 hidden h-5 w-px bg-stone-300 dark:bg-stone-700 sm:block"
-            aria-hidden
-          />
+          <span className={separador} aria-hidden />
           {DIFICULDADES.map((d: Dificuldade) => (
             <button
               key={d}
               type="button"
               onClick={() => onEstadoChange({ dif: estado.dif === d ? null : d })}
+              aria-pressed={estado.dif === d}
               className={`${chipBase} ${estado.dif === d ? chipAtivo : chipInativo}`}
             >
-              🎯 {d}
+              <span aria-hidden>\ud83c\udfaf</span> {d}
             </button>
           ))}
-          <span
-            className="mx-1 hidden h-5 w-px bg-stone-300 dark:bg-stone-700 sm:block"
-            aria-hidden
-          />
+          <span className={separador} aria-hidden />
           {TEMPOS_MAX.map((t) => (
             <button
               key={t}
               type="button"
               onClick={() => onEstadoChange({ tempoMax: estado.tempoMax === t ? null : t })}
+              aria-pressed={estado.tempoMax === t}
               className={`${chipBase} ${estado.tempoMax === t ? chipAtivo : chipInativo}`}
             >
-              ⏱ ≤{t} min
+              <span aria-hidden>\u23f1</span> \u2264{t} min
             </button>
           ))}
         </div>
@@ -210,9 +242,9 @@ export default function FilterBar({
                   }
                 }}
                 list="lista-ingredientes-disponiveis"
-                placeholder="Ingrediente que tens em casa…"
+                placeholder="Ingrediente que tens em casa\u2026"
                 aria-label="Ingrediente que tens em casa"
-                className="min-w-56 flex-1 rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500"
+                className="min-h-11 min-w-56 flex-1 rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-500 focus:outline-none dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:placeholder:text-stone-500"
               />
               <datalist id="lista-ingredientes-disponiveis">
                 {ingredientesDisponiveis.map((ing) => (
@@ -222,7 +254,7 @@ export default function FilterBar({
               <button
                 type="button"
                 onClick={adicionarTenho}
-                className="inline-flex items-center gap-1 rounded-full bg-stone-900 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-stone-300"
+                className="inline-flex min-h-11 items-center gap-1 rounded-full bg-stone-900 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-stone-300"
               >
                 <Plus className="h-4 w-4" aria-hidden /> Adicionar
               </button>
@@ -232,7 +264,7 @@ export default function FilterBar({
                 aria-pressed={soCompletas}
                 className={`${chipBase} ${soCompletas ? chipAtivo : chipInativo}`}
               >
-                ✔ Só receitas completas
+                <span aria-hidden>\u2714</span> S\u00f3 receitas completas
               </button>
             </div>
             {tenho.length > 0 && (
@@ -247,7 +279,7 @@ export default function FilterBar({
                       type="button"
                       onClick={() => onRemoverTenho(item)}
                       aria-label={`Remover ${item}`}
-                      className="rounded-full hover:text-emerald-900 dark:hover:text-emerald-100"
+                      className="flex h-6 w-6 items-center justify-center rounded-full hover:text-emerald-900 dark:hover:text-emerald-100"
                     >
                       <X className="h-3 w-3" aria-hidden />
                     </button>
@@ -256,7 +288,8 @@ export default function FilterBar({
               </div>
             )}
             <p className="text-xs text-stone-500 dark:text-stone-400">
-              As receitas são ordenadas pela quantidade de ingredientes que já tens em casa.
+              As receitas s\u00e3o ordenadas pela quantidade de ingredientes que j\u00e1 tens em
+              casa.
             </p>
           </div>
         )}

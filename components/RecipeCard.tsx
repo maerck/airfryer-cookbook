@@ -55,17 +55,17 @@ export default function RecipeCard({
           onClick={() => onToggleFavorita(r.id)}
           aria-label={favorita ? "Remover dos favoritos" : "Adicionar aos favoritos"}
           aria-pressed={favorita}
-          className="text-xl leading-none transition-transform hover:scale-110"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-xl leading-none transition-transform hover:scale-110"
         >
-          {favorita ? "⭐" : "☆"}
+          <span aria-hidden>{favorita ? "⭐" : "☆"}</span>
         </button>
         <Link
           href={`/receita/${r.id}`}
           aria-label={`Abrir página de ${r.nome}`}
           title="Abrir página da receita"
-          className="text-stone-400 transition-colors hover:text-stone-700 dark:text-stone-500 dark:hover:text-stone-200"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-stone-400 transition-colors hover:text-stone-700 dark:text-stone-500 dark:hover:text-stone-200"
         >
-          <SquareArrowOutUpRight className="h-4 w-4" aria-hidden />
+          <SquareArrowOutUpRight className="h-5 w-5" aria-hidden />
         </Link>
       </div>
       <div className="mt-2.5 flex flex-wrap gap-1.5 text-xs">

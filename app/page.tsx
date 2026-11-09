@@ -7,6 +7,7 @@ import EmptyState from "@/components/EmptyState";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import FilterBar from "@/components/FilterBar";
 import Header from "@/components/Header";
+import ReceitasSkeleton from "@/components/ReceitasSkeleton";
 import RecipeCard from "@/components/RecipeCard";
 import { contarPorMetodo, RECEITAS } from "@/lib/data";
 import {
@@ -17,6 +18,7 @@ import {
   normalizar,
 } from "@/lib/filters";
 import { encontrarModelo, MODELO_PADRAO } from "@/lib/models";
+import { contarListaCompras } from "@/lib/shopping";
 import {
   guardarFavoritas,
   guardarIngredientesMarcados,
@@ -36,13 +38,7 @@ import type { ModeloAirfryer } from "@/lib/types";
 export default function Page() {
   return (
     <ErrorBoundary>
-      <Suspense
-        fallback={
-          <div className="flex min-h-screen items-center justify-center bg-stone-100 text-stone-500 dark:bg-stone-950 dark:text-stone-400">
-            A carregar receitas…
-          </div>
-        }
-      >
+      <Suspense fallback={<ReceitasSkeleton />}>
         <Explorer />
       </Suspense>
     </ErrorBoundary>
@@ -138,6 +134,8 @@ function Explorer() {
 
   const contagemMetodos = useMemo(() => contarPorMetodo(), []);
 
+  const totalListaCompras = useMemo(() => contarListaCompras(marcados), [marcados]);
+
   const filtradas = useMemo(
     () => filtrarReceitas(RECEITAS, { ...estado, favoritas }),
     [estado, favoritas],
@@ -223,6 +221,7 @@ function Explorer() {
         onEstadoChange={atualizarEstado}
         contagemMetodos={contagemMetodos}
         totalFavoritas={favoritas.size}
+        totalListaCompras={totalListaCompras}
         aMostrar={visualizacao.length}
         onSurpreendeMe={surpreendeMe}
         modoTenho={modoTenho}
@@ -264,7 +263,7 @@ function Explorer() {
                 <button
                   type="button"
                   onClick={() => setLimite((l) => l + 24)}
-                  className="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-medium text-stone-700 transition-colors hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:border-stone-500"
+                  className="min-h-11 rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-medium text-stone-700 transition-colors hover:border-stone-400 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:border-stone-500"
                 >
                   Mostrar mais ({base.length - visualizacao.length} restantes)
                 </button>
@@ -278,7 +277,7 @@ function Explorer() {
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Voltar ao topo"
-          className="fixed bottom-6 right-6 z-30 rounded-full bg-stone-900 p-3 text-white shadow-lg transition-colors hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-stone-300"
+          className="fixed bottom-6 left-6 z-30 rounded-full bg-stone-900 p-3 text-white shadow-lg transition-colors hover:bg-stone-700 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-stone-300 sm:left-auto sm:right-6"
         >
           <ChevronUp className="h-5 w-5" aria-hidden />
         </button>
