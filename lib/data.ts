@@ -48,3 +48,13 @@ export function vizinhasDaReceita(id: number): { anterior?: Receita; seguinte?: 
 export function paramsReceitas(): { id: string }[] {
   return RECEITAS.map((r) => ({ id: String(r.id) }));
 }
+
+/**
+ * Linha de atribuição pt-PT mostrada em /receita/[id] quando a receita foi adaptada de uma
+ * fonte aberta (M13): "Adaptado de {nome} ({licença})" + autores, quando existem.
+ */
+export function atribuicaoDaReceita(r: Receita): string | undefined {
+  if (!r.fonte) return undefined;
+  const autores = r.fonte.autores?.length ? ` — ${r.fonte.autores.join(", ")}` : "";
+  return `Adaptado de ${r.fonte.nome} (${r.fonte.licenca})${autores}`;
+}

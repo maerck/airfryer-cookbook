@@ -1,0 +1,72 @@
+name: Atualizar receitas (M13)
+
+# Pipeline semanal de conteúdo: só corre em GitHub Actions e só abre PR para o dono rever.
+# A app não faz chamadas de IA em runtime; a chave vive em GitHub Secrets (MISTRAL_API_KEY).
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # segunda-feira 06:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: atualizar-receitas
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  NODE_VERSION: "22"
+  PNPM_VERSION: "10"
+
+jobs:
+  propor:
+    runs-on: ubuntu-latest
+    outputs:
+      novas: ${{ steps.pipeline.outputs.novas }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # falha cedo, com mensagem clara, se a chave não estiver configurada — sem chave não há PR
+      - name: Verificar MISTRAL_API_KEY
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          if [ -z "$MISTRAL_API_KEY" ]; then
+            echo "::error::MISTRAL_API_KEY não está definida nos Secrets do repositório — pipeline cancelado sem abrir PR."
+            exit 1
+          fi
+      - name: Propor receitas novas
+        id: pipeline
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: pnpm atualizar:receitas
+      - name: Validar dados novos
+        run: |
+          pnpm check:data
+          pnpm data:build --check
+      - name: Testes
+        run: pnpm test
+      - name: Abrir PR com a proposta
+        if: steps.pipeline.outputs.novas != '' && steps.pipeline.outputs.novas != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NOVAS: ${{ steps.pipeline.outputs.novas }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          branch="chore/receitas-semanais-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$branch"
+          git add data/recipes data/recipes.json .github/atualizacao-receitas.md
+          git commit -m "chore(m13): proposta semanal de $NOVAS receita(s) nova(s) (fontes abertas)"
+          git push -u origin "$branch"
+          gh pr create --title "chore(m13): $NOVAS receita(s) nova(s) — fontes abertas" \
+            --body-file .github/atualizacao-receitas.md --base main --head "$branch"

@@ -9,6 +9,12 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) e o p
 
 ### Adicionado
 
+- Pipeline semanal de conteúdo (M13): `data/fontes.json` (registo de fontes abertas — só licenças
+  que permitem adaptação), campo opcional `fonte` nas receitas com atribuição "Adaptado de
+  {nome} ({licença})" em `/receita/[id]`, `scripts/atualizar-receitas.ts` + `scripts/ia/` (Mistral
+  via fetch, só em CI) e workflow `atualizar-receitas.yml` que abre PRs com ≤ 5 receitas novas,
+  checklist de segurança alimentar e custo estimado — sem `MISTRAL_API_KEY` falha sem abrir PR.
+
 - Testes automáticos de acessibilidade (M11): `axe-core` sobre o HTML SSR de `/`, `/modelos`,
   `/lista-compras`, `/receita/1` e da página 404 (ambiente jsdom no Vitest, só devDependencies),
   sem violações `serious`/`critical`/`moderate` por rota; `pnpm test:a11y` corre só estes testes.

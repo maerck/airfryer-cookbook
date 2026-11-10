@@ -30,7 +30,7 @@ Updated at the end of every session (framework §4 session protocol).
 | M10 — Fundações de release                                       | Done    | 2026-11-09 | PR #7: Dependabot, CHANGELOG, `version` 1.0.0, URL de produção no README/AGENTS.md; release `v1.0.0` em `981201b` (CI verde); PR #11 fundida; "Automatically delete head branches" ativado via API (`delete_branch_on_merge: true`); PRs #8–#10 do Dependabot fundidas; branches fundidas apagadas no local e no remoto                                                                                                                                                                                                                                                                                                                |
 | M11 — Testes automáticos a11y + smoke                            | Done    | 2026-11-09 | axe (jsdom) sem violações serious/critical/moderate em `/`, `/modelos`, `/lista-compras`, `/receita/1` e 404; smoke por rota; 140/140 vitest; correções de landmarks detetadas pelo axe; `pnpm test:a11y`; README/CHANGELOG/AGENTS.md atualizados                                                                                                                                                                                                                                                                                                                                                                                      |
 | M12 — Um ficheiro por receita + modelos mais ricos               | Done    | 2026-11-09 | `data/recipes/<id>.json`, ajuste por método                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| M13 — Atualização semanal (fontes abertas + Mistral)             | Planned | 2026-11-09 | só em GitHub Actions; PR revisto pelo dono; depende de M12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| M13 — Atualização semanal (fontes abertas + Mistral)             | Done    | 2026-11-09 | só em GitHub Actions; PR revisto pelo dono; depende de M12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | M14 — Exportar/importar os meus dados                            | Planned | 2026-11-09 | backup JSON + favoritas por link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | M15 — Modo offline completo                                      | Planned | 2026-11-09 | guardar todas/favoritas no SW                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | M16 — Modo cozinhar melhorado                                    | Planned | 2026-11-09 | vários temporizadores + ler passo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -283,45 +283,54 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 
 #### Tasks
 
-- [ ] Registo de fontes `data/fontes.json` (nome, URL, licença, termos de atribuição) + schema zod;
+- [x] Registo de fontes `data/fontes.json` (nome, URL, licença, termos de atribuição) + schema zod;
   só licenças que permitem adaptação (ex.: CC BY-SA 4.0); licença e `robots.txt` de cada fonte
   verificados antes de a registar
-- [ ] Schema da receita: campo opcional `fonte` (`nome`, `url`, `licenca`, `autores?`), relaxação
+- [x] Schema da receita: campo opcional `fonte` (`nome`, `url`, `licenca`, `autores?`), relaxação
   permitida (as 200 atuais ficam sem `fonte`); `/receita/[id]` mostra a atribuição quando existe
   (string pt-PT a confirmar: "Adaptado de {nome} ({licença})")
-- [ ] Licenciamento: CC BY-SA obriga a partilhar as adaptações na mesma licença; README/LICENSE
+- [x] Licenciamento: CC BY-SA obriga a partilhar as adaptações na mesma licença; README/LICENSE
   passam a distinguir o código (MIT) das receitas adaptadas (licença da fonte)
-- [ ] `scripts/atualizar-receitas.ts`: recolhe candidatos das fontes (com limite de pedidos e
+- [x] `scripts/atualizar-receitas.ts`: recolhe candidatos das fontes (com limite de pedidos e
   user-agent genérico), remove duplicados face ao dataset (nome normalizado + semelhança de
   ingredientes), adapta com Mistral Large à Xiaomi 7 L (método, temperatura, tempo, pt-PT, saída
   JSON estruturada), revê com Mistral Small (pt-PT, categoria, coerência tempo/temperatura) e valida
   com zod + `check:data`; no máximo N receitas novas por semana (N = 5 por omissão); só
   **acrescenta** receitas com ids sequenciais, nunca altera as existentes
-- [ ] Fronteira de fornecedor (princípio 9): interface em `scripts/ia/` + implementação Mistral via
+- [x] Fronteira de fornecedor (princípio 9): interface em `scripts/ia/` + implementação Mistral via
   `fetch` (endpoint UE, versões de modelo fixadas); saída do LLM validada com zod; sem SDK no código
   da app
-- [ ] Workflow `.github/workflows/atualizar-receitas.yml` (skill `cicd-framework`): `schedule`
+- [x] Workflow `.github/workflows/atualizar-receitas.yml` (skill `cicd-framework`): `schedule`
   semanal + `workflow_dispatch`; `MISTRAL_API_KEY` em GitHub Secrets; permissões mínimas
   (`contents: write`, `pull-requests: write` só neste workflow); o PR inclui as receitas novas, as
   fontes e licenças, o resumo do `check:data` e uma checklist de segurança alimentar (aves, porco,
   peixe, ovos: temperatura e tempo mínimos) para o dono confirmar
-- [ ] Limite de custo por execução (máx. pedidos/tokens) e custo estimado no corpo do PR; sem chave,
+- [x] Limite de custo por execução (máx. pedidos/tokens) e custo estimado no corpo do PR; sem chave,
   o workflow falha cedo com mensagem clara
-- [ ] Testes com fornecedor e fontes simulados (sem rede): dedupe, mapeamento para o schema,
+- [x] Testes com fornecedor e fontes simulados (sem rede): dedupe, mapeamento para o schema,
   rejeição de saídas inválidas, limite N
-- [ ] AGENTS.md invariantes nº1 e nº4 e "Out of scope" atualizados: LLM só no pipeline de conteúdo
+- [x] AGENTS.md invariantes nº1 e nº4 e "Out of scope" atualizados: LLM só no pipeline de conteúdo
   em CI; receitas existentes imutáveis; cada adição aprovada pelo dono no merge do PR
-- [ ] Modelos de airfryer ficam fora do pipeline nesta fase (mudam raramente; os factos técnicos vêm
+- [x] Modelos de airfryer ficam fora do pipeline nesta fase (mudam raramente; os factos técnicos vêm
   do dono — M12)
 
 #### Acceptance criteria
 
-- [ ] Um `workflow_dispatch` manual abre um PR com ≤ N receitas novas válidas, cada uma com `fonte`,
+- [x] Um `workflow_dispatch` manual abre um PR com ≤ N receitas novas válidas, cada uma com `fonte`,
   licença e a checklist de segurança alimentar
-- [ ] Nenhuma receita existente alterada (teste compara os ids existentes com o dataset anterior)
-- [ ] Sem `MISTRAL_API_KEY`, o workflow falha com mensagem clara e não abre PR
-- [ ] A app não faz chamadas de rede novas em runtime e não tem chaves no bundle
-- [ ] `vitest run`, `tsc --noEmit`, `biome check`, `check:data` verdes
+- [x] Nenhuma receita existente alterada (teste compara os ids existentes com o dataset anterior)
+- [x] Sem `MISTRAL_API_KEY`, o workflow falha com mensagem clara e não abre PR
+- [x] A app não faz chamadas de rede novas em runtime e não tem chaves no bundle
+- [x] `vitest run`, `tsc --noEmit`, `biome check`, `check:data` verdes
+
+Notas M13 (2026-11-09): `data/fontes.json` começa vazio (`[]`) — o dono regista fontes só depois de
+verificar licença e `robots.txt`. Strings pt-PT novas registadas: "Adaptado de {nome} ({licença})"
+(atribuição em `/receita/[id]` e na descrição dos metadados) e o corpo do PR semanal com a
+"Checklist de segurança alimentar". Pipeline só em CI (`atualizar-receitas.yml`,
+`MISTRAL_API_KEY` em Secrets, permissões `contents: write` + `pull-requests: write` só nesse
+workflow); sem chave falha cedo sem PR. Limites: ≤ 5 receitas novas/execução, ≤ 10 pedidos HTTP,
+≤ 40 pedidos de IA / 200k tokens, custo estimado no corpo do PR. Testes com provedor/fetch falsos
+(sem rede): `__tests__/m13.test.ts`.
 
 ### M14 — Exportar/importar os meus dados
 
@@ -410,8 +419,9 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 ## Out of scope
 
 - Backend, database, auth, user accounts; no AI/LLM calls in the app (decided 2026-11-08).
-  Exception decided 2026-11-09: the M13 content pipeline may call Mistral from GitHub Actions only,
-  adding recipes via an owner-reviewed PR — AGENTS.md invariants 1 and 4 are amended in M13
+  Exception decided 2026-11-09 (implemented in M13): the content pipeline may call Mistral from
+  GitHub Actions only, adding recipes via an owner-reviewed PR — AGENTS.md invariants 1 and 4
+  amended accordingly
 - Automated edits to existing recipes (the M13 pipeline only adds new ones)
 - Speech recognition or any feature that sends user data off the device
 - Any change to `data/recipes.json` content by agents (owner may re-upload new dataset

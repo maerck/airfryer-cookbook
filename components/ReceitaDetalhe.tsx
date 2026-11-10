@@ -438,6 +438,19 @@ export default function ReceitaDetalhe({
               </section>
             </div>
           )}
+          {r.fonte && (
+            <p className="mt-4 border-t border-stone-100 pt-3 text-xs text-stone-500 dark:border-stone-800 dark:text-stone-400">
+              Adaptado de{" "}
+              <a
+                href={r.fonte.url}
+                className="underline decoration-stone-300 underline-offset-2 hover:text-stone-700 dark:decoration-stone-700 dark:hover:text-stone-200"
+              >
+                {r.fonte.nome}
+              </a>{" "}
+              ({r.fonte.licenca}
+              {r.fonte.autores?.length ? ` — ${r.fonte.autores.join(", ")}` : ""})
+            </p>
+          )}
         </article>
         <nav
           aria-label="Navegação entre receitas"

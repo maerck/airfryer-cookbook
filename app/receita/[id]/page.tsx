@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ReceitaDetalhe from "@/components/ReceitaDetalhe";
 import {
+  atribuicaoDaReceita,
   METODO_CHIP,
   paramsReceitas,
   receitaPorId,
@@ -21,9 +22,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { id } = await params;
   const receita = receitaPorId(Number(id));
   if (!receita) return { title: "Receita não encontrada · 200 Receitas" };
+  const atribuicao = atribuicaoDaReceita(receita);
   return {
     title: `${receita.nome} · 200 Receitas · Air Fryer & Vapor`,
-    description: `${receita.emoji} ${receita.nome} — ${METODO_CHIP[receita.metodo]}, ${receita.cat}, ${receita.tempo} min, ${receita.dificuldade}. Receita para air fryer e vapor.`,
+    description: `${receita.emoji} ${receita.nome} — ${METODO_CHIP[receita.metodo]}, ${receita.cat}, ${receita.tempo} min, ${receita.dificuldade}. Receita para air fryer e vapor.${atribuicao ? ` ${atribuicao}.` : ""}`,
     alternates: {
       canonical: `/receita/${id}`,
     },
