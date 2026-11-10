@@ -5,7 +5,7 @@
  * `pnpm data:build --check`.
  */
 import { readFileSync } from "node:fs";
-import { validarModelos, validarReceitas } from "../lib/schemas.ts";
+import { validarFontes, validarModelos, validarReceitas } from "../lib/schemas.ts";
 import type { Categoria, Metodo, Receita } from "../lib/types.ts";
 import { lerDiretorioReceitas } from "./build-data.ts";
 
@@ -44,12 +44,18 @@ try {
   const receitas = validarReceitas(lerJson(new URL("../data/recipes.json", import.meta.url)));
   const receitasDir = lerDiretorioReceitas();
   const modelos = validarModelos(lerJson(new URL("../data/modelos.json", import.meta.url)));
+  const fontes = validarFontes(lerJson(new URL("../data/fontes.json", import.meta.url)));
   console.log("check:data OK");
   for (const linha of resumo(receitas)) console.log(`  ${linha}`);
   console.log(
     `  data/recipes/: ${receitasDir.length} ficheiros (<id>.json, ids sequenciais sem buracos)`,
   );
   console.log(`modelos: ${modelos.length} (${modelos.map((m) => m.id).join(", ")})`);
+  console.log(
+    fontes.length === 0
+      ? "fontes: 0 registadas (data/fontes.json vazio — o dono regista fontes abertas)"
+      : `fontes: ${fontes.length} (${fontes.map((f) => `${f.id} [${f.licenca}]`).join(", ")})`,
+  );
 } catch (erro) {
   console.error(`check:data FALHOU: ${erro instanceof Error ? erro.message : String(erro)}`);
   process.exit(1);

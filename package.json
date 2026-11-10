@@ -17,6 +17,7 @@
     "check:data": "node --experimental-strip-types scripts/check-data.ts",
     "data:build": "node --experimental-strip-types scripts/build-data.ts",
     "data:split": "node --experimental-strip-types scripts/build-data.ts split",
+    "atualizar:receitas": "node --experimental-strip-types scripts/atualizar-receitas.ts",
     "lint": "biome check .",
     "lint:fix": "biome check --write ."
   },
