@@ -3,6 +3,21 @@ import type { Categoria, Dificuldade, Metodo } from "./constants.ts";
 // Os valores possíveis vivem em lib/constants.ts (fonte única); aqui só se reexportam os tipos.
 export type { Categoria, Dificuldade, Metodo };
 
+export interface AtribuicaoFonte {
+  nome: string; // nome da fonte (ex.: site) — pt-PT quando aplicável
+  url: string; // URL da receita original
+  licenca: string; // ex.: "CC BY-SA 4.0"
+  autores?: string[];
+}
+
+export interface Fonte {
+  id: string; // slug único
+  nome: string;
+  url: string; // página/endpoint da fonte
+  licenca: string; // só licenças abertas que permitem adaptação (ver LICENCAS_PERMITIDAS em lib/schemas.ts)
+  termosAtribuicao?: string; // texto de atribuição exigido pela licença
+}
+
 export interface Receita {
   id: number; // inteiro positivo único, sequencial a partir de 1 (o dataset pode crescer)
   nome: string; // pt-PT
@@ -16,6 +31,7 @@ export interface Receita {
   ingredientes: string[];
   passos: string[];
   dica?: string;
+  fonte?: AtribuicaoFonte; // presente quando a receita foi adaptada de uma fonte aberta (M13)
 }
 
 export interface AjusteDelta {
