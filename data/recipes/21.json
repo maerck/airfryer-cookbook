@@ -1,0 +1,26 @@
+{
+  "id": 21,
+  "nome": "Peixe inteiro no vapor à cantonesa",
+  "emoji": "🐟",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 30,
+  "dificuldade": "Média",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1 dourada ou robalo inteiro (~600–700 g, limpa)",
+    "Gengibre fresco em lâminas",
+    "3 cebolinhos (ou cebolinho/ceivada) cortados",
+    "3 c. sopa de molho de soja",
+    "2 c. sopa de óleo de amendoim ou azeite muito quente"
+  ],
+  "passos": [
+    "Faz 3 golpes diagonais de cada lado do peixe.",
+    "Coloca num prato resistente ao calor com lâminas de gengibre por dentro, por baixo e por cima.",
+    "Coze em modo vapor 12–15 min, até a espinha se soltar facilmente.",
+    "Descarta o líquido da cozedura, cobre o peixe com cebolinho.",
+    "Aquece o óleo até fumegar, verte sobre o peixe e depois adiciona a soja."
+  ],
+  "dica": "Clássico cantonês — a textura sedosa do peixe no vapor não tem equivalente no forno."
+}

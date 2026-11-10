@@ -1,0 +1,25 @@
+{
+  "id": 31,
+  "nome": "Ovos aveludados à chinesa (steamed eggs)",
+  "emoji": "🥚",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "3 ovos",
+    "250 ml de água ou caldo morno",
+    "1/2 c. chá de sal",
+    "1 c. sopa de molho de soja + cebolinho",
+    "Algumas gotas de óleo de sésamo ou azeite"
+  ],
+  "passos": [
+    "Bate bem os ovos com o líquido e o sal; coa para eliminar bolhas de ar.",
+    "Verte em 2 taças pequenas e cobre com película aderente ou alumínio.",
+    "Coze em modo vapor 10–12 min, até firme mas ainda tremido.",
+    "Tempera com soja, cebolinho e óleo de sésamo."
+  ],
+  "dica": "O segredo da textura sedosa é coar a mistura e cobrir as taças — sem isso ficam com buracos."
+}

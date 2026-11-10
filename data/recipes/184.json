@@ -1,0 +1,22 @@
+{
+  "id": 184,
+  "nome": "Feijão-verde no vapor com amêndoas",
+  "emoji": "🫛",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "400 g de feijão-verde",
+    "20 g de amêndoas laminadas",
+    "Manteiga, sal e raspa de limão"
+  ],
+  "passos": [
+    "Coze o feijão-verde em modo vapor 6–8 min, até verde-vivo e tenro.",
+    "Tosta as amêndoas 2 min (podes aproveitar o mesmo ciclo).",
+    "Envolve com manteiga, amêndoas e raspa de limão."
+  ],
+  "dica": "O vapor preserva a cor verde-primavilha que a fervura apaga."
+}

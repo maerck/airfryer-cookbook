@@ -1,0 +1,22 @@
+{
+  "id": 119,
+  "nome": "Couve-roxa assada com cominhos",
+  "emoji": "🥬",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "200°C",
+  "ingredientes": [
+    "1/2 couve-roxa em gomos finos",
+    "Azeite + vinagre de vinho tinto",
+    "Cominhos, sal e 1 c. chá de mel"
+  ],
+  "passos": [
+    "Envolve os gomos no azeite, cominhos, sal e mel.",
+    "Coze a 200°C durante 15–18 min, até as bordas queimar levemente (no bom sentido).",
+    "Termina com vinagre ao sair."
+  ],
+  "dica": "O vinagre no fim acorda toda a doçura da couve."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 157,
+  "nome": "Tarte de amêndoa (frangipane)",
+  "emoji": "🥧",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 50,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "170°C",
+  "ingredientes": [
+    "1 massa quebrada pronta (ou folhada)",
+    "150 g de amêndoa ralada + 100 g de açúcar",
+    "100 g de manteiga amolecida + 2 ovos",
+    "Amêndoas laminadas para o topo e geleia de albricoque"
+  ],
+  "passos": [
+    "Bate a manteiga com o açúcar; junta os ovos e a amêndoa ralada.",
+    "Forra uma forma pequena com a massa e verte o frangipane.",
+    "Cobre com amêndoas laminadas.",
+    "Coze a 170°C durante 25–30 min, até dourar.",
+    "Pincela com geleia aquecida para brilhar."
+  ],
+  "dica": "Doce conventual português num cesto — sobremesa de romaria."
+}

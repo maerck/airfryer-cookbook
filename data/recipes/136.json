@@ -1,0 +1,24 @@
+{
+  "id": 136,
+  "nome": "Samosas de vegetais",
+  "emoji": "🥟",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "Massa: 200 g de farinha + 60 ml de água + 2 c. sopa de azeite + sal",
+    "Recheio: 2 batatas cozidas em cubos + 100 g de ervilhas",
+    "1 c. chá de curcuma + cominhos + gengibre + malagueta",
+    "Coentros e sumo de limão"
+  ],
+  "passos": [
+    "Amassa a massa até ficar firme; deixa 20 min a descansar.",
+    "Salteia o recheio com as especiarias e os coentros.",
+    "Estende a massa fina, corta círculos e forma triângulos fechando bem as bordas.",
+    "Coze a 190°C durante 12–15 min, virando, até dourar."
+  ],
+  "dica": "Molho de iogurte com hortelã e menta: mergulha sem culpa."
+}

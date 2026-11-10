@@ -1,0 +1,24 @@
+{
+  "id": 132,
+  "nome": "Palitos de polenta crocante",
+  "emoji": "🥔",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "200°C",
+  "ingredientes": [
+    "200 g de fuba de milho (polenta)",
+    "800 ml de água ou caldo + sal",
+    "30 g de parmesão ralado",
+    "Azeite e pimenta"
+  ],
+  "passos": [
+    "Coze a polenta na água a ferver, mexendo 15 min; tempera com parmesão.",
+    "Verte para uma travesa untada e deixa firmar 30 min (fria).",
+    "Corta em palitos e envolve no azeite.",
+    "Coze a 200°C durante 12–15 min, virando a meio, até dourar."
+  ],
+  "dica": "Os palitos italianos que substituem as batatas fritas com mais estilo."
+}

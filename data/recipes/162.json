@@ -1,0 +1,24 @@
+{
+  "id": 162,
+  "nome": "Pêssegos assados com mel e amêndoas",
+  "emoji": "🍑",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 pêssegos cortados ao meio e sem caroço",
+    "1 c. sopa de mel + manteiga",
+    "Amêndoas laminadas",
+    "Iogurte grego para servir"
+  ],
+  "passos": [
+    "Coloca as metades num prato de calor com uma noz de manteiga e mel no centro.",
+    "Polvilha com amêndoas.",
+    "Coze a 190°C durante 10–12 min, até amolecerem e as amêndoas tostarem.",
+    "Serve mornos com iogurte grego."
+  ],
+  "dica": "Versão elegante com pêssegos em calda no inverno."
+}

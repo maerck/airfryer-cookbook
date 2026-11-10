@@ -1,0 +1,25 @@
+{
+  "id": 114,
+  "nome": "Quiche de espinafres e feta",
+  "emoji": "🥧",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "170°C",
+  "ingredientes": [
+    "1 placa de massa folhada (ou quebrada)",
+    "200 g de espinafres salteados",
+    "100 g de queijo feta esfarelado",
+    "3 ovos + 150 ml de natas",
+    "Noz-moscada, sal e pimenta"
+  ],
+  "passos": [
+    "Forra uma forma de fundo removível pequena com a massa e pica o fundo com um garfo.",
+    "Distribui os espinafres e o feta.",
+    "Bate os ovos com as natas e temperos e verte sobre o recheio.",
+    "Coze a 170°C durante 25–30 min, até dourar e firme ao toque."
+  ],
+  "dica": "Boa fria para lancheiras e piqueniques."
+}

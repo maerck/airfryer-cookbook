@@ -1,0 +1,23 @@
+{
+  "id": 78,
+  "nome": "Atum selado com sésamo (tataki)",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 15,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "200°C",
+  "ingredientes": [
+    "2 lombos de atum fresco (~3 cm de altura)",
+    "2 c. sopa de molho de soja",
+    "3 c. sopa de sésamo (branco e preto)",
+    "Molho de soja e lima para servir"
+  ],
+  "passos": [
+    "Passa o atum pela soja e depois envolve no sésamo em toda a volta.",
+    "Pré-aquece a 200°C e coze apenas 1,5–2 min por lado — o centro tem de ficar rosado.",
+    "Fatia em bocados grossos e serve com soja e lima."
+  ],
+  "dica": "Menos é mais: atum bem passado vira papelão. Cuida do relógio."
+}

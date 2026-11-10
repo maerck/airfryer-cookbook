@@ -39,7 +39,8 @@ Fixed stack — do not substitute:
 
 | Path                     | Purpose                                                                                                                                                                                                                                                                                                      |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `data/recipes.json`      | Immutable dataset — 200 validated recipes (never edit content)                                                                                                                                                                                                                                               |
+| `data/recipes/`          | Immutable dataset, one file per recipe (`<id>.json`, filename = id, sequential ids) — the editable form after an owner re-upload (`pnpm data:split`)                                                                                                                                                         |
+| `data/recipes.json`      | Generated combined dataset (`pnpm data:build`, checked in; CI fails via `pnpm data:build --check` if out of sync with `data/recipes/`) — the app and tests import this; never edit content or hand-edit the file                                                                                             |
 | `data/modelos.json`      | Immutable dataset — airfryer models (never edit content); the active model id lives in `localStorage`                                                                                                                                                                                                        |
 | `lib/constants.ts`       | Fonte única das enumerações (`METODOS`, `CATEGORIAS`, `DIFICULDADES`, `ORDENS`) + tipos derivados e constantes de apresentação; não importa os datasets — componentes cliente que não precisam das receitas importam daqui                                                                                   |
 | `lib/types.ts`           | `Receita`, `Metodo`, `Categoria`, `Dificuldade`, `ModeloAirfryer`, `AjusteModelo` types                                                                                                                                                                                                                      |
@@ -57,7 +58,7 @@ Fixed stack — do not substitute:
 | `app/`                   | App Router: `layout.tsx`, `page.tsx` (client explorer at `/`), `modelos/page.tsx`, `lista-compras/page.tsx`, `receita/[id]/page.tsx` (SSG, printable), `not-found.tsx`, `globals.css`, `error.tsx`, `loading.tsx`, `icon.svg`, `sitemap.ts`, `robots.ts`, `opengraph-image.tsx` (metadata files, not routes) |
 | `components/`            | `Header.tsx`, `HeaderNav.tsx`, `FilterBar.tsx`, `RecipeCard.tsx`, `EmptyState.tsx`, `ErrorBoundary.tsx`, `ModelosClient.tsx`, `ModelCard.tsx`, `ListaComprasClient.tsx`, `ReceitaDetalhe.tsx`, `ThemeProvider.tsx`, `ThemeToggle.tsx`, `WebMCPTools.tsx`, `ReceitasSkeleton.tsx`, `RegisterSW.tsx`           |
 | `public/sw.js`           | Service worker (PWA offline): app-shell cache, network-first navigations with offline fallback; `app/manifest.ts` gera o web manifest                                                                                                                                                                        |
-| `scripts/`               | `check-data.ts` — valida `data/*.json` contra `lib/schemas.ts` (`pnpm check:data`)                                                                                                                                                                                                                           |
+| `scripts/`               | `check-data.ts` — valida `data/*.json` + `data/recipes/` (`pnpm check:data`); `build-data.ts` — `pnpm data:build` / `data:split` / `data:build --check`                                                                                                                                                      |
 | `__tests__/`             | Vitest suite: data/logic/SSR tests + per-route smoke (`smoke.test.ts`) + axe a11y over SSR HTML (`a11y.test.ts`, jsdom env; `pnpm test:a11y`); shared route renderer in `__tests__/helpers/rotas.ts`                                                                                                         |
 | `.github/workflows/`     | `ci.yml` — CI canónica do framework (lint → typecheck → test → build → check:data)                                                                                                                                                                                                                           |
 | `.github/dependabot.yml` | Dependabot semanal (`npm` + `github-actions`; minor/patch agrupados; sem majors do stack fixado)                                                                                                                                                                                                             |
@@ -65,24 +66,27 @@ Fixed stack — do not substitute:
 
 ## 6. Commands
 
-| Task             | Command                                                |
-| ---------------- | ------------------------------------------------------ |
-| Install          | `pnpm install` (npm also works — acceptance criterion) |
-| Dev              | `pnpm dev` (`npm run dev` also verified)               |
-| Production build | `pnpm build`                                           |
-| Typecheck        | `pnpm exec tsc --noEmit`                               |
-| Tests            | `pnpm test` (Vitest, run mode)                         |
-| A11y tests only  | `pnpm test:a11y` (axe over SSR HTML, jsdom env)        |
-| Check data       | `pnpm check:data` (valida `data/*.json` + resumo)      |
-| Lint/format      | `pnpm exec biome check --write .`                      |
+| Task             | Command                                                             |
+| ---------------- | ------------------------------------------------------------------- |
+| Install          | `pnpm install` (npm also works — acceptance criterion)              |
+| Dev              | `pnpm dev` (`npm run dev` also verified)                            |
+| Production build | `pnpm build`                                                        |
+| Typecheck        | `pnpm exec tsc --noEmit`                                            |
+| Tests            | `pnpm test` (Vitest, run mode)                                      |
+| A11y tests only  | `pnpm test:a11y` (axe over SSR HTML, jsdom env)                     |
+| Check data       | `pnpm check:data` (valida `data/*.json` + `data/recipes/` + resumo) |
+| Build/split data | `pnpm data:build` (`--check` na CI) · `pnpm data:split`             |
+| Lint/format      | `pnpm exec biome check --write .`                                   |
 
 ## 7. Hard invariants (never violate)
 
-1. `data/recipes.json` and `data/modelos.json` are immutable for agents: never rewrite, translate,
-   reword or re-categorize a recipe, and never edit model entries — add a new model entry instead.
-   The owner may replace the files wholesale (periodic re-upload, M5 in `PLAN.md`); agents only
-   relax/validate the schemas in `lib/schemas.ts`, never the content. Datasets may grow beyond 200
-   recipes (unique positive sequential ids); run `pnpm check:data` after any re-upload.
+1. `data/recipes/<id>.json`, the generated `data/recipes.json` and `data/modelos.json` are immutable
+   for agents: never rewrite, translate, reword or re-categorize a recipe, and never edit model
+   entries — add a new model entry instead. The owner may replace the files wholesale (periodic
+   re-upload, M5 in `PLAN.md`: replace `recipes.json`, then `pnpm data:split`); agents only
+   relax/validate the schemas in `lib/schemas.ts`, never the content, and only ever regenerate
+   `data/recipes.json` via `pnpm data:build`. Datasets may grow beyond 200 recipes (unique positive
+   sequential ids); run `pnpm check:data` after any re-upload.
 2. All UI copy stays in European Portuguese, verbatim per the strings in `PLAN.md` M1.
 3. No `any` in TypeScript — typed filter state everywhere.
 4. No backend, no database, no auth, no LLM/API calls; persistence via `localStorage` only.

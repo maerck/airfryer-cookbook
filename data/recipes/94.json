@@ -1,0 +1,25 @@
+{
+  "id": 94,
+  "nome": "Gratinado de bacalhau com natas",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 50,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "300 g de bacalhau cozido e desfiado",
+    "400 g de batata palito (frita primeiro na air fryer)",
+    "200 ml de natas + 1 cebola + noz-moscada",
+    "Queijo mozarela ralado",
+    "Azeite e pimenta"
+  ],
+  "passos": [
+    "Frita as batatas palito a 200°C durante 12–15 min e reserva.",
+    "Refoga a cebola, adiciona o bacalhau e as natas; tempera.",
+    "Numa travessa pequena que caiba no cesto, mistura com as batatas e cobre com queijo.",
+    "Coze a 180°C durante 15–18 min, até borbulhar e dourar."
+  ],
+  "dica": "O conforto do bacalhau com natas numa fração do tempo do forno."
+}

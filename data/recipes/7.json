@@ -1,0 +1,26 @@
+{
+  "id": 7,
+  "nome": "Entrecosto BBQ com mel",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 45,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "800 g de entrecosto de porco cortado em tiras",
+    "4 c. sopa de molho barbecue",
+    "1 c. sopa de mel",
+    "2 dentes de alho picados",
+    "Azeite e sal"
+  ],
+  "passos": [
+    "Corta o entrecosto em tiras que caibam lado a lado no cesto.",
+    "Envolve no azeite, alho e sal; deixa marinar 15 min.",
+    "Coze a 180°C durante 15 min.",
+    "Pincela com o BBQ misturado com mel, vira as tiras e pincela de novo.",
+    "Coze mais 12–15 min até estar caramelizado e dourado."
+  ],
+  "dica": "Coloca um pedaço de papel de alumínio sob o cesto na gaveta: o mel caramela e pinga."
+}

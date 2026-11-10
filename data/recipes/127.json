@@ -1,0 +1,25 @@
+{
+  "id": 127,
+  "nome": "Pão de queijo brasileiro",
+  "emoji": "🧀",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "250 g de polvilho azedo (ou mix pronto de pão de queijo)",
+    "2 ovos + 100 ml de leite + 50 ml de óleo",
+    "150 g de queijo minas ou parmesão ralado",
+    "1/2 c. chá de sal"
+  ],
+  "passos": [
+    "Escalda o polvilho com o leite e o óleo quentes; mexe e deixa amornar.",
+    "Adiciona os ovos e o queijo; amassa até formar bola.",
+    "Forma bolinhas e coloca no cesto espaçadas.",
+    "Coze a 180°C durante 15–18 min, até inflarem e dourarem levemente.",
+    "Serve quentes — têm de comer-se ao sair."
+  ],
+  "dica": "Sem glúten por natureza: polvilho é fécula de mandioca."
+}

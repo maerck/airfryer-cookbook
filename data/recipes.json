@@ -1561,7 +1561,11 @@
     "dificuldade": "Muito fácil",
     "doses": 4,
     "temp": "200°C",
-    "ingredientes": ["8 salsichas tipo frankfurt", "8 fatias de bacon", "Mostarda para servir"],
+    "ingredientes": [
+      "8 salsichas tipo frankfurt",
+      "8 fatias de bacon",
+      "Mostarda para servir"
+    ],
     "passos": [
       "Enrola cada salsicha numa fatia de bacon, prendendo com um palito.",
       "Coze a 200°C durante 10–12 min, virando a meio, até o bacon ficar crocante.",
@@ -1862,7 +1866,11 @@
     "dificuldade": "Fácil",
     "doses": 4,
     "temp": "200°C",
-    "ingredientes": ["600 g de secretos de porco preto", "Flor de sal e pimenta preta", "Azeite"],
+    "ingredientes": [
+      "600 g de secretos de porco preto",
+      "Flor de sal e pimenta preta",
+      "Azeite"
+    ],
     "passos": [
       "Tempera só na hora de cozer (sal antes tira humidade).",
       "Coze a 200°C durante 8–10 min, virando uma única vez.",
@@ -2095,7 +2103,12 @@
     "dificuldade": "Muito fácil",
     "doses": 4,
     "temp": "200°C",
-    "ingredientes": ["4 cavalas limpas", "2 c. sopa de mostarda", "Sumo de limão + azeite", "Sal"],
+    "ingredientes": [
+      "4 cavalas limpas",
+      "2 c. sopa de mostarda",
+      "Sumo de limão + azeite",
+      "Sal"
+    ],
     "passos": [
       "Mistura a mostarda com o limão e azeite; barra as cavalas dentro e fora.",
       "Coze a 200°C durante 10–12 min, virando uma vez.",
@@ -2800,7 +2813,11 @@
     "dificuldade": "Muito fácil",
     "doses": 4,
     "temp": "200°C",
-    "ingredientes": ["300 g de pimentos de Padrón", "Azeite generoso", "Sal grosso"],
+    "ingredientes": [
+      "300 g de pimentos de Padrón",
+      "Azeite generoso",
+      "Sal grosso"
+    ],
     "passos": [
       "Envolve os pimentos no azeite.",
       "Coze a 200°C durante 6–8 min, abanando o cesto, até borbulharem e tostarem.",
@@ -3140,7 +3157,11 @@
     "dificuldade": "Muito fácil",
     "doses": 4,
     "temp": "190°C",
-    "ingredientes": ["3 cabeças de alho", "Azeite + sal", "Pão tostado para servir"],
+    "ingredientes": [
+      "3 cabeças de alho",
+      "Azeite + sal",
+      "Pão tostado para servir"
+    ],
     "passos": [
       "Corta o topo de cada cabeça para expor os dentes.",
       "Rega com azeite e sal; envolve em alumínio (frouxo).",
@@ -3322,7 +3343,11 @@
     "dificuldade": "Fácil",
     "doses": 4,
     "temp": "150°C",
-    "ingredientes": ["2 batatas-doces em fatias de 2 mm (mandolina)", "1 c. sopa de azeite", "Sal"],
+    "ingredientes": [
+      "2 batatas-doces em fatias de 2 mm (mandolina)",
+      "1 c. sopa de azeite",
+      "Sal"
+    ],
     "passos": [
       "Envolve as fatias no azeite, uma a uma se precisares.",
       "Coze a 150°C durante 15–20 min, em duas camadas no máximo, abanando a meio.",
@@ -3980,7 +4005,11 @@
     "dificuldade": "Muito fácil",
     "doses": 4,
     "temp": "200°C",
-    "ingredientes": ["500 g de castanhas frescas", "Água para demolhar", "Sal (opcional)"],
+    "ingredientes": [
+      "500 g de castanhas frescas",
+      "Água para demolhar",
+      "Sal (opcional)"
+    ],
     "passos": [
       "Corta uma cruz na casca de cada castanha (obrigatório, ou explodem).",
       "Demolha em água 15 min; escorre.",
@@ -4518,7 +4547,11 @@
     "dificuldade": "Muito fácil",
     "doses": 4,
     "temp": "Vapor → 200°C",
-    "ingredientes": ["2 peitos de frango", "Sal, pimenta, alho em pó e pimentão doce", "Azeite"],
+    "ingredientes": [
+      "2 peitos de frango",
+      "Sal, pimenta, alho em pó e pimentão doce",
+      "Azeite"
+    ],
     "passos": [
       "Coze os peitos em modo vapor 12 min, até quase feitos.",
       "Seca-os bem e tempera com as especiarias e azeite.",
@@ -4537,7 +4570,11 @@
     "dificuldade": "Fácil",
     "doses": 4,
     "temp": "Vapor → 200°C",
-    "ingredientes": ["400 g de couve-de-bruxelas", "Azeite + sal", "Queijo parmesão (opcional)"],
+    "ingredientes": [
+      "400 g de couve-de-bruxelas",
+      "Azeite + sal",
+      "Queijo parmesão (opcional)"
+    ],
     "passos": [
       "Coze as couves em modo vapor 5 min, até quase tenras.",
       "Escorre e seca bem; envolve no azeite e sal.",

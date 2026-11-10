@@ -1,0 +1,23 @@
+{
+  "id": 66,
+  "nome": "Asas de frango com alho e parmesão",
+  "emoji": "🍗",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "200°C",
+  "ingredientes": [
+    "1 kg de asas de frango",
+    "4 dentes de alho picados",
+    "3 c. sopa de parmesão ralado",
+    "Azeite, salsa picada, sal"
+  ],
+  "passos": [
+    "Coze as asas a 200°C durante 12 min; vira e coze mais 10–12 min.",
+    "Entretanto mistura o alho com o azeite, o parmesão e a salsa.",
+    "Envolve as asas quentes na mistura e serve logo."
+  ],
+  "dica": "Estilo americano 'garlic parmesan' — sem molho picante, mas igualmente viciante."
+}

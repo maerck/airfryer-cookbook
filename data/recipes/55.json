@@ -1,0 +1,25 @@
+{
+  "id": 55,
+  "nome": "Frango com mel e mostarda",
+  "emoji": "🍯",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 35,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "8 coxas de frango (com ou sem pele)",
+    "2 c. sopa de mel",
+    "2 c. sopa de mostarda Dijon",
+    "2 dentes de alho + tomilho",
+    "Azeite, sal e pimenta"
+  ],
+  "passos": [
+    "Mistura o mel, a mostarda, o alho, o azeite, o sal e a pimenta; envolve o frango e descansa 20 min.",
+    "Coze a 190°C durante 12 min.",
+    "Vira, pincela com o restante da marinada e coze mais 12–15 min.",
+    "Nos últimos 2 min, pincela com um pouco mais de mel para brilhar."
+  ],
+  "dica": "O mel queima depressa — pincela só no final."
+}

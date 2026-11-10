@@ -1,0 +1,22 @@
+{
+  "id": 64,
+  "nome": "Chouriço assado com mel e mostarda",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 chouriço de carne",
+    "1 c. sopa de mel + 1 c. sopa de mostarda",
+    "Um fio de azeite"
+  ],
+  "passos": [
+    "Corta o chouriço em rodelas grossas (~2 cm).",
+    "Envolve na mistura de mel e mostarda.",
+    "Coze a 190°C durante 8–10 min, virando a meio, até dourar."
+  ],
+  "dica": "A entrada que desaparece primeiro de qualquer mesa de petiscos."
+}

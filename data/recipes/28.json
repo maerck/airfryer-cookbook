@@ -1,0 +1,25 @@
+{
+  "id": 28,
+  "nome": "Espargos com parmesão",
+  "emoji": "🌿",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 10,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 molho de espargos (pontas duras quebradas)",
+    "1 c. sopa de azeite",
+    "Sal e pimenta",
+    "30 g de parmesão ralado",
+    "Raspa de limão (opcional)"
+  ],
+  "passos": [
+    "Envolve os espargos no azeite, sal e pimenta.",
+    "Coze a 190°C durante 7–8 min, até ficarem tenros com pontas tostadas.",
+    "Polvilha o parmesão e coze 1–2 min até derreter.",
+    "Termina com raspa de limão."
+  ],
+  "dica": "Espargos finos cozem em 5–6 min; os grossos precisam de 9–10."
+}

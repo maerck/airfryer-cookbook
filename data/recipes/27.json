@@ -1,0 +1,25 @@
+{
+  "id": 27,
+  "nome": "Cogumelos inteiros com alho e salsa",
+  "emoji": "🍄",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 3,
+  "temp": "190°C",
+  "ingredientes": [
+    "400 g de cogumelos Paris inteiros (limpos, sem lavar)",
+    "3 dentes de alho picados",
+    "2 c. sopa de azeite",
+    "Salsa picada e tomilho",
+    "Sal e pimenta"
+  ],
+  "passos": [
+    "Limpa os cogumelos com um pano húmido (nunca sob água corrente).",
+    "Envolve no azeite, alho, tomilho, sal e pimenta.",
+    "Coze a 190°C durante 10–12 min, abanando o cesto a meio.",
+    "Termina com salsa fresca e algumas gotas de limão."
+  ],
+  "dica": "Servidos sobre torrus com queijo derretido, são entrada de restaurante."
+}

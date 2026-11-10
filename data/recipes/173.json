@@ -1,0 +1,23 @@
+{
+  "id": 173,
+  "nome": "Postas de bacalhau no vapor com azeite e alho",
+  "emoji": "🐟",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "3 postas de bacalhau demolhado",
+    "4 c. sopa de azeite + 3 dentes de alho",
+    "Coentros e pimenta",
+    "Batatas cozidas à parte"
+  ],
+  "passos": [
+    "Coloca as postas num prato resistente ao calor.",
+    "Coze em modo vapor 12–15 min, até desfazer em lascas.",
+    "Ao servir, rega com azeite com alho cru fatiado e coentros."
+  ],
+  "dica": "O vapor conserva toda a humidade: bacalhau que nunca seca, nem nas pontas."
+}

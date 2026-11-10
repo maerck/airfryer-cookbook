@@ -1,0 +1,22 @@
+{
+  "id": 124,
+  "nome": "Croutons de alho",
+  "emoji": "🥖",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "4 fatias de pão de véspera em cubos",
+    "3 c. sopa de azeite",
+    "1 c. chá de alho em pó + sal"
+  ],
+  "passos": [
+    "Envolve os cubos no azeite com o alho em pó e sal.",
+    "Coze a 180°C durante 6–8 min, abanando o cesto a meio, até dourar e estar crocante.",
+    "Deixa arrefecer e guarda num frasco até 3 dias."
+  ],
+  "dica": "Nenhuma salada sobrevive à mediocridade com croutons de alho caseiros."
+}

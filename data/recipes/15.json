@@ -1,0 +1,26 @@
+{
+  "id": 15,
+  "nome": "Bacalhau com crosta de broa",
+  "emoji": "🍞",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "180°C",
+  "ingredientes": [
+    "2 lombos de bacalhau demolhado",
+    "150 g de miolo de broa esfarelado",
+    "2 dentes de alho picados",
+    "3 c. sopa de azeite",
+    "Coentros picados e pimenta"
+  ],
+  "passos": [
+    "Seca muito bem os lombos com papel de cozinha.",
+    "Mistura a broa com o alho, os coentros, azeite e pimenta.",
+    "Pressiona a mistura sobre a face superior dos lombos, formando uma crosta espessa.",
+    "Coze a 180°C durante 15–18 min, até a crosta dourar e o bacalhau desfazer em lascas.",
+    "Serve com batatas a murro e azeite."
+  ],
+  "dica": "Não adiciones sal — o bacalhau já traz o suficiente do processo de demolha."
+}

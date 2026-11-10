@@ -1,0 +1,21 @@
+{
+  "id": 153,
+  "nome": "Chips de maçã",
+  "emoji": "🍎",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 40,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "150°C",
+  "ingredientes": [
+    "3 maçãs em fatias de 2 mm (mandolina), sem sementes",
+    "Canela e 1 c. sopa de açúcar"
+  ],
+  "passos": [
+    "Envolve as fatias na mistura de açúcar e canela.",
+    "Coze a 150°C durante 20–25 min, em duas camadas no máximo, virando a meio.",
+    "Deixa arrefecer fora do cesto: ficam crocantes ao secar."
+  ],
+  "dica": "Snack doce sem culpa, boa para lancheiras e caminhadas."
+}

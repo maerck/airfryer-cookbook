@@ -1,0 +1,25 @@
+{
+  "id": 85,
+  "nome": "Lulas recheadas com chouriço",
+  "emoji": "🦑",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "8 lulas médias limpas (tubos inteiros)",
+    "100 g de chouriço picado + miolo das próprias lulas",
+    "1 cebola + 2 dentes de alho + polpa de tomate",
+    "Azeite, salsa e palitos"
+  ],
+  "passos": [
+    "Refoga cebola e alho; adiciona o chouriço e os miolos picados; deixa arrefecer.",
+    "Recheia cada lula até 2/3 e fecha com um palito.",
+    "Coloca numa travessa pequena com um pouco de polpa de tomate na base.",
+    "Coze a 190°C durante 18–20 min.",
+    "Serve com arroz branco e salsa."
+  ],
+  "dica": "O palito sai fácil depois de assado — avisa os convidados."
+}

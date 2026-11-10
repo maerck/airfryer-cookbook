@@ -1,0 +1,22 @@
+{
+  "id": 176,
+  "nome": "Milho no vapor",
+  "emoji": "🌽",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "4 espigas de milho (frescas ou congeladas)",
+    "Manteiga e sal",
+    "Páprica ou pimentão doce (opcional)"
+  ],
+  "passos": [
+    "Coloca as espigas no prato de vapor.",
+    "Coze em modo vapor 10–12 min, até os grãos ficarem tenros e doces.",
+    "Barra com manteiga e sal."
+  ],
+  "dica": "O vapor realça a doçura natural — não precisa de sal nem de água com sal."
+}

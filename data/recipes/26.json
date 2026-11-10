@@ -1,0 +1,26 @@
+{
+  "id": 26,
+  "nome": "Legumes assados mediterrânicos",
+  "emoji": "🍆",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 25,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 courgette em meias-luas",
+    "1 beringela em cubos",
+    "2 pimentos em tiras",
+    "1 cebola em gomos",
+    "Azeite, orégãos, sal e pimenta"
+  ],
+  "passos": [
+    "Corta todos os legumes em pedaços grandes e iguais.",
+    "Envolve generosamente em azeite, orégãos, sal e pimenta.",
+    "Coze a 190°C durante 16–18 min, abanando o cesto a meio.",
+    "Os bordos devem ficar tostados e o interior tenro.",
+    "Serve como acompanhamento ou com couscous para um prato completo."
+  ],
+  "dica": "Sal no fim, não no início — salgar cedo faz os legumes libertarem água e ficarem moles."
+}

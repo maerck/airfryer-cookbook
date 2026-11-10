@@ -1,0 +1,25 @@
+{
+  "id": 9,
+  "nome": "Alheira assada com ovo",
+  "emoji": "🥓",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "180°C",
+  "ingredientes": [
+    "2 alheiras",
+    "Um fio de azeite",
+    "2 ovos",
+    "Couve lombarda refogada e bolo do caco para servir"
+  ],
+  "passos": [
+    "Pica a pele das alheiras com um garfo para não rebentarem.",
+    "Coloca-as no cesto com um fio de azeite.",
+    "Coze a 180°C durante 12–14 min, virando a meio, até a pele estar dourada.",
+    "Na altura, coze também os ovos numa forminha de silicone ao lado (4–5 min).",
+    "Serve com ovo por cima e couve refogada."
+  ],
+  "dica": "Prato transmontano clássico sem cheiro a fritura — a pele da alheira fica surpreendentemente estaladiça."
+}

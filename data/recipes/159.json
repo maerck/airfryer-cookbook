@@ -1,0 +1,24 @@
+{
+  "id": 159,
+  "nome": "Blondies de manteiga de amendoim",
+  "emoji": "🍪",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "160°C",
+  "ingredientes": [
+    "150 g de manteiga de amendoim",
+    "100 g de açúcar mascavado + 1 ovo",
+    "120 g de farinha + 1/2 c. chá de fermento",
+    "Pepitas de chocolate branco ou preto"
+  ],
+  "passos": [
+    "Bate a manteiga de amendoim com o açúcar e o ovo.",
+    "Incorpora a farinha e as pepitas.",
+    "Verte para uma forma pequena untada.",
+    "Coze a 160°C durante 18–22 min — centro húmido de propósito."
+  ],
+  "dica": "O primo loiro do brownie, com proteína extra do amendoim."
+}

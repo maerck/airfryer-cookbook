@@ -1,0 +1,23 @@
+{
+  "id": 41,
+  "nome": "Pães bao de porco (baozi)",
+  "emoji": "🫓",
+  "metodo": "Vapor",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 120,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "Massa: 300 g de farinha de trigo + 1 c. chá de levedura seca + 1 c. sopa de açúcar + 150 ml de água morna",
+    "Recheio: 200 g de carne de porco picada + cebolinho + soja + gengibre + óleo de sésamo"
+  ],
+  "passos": [
+    "Amassa a farinha, a levedura, o açúcar e a água 10 min até ficar lisa; deixa levedar 1 hora (podes usar o modo de fermentação da air fryer, ~40°C).",
+    "Mistura os ingredientes do recheio.",
+    "Estende 12 discos de massa, coloca recheio e fecha franzindo o topo.",
+    "Deixa levedar mais 20 min.",
+    "Coze em modo vapor 12–15 min. Não abras a tampa durante a cozedura."
+  ],
+  "dica": "Fica uma nuvem dentro. Podes rechear com frango, legumes salteados ou doce de feijão (versão doce)."
+}

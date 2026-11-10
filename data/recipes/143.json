@@ -1,0 +1,24 @@
+{
+  "id": 143,
+  "nome": "Bolo de laranja",
+  "emoji": "🍊",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 50,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "160°C",
+  "ingredientes": [
+    "3 ovos + 150 g de açúcar",
+    "Raspa e sumo de 2 laranjas",
+    "150 g de farinha + 1 c. chá de fermento",
+    "80 ml de óleo"
+  ],
+  "passos": [
+    "Bate os ovos com o açúcar e a raspa até esbranquiçar.",
+    "Adiciona o óleo e o sumo, depois a farinha com o fermento.",
+    "Verte para uma forma pequena untada.",
+    "Coze a 160°C durante 30–35 min; teste do palito."
+  ],
+  "dica": "Calda de laranja (sumo + açúcar) espetada no bolo quente transforma-o."
+}

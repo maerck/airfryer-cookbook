@@ -3,6 +3,7 @@ import { RECEITAS } from "@/lib/data";
 import {
   ajustarTemperatura,
   ajusteDescricao,
+  ajusteParaMetodo,
   aplicarAjusteModelo,
   encontrarModelo,
   formatarNumero,
@@ -10,6 +11,7 @@ import {
   MODELOS,
   temAjuste,
 } from "@/lib/models";
+import { validarModelos } from "@/lib/schemas";
 import type { ModeloAirfryer } from "@/lib/types";
 
 function modeloFake(patch: Partial<ModeloAirfryer> = {}): ModeloAirfryer {
@@ -163,5 +165,90 @@ describe("aplicarAjusteModelo — aviso junto dos passos", () => {
     expect(nota).toContain("Outra 5 L");
     expect(nota).toContain("+5 min");
     expect(nota).toContain("-10 °C");
+  });
+});
+
+describe("ajuste por método (porMetodo)", () => {
+  const receita = RECEITAS[0];
+  if (!receita) throw new Error("dataset vazio");
+
+  it("o modelo padrão não tem overrides por método (retrocompatível)", () => {
+    expect(MODELO_PADRAO.ajuste.porMetodo).toBeUndefined();
+    expect(ajusteParaMetodo(MODELO_PADRAO, receita.metodo)).toEqual({
+      tempoMin: 0,
+      temperaturaC: 0,
+    });
+  });
+
+  it("ajusteParaMetodo devolve o override quando existe, senão o global", () => {
+    const modelo = modeloFake({
+      ajuste: {
+        tempoMin: 5,
+        temperaturaC: 10,
+        porMetodo: { Vapor: { tempoMin: -3, temperaturaC: 0 } },
+      },
+    });
+    expect(ajusteParaMetodo(modelo, "Vapor")).toEqual({ tempoMin: -3, temperaturaC: 0 });
+    expect(ajusteParaMetodo(modelo, "Air Fryer")).toEqual({ tempoMin: 5, temperaturaC: 10 });
+  });
+
+  it("aplicarAjusteModelo usa o override apenas no método correspondente", () => {
+    const modelo = modeloFake({
+      ajuste: {
+        tempoMin: 0,
+        temperaturaC: 0,
+        porMetodo: { [receita.metodo]: { tempoMin: 7, temperaturaC: -10 } },
+      },
+    });
+    const a = aplicarAjusteModelo(receita, modelo);
+    expect(a.tempo).toBe(receita.tempo + 7);
+    expect(a.temp).toBe(ajustarTemperatura(receita.temp, -10));
+    expect(a.notaPassos).toContain("+7 min");
+    expect(a.notaPassos).toContain("-10 °C");
+    // outro método não é afetado
+    const outroMetodo = receita.metodo === "Vapor" ? "Air Fryer" : "Vapor";
+    expect(temAjuste(modelo, outroMetodo)).toBe(false);
+    expect(aplicarAjusteModelo({ ...receita, metodo: outroMetodo }, modelo).tempo).toBe(
+      receita.tempo,
+    );
+  });
+
+  it("temAjuste com método reflete o ajuste Efetivo; sem método, qualquer override conta", () => {
+    const soVapor = modeloFake({
+      ajuste: {
+        tempoMin: 0,
+        temperaturaC: 0,
+        porMetodo: { Vapor: { tempoMin: 2, temperaturaC: 0 } },
+      },
+    });
+    expect(temAjuste(soVapor)).toBe(true);
+    expect(temAjuste(soVapor, "Vapor")).toBe(true);
+    expect(temAjuste(soVapor, "Air Fryer")).toBe(false);
+    expect(temAjuste(modeloFake())).toBe(false);
+  });
+
+  it("validarModelos aceita porMetodo com métodos válidos e rejeita métodos fora do contrato", () => {
+    const base = modeloFake();
+    const comPorMetodo = {
+      ...base,
+      ajuste: {
+        tempoMin: 0,
+        temperaturaC: 0,
+        porMetodo: { "Vapor + Ar": { tempoMin: 4, temperaturaC: 5 } },
+      },
+    };
+    expect(validarModelos([comPorMetodo])).toHaveLength(1);
+    expect(() =>
+      validarModelos([
+        {
+          ...base,
+          ajuste: {
+            tempoMin: 0,
+            temperaturaC: 0,
+            porMetodo: { "Micro-ondas": { tempoMin: 1, temperaturaC: 0 } },
+          },
+        },
+      ]),
+    ).toThrow(/inválido/);
   });
 });

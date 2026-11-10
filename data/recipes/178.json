@@ -1,0 +1,25 @@
+{
+  "id": 178,
+  "nome": "Mantou (pãezinhos de vapor)",
+  "emoji": "🫓",
+  "metodo": "Vapor",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 120,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "300 g de farinha de trigo (T65)",
+    "5 g de levedura seca + 1 c. sopa de açúcar",
+    "150 ml de água morna",
+    "1 pitada de sal"
+  ],
+  "passos": [
+    "Amassa tudo 8–10 min até lisa; deixa levedar 1 hora (ou no modo de fermentação da air fryer).",
+    "Forma bolinhas ou tranças simples.",
+    "Deixa levedar mais 20 min.",
+    "Coze em modo vapor 12–15 min, sem abrir a tampa durante a cozedura.",
+    "Serve com pratos de molho, no lugar do pão."
+  ],
+  "dica": "Pão chinês de nuvem: neutral e fofo, feito para mergulhar em molhos."
+}

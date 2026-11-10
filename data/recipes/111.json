@@ -1,0 +1,24 @@
+{
+  "id": 111,
+  "nome": "Croquetes de espinafres",
+  "emoji": "🥬",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "300 g de espinafres salteados e bem escorridos",
+    "40 g de manteiga + 40 g de farinha + 250 ml de leite",
+    "Noz-moscada, sal e queijo ralado",
+    "1 ovo + pão ralado para panar"
+  ],
+  "passos": [
+    "Faz um bechamel e incorpora os espinafres picados e o queijo.",
+    "Deixa arrefecer 1 hora até moldável.",
+    "Forma croquetes e pana (ovo + pão ralado).",
+    "Coze a 190°C durante 10–12 min até dourar."
+  ],
+  "dica": "Espinafres com água a mais rebentam a massa — escorre mesmo bem."
+}

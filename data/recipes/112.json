@@ -1,0 +1,25 @@
+{
+  "id": 112,
+  "nome": "Hambúrgueres de feijão preto",
+  "emoji": "🍔",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 40,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "400 g de feijão preto cozido e escorrido",
+    "1/2 cebola + 2 dentes de alho",
+    "1 c. chá de cominhos + pimentão doce",
+    "3 c. sopa de aveia ou pão ralado",
+    "Fio de azeite"
+  ],
+  "passos": [
+    "Tritura metade do feijão e mistura com o resto inteiro (textura).",
+    "Adiciona cebola picada, alho, especiarias e aveia até formar massa moldável.",
+    "Forma 4 hambúrgueres e refrigera 20 min.",
+    "Coze a 190°C durante 12–15 min, virando com cuidado."
+  ],
+  "dica": "Ficam firmes por fora e cremosos por dentro — não os esmagues no pão."
+}

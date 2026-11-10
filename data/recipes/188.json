@@ -1,0 +1,25 @@
+{
+  "id": 188,
+  "nome": "Polvo no vapor com alho e azeite",
+  "emoji": "🐙",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 70,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1 polvo pequeno (~1 kg), congelado e descongelado",
+    "1 folha de louro",
+    "Azeite generoso + 4 dentes de alho",
+    "Coentros e limão"
+  ],
+  "passos": [
+    "Enche o depósito de água (1,5 L chega para os 90 min máximos).",
+    "Coloca o polvo num prato de calor com o louro.",
+    "Coze em modo vapor 45–60 min, até um garfo entrar na base dos braços sem resistência.",
+    "Corta os braços e cobre com azeite, alho cru e coentros.",
+    "Sobras: fica óptimo na salada de polvo do dia seguinte."
+  ],
+  "dica": "Congela o polvo cru antes: amacia as fibras e poupa metade do tempo de cozedura."
+}

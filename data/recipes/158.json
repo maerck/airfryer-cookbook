@@ -1,0 +1,25 @@
+{
+  "id": 158,
+  "nome": "Scones de passas",
+  "emoji": "🫓",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "250 g de farinha + 2 c. chá de fermento + sal",
+    "50 g de manteiga fria em cubos",
+    "40 g de açúcar + 80 g de passas",
+    "150 ml de leite"
+  ],
+  "passos": [
+    "Mistura a farinha com a manteiga com as pontas dos dedos até areia.",
+    "Adiciona açúcar, passas e leite; junta sem amassar.",
+    "Forma discos de 3 cm de altura.",
+    "Coze a 180°C durante 15–18 min, até dourar.",
+    "Serve mornos com manteiga e geleia."
+  ],
+  "dica": "Não amasses: scone bom é trabalhado o mínimo possível."
+}

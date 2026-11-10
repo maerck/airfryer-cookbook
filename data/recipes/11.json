@@ -1,0 +1,24 @@
+{
+  "id": 11,
+  "nome": "Picanha fatiada na air fryer",
+  "emoji": "🥩",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "200°C",
+  "ingredientes": [
+    "600–800 g de picanha em bifes grossos (~3 cm)",
+    "Sal grosso",
+    "Pimenta preta (opcional)"
+  ],
+  "passos": [
+    "Tempera os bifes apenas com sal grosso (a gordura faz o resto).",
+    "Pré-aquece 3 min a 200°C.",
+    "Coze os bifes 4–5 min por lado para mal passado.",
+    "Descansa 3–4 min antes de fatiar.",
+    "Fatia contra a fibra e serve com farofa ou arroz."
+  ],
+  "dica": "Peça inteira pequena (~800 g): coze 30–35 min a 180°C e termina 5 min a 200°C virada, sempre com a gordura virada para cima."
+}

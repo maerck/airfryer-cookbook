@@ -1,0 +1,24 @@
+{
+  "id": 187,
+  "nome": "Almôndegas de porco no vapor com soja e gengibre",
+  "emoji": "🧆",
+  "metodo": "Vapor",
+  "cat": "Carne",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "400 g de carne de porco picada",
+    "1 c. sopa de gengibre ralado + 2 dentes de alho",
+    "2 c. sopa de molho de soja + 1 clara",
+    "1 c. sopa de amido de milho + cebolinho"
+  ],
+  "passos": [
+    "Mistura tudo e bate a massa contra a taça até ficar pegajosa.",
+    "Forma bolas e coloca em papel vegetal no prato de vapor.",
+    "Coze em modo vapor 12–14 min.",
+    "Serve com arroz e o próprio caldo que se formou."
+  ],
+  "dica": "Estilo chinês: mais leve que a almôndega frita, mas igualmente saborosa."
+}

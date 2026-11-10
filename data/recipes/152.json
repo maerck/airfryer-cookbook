@@ -1,0 +1,23 @@
+{
+  "id": 152,
+  "nome": "Crème brûlée",
+  "emoji": "🍮",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "150°C",
+  "ingredientes": [
+    "400 ml de natas + 1 vagem de baunilha",
+    "4 gemas + 60 g de açúcar",
+    "2 c. sopa de açúcar para caramelizar"
+  ],
+  "passos": [
+    "Aquece as natas com a baunilha; mistura nas gemas batidas com o açúcar (sem ferver).",
+    "Verte para 4 ramequins e cobre com alumínio.",
+    "Coze a 150°C durante 20–25 min, até firmar nas bordas e tremer no centro.",
+    "Fria 3 horas; polvilha açúcar e doura com o maçarico (ou 2 min no máximo da air fryer, bem vigiado)."
+  ],
+  "dica": "A crosta de caramelo deve estalar sob a colher — é metade da graça."
+}

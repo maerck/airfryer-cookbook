@@ -1,0 +1,23 @@
+{
+  "id": 146,
+  "nome": "Donuts de massa folhada",
+  "emoji": "🍩",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 placa de massa folhada",
+    "Açúcar e canela para envolver",
+    "Geleia ou nutella para rechear (opcional)"
+  ],
+  "passos": [
+    "Corta anéis com um copo e um gargalo de garrafa (guarda os centros para mini-donuts).",
+    "Coze a 180°C durante 10–12 min, até inflar e dourar.",
+    "Envolve quentes no açúcar com canela.",
+    "Recheia com geleia usando um saco de pasteleiro com bico fino."
+  ],
+  "dica": "Os 'donuts holes' (centros) cozem mais rápido — retira-os 3 min antes."
+}

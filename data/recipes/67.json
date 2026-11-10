@@ -1,0 +1,25 @@
+{
+  "id": 67,
+  "nome": "Barriga de porco assada com especiarias",
+  "emoji": "🥓",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 75,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "200°C",
+  "ingredientes": [
+    "800 g de barriga de porco com pele",
+    "Sal grosso",
+    "1 c. sopa de pimentão doce + 1 c. chá de cominhos + alho em pó",
+    "Azeite"
+  ],
+  "passos": [
+    "Risca a pele em losangos com uma faca afiada, sem cortar a carne.",
+    "Salga generosamente a pele e deixa repousar 30 min; seca bem com papel.",
+    "Esfrega a carne (não a pele) com azeite e especiarias.",
+    "Coze com a pele para cima a 200°C durante 30–35 min, até a pele estalar.",
+    "Descansa 10 min antes de fatiar."
+  ],
+  "dica": "Pele seca = crackling. Passa um secador de cabelo 1 min se tiveres pressa."
+}

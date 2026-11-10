@@ -1,0 +1,24 @@
+{
+  "id": 198,
+  "nome": "Tofu: vapor + crocante com molho de soja e gengibre",
+  "emoji": "🌱",
+  "metodo": "Vapor + Ar",
+  "cat": "Vegetariano",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 3,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "400 g de tofu firme em cubos",
+    "2 c. sopa de amido de milho",
+    "Molho: soja + gengibre ralado + mel + alho",
+    "Cebolinho e sésamo"
+  ],
+  "passos": [
+    "Coze os cubos de tofu em modo vapor 6 min (aquece por dentro e fica sedoso).",
+    "Seca-os bem e envolve no amido de milho.",
+    "Crocanta em modo air fryer a 200°C durante 10–12 min, virando.",
+    "Aquece o molho e envolve; termina com cebolinho e sésamo."
+  ],
+  "dica": "Interior de nuvem, casca de vidro — a textura impossível num só método."
+}

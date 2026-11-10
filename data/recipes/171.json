@@ -1,0 +1,24 @@
+{
+  "id": 171,
+  "nome": "Ovos escalfados no vapor",
+  "emoji": "🥚",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "2 ovos frescos",
+    "Copinhos de silicone untados",
+    "Vinagre (uma gota em cada copo)",
+    "Tostas e molho holandês para servir (opcional)"
+  ],
+  "passos": [
+    "Unta os copinhos e coloca um ovo em cada.",
+    "Coze em modo vapor 6–8 min, até a clara firmar e a gema tremer.",
+    "Desmolda sobre tostas.",
+    "Perfeitos para Eggs Benedict caseiro."
+  ],
+  "dica": "O vapor escalfa sem a agitação da água — o ovo sai limpo e perfeito."
+}

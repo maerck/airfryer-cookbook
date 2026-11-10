@@ -1,0 +1,24 @@
+{
+  "id": 30,
+  "nome": "Legumes de raiz no vapor com molho de iogurte",
+  "emoji": "🥕",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "2 batatas-doces em gomos",
+    "2 cenouras em palitos grossos",
+    "1 beterraba em fatias",
+    "Molho: iogurte grego + raspa de limão + hortelã picada + sal"
+  ],
+  "passos": [
+    "Descasca e corta os legumes em pedaços do mesmo tamanho.",
+    "Coze em modo vapor 18–20 min, até um garfo entrar suavemente.",
+    "Mistura o iogurte com o limão, a hortelã e o sal.",
+    "Serve os legumes mornos ou frios com o molho por cima."
+  ],
+  "dica": "A beterraba mancha tudo — coze-a embrulhada em papel de alumínio."
+}

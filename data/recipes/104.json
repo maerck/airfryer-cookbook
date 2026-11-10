@@ -1,0 +1,24 @@
+{
+  "id": 104,
+  "nome": "Portobello recheado com queijo",
+  "emoji": "🍄",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 25,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 cogumelos portobello grandes (sem pés)",
+    "Azeite + alho espremido",
+    "Queijo mozarela ou gorgonzola",
+    "Orégãos e pimenta"
+  ],
+  "passos": [
+    "Limpa os chapéus e esfrega com azeite e alho.",
+    "Coloca com as guelras para cima e cobre com queijo.",
+    "Coze a 190°C durante 10–12 min, até o queijo derreter.",
+    "Serve como entrada ou num pão de hambúrguer com rúcula."
+  ],
+  "dica": "O portobello assado substitui a carne no hambúrguer sem ninguém reclamar."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 182,
+  "nome": "Robalo no vapor com vinho branco e legumes",
+  "emoji": "🐟",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 30,
+  "dificuldade": "Média",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1 robalo inteiro limpo (~600 g)",
+    "1/2 copo de vinho branco",
+    "Rodelas de limão + alho + tomilho",
+    "Cenoura e curgete em palitos finos"
+  ],
+  "passos": [
+    "Coloca a camada de legumes no prato e o peixe por cima.",
+    "Recheia e cobre com limão, alho e tomilho; verte o vinho.",
+    "Coze em modo vapor 15–18 min, até a espinha se soltar.",
+    "Serve no próprio prato, com o caldo."
+  ],
+  "dica": "Versão europeia do peixe ao vapor: mais delicada que a chinesa, igualmente sedosa."
+}

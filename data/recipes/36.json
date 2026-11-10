@@ -1,0 +1,25 @@
+{
+  "id": 36,
+  "nome": "Pão de alho estaladiço",
+  "emoji": "🥖",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 baguette ou meio pão alentejano",
+    "60 g de manteiga amolecida",
+    "2–3 dentes de alho espremidos",
+    "Salsa picada",
+    "Queijo mozarela ralado (opcional)"
+  ],
+  "passos": [
+    "Mistura a manteiga com o alho e a salsa.",
+    "Corta o pão em fatias sem separar totalmente (corte em sanfona).",
+    "Barra cada corte generosamente com a manteiga de alho.",
+    "Coze a 180°C durante 6–8 min; com queijo, mais 2 min a derreter."
+  ],
+  "dica": "Embrulha em papel de alumínio se gostares do miolo mais macio; sem alumínio fica tudo crocante."
+}

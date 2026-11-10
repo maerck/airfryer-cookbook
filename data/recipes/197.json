@@ -1,0 +1,23 @@
+{
+  "id": 197,
+  "nome": "Lombos de bacalhau: vapor + dourado em azeite",
+  "emoji": "🐟",
+  "metodo": "Vapor + Ar",
+  "cat": "Peixe & Marisco",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "2 lombos de bacalhau demolhado",
+    "Azeite + alho + pimenta",
+    "Coentros e limão"
+  ],
+  "passos": [
+    "Coze os lombos em modo vapor 10 min, até quase desfazer em lascas.",
+    "Secca bem e envolve num fio generoso de azeite.",
+    "Doura em modo air fryer a 200°C durante 4–5 min por lado, até a superfície tostar.",
+    "Termina com alho cru, coentros e limão."
+  ],
+  "dica": "O bacalhau fica tão suculento como à lagareiro, com metade do azeite."
+}

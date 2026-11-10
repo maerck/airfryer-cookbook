@@ -1,0 +1,26 @@
+{
+  "id": 165,
+  "nome": "Bolo de mel e nozes",
+  "emoji": "🍯",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "150°C",
+  "ingredientes": [
+    "150 g de mel + 100 g de açúcar",
+    "3 ovos + 100 ml de óleo",
+    "220 g de farinha + 1 c. chá de fermento",
+    "1 c. chá de canela + cravinho + noz-moscada",
+    "150 g de nozes picadas"
+  ],
+  "passos": [
+    "Aquece o mel com o açúcar até derreter; deixa amornar.",
+    "Bate os ovos e junta o mel e o óleo.",
+    "Incorpora a farinha com as especiarias e o fermento; dobra as nozes.",
+    "Coze numa forma pequena a 150°C durante 40–45 min.",
+    "Fica melhor no dia seguinte — e no outro também."
+  ],
+  "dica": "Tradição do Algarve e da Madeira, sem forno a lenha."
+}

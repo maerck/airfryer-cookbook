@@ -1,0 +1,23 @@
+{
+  "id": 192,
+  "nome": "Brócolos: vapor + alho tostado",
+  "emoji": "🥦",
+  "metodo": "Vapor + Ar",
+  "cat": "Vegetariano",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "400 g de brócolos em raminhos",
+    "3 dentes de alho fatiados + azeite",
+    "Amêndoas laminadas + limão"
+  ],
+  "passos": [
+    "Coze os brócolos em modo vapor 5–6 min, até verde-vivo.",
+    "Escorre bem, seca e envolve no azeite com o alho.",
+    "Tosta em modo air fryer a 200°C durante 4–5 min, com as amêndoas.",
+    "Termina com raspa de limão."
+  ],
+  "dica": "Verde dentro, tostado fora — o brócolo que até os miúdos comem."
+}

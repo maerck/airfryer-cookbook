@@ -1,0 +1,22 @@
+{
+  "id": 106,
+  "nome": "Brócolos assados com alho e limão",
+  "emoji": "🥦",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "200°C",
+  "ingredientes": [
+    "400 g de brócolos em raminhos pequenos",
+    "3 dentes de alho fatiados",
+    "Azeite, sal e raspa de limão"
+  ],
+  "passos": [
+    "Envolve os brócolos no azeite com o alho.",
+    "Coze a 200°C durante 10–12 min, abanando a meio, até as pontas tostarem.",
+    "Tempera com raspa de limão e sal."
+  ],
+  "dica": "Assado fica crocante fora e tenro dentro — nada a ver com o cozido."
+}

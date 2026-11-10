@@ -1,0 +1,23 @@
+{
+  "id": 68,
+  "nome": "Febras de porco com mostarda e alho",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 febras de porco (bifes do lombo)",
+    "2 c. sopa de mostarda",
+    "3 dentes de alho",
+    "Azeite, sal, pimenta e tomilho"
+  ],
+  "passos": [
+    "Envolve as febras na mostarda, alho, azeite e temperos; descansa 15 min.",
+    "Coze a 190°C durante 6–7 min por lado.",
+    "Descansa 3 min e serve com puré ou arroz."
+  ],
+  "dica": "A mostarda forma uma crosta saborosa quando assa."
+}

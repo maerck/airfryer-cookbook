@@ -18,9 +18,15 @@ export interface Receita {
   dica?: string;
 }
 
+export interface AjusteDelta {
+  tempoMin: number; // delta (min)
+  temperaturaC: number; // delta (°C)
+}
+
 export interface AjusteModelo {
   tempoMin: number; // delta (min) applied to every recipe's tempo
   temperaturaC: number; // delta (°C) applied to every numeric temperature in temp
+  porMetodo?: Partial<Record<Metodo, AjusteDelta>>; // override opcional por método de confeção
 }
 
 export interface ModeloAirfryer {

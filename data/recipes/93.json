@@ -1,0 +1,24 @@
+{
+  "id": 93,
+  "nome": "Salmão com crosta de ervas",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "190°C",
+  "ingredientes": [
+    "2 lombos de salmão",
+    "4 c. sopa de pão ralado",
+    "Salsa e coentros picados + 1 dente de alho",
+    "Azeite e mostarda",
+    "Sal e pimenta"
+  ],
+  "passos": [
+    "Seca os lombos e barra a face superior com mostarda.",
+    "Mistura o pão ralado com as ervas, o alho e azeite; pressiona sobre o salmão.",
+    "Coze a 190°C durante 10–12 min, sem virar, até a crosta dourar."
+  ],
+  "dica": "A mostarda cola a crosta e acrescenta acidez — não salta esse passo."
+}

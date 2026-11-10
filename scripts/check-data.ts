@@ -1,10 +1,13 @@
 /**
- * Valida data/recipes.json e data/modelos.json contra os schemas zod e imprime um resumo.
- * Corre antes de cada re-upload de dados: `pnpm check:data` (exit 1 se inválido).
+ * Valida data/recipes.json, data/recipes/*.json e data/modelos.json contra os schemas zod e
+ * imprime um resumo. Corre antes de cada re-upload de dados: `pnpm check:data` (exit 1 se
+ * inválido). A sincronia entre data/recipes.json e data/recipes/ é garantida na CI por
+ * `pnpm data:build --check`.
  */
 import { readFileSync } from "node:fs";
 import { validarModelos, validarReceitas } from "../lib/schemas.ts";
 import type { Categoria, Metodo, Receita } from "../lib/types.ts";
+import { lerDiretorioReceitas } from "./build-data.ts";
 
 function lerJson(caminho: URL): unknown {
   return JSON.parse(readFileSync(caminho, "utf8")) as unknown;
@@ -39,9 +42,13 @@ function resumo(receitas: readonly Receita[]): string[] {
 
 try {
   const receitas = validarReceitas(lerJson(new URL("../data/recipes.json", import.meta.url)));
+  const receitasDir = lerDiretorioReceitas();
   const modelos = validarModelos(lerJson(new URL("../data/modelos.json", import.meta.url)));
   console.log("check:data OK");
   for (const linha of resumo(receitas)) console.log(`  ${linha}`);
+  console.log(
+    `  data/recipes/: ${receitasDir.length} ficheiros (<id>.json, ids sequenciais sem buracos)`,
+  );
   console.log(`modelos: ${modelos.length} (${modelos.map((m) => m.id).join(", ")})`);
 } catch (erro) {
   console.error(`check:data FALHOU: ${erro instanceof Error ? erro.message : String(erro)}`);

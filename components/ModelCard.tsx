@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
+import { METODO_CHIP } from "@/lib/constants";
 import { ajusteDescricao, formatarNumero, temAjuste } from "@/lib/models";
-import type { ModeloAirfryer } from "@/lib/types";
+import type { AjusteDelta, Metodo, ModeloAirfryer } from "@/lib/types";
 
 interface ModelCardProps {
   modelo: ModeloAirfryer;
@@ -9,6 +10,7 @@ interface ModelCardProps {
 }
 
 export default function ModelCard({ modelo, ativo, onSelecionar }: ModelCardProps) {
+  const porMetodo = Object.entries(modelo.ajuste.porMetodo ?? {}) as [Metodo, AjusteDelta][];
   return (
     <article
       className={`rounded-2xl border bg-white p-5 shadow-sm transition-shadow hover:shadow-md dark:bg-stone-900 ${
@@ -55,8 +57,21 @@ export default function ModelCard({ modelo, ativo, onSelecionar }: ModelCardProp
       </div>
       <p className="mt-3 text-sm text-stone-600 dark:text-stone-400">
         ⚙️ Ajuste de receitas: <strong>{ajusteDescricao(modelo.ajuste)}</strong>
-        {temAjuste(modelo) && " — aplicado aos tempos e temperaturas de todas as receitas"}
+        {porMetodo.length === 0 &&
+          temAjuste(modelo) &&
+          " — aplicado aos tempos e temperaturas de todas as receitas"}
       </p>
+      {porMetodo.length > 0 && (
+        <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
+          Por método:{" "}
+          {porMetodo.map(([metodo, ajuste], i) => (
+            <span key={metodo}>
+              {i > 0 && " · "}
+              {METODO_CHIP[metodo]} <strong>{ajusteDescricao(ajuste)}</strong>
+            </span>
+          ))}
+        </p>
+      )}
       {modelo.notas && (
         <p className="mt-2 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
           {modelo.notas}

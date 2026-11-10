@@ -1,0 +1,24 @@
+{
+  "id": 155,
+  "nome": "Bolinhos de coco",
+  "emoji": "🥥",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "170°C",
+  "ingredientes": [
+    "200 g de coco ralado",
+    "1 lata de leite condensado (397 g)",
+    "2 ovos",
+    "1 c. chá de baunilha"
+  ],
+  "passos": [
+    "Mistura o coco com o leite condensado, os ovos e a baunilha.",
+    "Forma montinhos com duas colheres no cesto forrado com papel vegetal.",
+    "Coze a 170°C durante 15–18 min, até dourar as pontas.",
+    "Serve frios — firmam ao arrefecer."
+  ],
+  "dica": "Doce de festa de três ingredientes, sem forno grande ligado."
+}

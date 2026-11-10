@@ -1,0 +1,24 @@
+{
+  "id": 71,
+  "nome": "Rosbife na air fryer",
+  "emoji": "🥩",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 90,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 peça de lombo ou alcatra de vaca (~1 kg)",
+    "Sal, pimenta preta e alho",
+    "1 c. sopa de mostarda"
+  ],
+  "passos": [
+    "Tempera a peça com sal, pimenta, alho e mostarda, de véspera.",
+    "Coze a 180°C durante 40–45 min, virando a meio.",
+    "Está pronto a 58°C no centro (mal passado).",
+    "Descansa 10 min e fatia o mais fino possível.",
+    "Sobras = sandes de rosbife no dia seguinte."
+  ],
+  "dica": "7 L é o tamanho ideal: uma peça de 1 kg assa sem secar."
+}

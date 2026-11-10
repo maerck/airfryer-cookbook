@@ -1,0 +1,23 @@
+{
+  "id": 99,
+  "nome": "Lombos de bacalhau com cebola caramelizada",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 35,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "2 lombos de bacalhau demolhado",
+    "2 cebolas em rodelas",
+    "1 c. chá de mel + azeite",
+    "1 folha de louro, azeitonas pretas"
+  ],
+  "passos": [
+    "Carameliza as cebolas com azeite e mel numa frigideira, 10 min.",
+    "Cobre os lombos secos com as cebolas e as azeitonas.",
+    "Coze a 180°C durante 15–18 min, até o bacalhau desfazer em lascas."
+  ],
+  "dica": "A doçura da cebola contrasta com o salgado do bacalhau."
+}

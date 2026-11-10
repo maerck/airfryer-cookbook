@@ -1,0 +1,23 @@
+{
+  "id": 131,
+  "nome": "Cabeças de alho assadas",
+  "emoji": "🧄",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 40,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "3 cabeças de alho",
+    "Azeite + sal",
+    "Pão tostado para servir"
+  ],
+  "passos": [
+    "Corta o topo de cada cabeça para expor os dentes.",
+    "Rega com azeite e sal; envolve em alumínio (frouxo).",
+    "Coze a 190°C durante 25–30 min, até os dentes ficarem dourados e cremosos.",
+    "Espreme o puré diretamente sobre tostas."
+  ],
+  "dica": "O alho assado perde a picância e torna-se doce e cremoso como manteiga."
+}

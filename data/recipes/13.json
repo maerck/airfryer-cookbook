@@ -1,0 +1,23 @@
+{
+  "id": 13,
+  "nome": "Asas de frango dupla cozedura (vapor + ar)",
+  "emoji": "🍗",
+  "metodo": "Vapor + Ar",
+  "cat": "Carne",
+  "tempo": 35,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "1 kg de asas de frango",
+    "Sal, alho em pó e pimentão doce",
+    "1 c. sopa de azeite"
+  ],
+  "passos": [
+    "Coze as asas em modo vapor durante 10–12 min (ficam tenras e suculentas).",
+    "Escorre o líquido da gaveta e seca bem as asas com papel de cozinha.",
+    "Tempera com sal, alho em pó, pimentão doce e azeite.",
+    "Coze em modo air fryer a 200°C durante 12–15 min, virando a meio, até estaladiças."
+  ],
+  "dica": "É a especialidade desta máquina: vapor primeiro (tenro dentro), ar quente depois (crocante fora) — estilo 'sous vide' rápido."
+}

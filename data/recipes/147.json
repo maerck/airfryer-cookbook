@@ -1,0 +1,25 @@
+{
+  "id": 147,
+  "nome": "Churros de air fryer",
+  "emoji": "🥨",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "150 ml de água + 50 g de manteiga + 1 c. sopa de açúcar + sal",
+    "120 g de farinha + 1 ovo",
+    "Açúcar e canela para envolver",
+    "Chocolate derretido para mergulhar"
+  ],
+  "passos": [
+    "Ferve a água com a manteiga e o açúcar; junta a farinha de uma vez e mexe até formar bola; deixa amornar.",
+    "Incorpora o ovo e mete a massa num saco de pasteleiro.",
+    "Serpentinas de massa sobre papel vegetal no cesto, com 5 cm de folga entre elas.",
+    "Coze a 190°C durante 10–12 min, virando a meio.",
+    "Envolve em açúcar e canela e serve com chocolate quente para mergulhar."
+  ],
+  "dica": "Cruza as serpentinas: os churros não podem tocar entre si ou colam."
+}

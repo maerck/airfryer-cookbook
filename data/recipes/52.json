@@ -1,0 +1,26 @@
+{
+  "id": 52,
+  "nome": "Croquetes de carne à portuguesa",
+  "emoji": "🥟",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "300 g de sobras de carne assada ou cozida, picadas",
+    "1 cebola picada + 2 dentes de alho",
+    "40 g de manteiga + 40 g de farinha + 300 ml de leite",
+    "Salsa picada, sal e noz-moscada",
+    "1 ovo batido + pão ralado para panar"
+  ],
+  "passos": [
+    "Refoga a cebola e o alho; adiciona a carne picada e reserva.",
+    "Faz um bechamel: derrete a manteiga, junta a farinha, mexe e adiciona o leite quente até engrossar.",
+    "Incorpora a carne e a salsa; tempera e deixa arrefecer 1 hora no frigorífico.",
+    "Forma os croquetes com duas colheres e passa por ovo e pão ralado.",
+    "Coze a 190°C durante 10–12 min, virando a meio, até dourar."
+  ],
+  "dica": "Massa bem fria é o segredo para moldar sem colar."
+}

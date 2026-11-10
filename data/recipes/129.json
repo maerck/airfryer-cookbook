@@ -1,0 +1,24 @@
+{
+  "id": 129,
+  "nome": "Focaccia de alecrim",
+  "emoji": "🍞",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 120,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "300 g de farinha T65 + 1 c. chá de levedura seca",
+    "220 ml de água morna + 1 c. sopa de azeite",
+    "1 c. chá de sal + 1 c. chá de açúcar",
+    "Alecrim, azeite e flor de sal para finalizar"
+  ],
+  "passos": [
+    "Amassa tudo 8 min até ficar lisa e elástica (ou usa o modo de fermentação da air fryer a ~40°C para levedar 1 hora).",
+    "Estende numa forma pequena untada com azeite; deixa levedar mais 30 min.",
+    "Com os dedos, faz covas na massa e rega com azeite; espalha o alecrim e a flor de sal.",
+    "Coze a 180°C durante 18–20 min, até dourar."
+  ],
+  "dica": "Serve morna com azeite — ou cortada ao meio como pão de sandes."
+}

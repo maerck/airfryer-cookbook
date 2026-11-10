@@ -22,9 +22,15 @@ export const receitaSchema = z.object({
   dica: z.string().min(1).optional(),
 });
 
+export const ajusteDeltaSchema = z.object({
+  tempoMin: z.number().int(),
+  temperaturaC: z.number().int(),
+});
+
 export const ajusteSchema = z.object({
   tempoMin: z.number().int(),
   temperaturaC: z.number().int(),
+  porMetodo: z.partialRecord(metodoSchema, ajusteDeltaSchema).optional(),
 });
 
 export const modeloSchema = z.object({

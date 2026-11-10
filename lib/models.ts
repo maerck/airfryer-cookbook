@@ -1,6 +1,6 @@
 import modelosJson from "@/data/modelos.json";
 import { validarModelos } from "./schemas";
-import type { AjusteModelo, ModeloAirfryer, Receita } from "./types";
+import type { AjusteDelta, AjusteModelo, Metodo, ModeloAirfryer, Receita } from "./types";
 
 export const MODELOS: readonly ModeloAirfryer[] = validarModelos(modelosJson);
 
@@ -11,8 +11,21 @@ export function encontrarModelo(id: string | null | undefined): ModeloAirfryer {
   return MODELOS.find((m) => m.id === id) ?? MODELO_PADRAO;
 }
 
-export function temAjuste(modelo: ModeloAirfryer): boolean {
-  return modelo.ajuste.tempoMin !== 0 || modelo.ajuste.temperaturaC !== 0;
+/** Ajuste efetivamente aplicado a uma receita: override por método quando existe, senão o global. */
+export function ajusteParaMetodo(modelo: ModeloAirfryer, metodo: Metodo): AjusteDelta {
+  const a = modelo.ajuste.porMetodo?.[metodo] ?? modelo.ajuste;
+  return { tempoMin: a.tempoMin, temperaturaC: a.temperaturaC };
+}
+
+export function temAjuste(modelo: ModeloAirfryer, metodo?: Metodo): boolean {
+  if (metodo !== undefined) {
+    const a = ajusteParaMetodo(modelo, metodo);
+    return a.tempoMin !== 0 || a.temperaturaC !== 0;
+  }
+  if (modelo.ajuste.tempoMin !== 0 || modelo.ajuste.temperaturaC !== 0) return true;
+  return Object.values(modelo.ajuste.porMetodo ?? {}).some(
+    (a) => a.tempoMin !== 0 || a.temperaturaC !== 0,
+  );
 }
 
 /** Shift every numeric "°C" in a temp string (e.g. "Vapor → 200°C"); non-numeric strings ("Modo vapor") pass through. */
@@ -39,12 +52,13 @@ export interface ReceitaAjustada {
 }
 
 export function aplicarAjusteModelo(receita: Receita, modelo: ModeloAirfryer): ReceitaAjustada {
+  const ajuste = ajusteParaMetodo(modelo, receita.metodo);
   return {
-    tempo: Math.max(1, receita.tempo + modelo.ajuste.tempoMin),
-    temp: ajustarTemperatura(receita.temp, modelo.ajuste.temperaturaC),
-    ...(temAjuste(modelo)
+    tempo: Math.max(1, receita.tempo + ajuste.tempoMin),
+    temp: ajustarTemperatura(receita.temp, ajuste.temperaturaC),
+    ...(temAjuste(modelo, receita.metodo)
       ? {
-          notaPassos: `Os tempos e temperaturas escritos nos passos são os da receita original. Com o modelo ${modelo.nome}, aplica o ajuste à cozedura: ${ajusteDescricao(modelo.ajuste)}.`,
+          notaPassos: `Os tempos e temperaturas escritos nos passos são os da receita original. Com o modelo ${modelo.nome}, aplica o ajuste à cozedura: ${ajusteDescricao(ajuste)}.`,
         }
       : {}),
   };

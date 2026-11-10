@@ -1,0 +1,23 @@
+{
+  "id": 62,
+  "nome": "Bifes de peru com limão e orégãos",
+  "emoji": "🦃",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 bifes de peru",
+    "2 dentes de alho",
+    "Azeite, raspa e sumo de limão",
+    "Orégãos, sal e pimenta"
+  ],
+  "passos": [
+    "Envolve os bifes no azeite, alho, limão, orégãos, sal e pimenta.",
+    "Coze a 190°C durante 6–7 min por lado.",
+    "Descansa 2 min antes de servir."
+  ],
+  "dica": "O peru é magro: não cozas além do ponto ou fica seco."
+}

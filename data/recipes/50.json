@@ -1,0 +1,25 @@
+{
+  "id": 50,
+  "nome": "Peras no vapor com mel e canela",
+  "emoji": "🍐",
+  "metodo": "Vapor",
+  "cat": "Doces",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "4 peras firmes cortadas ao meio e descaroçadas",
+    "2 c. sopa de mel",
+    "Canela",
+    "Nozes ou amêndoas laminadas",
+    "Iogurte grego para servir (opcional)"
+  ],
+  "passos": [
+    "Coloca as metades de pera num prato de vapor com a parte cortada para cima.",
+    "Drizzle de mel sobre cada uma e polvilha com canela.",
+    "Coze em modo vapor 15–18 min, até a polpa ceder ao garfo.",
+    "Serve mornas com as nozes e iogurte."
+  ],
+  "dica": "Sobremesa leve e saudável: o vapor intensifica a doçura natural da fruta."
+}

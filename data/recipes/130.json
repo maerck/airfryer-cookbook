@@ -1,0 +1,23 @@
+{
+  "id": 130,
+  "nome": "Paus de queijo",
+  "emoji": "🧀",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 placa de massa folhada",
+    "100 g de queijo ralado (emmental ou gruyère)",
+    "1 gema batida + sementes de sésamo",
+    "Pimenta preta (opcional)"
+  ],
+  "passos": [
+    "Polvilha a massa com o queijo e corta em tiras; torce cada uma.",
+    "Pincela com gema e polvilha sésamo.",
+    "Coze a 190°C durante 8–10 min, até dourar e inflar."
+  ],
+  "dica": "Aperitivo 'faux effort' para chegar à mesa com pão de queijo torcido."
+}

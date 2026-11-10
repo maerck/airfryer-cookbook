@@ -1,0 +1,26 @@
+{
+  "id": 32,
+  "nome": "Couve-flor inteira vapor + dourada",
+  "emoji": "🥦",
+  "metodo": "Vapor + Ar",
+  "cat": "Vegetariano",
+  "tempo": 35,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "Vapor → 190°C",
+  "ingredientes": [
+    "1 couve-flor inteira (limpa, sem folhas)",
+    "2 c. sopa de azeite",
+    "1 c. chá de pimentão doce + 1/2 c. chá de cominhos",
+    "Alho em pó e sal",
+    "Iogurte grego e salsa para servir"
+  ],
+  "passos": [
+    "Coze a couve-flor inteira em modo vapor 10–12 min, até quase tenra.",
+    "Deixa arrefecer 5 min e seca bem a superfície.",
+    "Esfrega com a pasta de azeite e especiarias por todos os lados.",
+    "Coze em modo air fryer a 190°C durante 10–12 min, até dourar.",
+    "Serve inteira à mesa com iogurte e salsa picada."
+  ],
+  "dica": "Prato de efeito com zero esforço: macia dentro, tostada fora."
+}

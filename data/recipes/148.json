@@ -1,0 +1,23 @@
+{
+  "id": 148,
+  "nome": "Muffins de mirtilo",
+  "emoji": "🧁",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "170°C",
+  "ingredientes": [
+    "200 g de farinha + 100 g de açúcar + 1 c. chá de fermento",
+    "1 ovo + 100 ml de iogurte natural + 60 ml de óleo",
+    "150 g de mirtilos (frescos ou congelados)"
+  ],
+  "passos": [
+    "Mistura os secos; noutro, os líquidos e o ovo.",
+    "Junta tudo sem trabalhar demasiado e dobra os mirtilos.",
+    "Enche forminhas de queque até 3/4.",
+    "Coze a 170°C durante 18–20 min, até dourar por cima."
+  ],
+  "dica": "Massa de muffin trabalhada demais fica borracha — mistura com poucos movimentos."
+}

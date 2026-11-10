@@ -1,0 +1,25 @@
+{
+  "id": 61,
+  "nome": "Carne de vinha d'alhos assada",
+  "emoji": "🍷",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 50,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "800 g de carne de porco (cachaço) em cubos grandes",
+    "4 dentes de alho esmagados",
+    "100 ml de vinho branco",
+    "1 c. sopa de massa de pimentão",
+    "1 folha de louro, sal e azeite"
+  ],
+  "passos": [
+    "Marina a carne no vinho, alho, pimentão, louro e sal, no mínimo 2 horas.",
+    "Escorre (reserva a marinada) e coze a 180°C durante 25–30 min, virando e pincelando com a marinada.",
+    "Nos últimos 5 min sobe para 200°C para dourar.",
+    "Serve com batatas e couve — prato de festa tradicional."
+  ],
+  "dica": "Este é o tempero do Natal português, adaptado ao cesto."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 54,
+  "nome": "Frango tandoori",
+  "emoji": "🍛",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 45,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 kg de frango em pedaços sem pele",
+    "150 g de iogurte natural",
+    "2 c. sopa de especiarias tandoori (ou mistura de pimentão doce, cominhos, curcuma e gengibre)",
+    "3 dentes de alho espremido + gengibre ralado",
+    "Sal e sumo de limão"
+  ],
+  "passos": [
+    "Mistura o iogurte com as especiarias, o alho, o gengibre, o sal e o limão.",
+    "Envolve o frango completamente e marina no mínimo 2 horas (de véspera é ideal).",
+    "Coze a 190°C durante 20–25 min, virando a meio, até dourar.",
+    "Serve com iogurte natural, limão e arroz basmati."
+  ],
+  "dica": "Uma pitada de colorau fumado dá o tom vermelho-alaranjado clássico."
+}

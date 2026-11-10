@@ -1,0 +1,25 @@
+{
+  "id": 6,
+  "nome": "Costeletas de porco com alho e limão",
+  "emoji": "🍋",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 25,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 costeletas de porco (~1,5 cm de espessura)",
+    "3 dentes de alho picados",
+    "Raspa e sumo de 1 limão",
+    "1 c. sopa de azeite",
+    "Sal, pimenta e tomilho"
+  ],
+  "passos": [
+    "Envolve as costeletas no azeite, alho, limão, sal, pimenta e tomilho; descansa 15 min.",
+    "Coze a 190°C durante 6–7 min.",
+    "Vira e coze mais 5–6 min (o centro deve ficar levemente rosado para manter suculência).",
+    "Descansa 3 min antes de servir."
+  ],
+  "dica": "Não cozas demasiado — o porco magra resseca depressa. Usa um termómetro: 62–65°C no centro é perfeito."
+}

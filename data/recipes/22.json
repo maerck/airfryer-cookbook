@@ -1,0 +1,24 @@
+{
+  "id": 22,
+  "nome": "Salmão no vapor com limão e gengibre",
+  "emoji": "🐟",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "2 lombos de salmão",
+    "Gengibre ralado e rodelas de limão",
+    "Sal e pimenta",
+    "Molho: 2 c. sopa de soja + 1 c. chá de mel + sumo de limão"
+  ],
+  "passos": [
+    "Tempera o salmão com sal, pimenta e gengibre ralado.",
+    "Coloca num prato com as rodelas de limão por cima.",
+    "Coze em modo vapor 10–12 min.",
+    "Mistura a soja com o mel e o limão e verte sobre o salmão ao servir."
+  ],
+  "dica": "Nada mais saudável: sem gordura adicionada, e o vapor preserva os ómega-3 do salmão."
+}

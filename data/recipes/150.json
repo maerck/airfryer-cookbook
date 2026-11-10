@@ -1,0 +1,23 @@
+{
+  "id": 150,
+  "nome": "Bananas com chocolate (barquinhos)",
+  "emoji": "🍌",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "4 bananas com casca",
+    "60 g de chocolate negro em quadradinhos",
+    "Marshmallows (opcional)"
+  ],
+  "passos": [
+    "Abre cada banana ao comprimento pela casca, sem a atravessar.",
+    "Espeta pedaços de chocolate e marshmallows dentro.",
+    "Embrulha em alumínio e coze a 180°C durante 8–10 min.",
+    "Serve na própria casca, com colher."
+  ],
+  "dica": "Sobremesa de acampamento em versão de cozinha — as crianças fazem as suas."
+}
