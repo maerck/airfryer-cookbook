@@ -1,0 +1,25 @@
+{
+  "id": 166,
+  "nome": "Tarte de requeijão com canela",
+  "emoji": "🥧",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 55,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "160°C",
+  "ingredientes": [
+    "1 massa quebrada",
+    "2 requeijões (~400 g)",
+    "3 ovos + 120 g de açúcar",
+    "Canela e raspa de limão"
+  ],
+  "passos": [
+    "Forra uma forma pequena com a massa.",
+    "Bate o requeijão com o açúcar, os ovos, a canela e a raspa até cremoso.",
+    "Verte para a forma.",
+    "Coze a 160°C durante 30–35 min, até firme e dourado.",
+    "Polvilha com canela e açúcar ao servir."
+  ],
+  "dica": "Doce da Serra da Estrela aproveitando o requeijão que sobra da época."
+}

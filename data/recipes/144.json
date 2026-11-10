@@ -1,0 +1,25 @@
+{
+  "id": 144,
+  "nome": "Bolo de cenoura",
+  "emoji": "🥕",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 55,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "160°C",
+  "ingredientes": [
+    "3 ovos + 150 g de açúcar",
+    "200 g de cenoura ralada",
+    "180 g de farinha + 1 c. chá de fermento",
+    "80 ml de óleo + canela",
+    "Cobertura: queijo creme + açúcar (opcional)"
+  ],
+  "passos": [
+    "Bate os ovos com o açúcar; adiciona o óleo e a cenoura.",
+    "Incorpora a farinha, o fermento e a canela.",
+    "Coze numa forma pequena a 160°C durante 35–40 min.",
+    "Depois de frio, cobre com o creme de queijo."
+  ],
+  "dica": "Humidade natural da cenoura = bolo que não seca."
+}

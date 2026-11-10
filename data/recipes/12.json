@@ -1,0 +1,25 @@
+{
+  "id": 12,
+  "nome": "Peito de frango no vapor (meal prep)",
+  "emoji": "🍗",
+  "metodo": "Vapor",
+  "cat": "Carne",
+  "tempo": 25,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "2 peitos de frango",
+    "Sal, pimenta e alho em pó",
+    "Rodelas de limão",
+    "Ervas frescas (tomilho ou orégãos)"
+  ],
+  "passos": [
+    "Enche o depósito de água até à marca de 1,5 L.",
+    "Tempera os peitos e coloca-os num prato resistente ao calor com as rodelas de limão e as ervas por cima.",
+    "Coze em modo vapor 16–18 min, até o interior estar opaco.",
+    "Deixa descansar 3 min antes de fatiar.",
+    "Ideal para meal prep: guarda em frascos com legumes e arroz."
+  ],
+  "dica": "O vapor é o segredo do peito de frango suculento — impossível de conseguir no micro-ondas sem secar."
+}

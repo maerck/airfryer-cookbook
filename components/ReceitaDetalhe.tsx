@@ -215,7 +215,7 @@ export default function ReceitaDetalhe({
                   <span className="rounded-full border border-stone-200 bg-stone-50 px-2 py-0.5 text-stone-600 dark:border-stone-700 dark:bg-stone-800/60 dark:text-stone-300">
                     🍽 {dosesAtuais} doses
                   </span>
-                  {temAjuste(modelo) && (
+                  {temAjuste(modelo, r.metodo) && (
                     <span
                       className="rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 font-medium text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200"
                       title={`Ajustado ao modelo ${modelo.nome}`}

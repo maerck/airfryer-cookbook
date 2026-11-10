@@ -1,0 +1,24 @@
+{
+  "id": 163,
+  "nome": "Espirais de canela (cinnamon rolls)",
+  "emoji": "🥐",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 placa de massa folhada",
+    "30 g de manteiga mole + 60 g de açúcar mascavado + canela",
+    "Glacé: açúcar em pó + leite"
+  ],
+  "passos": [
+    "Barra a folhada com manteiga e cobre com açúcar e canela.",
+    "Enrola apertado pelo lado comprido e corta 8 espirais.",
+    "Coloca no cesto forrado com folga entre elas.",
+    "Coze a 180°C durante 15–18 min, até dourar e caramelizar.",
+    "Rega com glacé (açúcar em pó + um fio de leite)."
+  ],
+  "dica": "O açúcar mascavado carameliza com a folhada e cria xarope no fundo."
+}

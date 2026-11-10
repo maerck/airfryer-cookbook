@@ -1,0 +1,24 @@
+{
+  "id": 77,
+  "nome": "Postas de bacalhau grelhadas com azeite e alho",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "3 postas de bacalhau demolhado",
+    "4 c. sopa de azeite + 3 dentes de alho",
+    "Pimenta e coentros ou salsa",
+    "Batatas cozidas para acompanhar"
+  ],
+  "passos": [
+    "Seca muito bem as postas com papel de cozinha.",
+    "Envolve no azeite e pimenta (o bacalhau já tem sal).",
+    "Coze a 190°C durante 12–15 min, virando com espátula a meio.",
+    "Ao servir, rega com azeite com alho cru fatiado e coentros."
+  ],
+  "dica": "Grelhado clássico de Natal ou Semana Santa, sem cheiro na casa toda."
+}

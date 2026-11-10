@@ -1,0 +1,25 @@
+{
+  "id": 70,
+  "nome": "Bitoques de porco com molho de mostarda",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 bitoques (bifes finos de porco batidos)",
+    "2 c. sopa de mostarda",
+    "3 dentes de alho",
+    "Natas ou iogurte grego para o molho",
+    "Sal, pimenta e azeite"
+  ],
+  "passos": [
+    "Tempera os bitoques com alho, azeite, sal e pimenta.",
+    "Coze a 190°C durante 5–6 min por lado.",
+    "Mistura as natas (ou iogurte) com a mostarda e um pouco dos sucos da cozedura.",
+    "Serve o molho frio por cima dos bitoques quentes, com ovo estrelado ao lado."
+  ],
+  "dica": "Prato de tasca em minutos: bitoque, molho, ovo e batata frita."
+}

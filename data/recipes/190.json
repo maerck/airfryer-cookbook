@@ -1,0 +1,23 @@
+{
+  "id": 190,
+  "nome": "Peito de frango: vapor + dourado (meal prep premium)",
+  "emoji": "🍗",
+  "metodo": "Vapor + Ar",
+  "cat": "Carne",
+  "tempo": 30,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "2 peitos de frango",
+    "Sal, pimenta, alho em pó e pimentão doce",
+    "Azeite"
+  ],
+  "passos": [
+    "Coze os peitos em modo vapor 12 min, até quase feitos.",
+    "Seca-os bem e tempera com as especiarias e azeite.",
+    "Doura em modo air fryer a 200°C durante 6–8 min.",
+    "Succulento por dentro, tostado por fora — para bowls e saladas da semana."
+  ],
+  "dica": "A dupla cozedura resolve o problema nº1 do peito de frango: o interior seco."
+}

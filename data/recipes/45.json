@@ -1,0 +1,27 @@
+{
+  "id": 45,
+  "nome": "Bolo de iogurte na air fryer",
+  "emoji": "🍰",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 50,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "160°C",
+  "ingredientes": [
+    "1 iogurte natural (125 g) — e usa o copo como medida",
+    "2 medidas (do copo) de açúcar",
+    "3 medidas de farinha",
+    "1/2 medida de óleo",
+    "3 ovos + 1 c. chá de fermento",
+    "Raspa de limão"
+  ],
+  "passos": [
+    "Bate os ovos com o açúcar e a raspa de limão até esbranquiçar.",
+    "Adiciona o iogurte, o óleo, depois a farinha peneirada com o fermento.",
+    "Unta e forra uma forma de bolo que caiba no cesto de 7 L.",
+    "Coze a 160°C durante 30–35 min; faz o teste do palito.",
+    "Polvilha com açúcar em pó quando arrefecer."
+  ],
+  "dica": "Parte com chocolate: junta 2 c. sopa de cacau à farinha e pepitas de chocolate."
+}

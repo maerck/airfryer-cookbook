@@ -1,0 +1,24 @@
+{
+  "id": 59,
+  "nome": "Costeletas de borrego com alecrim",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "8 costeletas pequenas de borrego",
+    "3 dentes de alho esmagados",
+    "Azeite, alecrim fresco",
+    "Sal, pimenta e limão"
+  ],
+  "passos": [
+    "Envolve as costeletas no azeite, alho, alecrim, sal e pimenta; descansa 15 min.",
+    "Coze a 190°C durante 5–6 min por lado.",
+    "Descansa 3 min e serve com limão.",
+    "Acompanha com batatinhas e legumes assados."
+  ],
+  "dica": "O borrego fica rosa no centro — é assim que se come."
+}

@@ -3,7 +3,7 @@
 import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 import { CORES_CAT, CORES_METODO, METODO_EMOJI } from "@/lib/constants";
-import { ajusteDescricao, aplicarAjusteModelo, temAjuste } from "@/lib/models";
+import { ajusteDescricao, ajusteParaMetodo, aplicarAjusteModelo, temAjuste } from "@/lib/models";
 import type { ModeloAirfryer, Receita } from "@/lib/types";
 
 interface RecipeCardProps {
@@ -86,10 +86,10 @@ export default function RecipeCard({
             🧺 {cobertura.cobertos}/{cobertura.total} em casa
           </span>
         )}
-        {temAjuste(modelo) && (
+        {temAjuste(modelo, r.metodo) && (
           <span
             className="rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 font-medium text-amber-800 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200"
-            title={`Ajuste do modelo ${modelo.nome}: ${ajusteDescricao(modelo.ajuste)}`}
+            title={`Ajuste do modelo ${modelo.nome}: ${ajusteDescricao(ajusteParaMetodo(modelo, r.metodo))}`}
           >
             ⚙️ {modelo.nome}
           </span>

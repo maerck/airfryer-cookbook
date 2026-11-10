@@ -1,0 +1,23 @@
+{
+  "id": 199,
+  "nome": "Bananas caramelizadas (vapor + ar)",
+  "emoji": "🍌",
+  "metodo": "Vapor + Ar",
+  "cat": "Doces",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "4 bananas cortadas ao meio no comprimento",
+    "2 c. sopa de açúcar mascavado + canela",
+    "Iogurte grego ou gelado para servir"
+  ],
+  "passos": [
+    "Coze as metades em modo vapor 4 min, até amaciarem.",
+    "Polvilha com o açúcar mascavado e canela.",
+    "Carameliza em modo air fryer a 200°C durante 4–5 min, até o açúcar borbulhar.",
+    "Serve mornas com iogurte ou gelado."
+  ],
+  "dica": "Banana quente e doce com cobertura crocante — sobremesa de hotel de spa."
+}

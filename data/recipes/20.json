@@ -1,0 +1,25 @@
+{
+  "id": 20,
+  "nome": "Gambas ao alho e limão",
+  "emoji": "🍤",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 10,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "190°C",
+  "ingredientes": [
+    "400 g de gambas descascadas (ou camarão)",
+    "4 dentes de alho fatiados",
+    "4 c. sopa de azeite",
+    "1 malagueta em rodelas (opcional)",
+    "Salsa e sumo de limão"
+  ],
+  "passos": [
+    "Mistura tudo numa taça, envolvendo bem as gambas no azeite e alho.",
+    "Coloca no cesto com todo o azeite.",
+    "Coze a 190°C durante 5–6 min, até as gambas ficarem rosadas.",
+    "Termina com salsa e limão; come mergulhando pão no azeite."
+  ],
+  "dica": "Pronto em minutos — serve como entrada com pão torrado ou sobre massas."
+}

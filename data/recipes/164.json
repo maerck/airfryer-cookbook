@@ -1,0 +1,24 @@
+{
+  "id": 164,
+  "nome": "Pão-de-ló",
+  "emoji": "🍰",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "150°C",
+  "ingredientes": [
+    "4 ovos + 120 g de açúcar",
+    "90 g de farinha",
+    "Raspa de 1/2 limão",
+    "Forma alta pequena, bem untada"
+  ],
+  "passos": [
+    "Bate os ovos com o açúcar e a raspa, 8–10 min, até triplicar e esbranquiçar (é o segredo).",
+    "Envolve a farinha peneirada com movimentos suaves.",
+    "Verte para a forma e coze a 150°C durante 25–30 min, sem abrir a meio.",
+    "Serve com doce de ovos ou fruta."
+  ],
+  "dica": "O clássico de Ovar: ar de esponja que se desfaz na boca."
+}

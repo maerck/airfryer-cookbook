@@ -1,0 +1,23 @@
+{
+  "id": 193,
+  "nome": "Batatas a murro 100% na máquina",
+  "emoji": "🥔",
+  "metodo": "Vapor + Ar",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 40,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "700 g de batatinhas pequenas",
+    "Azeite + alecrim + 2 dentes de alho",
+    "Sal grosso"
+  ],
+  "passos": [
+    "Coze as batatinhas em modo vapor 15–18 min, até al dente.",
+    "Achata cada uma com o fundo de um copo (o murro).",
+    "Envolve no azeite, alecrim, alho e sal grosso.",
+    "Doura em modo air fryer a 200°C durante 10–12 min, até os bordos estaladiços."
+  ],
+  "dica": "Sem panela suja: a versão anterior precisava de fogão, esta não sai do cesto."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 58,
+  "nome": "Lombinho de porco com mel e mostarda",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 45,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 lombinho de porco (~600 g)",
+    "2 c. sopa de mel + 2 c. sopa de mostarda",
+    "3 dentes de alho",
+    "Azeite, sal, pimenta e tomilho"
+  ],
+  "passos": [
+    "Esfrega o lombinho com o mel, a mostarda, o alho, o azeite, o sal e o tomilho.",
+    "Coze a 180°C durante 30–35 min, virando a meio e pincelando com os sucos.",
+    "Está pronto a 63–65°C no centro.",
+    "Descansa 5 min embrulhado em alumínio e fatia em medalhões."
+  ],
+  "dica": "Sobras frias em fatias finas são óptimas em sandes do dia seguinte."
+}

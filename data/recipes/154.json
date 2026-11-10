@@ -1,0 +1,24 @@
+{
+  "id": 154,
+  "nome": "Granola caseira",
+  "emoji": "🥣",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 8,
+  "temp": "160°C",
+  "ingredientes": [
+    "200 g de flocos de aveia",
+    "50 g de frutos secos picados + 30 g de sementes",
+    "3 c. sopa de mel + 2 c. sopa de óleo de coco ou azeite suave",
+    "Coco ralado e 1 pitada de sal"
+  ],
+  "passos": [
+    "Envolve tudo bem no mel e óleo.",
+    "Coze a 160°C durante 15–18 min, mexendo a cada 5 min.",
+    "Deixa arrefecer completamente — aí fica crocante.",
+    "Junta frutos secos desidratados ao servir, com iogurte e fruta."
+  ],
+  "dica": "Mexe pouco e fica em agregados; mexe muito e vira farofa torrada."
+}

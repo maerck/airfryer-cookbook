@@ -29,7 +29,7 @@ Updated at the end of every session (framework §4 session protocol).
 | Revisão do framework + housekeeping                              | Done    | 2026-11-09 | plugin `agent-framework` 1.9.1 confirmado (= upstream); AGENTS.md §9–§11 com nomes por ferramenta e as 13 personas (PR #5); branches fundidas apagadas no local e no remoto; M10–M17 planeados                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | M10 — Fundações de release                                       | Done    | 2026-11-09 | PR #7: Dependabot, CHANGELOG, `version` 1.0.0, URL de produção no README/AGENTS.md; release `v1.0.0` em `981201b` (CI verde); PR #11 fundida; "Automatically delete head branches" ativado via API (`delete_branch_on_merge: true`); PRs #8–#10 do Dependabot fundidas; branches fundidas apagadas no local e no remoto                                                                                                                                                                                                                                                                                                                |
 | M11 — Testes automáticos a11y + smoke                            | Done    | 2026-11-09 | axe (jsdom) sem violações serious/critical/moderate em `/`, `/modelos`, `/lista-compras`, `/receita/1` e 404; smoke por rota; 140/140 vitest; correções de landmarks detetadas pelo axe; `pnpm test:a11y`; README/CHANGELOG/AGENTS.md atualizados                                                                                                                                                                                                                                                                                                                                                                                      |
-| M12 — Um ficheiro por receita + modelos mais ricos               | Planned | 2026-11-09 | `data/recipes/<id>.json`, ajuste por método                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| M12 — Um ficheiro por receita + modelos mais ricos               | Done    | 2026-11-09 | `data/recipes/<id>.json`, ajuste por método                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | M13 — Atualização semanal (fontes abertas + Mistral)             | Planned | 2026-11-09 | só em GitHub Actions; PR revisto pelo dono; depende de M12                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | M14 — Exportar/importar os meus dados                            | Planned | 2026-11-09 | backup JSON + favoritas por link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | M15 — Modo offline completo                                      | Planned | 2026-11-09 | guardar todas/favoritas no SW                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -250,26 +250,30 @@ Resultado: 140/140 vitest, `tsc`/`biome` limpos, `next build` OK (210 páginas),
 
 #### Tasks
 
-- [ ] `data/recipes/<id>.json`, um ficheiro por receita, gerado uma vez a partir de
+- [x] `data/recipes/<id>.json`, um ficheiro por receita, gerado uma vez a partir de
   `data/recipes.json` **sem alterar conteúdo** (transformação estrutural autorizada pelo dono em
   2026-11-09)
-- [ ] `scripts/build-data.ts` (`pnpm data:build`) junta `data/recipes/*.json` → `data/recipes.json`
+- [x] `scripts/build-data.ts` (`pnpm data:build`) junta `data/recipes/*.json` → `data/recipes.json`
   ordenado por `id`; `data/recipes.json` continua no git como ficheiro gerado (a app e os testes não
   mudam); `pnpm data:build --check` na CI falha se não estiver em sincronia
-- [ ] `pnpm data:split` faz o inverso, para o re-upload de M5 continuar a funcionar com um
+- [x] `pnpm data:split` faz o inverso, para o re-upload de M5 continuar a funcionar com um
   `recipes.json` completo; runbook do README atualizado
-- [ ] `check:data` valida também: nome do ficheiro = `id`, ids sequenciais sem buracos
-- [ ] Modelos: `ajusteSchema` ganha overrides opcionais por método (`porMetodo`), retrocompatível;
+- [x] `check:data` valida também: nome do ficheiro = `id`, ids sequenciais sem buracos
+- [x] Modelos: `ajusteSchema` ganha overrides opcionais por método (`porMetodo`), retrocompatível;
   `aplicarAjusteModelo` usa o override quando existe; `/modelos` e `/receita/[id]` mostram-no
-- [ ] Novos modelos só a partir de fichas técnicas fornecidas pelo dono; os agentes acrescentam
+- [x] Novos modelos só a partir de fichas técnicas fornecidas pelo dono; os agentes acrescentam
   entradas e nunca editam as existentes (invariante nº1)
-- [ ] AGENTS.md §5 (layout `data/recipes/`) e invariante nº1 atualizados
+- [x] AGENTS.md §5 (layout `data/recipes/`) e invariante nº1 atualizados
 
 #### Acceptance criteria
 
-- [ ] Teste: o `recipes.json` gerado é deep-equal ao atual (prova de que nenhuma receita mudou)
-- [ ] CI falha se `data/recipes.json` e `data/recipes/` divergirem
-- [ ] `check:data`, `vitest run`, `tsc --noEmit`, `biome check` verdes; `next build` OK
+- [x] Teste: o `recipes.json` gerado é deep-equal ao atual (prova de que nenhuma receita mudou)
+- [x] CI falha se `data/recipes.json` e `data/recipes/` divergirem
+- [x] `check:data`, `vitest run`, `tsc --noEmit`, `biome check` verdes; `next build` OK
+
+Notas M12 (2026-11-09): `data/recipes.json` e `data/recipes/` saem do formatador do Biome
+(ficheiros gerados; `data:build --check` compara JSON canónico, imune à formatação). String pt-PT
+nova registada: "Por método:" (lista de overrides por método no cartão do modelo em `/modelos`).
 
 ### M13 — Atualização semanal de receitas (fontes abertas + Mistral, via PR)
 

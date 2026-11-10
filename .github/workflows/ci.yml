@@ -35,3 +35,5 @@ jobs:
       - run: pnpm build
       # extensão deste repo (ver AGENTS.md §6): valida os datasets antes de o resultado ser publicável
       - run: pnpm check:data
+      # M12: data/recipes.json é gerado a partir de data/recipes/ — a CI falha se divergirem
+      - run: pnpm data:build --check

@@ -1,0 +1,25 @@
+{
+  "id": 47,
+  "nome": "Maçãs assadas com canela e nozes",
+  "emoji": "🍎",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 25,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "4 maçãs (Bravo de Esmolfe ou Golden)",
+    "2 c. sopa de mel",
+    "Canela a gosto",
+    "Nozes ou amêndoas picadas",
+    "1 noz de manteiga (opcional)"
+  ],
+  "passos": [
+    "Retira o caroço das maçãs com um descaroçador (sem furar o fundo).",
+    "Recheia cada uma com mel, canela, nozes e uma noz de manteiga.",
+    "Coze a 180°C durante 15–18 min, até a pele rugas e a polpa ficar tenra.",
+    "Serve mornas com iogurte grego ou gelado."
+  ],
+  "dica": "Sobremesa de outono de 10 minutos de esforço e uma casa com cheiro a canela."
+}

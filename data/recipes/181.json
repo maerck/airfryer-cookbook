@@ -1,0 +1,24 @@
+{
+  "id": 181,
+  "nome": "Mexilhões no vapor com tomate e vinho",
+  "emoji": "🐚",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1 kg de mexilhões limpos e bem lavados",
+    "200 g de polpa de tomate + 2 dentes de alho",
+    "100 ml de vinho branco",
+    "Coentros e azeite"
+  ],
+  "passos": [
+    "Espalha os mexilhões num prato fundo de calor.",
+    "Distribui a polpa de tomate com o alho e verte o vinho.",
+    "Coze em modo vapor 5–7 min, até abrirem.",
+    "Descarta os fechados; termina com coentros e azeite."
+  ],
+  "dica": "Serve com esparguete: o caldo do fundo é metade do prato."
+}

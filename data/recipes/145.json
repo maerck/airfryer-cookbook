@@ -1,0 +1,24 @@
+{
+  "id": 145,
+  "nome": "Tarte de maçã com folhada",
+  "emoji": "🥧",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 35,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 placa de massa folhada",
+    "4 maçãs em laminas finas",
+    "2 c. sopa de açúcar + canela",
+    "Manteiga e geleia de albricoque para brilhar"
+  ],
+  "passos": [
+    "Forra o fundo de uma forma pequena com a folhada e pica com um garfo.",
+    "Dispõe as lâminas de maçã em espiral; polvilha com açúcar e canela e nozes de manteiga.",
+    "Coze a 180°C durante 20–25 min, até a folhada dourar.",
+    "Pincela com geleia aquecida para o brilho de pastelaria."
+  ],
+  "dica": "Meia hora de trabalho para uma tarte que parece de loja."
+}

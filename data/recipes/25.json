@@ -1,0 +1,26 @@
+{
+  "id": 25,
+  "nome": "Tofu crocante com sésamo",
+  "emoji": "🌱",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 3,
+  "temp": "190°C",
+  "ingredientes": [
+    "400 g de tofu firme",
+    "2 c. sopa de molho de soja",
+    "1 c. chá de alho em pó",
+    "2 c. sopa de amido de milho",
+    "1 c. sopa de sésamo"
+  ],
+  "passos": [
+    "Prensa o tofu 10 min com um peso para sair a água; corta em cubos.",
+    "Marina nos cubos com a soja e o alho em pó, 10 min.",
+    "Envolve no amido de milho (fica com uma casca fina que crocanta).",
+    "Coze a 190°C durante 15–18 min, virando a meio.",
+    "Polvilha com sésamo nos últimos 2 min. Serve com molho agridoce ou em bowlos."
+  ],
+  "dica": "Congelar e descongelar o tofu antes muda a textura: fica mais 'carnudo' e absorve melhor os molhos."
+}

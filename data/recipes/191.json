@@ -1,0 +1,23 @@
+{
+  "id": 191,
+  "nome": "Couve-de-bruxelas: vapor + assada",
+  "emoji": "🥬",
+  "metodo": "Vapor + Ar",
+  "cat": "Vegetariano",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "400 g de couve-de-bruxelas",
+    "Azeite + sal",
+    "Queijo parmesão (opcional)"
+  ],
+  "passos": [
+    "Coze as couves em modo vapor 5 min, até quase tenras.",
+    "Escorre e seca bem; envolve no azeite e sal.",
+    "Assa em modo air fryer a 200°C durante 8–10 min, até as folhas exteriores ficarem estaladiças.",
+    "Polvilha com parmesão ao servir."
+  ],
+  "dica": "Sem a panela de água a ferver: tudo acontece na mesma máquina."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 180,
+  "nome": "Costelas de porco no vapor com feijão preto",
+  "emoji": "🍖",
+  "metodo": "Vapor",
+  "cat": "Carne",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "600 g de costeletas de porco pequenas (estilo dim sum, cortadas em bocados de um só trinco)",
+    "1 c. sopa de feijão preto fermentado (douchi) ou 1 c. chá de missô",
+    "2 c. sopa de molho de soja + gengibre ralado + alho",
+    "1 c. chá de amido de milho + pimenta"
+  ],
+  "passos": [
+    "Mistura as costelas com todos os ingredientes e marina 20 min.",
+    "Distribui num prato de calor em camada única.",
+    "Coze em modo vapor 25–30 min, até a carne se soltar do osso.",
+    "Polvilha com cebolinho e serve com arroz."
+  ],
+  "dica": "Clássico de dim sum: o vapor longo deixa a carne soltar-se do osso."
+}

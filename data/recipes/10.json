@@ -1,0 +1,26 @@
+{
+  "id": 10,
+  "nome": "Hambúrgueres suculentos",
+  "emoji": "🍔",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "500 g de carne de vaca picada (com alguma gordura)",
+    "Sal e pimenta",
+    "4 fatias de queijo cheddar",
+    "4 pães de hambúrguer",
+    "Alface, tomate e molho a gosto"
+  ],
+  "passos": [
+    "Molda 4 bifes de carne com ~2 cm, sem compactar demasiado; tempera só com sal e pimenta.",
+    "Coze a 190°C durante 8–10 min, virando a meio.",
+    "Coloca o queijo nos últimos 1–2 min para derreter.",
+    "Tosta os pães abertos no cesto 1–2 min.",
+    "Monta com alface, tomate e molho."
+  ],
+  "dica": "Faz um pequeno pressão no centro de cada hambúrguer: evita que bole durante a cozedura."
+}

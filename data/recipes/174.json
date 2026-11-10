@@ -1,0 +1,22 @@
+{
+  "id": 174,
+  "nome": "Couve lombarda no vapor",
+  "emoji": "🥬",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1/2 couve lombarda em fatias de 1 cm",
+    "Manteiga ou azeite",
+    "Cominhos, sal e noz-moscada"
+  ],
+  "passos": [
+    "Coloca as fatias no prato de vapor sem sobrepor muito.",
+    "Coze em modo vapor 8–10 min, até tenras mas ainda com mordida.",
+    "Tempera com manteiga, cominhos, sal e noz-moscada."
+  ],
+  "dica": "Os cominhos são o par clássico da lombarda (e ajudam a digestão)."
+}

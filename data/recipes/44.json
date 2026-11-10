@@ -1,0 +1,26 @@
+{
+  "id": 44,
+  "nome": "Fatias douradas (french toast)",
+  "emoji": "🍞",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "180°C",
+  "ingredientes": [
+    "4 fatias grossas de pão de brioche ou pão de véspera",
+    "2 ovos + 120 ml de leite",
+    "1 c. sopa de açúcar + canela",
+    "Manteiga (para o cesto)",
+    "Mel ou fruta para servir"
+  ],
+  "passos": [
+    "Bate os ovos com o leite, o açúcar e a canela.",
+    "Passa as fatias pela mistura, 20 segundos de cada lado (não encharques).",
+    "Coloca no cesto untado com manteiga.",
+    "Coze a 180°C durante 4 min por lado, até dourar.",
+    "Serve com mel e frutos vermelhos."
+  ],
+  "dica": "Pão de véspera absorve melhor o creme sem se desfazer — nunca uses pão fresco."
+}

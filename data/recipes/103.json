@@ -1,0 +1,24 @@
+{
+  "id": 103,
+  "nome": "Pimentos recheados com arroz e cogumelos",
+  "emoji": "🫑",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 50,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 pimentos grandes (inteiros, sem tampo e sementes)",
+    "250 g de arroz cozido (sobras servem)",
+    "200 g de cogumelos salteados + cebola",
+    "Queijo ralado + azeite + orégãos"
+  ],
+  "passos": [
+    "Pré-coze os pimentos vazios a 190°C durante 5 min.",
+    "Mistura o arroz com os cogumelos salteados e temperos.",
+    "Enche os pimentos e cobre com queijo.",
+    "Coze a 190°C durante 12–15 min, até o queijo derreter e borbulhar."
+  ],
+  "dica": "Ficam de pé sozinhos se cortares uma rodela fina da base."
+}

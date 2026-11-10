@@ -1,0 +1,25 @@
+{
+  "id": 113,
+  "nome": "Tortilha espanhola na air fryer",
+  "emoji": "🍳",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "160°C",
+  "ingredientes": [
+    "3 batatas pré-cozidas em rodelas finas",
+    "1 cebola em rodelas",
+    "6 ovos",
+    "Sal e azeite"
+  ],
+  "passos": [
+    "Envolve as batatas e cebola em azeite e sal e coze a 180°C por 10 min.",
+    "Bate os ovos com sal e junta as batatas amolecidas.",
+    "Verte tudo para uma forma pequena untada e cobre com alumínio.",
+    "Coze a 160°C durante 20–25 min, até o centro firme.",
+    "Desenforma morna ou fria, em fatias."
+  ],
+  "dica": "A tortilha morna derrete na boca — deixa arrefecer 10 min antes de cortar."
+}

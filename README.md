@@ -20,15 +20,17 @@ Requer Node 22+. O gestor de pacotes commitado é o pnpm (`packageManager` em `p
 
 ## Scripts
 
-| Comando           | O que faz                                                  |
-| ----------------- | ---------------------------------------------------------- |
-| `pnpm dev`        | dev server (Turbopack)                                     |
-| `pnpm build`      | build de produção                                          |
-| `pnpm test`       | suite Vitest (`vitest run`)                                |
-| `pnpm test:a11y`  | só os testes de acessibilidade (axe) — `a11y.test.ts`      |
-| `pnpm typecheck`  | `tsc --noEmit`                                             |
-| `pnpm lint`       | Biome (check)                                              |
-| `pnpm check:data` | valida `data/*.json` contra os schemas e imprime um resumo |
+| Comando           | O que faz                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| `pnpm dev`        | dev server (Turbopack)                                                              |
+| `pnpm build`      | build de produção                                                                   |
+| `pnpm test`       | suite Vitest (`vitest run`)                                                         |
+| `pnpm test:a11y`  | só os testes de acessibilidade (axe) — `a11y.test.ts`                               |
+| `pnpm typecheck`  | `tsc --noEmit`                                                                      |
+| `pnpm lint`       | Biome (check)                                                                       |
+| `pnpm check:data` | valida `data/*.json` + `data/recipes/` contra os schemas e imprime um resumo        |
+| `pnpm data:build` | junta `data/recipes/*.json` → `data/recipes.json` (`--check` só verifica sincronia) |
+| `pnpm data:split` | expande `data/recipes.json` → `data/recipes/<id>.json` (após re-upload)             |
 
 ## Testes
 
@@ -53,17 +55,26 @@ As rotas são renderizadas para HTML por `__tests__/helpers/rotas.ts` (layout ra
 
 ## Atualizar os dados (re-upload periódico)
 
-O dataset pode crescer além das 200 receitas iniciais. Contrato: `data/recipes.json` é um array
-de receitas com `id` inteiro positivo, único e sequencial a partir de 1; `data/modelos.json` é um
-array de modelos com `id` slug único. Tudo o resto é validado pelo zod (`lib/schemas.ts`).
+O dataset pode crescer além das 200 receitas iniciais. Contrato: cada receita vive em
+`data/recipes/<id>.json` (um ficheiro por receita, nome = `id` inteiro positivo, único e
+sequencial a partir de 1); `data/recipes.json` é o ficheiro **gerado** (via `pnpm data:build`) que
+a app e os testes leem — nunca o edites à mão. `data/modelos.json` é um array de modelos com `id`
+slug único. Tudo o resto é validado pelo zod (`lib/schemas.ts`).
+
+Re-upload completo (o dono substitui o dataset inteiro por um `recipes.json` novo):
 
 1. Substitui `data/recipes.json` e/ou `data/modelos.json` pelos ficheiros novos.
-2. `pnpm check:data` — falha (exit 1) se algo estiver inválido e imprime o resumo (totais por
-   método/categoria/dificuldade).
-3. `pnpm test && pnpm typecheck && pnpm lint` — os testes de dados são estruturais (não usam
+2. `pnpm data:split` — expande o `recipes.json` novo para `data/recipes/<id>.json`.
+3. `pnpm check:data` — falha (exit 1) se algo estiver inválido e imprime o resumo (totais por
+   método/categoria/dificuldade + contagem dos ficheiros por receita).
+4. `pnpm test && pnpm typecheck && pnpm lint` — os testes de dados são estruturais (não usam
    agregados hardcoded), por isso não precisam de edits quando o dataset muda.
-4. Commit + push para `main` → a CI (`.github/workflows/ci.yml`) corre `lint`, `typecheck`,
-   `test`, `build` e `check:data`; se tudo passar, o deploy segue.
+5. Commit + push para `main` → a CI (`.github/workflows/ci.yml`) corre `lint`, `typecheck`,
+   `test`, `build`, `check:data` e `data:build --check` (falha se `data/recipes.json` e
+   `data/recipes/` divergirem); se tudo passar, o deploy segue.
+
+Para editar/adicionar apenas algumas receitas, altera os `data/recipes/<id>.json` respetivos e
+corre `pnpm data:build` para regenerar o ficheiro combinado.
 
 Os agentes nunca alteram o conteúdo dos ficheiros de dados — só o dono, por re-upload completo.
 
@@ -102,7 +113,7 @@ components/     componentes de UI (Header, FilterBar, RecipeCard, …)
 lib/            data.ts/models.ts (datasets validados), filters.ts, suggest.ts, shopping.ts,
                 storage.ts, schemas.ts, types.ts, constants.ts (enumerações, fonte única), site.ts
 scripts/        check-data.ts (validação dos datasets)
-data/           recipes.json + modelos.json (só o dono altera, por re-upload)
+data/           recipes/<id>.json (uma receita por ficheiro) + recipes.json gerado + modelos.json (só o dono altera, por re-upload)
 __tests__/      suite Vitest
 ```
 

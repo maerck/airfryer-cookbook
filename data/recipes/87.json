@@ -1,0 +1,24 @@
+{
+  "id": 87,
+  "nome": "Truta com amêndoas",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "190°C",
+  "ingredientes": [
+    "2 trutas abertas ao meio (borboleta)",
+    "40 g de amêndoas laminadas",
+    "40 g de manteiga",
+    "Limão, salsa, sal e azeite"
+  ],
+  "passos": [
+    "Tosta as amêndoas na air fryer 2–3 min a 190°C; reserva.",
+    "Tempera as trutas abertas com sal e azeite.",
+    "Coze a 190°C durante 8–10 min, até a carne opacar.",
+    "Derrete a manteiga, junta as amêndoas e o limão e cobre as trutas."
+  ],
+  "dica": "Truta fica pronta num instante — não te afastes do cesto."
+}

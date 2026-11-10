@@ -1,0 +1,24 @@
+{
+  "id": 80,
+  "nome": "Dourada grelhada com limão e ervas",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "200°C",
+  "ingredientes": [
+    "2 douradas limpas e arranhadas",
+    "Sal grosso",
+    "Azeite, 1 limão em rodelas, alho",
+    "Ervas a gosto (tomilho, louro)"
+  ],
+  "passos": [
+    "Seca bem as douradas e faz 2 golpes de cada lado; esfrega com sal grosso.",
+    "Recheia a cavidade com rodelas de limão, alho e ervas.",
+    "Coze a 200°C durante 8–10 min por lado, até a espinha se soltar.",
+    "Rega com azeite e serve inteira."
+  ],
+  "dica": "Duas douradas médias cabem lado a lado no cesto de 7 L."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 149,
+  "nome": "Cheesecake individual",
+  "emoji": "🍰",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "150°C",
+  "ingredientes": [
+    "100 g de bolacha triturada + 50 g de manteiga (base)",
+    "250 g de queijo creme + 60 g de açúcar",
+    "2 ovos + raspa de limão + 1 c. chá de baunilha"
+  ],
+  "passos": [
+    "Mistura a bolacha com a manteiga e prensa no fundo de 4 forminhas.",
+    "Bate o queijo com o açúcar, os ovos, a baunilha e o limão até cremoso.",
+    "Verte sobre as bases.",
+    "Coze a 150°C durante 18–20 min, até as bordas firmarem e o centro tremer pouco.",
+    "Fria 2 horas no frigorífico; finaliza com fruta ou coulis."
+  ],
+  "dica": "O centro tremido ao sair é o ponto certo — endurece ao arrefecer."
+}

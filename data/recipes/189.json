@@ -1,0 +1,23 @@
+{
+  "id": 189,
+  "nome": "Salmão teriyaki (vapor + ar)",
+  "emoji": "🐟",
+  "metodo": "Vapor + Ar",
+  "cat": "Peixe & Marisco",
+  "tempo": 25,
+  "dificuldade": "Fácil",
+  "doses": 2,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "2 lombos de salmão",
+    "4 c. sopa de molho teriyaki (ou soja + mel + mirin)",
+    "Sésamo e cebolinho"
+  ],
+  "passos": [
+    "Coze os lombos em modo vapor 8 min (ficam tenros e suculentos).",
+    "Pincela com o molho teriyaki de ambos os lados.",
+    "Muda para modo air fryer a 200°C por 4–5 min, até glacear e dourar.",
+    "Polvilha com sésamo e cebolinho."
+  ],
+  "dica": "Vapor primeiro = interior sedoso; ar depois = glaceado dourado. O melhor dos dois mundos."
+}

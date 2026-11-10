@@ -1,0 +1,23 @@
+{
+  "id": 128,
+  "nome": "Empadas de galinha",
+  "emoji": "🥧",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "180°C",
+  "ingredientes": [
+    "Massa: 250 g de farinha + 125 g de manteiga + 1 ovo + água fria",
+    "Recheio: 200 g de frango cozido desfiado + cebolada + 2 c. sopa de bechamel",
+    "Gema para pincelar"
+  ],
+  "passos": [
+    "Amassa a farinha com a manteiga, o ovo e água; deixa 30 min no frio.",
+    "Refoga cebola e mistura o frango com o bechamel.",
+    "Forra forminhas de queque untadas com a massa, enche e fecha.",
+    "Pincela com gema e coze a 180°C durante 15–18 min."
+  ],
+  "dica": "Congela cruas: coze direto do congelador com +5 min."
+}

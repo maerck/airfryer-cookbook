@@ -1,0 +1,22 @@
+{
+  "id": 139,
+  "nome": "Chips de batata-doce",
+  "emoji": "🍠",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "150°C",
+  "ingredientes": [
+    "2 batatas-doces em fatias de 2 mm (mandolina)",
+    "1 c. sopa de azeite",
+    "Sal"
+  ],
+  "passos": [
+    "Envolve as fatias no azeite, uma a uma se precisares.",
+    "Coze a 150°C durante 15–20 min, em duas camadas no máximo, abanando a meio.",
+    "Salga só depois de frias e crocantes."
+  ],
+  "dica": "Paciência com a temperatura baixa: a 200°C queimam antes de secar."
+}

@@ -1,0 +1,23 @@
+{
+  "id": 90,
+  "nome": "Empanadas de atum",
+  "emoji": "🥟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "Massa: 250 g de farinha + 60 g de manteiga + 1 ovo + água morna + sal",
+    "Recheio: 2 latas de atum + 1 ovo cozido + azeitonas + tomate pelado picado",
+    "Cebola refogada e cominhos"
+  ],
+  "passos": [
+    "Amassa a farinha com a manteiga, o ovo e água até formar bola; deixa 30 min no frio.",
+    "Mistura os ingredientes do recheio.",
+    "Estende a massa, corta círculos e recheia a meio; fecha em meia-lua apertando com um garfo.",
+    "Coze a 190°C durante 12–15 min até dourar."
+  ],
+  "dica": "Ficam óptimas frias para lancheiras — faz o lote completo."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 89,
+  "nome": "Pataniscas de bacalhau",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 35,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "200 g de bacalhau cozido e desfiado",
+    "150 g de farinha + 250 ml de água gelada + 2 ovos",
+    "1 cebola picada + salsa",
+    "Pimenta e sal",
+    "Azeite"
+  ],
+  "passos": [
+    "Faz uma massa líquida espessa com farinha, ovos e água; tempera com pimenta.",
+    "Incorpora o bacalhau desfiado, a cebola e a salsa.",
+    "Colheradas da massa no cesto untado com azeite, achatando cada uma.",
+    "Coze a 190°C durante 8–10 min, virando a meio, até dourar."
+  ],
+  "dica": "A patanisca da avó, sem fritura submersa — o cesto faz o trabalho."
+}

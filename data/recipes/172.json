@@ -1,0 +1,23 @@
+{
+  "id": 172,
+  "nome": "Filetes de pescada no vapor com legumes",
+  "emoji": "🐟",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "4 filetes de pescada",
+    "1 cenoura + 1 curgete em palitos",
+    "Limão, sal e azeite",
+    "Molho de iogurte com alho (opcional)"
+  ],
+  "passos": [
+    "Coloca os legumes no prato de vapor e os filetes por cima, temperados com sal e limão.",
+    "Coze em modo vapor 10–12 min.",
+    "Rega com azeite cru e serve com o molho de iogurte."
+  ],
+  "dica": "Peixe + legumes numa só operação: jantar leve com uma única louça suja."
+}

@@ -1,0 +1,26 @@
+{
+  "id": 48,
+  "nome": "Camembert assado com mel e tomilho",
+  "emoji": "🧀",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 queijo camembert (sem a caixa de madeira)",
+    "1 c. sopa de mel",
+    "Tomilho fresco",
+    "1 dente de alho (opcional)",
+    "Tostas, pão de uva ou frutos secos para servir"
+  ],
+  "passos": [
+    "Faz uns cortes em grelha na superfície do queijo e espreme o alho para dentro.",
+    "Rega com mel e cobre com tomilho.",
+    "Coloca num pedaço de papel de alumínio ou forminha.",
+    "Coze a 180°C durante 10–12 min, até ficar mole e a borbulhar.",
+    "Serve imediatamente com tostas — come em 10 min, antes de endurecer."
+  ],
+  "dica": "Entrada de dinner party com 3 ingredientes e custo de 5 euros."
+}

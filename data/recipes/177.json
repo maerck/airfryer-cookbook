@@ -1,0 +1,25 @@
+{
+  "id": 177,
+  "nome": "Jiaozi de vegetais (ravióis chineses)",
+  "emoji": "🥟",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "20 discos de massa wonton",
+    "200 g de couve chinesa picada + 1 cenoura ralada",
+    "100 g de cogumelos picados + cebolinho",
+    "Molho de soja + gengibre + 1 fio de óleo de sésamo"
+  ],
+  "passos": [
+    "Mistura os vegetais com a soja, o gengibre e o óleo de sésamo.",
+    "Coloca uma colher de chá no centro de cada disco e fecha em meia-lua, apertando as bordas.",
+    "Forra o prato de vapor com papel ou folhas de couve e coloca os jiaozi sem tocarem.",
+    "Coze em modo vapor 10 min.",
+    "Serve com molho de soja e vinagre de arroz."
+  ],
+  "dica": "Congela crus em camadas com farinha: coze direto do congelador com +3 min."
+}

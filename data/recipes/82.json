@@ -1,0 +1,25 @@
+{
+  "id": 82,
+  "nome": "Croquetes de peixe",
+  "emoji": "🥟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 45,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "300 g de pescada cozida e desfiada",
+    "40 g de manteiga + 40 g de farinha + 300 ml de leite",
+    "1 cebola picada + salsa",
+    "Noz-moscada, sal, pimenta",
+    "1 ovo + pão ralado para panar"
+  ],
+  "passos": [
+    "Refoga a cebola; faz um bechamel com a manteiga, farinha e leite.",
+    "Incorpora o peixe desfiado e a salsa; tempera e deixa arrefecer 1 hora.",
+    "Forma croquetes e pana (ovo + pão ralado).",
+    "Coze a 190°C durante 10–12 min até dourar."
+  ],
+  "dica": "Boa solução para sobras de peixe cozido."
+}

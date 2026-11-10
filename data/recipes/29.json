@@ -1,0 +1,24 @@
+{
+  "id": 29,
+  "nome": "Legumes de primavera no vapor",
+  "emoji": "🥦",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "300 g de brócolos em raminhos",
+    "2 cenouras em palitos",
+    "150 g de feijão-verde",
+    "Sal, azeite e limão"
+  ],
+  "passos": [
+    "Enche o depósito de água (1,5 L dá para 90 min de vapor).",
+    "Coloca os legumes no prato/camada de vapor, sem sobrepor.",
+    "Coze em modo vapor 8–10 min, até ficarem verde-vivos e tenros.",
+    "Tempera com azeite, sal e sumo de limão."
+  ],
+  "dica": "Segundo a própria Xiaomi, este modelo coze 500 g de brócolos em cerca de 8 min — 30% mais rápido que um vaporizador tradicional."
+}

@@ -1,0 +1,26 @@
+{
+  "id": 24,
+  "nome": "Couve-flor buffalo (nuggets vegetais)",
+  "emoji": "🥦",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 couve-flor cortada em pequenos buquêtês",
+    "100 g de farinha + 120 ml de água (pasta)",
+    "1 c. chá de alho em pó",
+    "80 g de panko",
+    "4 c. sopa de molho de pimenta + 2 c. sopa de manteiga derretida"
+  ],
+  "passos": [
+    "Mistura a farinha, a água, o alho em pó e sal até obter uma pasta espessa.",
+    "Passa cada buquête pela pasta e depois pelo panko.",
+    "Coze a 190°C durante 15–18 min, virando a meio.",
+    "Envolve no molho de pimenta misturado com a manteiga.",
+    "Devolve ao cesto 2–3 min para caramelizar."
+  ],
+  "dica": "Converte até os maiores cépticos: a textura fica incrivelmente próxima das asas de frango."
+}

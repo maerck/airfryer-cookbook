@@ -1,0 +1,22 @@
+{
+  "id": 175,
+  "nome": "Espargos no vapor com manteiga de limão",
+  "emoji": "🌿",
+  "metodo": "Vapor",
+  "cat": "Vegetariano",
+  "tempo": 10,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1 molho de espargos (pontas duras removidas)",
+    "30 g de manteiga",
+    "Raspa e sumo de limão + sal"
+  ],
+  "passos": [
+    "Coze os espargos em modo vapor 4–6 min (finos) ou 6–8 min (grossos).",
+    "Derrete a manteiga com o limão.",
+    "Rega ao servir — verde-vivo e crocante."
+  ],
+  "dica": "Espargos ao vapor mantêm a cor e o crocante que a água a ferver destrói."
+}

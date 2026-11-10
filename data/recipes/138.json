@@ -1,0 +1,23 @@
+{
+  "id": 138,
+  "nome": "Croque monsieur",
+  "emoji": "🥪",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "180°C",
+  "ingredientes": [
+    "4 fatias de pão de brioche ou de forma",
+    "Fiambre e queijo gruyère em fatias",
+    "Bechamel espesso + mostarda",
+    "Queijo ralado para o topo"
+  ],
+  "passos": [
+    "Barra o pão com mostarda, monta fiambre + queijo e fecha.",
+    "Cobre com bechamel e queijo ralado.",
+    "Coze a 180°C durante 8–10 min, até o topo gratinar e dourar."
+  ],
+  "dica": "O clássico parisiense de cafés, agora lanche de domingo à noite."
+}

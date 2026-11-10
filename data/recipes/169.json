@@ -1,0 +1,25 @@
+{
+  "id": 169,
+  "nome": "Toucinho do céu",
+  "emoji": "🥮",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 50,
+  "dificuldade": "Média",
+  "doses": 8,
+  "temp": "160°C",
+  "ingredientes": [
+    "200 g de açúcar + 100 ml de água",
+    "150 g de amêndoa ralada",
+    "5 gemas + 2 ovos",
+    "Canela e raspa de limão"
+  ],
+  "passos": [
+    "Faz uma calda com o açúcar e a água (5 min); junta a amêndoa fora do lume.",
+    "Deixa amornar e incorpora os ovos batidos com as gemas, a canela e o limão.",
+    "Verte para uma forma pequena untada e forrada com papel.",
+    "Coze a 160°C durante 30–35 min, até firme.",
+    "Frio, corta em quadrados e polvilha com canela."
+  ],
+  "dica": "Doce conventual de ovos e amêndoa — a versão original levava banha (daí o nome); esta não."
+}

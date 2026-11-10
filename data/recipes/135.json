@@ -1,0 +1,22 @@
+{
+  "id": 135,
+  "nome": "Bruschettas de tomate",
+  "emoji": "🍅",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 baguette em fatias grossas",
+    "3 tomates maduros picados, sem sementes",
+    "Alho, manjericão, azeite e sal"
+  ],
+  "passos": [
+    "Tosta as fatias a 180°C durante 3–4 min e esfrega-as com alho cru.",
+    "Mistura o tomate com azeite, sal e manjericão.",
+    "Cobre as tostas e finaliza com um fio de azeite."
+  ],
+  "dica": "O alho cru esfregado no pão quente é o gesto que muda tudo."
+}

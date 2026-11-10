@@ -1,0 +1,25 @@
+{
+  "id": 53,
+  "nome": "Frango karaage (japonês)",
+  "emoji": "🍗",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 45,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "600 g de coxas de frango sem pele em cubos",
+    "3 c. sopa de molho de soja + 1 c. sopa de mirin ou vinho branco",
+    "1 c. sopa de gengibre ralado + 2 dentes de alho",
+    "Farinha + amido de milho em partes iguais para panar",
+    "Lima e maionese japonesa para servir"
+  ],
+  "passos": [
+    "Marina o frango na soja, mirin, gengibre e alho durante 30 min.",
+    "Escorre e envolve os cubos na mistura de farinha e amido.",
+    "Coze a 190°C durante 12–14 min, virando a meio, até ficar dourado e crocante.",
+    "Serve com gomos de lima e maionese japonesa."
+  ],
+  "dica": "A dupla farinha + amido é o que dá a crocância leve típica do karaage."
+}

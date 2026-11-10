@@ -1,0 +1,23 @@
+{
+  "id": 120,
+  "nome": "Feijão-verde assado com amêndoas",
+  "emoji": "🫛",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "200°C",
+  "ingredientes": [
+    "400 g de feijão-verde (pontas cortadas)",
+    "2 c. sopa de amêndoas laminadas",
+    "Azeite, alho, limão e sal"
+  ],
+  "passos": [
+    "Envolve o feijão-verde no azeite e alho.",
+    "Coze a 200°C durante 8 min.",
+    "Adiciona as amêndoas e coze mais 3–4 min, até tostarem.",
+    "Termina com raspa de limão."
+  ],
+  "dica": "Versão elegante do clássico francês 'amandel vert' — prato de festa leve."
+}

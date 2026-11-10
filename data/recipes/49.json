@@ -1,0 +1,26 @@
+{
+  "id": 49,
+  "nome": "Pudim de ovos no vapor",
+  "emoji": "🍮",
+  "metodo": "Vapor",
+  "cat": "Doces",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "Caramelo: 100 g de açúcar + 2 c. sopa de água",
+    "3 ovos",
+    "250 ml de leite",
+    "80 g de açúcar",
+    "Raspa de limão ou um pau de canela"
+  ],
+  "passos": [
+    "Faz o caramelo com o açúcar e a água até ficar âmbar; forra uma forma pequena e deixa endurecer.",
+    "Bate os ovos com o açúcar e a raspa de limão; adiciona o leite morno aos poucos.",
+    "Verte para a forma caramelizada e cobre com alumínio.",
+    "Coze em modo vapor 25–30 min, até firme.",
+    "Arrefece e desenforma — o caramelo escorre por cima como deve ser."
+  ],
+  "dica": "O vapor cozinha o pudim suavemente, sem a casca de ovo revessada que o forno muitas vezes dá."
+}

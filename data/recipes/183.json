@@ -1,0 +1,24 @@
+{
+  "id": 183,
+  "nome": "Frango no vapor com cogumelos shiitake",
+  "emoji": "🍄",
+  "metodo": "Vapor",
+  "cat": "Carne",
+  "tempo": 35,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "4 coxas de frango sem pele e sem osso (ou peitos)",
+    "150 g de cogumelos shiitake em fatias",
+    "2 c. sopa de molho de soja + gengibre ralado + alho",
+    "1 c. chá de óleo de sésamo + cebolinho"
+  ],
+  "passos": [
+    "Envolve o frango na soja, gengibre e alho; deixa 15 min.",
+    "Coloca num prato de calor com os shiitake por cima.",
+    "Coze em modo vapor 15–18 min, até o interior estar opaco.",
+    "Termina com óleo de sésamo e cebolinho; serve com arroz."
+  ],
+  "dica": "O caldo que se forma no prato é sopa de graça — aproveita-o no arroz."
+}

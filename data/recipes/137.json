@@ -1,0 +1,24 @@
+{
+  "id": 137,
+  "nome": "Rolos primavera crocantes",
+  "emoji": "🌯",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 40,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "8 folhas de massa para rolos primavera (frescas ou congeladas, descongeladas)",
+    "Recheio: 200 g de couve chinesa + 2 cenouras raladas + cogumelos + molho de soja",
+    "Água para colar",
+    "Óleo de sésamo ou azeite para pincelar"
+  ],
+  "passos": [
+    "Salteia os vegetais em tiras com a soja, 3–4 min; deixa escorrer e arrefecer.",
+    "Enrola apertado, colando as bordas com água.",
+    "Pincela com óleo de sésamo.",
+    "Coze a 190°C durante 10–12 min, virando a meio, até a massa ficar estaladiça e dourada."
+  ],
+  "dica": "Versão congelada de supermercado também funciona: 8 min a 190°C direto do congelador."
+}

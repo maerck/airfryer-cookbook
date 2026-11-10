@@ -1,0 +1,23 @@
+{
+  "id": 160,
+  "nome": "Crumble de maçã individual",
+  "emoji": "🥧",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "4 maçãs em cubos + canela + 1 c. sopa de açúcar",
+    "Crumble: 80 g de farinha + 50 g de aveia + 60 g de manteiga fria + 50 g de açúcar"
+  ],
+  "passos": [
+    "Distribui as maçãs por 4 forminhas e polvilha com açúcar e canela.",
+    "Mistura os ingredientes do crumble com as pontas dos dedos até granulado.",
+    "Cobre as maçãs generosamente.",
+    "Coze a 180°C durante 18–20 min, até o crumble dourar e borbulhar.",
+    "Serve com nata ou gelado."
+  ],
+  "dica": "O crumble extra congela bem — guarda para a próxima crise de doce."
+}

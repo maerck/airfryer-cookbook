@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "nome": "Frango assado inteiro com limão e alho",
+  "emoji": "🍗",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 60,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "1 frango pequeno (~1,2 kg — cabe no cesto de 7 L)",
+    "1 limão + 4 dentes de alho",
+    "2 c. sopa de azeite",
+    "1 c. chá de pimentão doce",
+    "Sal, pimenta e tomilho fresco"
+  ],
+  "passos": [
+    "Seca muito bem o frango, dentro e fora (pele seca = pele crocante).",
+    "Mistura o azeite, o alho picado, o pimentão doce, sal e pimenta; esfrega por fora e dentro do frango.",
+    "Recheia a cavidade com o limão cortado ao meio, alho e tomilho; ata as asas junto ao corpo.",
+    "Coze a 180°C durante 40–45 min, virando a meio (com pinças, para não furar a pele).",
+    "Deixa descansar 5 min antes de cortar. Está pronto quando os sumos saem claros."
+  ],
+  "dica": "Se o topo dourar demasiado, cobre com uma folha de alumínio nos últimos 10 min."
+}

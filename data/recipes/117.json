@@ -1,0 +1,22 @@
+{
+  "id": 117,
+  "nome": "Tomate-cereja confitado",
+  "emoji": "🍅",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 50,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "150°C",
+  "ingredientes": [
+    "500 g de tomate-cereja",
+    "Azeite generoso + 2 dentes de alho",
+    "Tomilho + sal"
+  ],
+  "passos": [
+    "Envolve os tomates no azeite com o alho, o tomilho e o sal.",
+    "Coze a 150°C durante 40–45 min, até murcharem e concentrarem o doce.",
+    "Guarda submersos em azeite, no frigorífico, até 1 semana."
+  ],
+  "dica": "Doce, concentrado, em cima de bruschetta, massa ou queijo fresco."
+}

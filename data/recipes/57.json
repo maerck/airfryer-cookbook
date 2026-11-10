@@ -1,0 +1,26 @@
+{
+  "id": 57,
+  "nome": "Cordon bleu de frango",
+  "emoji": "🧀",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 bifes finos de peito de frango",
+    "4 fatias de fiambre + 4 fatias de queijo suave",
+    "Farinha + 2 ovos + panko",
+    "Palitos de madeira",
+    "Sal e pimenta"
+  ],
+  "passos": [
+    "Tempera os bifes e coloca uma fatia de fiambre e uma de queijo em cada um.",
+    "Enrola e fecha com palitos.",
+    "Pana cada rolo: farinha → ovo → panko.",
+    "Coze a 190°C durante 15–18 min, virando a meio, até dourar e o queijo derreter.",
+    "Retira os palitos antes de servir."
+  ],
+  "dica": "Dois palitos cruzados seguram melhor o rolo durante a cozedura."
+}

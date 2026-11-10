@@ -1,0 +1,26 @@
+{
+  "id": 23,
+  "nome": "Ameijoas no vapor com alho e vinho branco",
+  "emoji": "🐚",
+  "metodo": "Vapor",
+  "cat": "Peixe & Marisco",
+  "tempo": 15,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "1 kg de ameijoas muito bem lavadas",
+    "4 dentes de alho picados",
+    "100 ml de vinho branco",
+    "Coentros picados",
+    "Azeite e malagueta (opcional)"
+  ],
+  "passos": [
+    "Coloca as ameijoas num prato fundo resistente ao calor.",
+    "Distribui o alho por cima e verte o vinho branco.",
+    "Coze em modo vapor 5–8 min, até abrirem.",
+    "Descarta as que ficarem fechadas.",
+    "Termina com coentros, um fio de azeite e serve com pão."
+  ],
+  "dica": "O vapor abre as ameijoas no seu próprio caldo — mais puro do que a versão de frigideira."
+}

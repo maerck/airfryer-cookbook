@@ -1,0 +1,24 @@
+{
+  "id": 38,
+  "nome": "Rissóis de camarão",
+  "emoji": "🥟",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 60,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "Massa: 150 g de farinha + 250 ml de leite + 30 g de manteiga + sal",
+    "Recheio: 150 g de camarão cozido picado + 3 c. sopa de bechamel + mostarda + salsa",
+    "1 ovo batido + pão ralado para panar"
+  ],
+  "passos": [
+    "Ferve o leite com a manteiga e o sal; adiciona a farinha de uma vez e mexe até formar bola; deixa arrefecer.",
+    "Mistura o camarão com o bechamel, mostarda e salsa.",
+    "Estende a massa fina, corta círculos e coloca recheio no centro.",
+    "Dobra em meia-lua e fecha bem as bordas com um garfo.",
+    "Passa pelo ovo e pão ralado; coze a 190°C durante 10–12 min até dourar."
+  ],
+  "dica": "A massa quente cola nas mãos — trabalha-a com as mãos untadas de azeite."
+}

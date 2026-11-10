@@ -1,0 +1,23 @@
+{
+  "id": 79,
+  "nome": "Peixe-espada preta com manteiga de limão",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 postas de peixe-espada preta",
+    "60 g de manteiga + raspa e sumo de 1 limão",
+    "Alho e salsa picados",
+    "Sal e pimenta"
+  ],
+  "passos": [
+    "Tempera as postas com sal e pimenta.",
+    "Coze a 190°C durante 8–10 min, virando a meio.",
+    "Derrete a manteiga com o limão, alho e salsa e rega ao servir."
+  ],
+  "dica": "O clássico da Madeira com fritura trocada por grelha limpa."
+}

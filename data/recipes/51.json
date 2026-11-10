@@ -1,0 +1,26 @@
+{
+  "id": 51,
+  "nome": "Almôndegas de carne com molho de tomate",
+  "emoji": "🧆",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 35,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "500 g de carne picada (vaca ou mistura vaca/porco)",
+    "1 ovo + 3 c. sopa de pão ralado",
+    "1 cebola ralada + 2 dentes de alho",
+    "Salsa picada, sal e pimenta",
+    "400 g de polpa de tomate + orégãos"
+  ],
+  "passos": [
+    "Mistura a carne com o ovo, o pão ralado, a cebola, o alho e a salsa; forma bolas de ~4 cm.",
+    "Coze a 190°C durante 10–12 min, virando a meio, até dourarem.",
+    "Numa travessa pequena que caiba no cesto, cobre as almôndegas com a polpa de tomate temperada.",
+    "Volta à air fryer por mais 5 min, para o molho apurar.",
+    "Serve com espaguete ou pão."
+  ],
+  "dica": "Polvilha com parmesão nos últimos 2 min para gratinar."
+}

@@ -1,0 +1,27 @@
+{
+  "id": 43,
+  "nome": "Pastéis de nata rápidos de massa folhada",
+  "emoji": "🥮",
+  "metodo": "Air Fryer",
+  "cat": "Doces",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "190°C",
+  "ingredientes": [
+    "1 placa de massa folhada (reta da secção de refrigerados)",
+    "200 ml de natas + 100 ml de leite",
+    "2 ovos + 1 gema",
+    "100 g de açúcar",
+    "1 c. chá de farinha de amido ou farinha + casca de limão"
+  ],
+  "passos": [
+    "Aquece as natas, o leite, o açúcar e a casca de limão até dissolver o açúcar.",
+    "Mistura os ovos batidos com o amido; adiciona o líquido quente em fio, mexendo; volta ao lume 1–2 min até engrossar. Deixa arrefecer.",
+    "Corta círculos de massa e forra forminhas de queques bem untadas.",
+    "Enche 3/4 com o creme.",
+    "Coze a 190°C durante 12–15 min, até a massa subir e o creme ganhar pintas tostadas.",
+    "Polvilha com canela e açúcar em pó."
+  ],
+  "dica": "Versão caseira honesta: a crosta fica crocante e o creme sedoso — sem a caloria da fritura das pastelarias."
+}

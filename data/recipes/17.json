@@ -1,0 +1,24 @@
+{
+  "id": 17,
+  "nome": "Salmão grelhado com ervas",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "190°C",
+  "ingredientes": [
+    "2 lombos de salmão (com pele)",
+    "1 c. sopa de azeite",
+    "1 limão em rodelas",
+    "Alho picado, tomilho, sal e pimenta"
+  ],
+  "passos": [
+    "Pincela o salmão com azeite e tempera com sal, pimenta e alho.",
+    "Coloca com a pele virada para baixo e rodelas de limão por cima.",
+    "Coze a 190°C durante 10–12 min (12–14 se os lombos forem grossos).",
+    "Está pronto quando desfaz facilmente em lascas."
+  ],
+  "dica": "Salmão a 52–55°C no centro fica perfeito: translúcido no centro, opaco nas pontas."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 118,
+  "nome": "Baba ganoush (creme de beringela)",
+  "emoji": "🍆",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 45,
+  "dificuldade": "Fácil",
+  "doses": 6,
+  "temp": "200°C",
+  "ingredientes": [
+    "2 beringelas médias",
+    "3 c. sopa de tahine",
+    "1 dente de alho + sumo de 1 limão",
+    "Azeite, sal e cominhos"
+  ],
+  "passos": [
+    "Pica as beringelas com um garfo e coze inteiras a 200°C durante 25–30 min, até colapsarem.",
+    "Abre, retira a polpa e deixa escorrer 10 min.",
+    "Tritura com tahine, alho, limão, azeite e sal até ficar cremoso.",
+    "Serve com azeite e cominhos por cima, com pão pita."
+  ],
+  "dica": "A beringela assada dá um fumado profundo impossível de obter cozida."
+}

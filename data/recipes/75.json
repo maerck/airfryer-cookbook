@@ -1,0 +1,24 @@
+{
+  "id": 75,
+  "nome": "Pernil de porco assado",
+  "emoji": "🍖",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 120,
+  "dificuldade": "Média",
+  "doses": 6,
+  "temp": "170°C",
+  "ingredientes": [
+    "1 pernil pequeno (~1,2 kg, cabe no cesto de 7 L)",
+    "6 dentes de alho + 1 c. sopa de massa de pimentão",
+    "100 ml de vinho branco + azeite",
+    "Sal, pimenta e 2 folhas de louro"
+  ],
+  "passos": [
+    "Esfrega o pernil com o alho, pimentão, azeite, sal e louro; marina 2 horas.",
+    "Coze a 170°C durante 80–90 min, virando duas vezes e pincelando com o vinho.",
+    "Sobe para 200°C nos últimos 10 min para dourar.",
+    "Descansa 10 min antes de fatiar."
+  ],
+  "dica": "Domingo em família sem ligar o forno grande."
+}

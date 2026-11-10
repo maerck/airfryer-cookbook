@@ -1,0 +1,24 @@
+{
+  "id": 8,
+  "nome": "Bife de vaca grelhado",
+  "emoji": "🥩",
+  "metodo": "Air Fryer",
+  "cat": "Carne",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "200°C",
+  "ingredientes": [
+    "2 bifes de vaca (~2,5 cm de espessura, chambão ou lombo)",
+    "1 c. sopa de azeite",
+    "Sal grosso e pimenta preta moída na hora"
+  ],
+  "passos": [
+    "Tempera os bifes com sal, pimenta e azeite 15 min antes (à temperatura ambiente).",
+    "Pré-aquece a air fryer 3 min a 200°C.",
+    "Coze 4–5 min por lado para mal passado; 6–7 min por lado para bem passado.",
+    "Descansa os bifes 5 min embrulhados em alumínio antes de cortar.",
+    "Serve com manteiga de ervas por cima (opcional)."
+  ],
+  "dica": "A air fryer sela bem mas faz menos crosta que uma frigideira: termina 30 segundos numa frigideira muito quente se quiseres crosta perfeita."
+}

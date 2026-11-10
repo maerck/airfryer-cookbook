@@ -1,0 +1,25 @@
+{
+  "id": 88,
+  "nome": "Hambúrgueres de salmão",
+  "emoji": "🍔",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "400 g de salmão picado à faca (sem pele)",
+    "2 c. sopa de pão ralado + 1 ovo",
+    "Coentros picados, gengibre ralado, alho",
+    "Sal e lima",
+    "Pão de hambúrguer e maionese de lima"
+  ],
+  "passos": [
+    "Mistura o salmão com o ovo, o pão ralado, os coentros, o gengibre e o alho.",
+    "Forma 4 hambúrgueres e refrigera 15 min para firmar.",
+    "Coze a 190°C durante 10–12 min, virando a meio.",
+    "Serve no pão com maionese de lima e rúcula."
+  ],
+  "dica": "Picar à faca em vez de usar picada dá textura de verdade."
+}

@@ -1,0 +1,27 @@
+{
+  "id": 39,
+  "nome": "Siu mai de porco e camarão (dim sum)",
+  "emoji": "🥟",
+  "metodo": "Vapor",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 40,
+  "dificuldade": "Média",
+  "doses": 4,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "12 discos de massa wonton",
+    "250 g de carne de porco picada",
+    "100 g de camarão picado",
+    "2 cogumelos shiitake picados",
+    "1 c. sopa de molho de soja + gengibre ralado + 1 clara",
+    "Cebolinho e óleo de sésamo"
+  ],
+  "passos": [
+    "Mistura a carne, o camarão, os cogumelos, a soja, o gengibre e a clara; bate a mistura até ficar pegajosa.",
+    "Coloca 1 colher de recheio no centro de cada disco de massa.",
+    "Forma cestinhas abertas no topo, apertando a base sem fechar.",
+    "Coze em modo vapor 12 min.",
+    "Serve com soja, cebolinho e algumas gotas de óleo de sésamo."
+  ],
+  "dica": "A colheita de dim sum em casa: a massa wonton encontra-se na secção de produtos asiáticos do supermercado."
+}

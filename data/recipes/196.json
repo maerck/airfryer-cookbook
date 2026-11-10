@@ -1,0 +1,23 @@
+{
+  "id": 196,
+  "nome": "Entrecosto BBQ dupla cozedura (vapor + ar)",
+  "emoji": "🍖",
+  "metodo": "Vapor + Ar",
+  "cat": "Carne",
+  "tempo": 45,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "Vapor → 200°C",
+  "ingredientes": [
+    "800 g de entrecosto em tiras",
+    "4 c. sopa de molho barbecue + 1 c. sopa de mel",
+    "Sal e alho"
+  ],
+  "passos": [
+    "Coze o entrecosto em modo vapor 15 min (tenro por dentro).",
+    "Escorre e seca muito bem.",
+    "Envolve no barbecue com mel e sal.",
+    "Carameliza em modo air fryer a 200°C durante 10–12 min, virando a meio."
+  ],
+  "dica": "Carne a soltar-se do osso estilo low-and-smoke, em 45 minutos."
+}

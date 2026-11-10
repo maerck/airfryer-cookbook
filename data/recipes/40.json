@@ -1,0 +1,23 @@
+{
+  "id": 40,
+  "nome": "Gyozas no vapor com molho de soja",
+  "emoji": "🥟",
+  "metodo": "Vapor",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 2,
+  "temp": "Modo vapor",
+  "ingredientes": [
+    "12 gyozas (congeladas ou frescas, de supermercado)",
+    "2 c. sopa de molho de soja",
+    "Vinagre de arroz ou sumo de limão",
+    "Gengibre em lâminas e cebolinho"
+  ],
+  "passos": [
+    "Forra o prato de vapor com papel vegetal furado (para não colar).",
+    "Coze as gyozas em modo vapor 8–10 min, até a massa ficar translúcida.",
+    "Mistura a soja com o vinagre e o gengibre; serve de molho."
+  ],
+  "dica": "Para estilo 'potstickers': depois do vapor, 2 min na frigideira para dourar a base."
+}

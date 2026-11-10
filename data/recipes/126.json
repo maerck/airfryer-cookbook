@@ -1,0 +1,22 @@
+{
+  "id": 126,
+  "nome": "Amêndoas tostadas com páprica",
+  "emoji": "🥜",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 6,
+  "temp": "160°C",
+  "ingredientes": [
+    "200 g de amêndoas cruas",
+    "1 c. chá de azeite",
+    "Pimentão doce, sal e uma pitada de mel (opcional)"
+  ],
+  "passos": [
+    "Envolve as amêndoas no azeite e temperos.",
+    "Coze a 160°C durante 8–10 min, abanando o cesto a meio.",
+    "Deixa arrefecer — crocantes ficam só depois de frias."
+  ],
+  "dica": "Aperitivo de 3 ingredientes que desaparece antes do jantar."
+}

@@ -1,0 +1,23 @@
+{
+  "id": 95,
+  "nome": "Solha com manteiga e alcaparras",
+  "emoji": "🐟",
+  "metodo": "Air Fryer",
+  "cat": "Peixe & Marisco",
+  "tempo": 20,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "4 filetes de solha",
+    "50 g de manteiga",
+    "2 c. sopa de alcaparras",
+    "Limão, salsa, sal e pimenta"
+  ],
+  "passos": [
+    "Seca os filetes e tempera com sal e pimenta.",
+    "Coze a 190°C durante 8–10 min, virando com cuidado (a solha desfaz-se fácil).",
+    "Derrete a manteiga com as alcaparras e o limão e rega ao servir."
+  ],
+  "dica": "Peixe leve de digestão — jantar de semana elegante sem esforço."
+}

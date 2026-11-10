@@ -1,0 +1,24 @@
+{
+  "id": 125,
+  "nome": "Nachos com queijo",
+  "emoji": "🧀",
+  "metodo": "Air Fryer",
+  "cat": "Acompanhamentos & Lanches",
+  "tempo": 15,
+  "dificuldade": "Muito fácil",
+  "doses": 4,
+  "temp": "180°C",
+  "ingredientes": [
+    "200 g de tortilla chips",
+    "150 g de queijo cheddar ralado",
+    "1 tomate picado + 1 malagueta em rodelas",
+    "Coentros e natas azedas para servir"
+  ],
+  "passos": [
+    "Espalha os chips numa travessa que caiba no cesto.",
+    "Cobre com queijo, tomate e malagueta.",
+    "Coze a 180°C durante 5–6 min, até o queijo derreter e borbulhar.",
+    "Serve imediatamente com coentros e natas."
+  ],
+  "dica": "O queijo derrete em minutos — não cozes além ou os chips queimam."
+}

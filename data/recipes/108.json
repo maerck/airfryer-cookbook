@@ -1,0 +1,24 @@
+{
+  "id": 108,
+  "nome": "Beterraba assada com mel",
+  "emoji": "🥕",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 40,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "190°C",
+  "ingredientes": [
+    "3 beterrabas em cubos",
+    "Azeite, sal e tomilho",
+    "1 c. sopa de mel",
+    "Queijo chêvre para servir (opcional)"
+  ],
+  "passos": [
+    "Envolve os cubos no azeite, sal e tomilho.",
+    "Coze a 190°C durante 25–30 min, abanando a meio.",
+    "Nos últimos 5 min, adiciona o mel.",
+    "Serve morna com chêvre desfeito por cima."
+  ],
+  "dica": "Assar concentra o doce da beterraba — nada de água a ferver."
+}

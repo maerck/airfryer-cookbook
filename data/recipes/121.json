@@ -1,0 +1,22 @@
+{
+  "id": 121,
+  "nome": "Chips de couve (kale crisps)",
+  "emoji": "🥬",
+  "metodo": "Air Fryer",
+  "cat": "Vegetariano",
+  "tempo": 30,
+  "dificuldade": "Fácil",
+  "doses": 4,
+  "temp": "150°C",
+  "ingredientes": [
+    "1 molho de couve frisada (kale) em folhas do tamanho de um chip",
+    "1 c. sopa de azeite",
+    "Sal e pimentão doce (páprica)"
+  ],
+  "passos": [
+    "Seca muito bem as folhas e envolve levemente no azeite (folha a folha).",
+    "Coze a 150°C durante 10–12 min, até estaladiças mas ainda verdes.",
+    "Salga ao sair e come imediatamente."
+  ],
+  "dica": "Azeite a mais = folhas moles. Massagem com um fio por folha é o segredo."
+}
