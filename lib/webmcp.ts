@@ -53,6 +53,9 @@ function resolverModelContext(): ModelContextLike | undefined {
 
 const MAX_RESULTADOS_BUSCA = 25;
 const MAX_SUGESTOES = 10;
+/** Limites defensivos do input do agente (args do WebMCP são JSON arbitrário). */
+const MAX_INGREDIENTES_PEDIDOS = 30;
+const MAX_CARACTERES_INGREDIENTE = 80;
 
 function texto(obj: unknown): WebMCPResult {
   return { content: [{ type: "text", text: JSON.stringify(obj, null, 2) }] };
@@ -132,7 +135,10 @@ function getRecipe(args: Record<string, unknown>): WebMCPResult {
 
 function suggestRecipes(args: Record<string, unknown>): WebMCPResult {
   const lista = Array.isArray(args.ingredientes)
-    ? args.ingredientes.filter((x) => typeof x === "string")
+    ? args.ingredientes
+        .filter((x): x is string => typeof x === "string")
+        .slice(0, MAX_INGREDIENTES_PEDIDOS)
+        .map((x) => x.slice(0, MAX_CARACTERES_INGREDIENTE))
     : [];
   if (lista.length === 0) return erro("ingredientes tem de ser um array de strings não vazio.");
   const sugestoes = sugerirReceitas(RECEITAS, normalizarTenho(lista)).slice(0, MAX_SUGESTOES);
@@ -218,8 +224,9 @@ export const FERRAMENTAS_WEBMCP: WebMCPToolDef[] = [
       properties: {
         ingredientes: {
           type: "array",
-          items: { type: "string" },
-          description: "Ingredientes disponíveis.",
+          items: { type: "string", maxLength: 80 },
+          maxItems: 30,
+          description: "Ingredientes disponíveis (máx. 30 itens de 80 caracteres).",
         },
       },
       required: ["ingredientes"],

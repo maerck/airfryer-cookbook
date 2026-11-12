@@ -1,7 +1,16 @@
+import { RECEITAS } from "./data";
+
 const CHAVE_FAVORITAS = "af200:favoritas";
 const CHAVE_INGREDIENTES = "af200:ingredientes";
 const CHAVE_MODELO_ATIVO = "af200:modelo-ativo";
 const EVENTO_INGREDIENTES = "af200:ingredientes-alterados";
+
+/**
+ * Nº de ingredientes por receita (id → length). O localStorage é entrada não confiável
+ * (qualquer script same-origin escreve lá), por isso os índices persistidos são validados
+ * contra o dataset: ids desconhecidos, índices fora de [0, length) e duplicados são descartados.
+ */
+const LIMITE_INDICES = new Map<number, number>(RECEITAS.map((r) => [r.id, r.ingredientes.length]));
 
 function lerJSON(chave: string): unknown {
   try {
@@ -34,8 +43,14 @@ export function lerIngredientesMarcados(): Record<number, number[]> {
   for (const [chave, valor] of Object.entries(dados)) {
     if (!Array.isArray(valor)) continue;
     const id = Number(chave);
-    const indices = valor.filter((x): x is number => typeof x === "number" && Number.isInteger(x));
-    if (Number.isInteger(id) && indices.length > 0) resultado[id] = indices;
+    const limite = LIMITE_INDICES.get(id);
+    // id desconhecido ou índices fora de [0, limite) são descartados (localStorage hostil)
+    if (!Number.isInteger(id) || limite === undefined) continue;
+    const unicos = new Set<number>();
+    for (const x of valor) {
+      if (typeof x === "number" && Number.isInteger(x) && x >= 0 && x < limite) unicos.add(x);
+    }
+    if (unicos.size > 0) resultado[id] = [...unicos].sort((a, b) => a - b);
   }
   return resultado;
 }
