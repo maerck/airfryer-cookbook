@@ -2,11 +2,7 @@
 
 import { beforeEach, describe, expect, it } from "vitest";
 import { RECEITAS } from "@/lib/data";
-import {
-  guardarIngredientesMarcados,
-  lerFavoritas,
-  lerIngredientesMarcados,
-} from "@/lib/storage";
+import { guardarIngredientesMarcados, lerFavoritas, lerIngredientesMarcados } from "@/lib/storage";
 
 /** localStorage é entrada não confiável: qualquer script same-origin escreve lá. */
 
@@ -44,10 +40,7 @@ describe("storage — validação de ingredientes marcados contra o dataset", ()
     if (!r) throw new Error("dataset vazio");
     const limite = r.ingredientes.length;
     if (limite < 2) throw new Error("receita de teste com menos de 2 ingredientes");
-    localStorage.setItem(
-      "af200:ingredientes",
-      JSON.stringify({ [r.id]: [1, 1, 0, 0, 1] }),
-    );
+    localStorage.setItem("af200:ingredientes", JSON.stringify({ [r.id]: [1, 1, 0, 0, 1] }));
     expect(lerIngredientesMarcados()[r.id]).toEqual([0, 1]);
   });
 
