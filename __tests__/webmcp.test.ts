@@ -103,6 +103,25 @@ describe("WebMCP — suggest_recipes", () => {
   it("array vazio dá erro", () => {
     expect(executarFerramenta("suggest_recipes", { ingredientes: [] }).isError).toBe(true);
   });
+
+  it("limita o input hostil: máx. 30 itens de 80 caracteres (CWE-400/770)", () => {
+    const massivo = Array.from({ length: 5_000 }, (_, i) => "x".repeat(10_000) + i);
+    const inicio = performance.now();
+    const r = json(executarFerramenta("suggest_recipes", { ingredientes: massivo }));
+    const duracao = performance.now() - inicio;
+    // 30 itens × 80 caracteres é o teto contratual — o trabalho fica limitado a isso
+    expect(duracao).toBeLessThan(1_000);
+    expect(r.sugestoes).toBeDefined();
+  });
+
+  it("itens não-string continuam a ser ignorados", () => {
+    const r = json(
+      executarFerramenta("suggest_recipes", {
+        ingredientes: ["frango", 42, null, { x: 1 }, ["batata"]],
+      }),
+    );
+    expect(r.sugestoes).toBeDefined();
+  });
 });
 
 describe("WebMCP — list_filters", () => {

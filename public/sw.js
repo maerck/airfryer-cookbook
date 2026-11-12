@@ -1,4 +1,4 @@
-const VERSAO = "v1";
+const VERSAO = "v2";
 const SHELL = ["/", "/manifest.webmanifest", "/icon.svg"];
 
 self.addEventListener("install", (evento) => {
@@ -31,8 +31,12 @@ self.addEventListener("fetch", (evento) => {
     evento.respondWith(
       fetch(pedido)
         .then((resposta) => {
-          const copia = resposta.clone();
-          caches.open(VERSAO).then((cache) => cache.put(pedido, copia));
+          // só se cacheiam navegações válidas — uma página de erro transiente não pode
+          // ficar persistida e ser reproduzida offline como se fosse conteúdo real
+          if (resposta.ok) {
+            const copia = resposta.clone();
+            caches.open(VERSAO).then((cache) => cache.put(pedido, copia));
+          }
           return resposta;
         })
         .catch(() => caches.match(pedido).then((hit) => hit || caches.match("/"))),

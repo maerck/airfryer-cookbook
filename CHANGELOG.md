@@ -7,6 +7,19 @@ O formato segue o [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) e o p
 
 ## [Unreleased]
 
+### Corrigido
+
+- Endurecimento de segurança (revisão estática hermes-security, 5 achados baixos): ações da CI
+  fixadas por commit SHA em vez de tags mutáveis (CWE-829); índices de ingredientes do
+  `localStorage` validados contra o dataset em `lerIngredientesMarcados` (CWE-129) — ids
+  desconhecidos, índices fora de `[0, length)` e duplicados são descartados; o service worker
+  só cacheia navegações com resposta válida (`resposta.ok`, CWE-451) e a versão de cache passa
+  a `v2` para despejar páginas de erro já cacheadas; `suggest_recipes` do WebMCP limita o input
+  do agente a 30 itens de 80 caracteres (CWE-400/770), refletido no `inputSchema`; adicionados
+  cabeçalhos de segurança (CSP, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy)
+  via `headers()` no `next.config.ts` (CWE-693). Novos testes de regressão em
+  `__tests__/storage.test.ts` e `__tests__/webmcp.test.ts`.
+
 ### Adicionado
 
 - Testes automáticos de acessibilidade (M11): `axe-core` sobre o HTML SSR de `/`, `/modelos`,
