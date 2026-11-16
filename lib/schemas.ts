@@ -1,11 +1,26 @@
 import { z } from "zod";
 // extensão .ts explícita: este módulo também é carregado diretamente pelo Node (scripts/check-data.ts)
 import { CATEGORIAS, DIFICULDADES, METODOS } from "./constants.ts";
-import type { ModeloAirfryer, Receita } from "./types";
+import type { Fonte, ModeloAirfryer, Receita } from "./types";
+
+/**
+ * Licenças de conteúdo aberto que permitem adaptação com atribuição (M13). O registo em
+ * data/fontes.json só aceita estas licenças; a verificação da licença e do robots.txt de cada
+ * fonte é feita manualmente pelo dono antes de a registar.
+ */
+export const LICENCAS_PERMITIDAS = ["CC0 1.0", "CC BY 4.0", "CC BY-SA 4.0"] as const;
+export const licencaPermitidaSchema = z.enum(LICENCAS_PERMITIDAS);
 
 export const metodoSchema = z.enum(METODOS);
 export const categoriaSchema = z.enum(CATEGORIAS);
 export const dificuldadeSchema = z.enum(DIFICULDADES);
+
+export const atribuicaoSchema = z.object({
+  nome: z.string().min(1),
+  url: z.string().url(),
+  licenca: z.string().min(1),
+  autores: z.array(z.string().min(1)).min(1).optional(),
+});
 
 export const receitaSchema = z.object({
   id: z.number().int().positive(),
@@ -20,6 +35,15 @@ export const receitaSchema = z.object({
   ingredientes: z.array(z.string().min(1)).min(1),
   passos: z.array(z.string().min(1)).min(1),
   dica: z.string().min(1).optional(),
+  fonte: atribuicaoSchema.optional(),
+});
+
+export const fonteSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  nome: z.string().min(1),
+  url: z.string().url(),
+  licenca: licencaPermitidaSchema,
+  termosAtribuicao: z.string().min(1).optional(),
 });
 
 export const ajusteDeltaSchema = z.object({
@@ -76,6 +100,18 @@ export function validarReceitas(dados: unknown, ficheiro = "data/recipes.json"):
 /** Valida o dataset de modelos de airfryer (ids slug únicos). */
 export function validarModelos(dados: unknown, ficheiro = "data/modelos.json"): ModeloAirfryer[] {
   const parsed = z.array(modeloSchema).min(1).safeParse(dados);
+  if (!parsed.success) {
+    throw new Error(`${ficheiro} inválido: ${parsed.error.message}`);
+  }
+  return rejeitarIdsDuplicados(parsed.data, ficheiro);
+}
+
+/**
+ * Valida o registo de fontes abertas (M13). Pode estar vazio ([]) — o dono regista fontes só
+ * depois de verificar manualmente a licença e o robots.txt de cada uma.
+ */
+export function validarFontes(dados: unknown, ficheiro = "data/fontes.json"): Fonte[] {
+  const parsed = z.array(fonteSchema).safeParse(dados);
   if (!parsed.success) {
     throw new Error(`${ficheiro} inválido: ${parsed.error.message}`);
   }

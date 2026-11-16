@@ -78,6 +78,26 @@ corre `pnpm data:build` para regenerar o ficheiro combinado.
 
 Os agentes nunca alteram o conteúdo dos ficheiros de dados — só o dono, por re-upload completo.
 
+## Fontes abertas e pipeline semanal de receitas (M13)
+
+A app continua estática e sem chamadas a LLM. Um workflow do GitHub Actions
+(`.github/workflows/atualizar-receitas.yml`, semanal + `workflow_dispatch`) corre
+`pnpm atualizar:receitas` (`scripts/atualizar-receitas.ts` + fronteira de fornecedor em
+`scripts/ia/`), que só **acrescenta** receitas novas (máx. 5 por execução, ids sequenciais) a
+partir das fontes abertas registadas em `data/fontes.json` — licenças que permitem adaptação
+(`CC0 1.0`, `CC BY 4.0`, `CC BY-SA 4.0`), verificadas manualmente (licença + `robots.txt`) pelo
+dono antes de serem registadas. Cada receita nova leva atribuição `fonte` (mostrada em
+`/receita/[id]` como "Adaptado de {nome} ({licença})") e o PR inclui a checklist de segurança
+alimentar para o dono confirmar antes de fundir. Sem `MISTRAL_API_KEY` (GitHub Secret) o workflow
+falha cedo e não abre PR. A app não faz chamadas de rede em runtime e nenhuma chave entra no
+bundle.
+
+## Licenciamento
+
+O **código** deste projeto é [MIT](LICENSE). As **receitas adaptadas de fontes abertas** (campo
+`fonte` em `data/recipes/<id>.json`) mantêm a licença da respetiva fonte — CC BY-SA 4.0 obriga a
+partilhar as adaptações na mesma licença. As 200 receitas originais são conteúdo do autor.
+
 ## Deploy (público)
 
 Recomendado: **Vercel** (importar o repositório; deteta Next.js automaticamente; build
