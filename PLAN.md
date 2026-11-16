@@ -50,29 +50,29 @@ Stack: Next.js 16 (App Router) + TypeScript + Tailwind CSS, single-page at `/`, 
 - [x] Install agent-framework (plugin mode) into the repo
 - [x] Scaffold Next.js app (app/, components/, lib/, configs)
 - [x] Header: gradient `from-stone-900 via-stone-800 to-amber-950`; title
-  `200 Receitas · Air Fryer & Vapor`; subtitle
-  `Concebidas para a Xiaomi Mijia Smart Steam Air Fryer 7 L`; spec chips
-  `🔥 1800 W · ar quente`, `💨 900 W · vapor (depósito 1,5 L ≈ 90 min)`,
-  `📚 +100 receitas na app Xiaomi Home`; small stone-400 disclaimer (times/temperatures are
-  starting points; steam mode → heat-proof dish, never exceed max water line)
+      `200 Receitas · Air Fryer & Vapor`; subtitle
+      `Concebidas para a Xiaomi Mijia Smart Steam Air Fryer 7 L`; spec chips
+      `🔥 1800 W · ar quente`, `💨 900 W · vapor (depósito 1,5 L ≈ 90 min)`,
+      `📚 +100 receitas na app Xiaomi Home`; small stone-400 disclaimer (times/temperatures are
+      starting points; steam mode → heat-proof dish, never exceed max water line)
 - [x] Sticky filter bar: search (placeholder `🔍 Procurar por nome ou ingrediente…`,
-  case-insensitive over nome/cat/metodo/ingredientes), method chips with computed counts
-  (`Todos (200)`, `🔥 Air Fryer (155)`, `💨 Vapor (30)`, `🔁 Combinação (15)`), five category
-  toggle chips, `⭐ Só favoritas (n)` toggle, `⏱ Ordenar por tempo` toggle,
-  `🎲 Surpreende-me` (random from filtered set → expand + smooth-scroll into view),
-  counter `A mostrar <strong>{n}</strong> de 200 receitas`
+      case-insensitive over nome/cat/metodo/ingredientes), method chips with computed counts
+      (`Todos (200)`, `🔥 Air Fryer (155)`, `💨 Vapor (30)`, `🔁 Combinação (15)`), five category
+      toggle chips, `⭐ Só favoritas (n)` toggle, `⏱ Ordenar por tempo` toggle,
+      `🎲 Surpreende-me` (random from filtered set → expand + smooth-scroll into view),
+      counter `A mostrar <strong>{n}</strong> de 200 receitas`
 - [x] Recipe cards: rounded-2xl white border-stone-200 hover shadow; header row
-  (emoji, nome toggles expand, ☆/⭐ favorite, method/category/⏱ min/🎯 dificuldade badges);
-  expanded two-column (stack on mobile): `🧺 Ingredientes` checkboxes with `x/y` progress +
-  strikethrough, right column `🌡 {temp}` + `🍽 {doses}` badges, `👨‍🍳 Passos` numbered dark
-  circles, `💡 Dica` amber-50 callout
+      (emoji, nome toggles expand, ☆/⭐ favorite, method/category/⏱ min/🎯 dificuldade badges);
+      expanded two-column (stack on mobile): `🧺 Ingredientes` checkboxes with `x/y` progress +
+      strikethrough, right column `🌡 {temp}` + `🍽 {doses}` badges, `👨‍🍳 Passos` numbered dark
+      circles, `💡 Dica` amber-50 callout
 - [x] Empty state: `🥲 Nenhuma receita encontrada.` + `Limpar filtros`
 - [x] Footer: `Boas cozinhas, Tiago! 🍽 · Receitas recolhidas e adaptadas para ar quente + vapor`
 - [x] localStorage persistence: favorites `Set<number>`, checked ingredients
-  `Record<number, number[]>`; hydrate on mount, guard SSR
+      `Record<number, number[]>`; hydrate on mount, guard SSR
 - [x] URL state sync via search params (q, metodo, cat, fav, ord) with `router.replace`
 - [x] SEO: root metadata (title/description), `lang="pt"`, viewport, favicon; error/loading
-  boundaries + graceful failure if the dataset fails validation
+      boundaries + graceful failure if the dataset fails validation
 - [x] Vitest suite: aggregates (155/30/15; 45/41/44/32/38) + filter/search/sort logic
 
 #### Acceptance criteria
@@ -125,17 +125,17 @@ active model's ajuste is non-zero. `data/recipes.json` stays untouched.
 #### Tasks
 
 - [x] Per-recipe printable view `/receita/[id]` (`app/receita/[id]/page.tsx` + `components/ReceitaDetalhe.tsx`):
-  `generateStaticParams` (200 págs SSG), `generateMetadata` por receita, `notFound()` para ids inválidos,
-  botão Imprimir (`window.print()` + estilos `@media print`), link a partir de cada RecipeCard
+      `generateStaticParams` (200 págs SSG), `generateMetadata` por receita, `notFound()` para ids inválidos,
+      botão Imprimir (`window.print()` + estilos `@media print`), link a partir de cada RecipeCard
 - [x] Shopping list `/lista-compras` (`app/lista-compras/page.tsx` + `components/ListaComprasClient.tsx`):
-  agrega os ingredientes marcados nas receitas (`lib/shopping.ts`), agrupados por receita, com
-  remover item e limpar lista; link no Header
+      agrega os ingredientes marcados nas receitas (`lib/shopping.ts`), agrupados por receita, com
+      remover item e limpar lista; link no Header
 - [x] Dark mode via `next-themes` (`^0.4.6`): `ThemeProvider` (class strategy) no layout,
-  `ThemeToggle` no Header, `@custom-variant dark` no globals.css e variantes `dark:` nos componentes
+      `ThemeToggle` no Header, `@custom-variant dark` no globals.css e variantes `dark:` nos componentes
 - [x] "O que tenho em casa" (`lib/suggest.ts` + modo no FilterBar/Explorer): o utilizador lista os
-  ingredientes que tem (autocompletar com os ingredientes únicos do dataset) e as receitas são
-  ordenadas por cobertura (rácio desc, tempo asc, id); toggle "Só receitas completas"; badge
-  `🧺 x/y em casa` nos cards
+      ingredientes que tem (autocompletar com os ingredientes únicos do dataset) e as receitas são
+      ordenadas por cobertura (rácio desc, tempo asc, id); toggle "Só receitas completas"; badge
+      `🧺 x/y em casa` nos cards
 - [x] `app/not-found.tsx` pt-PT; `receitaPorId`/`paramsReceitas` em `lib/data.ts`
 - [x] Testes `__tests__/m3.test.ts` (suggest, shopping, helpers, SSR das novas páginas)
 - [x] `AGENTS.md` §4/§5/§7 sincronizados; `biome.json` com `css.parser.tailwindDirectives`
@@ -143,9 +143,9 @@ active model's ajuste is non-zero. `data/recipes.json` stays untouched.
 #### Acceptance criteria
 
 - [x] `tsc --noEmit` clean; `vitest run` 64/64; `biome check` clean; `next build` passa com
-  `/receita/[id]` SSG (200 paths); `check-framework.sh --root-only` 17/17
+      `/receita/[id]` SSG (200 paths); `check-framework.sh --root-only` 17/17
 - [x] Dev smoke: `/` mostra 200 cards, `/?metodo=Vapor` mostra 30, `/receita/1..200` OK,
-  `/receita/999` → not-found pt-PT, `/lista-compras` e `/modelos` OK
+      `/receita/999` → not-found pt-PT, `/lista-compras` e `/modelos` OK
 - [x] `data/recipes.json` e `data/modelos.json` intocados; copy pt-PT; sem `any`; localStorage only
 
 ### M8 — Melhorias da análise UI/UX (2026-11-09, PR #1)
@@ -179,8 +179,8 @@ Segunda ronda da análise UI/UX (desktop + mobile, a11y, performance), depois do
 - [x] Chip "Limpar filtros" (âmbar) na barra fixa quando há filtros ativos (`FilterBar` + `onLimparFiltros`)
 - [x] Botão "Partilhar" em `/receita/[id]` (`navigator.share` com fallback para clipboard + "Copiado!")
 - [x] Doseador de doses em `/receita/[id]` (1–24 doses): `lib/doses.ts` escala só o número inicial do
-  ingrediente (decimais pt-PT, frações "1/2", intervalos "2–3"); números no meio do texto ficam intactos
-  (ex.: "cesto de 7 L"); strings pt-PT: "Ajustar doses", "Diminuir doses", "Aumentar doses", "N doses"
+      ingrediente (decimais pt-PT, frações "1/2", intervalos "2–3"); números no meio do texto ficam intactos
+      (ex.: "cesto de 7 L"); strings pt-PT: "Ajustar doses", "Diminuir doses", "Aumentar doses", "N doses"
 - [x] Testes `__tests__/doses.test.ts` (incl. invariantes sobre o dataset real)
 
 #### Acceptance criteria
@@ -220,20 +220,20 @@ merge; datasets intocados pelos agentes (invariante nº1 — M13 acrescenta apen
 #### Tasks
 
 - [x] Dependabot (`.github/dependabot.yml`): ecossistemas `npm` e `github-actions`, semanal, PRs
-  agrupados (minor + patch num só PR, majors à parte), dentro das versões de `toolchain-standards`
-  (nunca saltar um major fixado em AGENTS.md §4)
+      agrupados (minor + patch num só PR, majors à parte), dentro das versões de `toolchain-standards`
+      (nunca saltar um major fixado em AGENTS.md §4)
 - [x] Verificar o deploy de produção na Vercel: domínio, `NEXT_PUBLIC_SITE_URL` definido em
-  Production, sitemap/robots/OG com o URL certo; URL de produção no `README.md` e em AGENTS.md §2
+      Production, sitemap/robots/OG com o URL certo; URL de produção no `README.md` e em AGENTS.md §2
 - [x] `CHANGELOG.md` (formato Keep a Changelog) com M1–M9 resumidos como `1.0.0`; `version` do
-  `package.json` alinhada com a tag
+      `package.json` alinhada com a tag
 - [x] Tag `v1.0.0` + GitHub Release com as notas do CHANGELOG (persona `release-manager`, skill
-  `release-flow`); README explica como fazer o próximo release
+      `release-flow`); README explica como fazer o próximo release
 - [x] "Automatically delete head branches" ativado nas definições do repositório (`delete_branch_on_merge: true` via API em 2026-11-09)
 
 #### Acceptance criteria
 
 - [x] O separador Dependabot do GitHub mostra os dois ecossistemas sem erros de configuração
-  (verificação `.github/dependabot.yml` do GitHub verde no PR #7)
+      (verificação `.github/dependabot.yml` do GitHub verde no PR #7)
 - [x] `/sitemap.xml`, `/robots.txt` e a OG image em produção usam o domínio de produção
 - [x] Release `v1.0.0` publicado; CI verde no commit etiquetado (`981201b`, run 42710782959)
 
@@ -242,11 +242,11 @@ merge; datasets intocados pelos agentes (invariante nº1 — M13 acrescenta apen
 #### Tasks
 
 - [x] `axe-core` + ambiente DOM do Vitest (`jsdom`) como devDependencies (aprovadas segundo
-  `toolchain-standards`); axe corre sobre o HTML SSR de `/`, `/modelos`, `/lista-compras`,
-  `/receita/1` e not-found
+      `toolchain-standards`); axe corre sobre o HTML SSR de `/`, `/modelos`, `/lista-compras`,
+      `/receita/1` e not-found
 - [x] Smoke por rota em Vitest, a substituir as verificações manuais de M3/M6/M8: título e
-  subtítulo, contador "A mostrar N de N", 24 cards iniciais + "Mostrar mais", ligações do cabeçalho,
-  modo cozinhar e doseador em `/receita/1`
+      subtítulo, contador "A mostrar N de N", 24 cards iniciais + "Mostrar mais", ligações do cabeçalho,
+      modo cozinhar e doseador em `/receita/1`
 - [x] README: o que os testes cobrem e como correr só os de acessibilidade (`pnpm test:a11y`)
 
 #### Acceptance criteria
@@ -273,18 +273,18 @@ Resultado: 140/140 vitest, `tsc`/`biome` limpos, `next build` OK (210 páginas),
 #### Tasks
 
 - [x] `data/recipes/<id>.json`, um ficheiro por receita, gerado uma vez a partir de
-  `data/recipes.json` **sem alterar conteúdo** (transformação estrutural autorizada pelo dono em
-  2026-11-09)
+      `data/recipes.json` **sem alterar conteúdo** (transformação estrutural autorizada pelo dono em
+      2026-11-09)
 - [x] `scripts/build-data.ts` (`pnpm data:build`) junta `data/recipes/*.json` → `data/recipes.json`
-  ordenado por `id`; `data/recipes.json` continua no git como ficheiro gerado (a app e os testes não
-  mudam); `pnpm data:build --check` na CI falha se não estiver em sincronia
+      ordenado por `id`; `data/recipes.json` continua no git como ficheiro gerado (a app e os testes não
+      mudam); `pnpm data:build --check` na CI falha se não estiver em sincronia
 - [x] `pnpm data:split` faz o inverso, para o re-upload de M5 continuar a funcionar com um
-  `recipes.json` completo; runbook do README atualizado
+      `recipes.json` completo; runbook do README atualizado
 - [x] `check:data` valida também: nome do ficheiro = `id`, ids sequenciais sem buracos
 - [x] Modelos: `ajusteSchema` ganha overrides opcionais por método (`porMetodo`), retrocompatível;
-  `aplicarAjusteModelo` usa o override quando existe; `/modelos` e `/receita/[id]` mostram-no
+      `aplicarAjusteModelo` usa o override quando existe; `/modelos` e `/receita/[id]` mostram-no
 - [x] Novos modelos só a partir de fichas técnicas fornecidas pelo dono; os agentes acrescentam
-  entradas e nunca editam as existentes (invariante nº1)
+      entradas e nunca editam as existentes (invariante nº1)
 - [x] AGENTS.md §5 (layout `data/recipes/`) e invariante nº1 atualizados
 
 #### Acceptance criteria
@@ -306,40 +306,40 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 #### Tasks
 
 - [ ] Registo de fontes `data/fontes.json` (nome, URL, licença, termos de atribuição) + schema zod;
-  só licenças que permitem adaptação (ex.: CC BY-SA 4.0); licença e `robots.txt` de cada fonte
-  verificados antes de a registar
+      só licenças que permitem adaptação (ex.: CC BY-SA 4.0); licença e `robots.txt` de cada fonte
+      verificados antes de a registar
 - [ ] Schema da receita: campo opcional `fonte` (`nome`, `url`, `licenca`, `autores?`), relaxação
-  permitida (as 200 atuais ficam sem `fonte`); `/receita/[id]` mostra a atribuição quando existe
-  (string pt-PT a confirmar: "Adaptado de {nome} ({licença})")
+      permitida (as 200 atuais ficam sem `fonte`); `/receita/[id]` mostra a atribuição quando existe
+      (string pt-PT a confirmar: "Adaptado de {nome} ({licença})")
 - [ ] Licenciamento: CC BY-SA obriga a partilhar as adaptações na mesma licença; README/LICENSE
-  passam a distinguir o código (MIT) das receitas adaptadas (licença da fonte)
+      passam a distinguir o código (MIT) das receitas adaptadas (licença da fonte)
 - [ ] `scripts/atualizar-receitas.ts`: recolhe candidatos das fontes (com limite de pedidos e
-  user-agent genérico), remove duplicados face ao dataset (nome normalizado + semelhança de
-  ingredientes), adapta com Mistral Large à Xiaomi 7 L (método, temperatura, tempo, pt-PT, saída
-  JSON estruturada), revê com Mistral Small (pt-PT, categoria, coerência tempo/temperatura) e valida
-  com zod + `check:data`; no máximo N receitas novas por semana (N = 5 por omissão); só
-  **acrescenta** receitas com ids sequenciais, nunca altera as existentes
+      user-agent genérico), remove duplicados face ao dataset (nome normalizado + semelhança de
+      ingredientes), adapta com Mistral Large à Xiaomi 7 L (método, temperatura, tempo, pt-PT, saída
+      JSON estruturada), revê com Mistral Small (pt-PT, categoria, coerência tempo/temperatura) e valida
+      com zod + `check:data`; no máximo N receitas novas por semana (N = 5 por omissão); só
+      **acrescenta** receitas com ids sequenciais, nunca altera as existentes
 - [ ] Fronteira de fornecedor (princípio 9): interface em `scripts/ia/` + implementação Mistral via
-  `fetch` (endpoint UE, versões de modelo fixadas); saída do LLM validada com zod; sem SDK no código
-  da app
+      `fetch` (endpoint UE, versões de modelo fixadas); saída do LLM validada com zod; sem SDK no código
+      da app
 - [ ] Workflow `.github/workflows/atualizar-receitas.yml` (skill `cicd-framework`): `schedule`
-  semanal + `workflow_dispatch`; `MISTRAL_API_KEY` em GitHub Secrets; permissões mínimas
-  (`contents: write`, `pull-requests: write` só neste workflow); o PR inclui as receitas novas, as
-  fontes e licenças, o resumo do `check:data` e uma checklist de segurança alimentar (aves, porco,
-  peixe, ovos: temperatura e tempo mínimos) para o dono confirmar
+      semanal + `workflow_dispatch`; `MISTRAL_API_KEY` em GitHub Secrets; permissões mínimas
+      (`contents: write`, `pull-requests: write` só neste workflow); o PR inclui as receitas novas, as
+      fontes e licenças, o resumo do `check:data` e uma checklist de segurança alimentar (aves, porco,
+      peixe, ovos: temperatura e tempo mínimos) para o dono confirmar
 - [ ] Limite de custo por execução (máx. pedidos/tokens) e custo estimado no corpo do PR; sem chave,
-  o workflow falha cedo com mensagem clara
+      o workflow falha cedo com mensagem clara
 - [ ] Testes com fornecedor e fontes simulados (sem rede): dedupe, mapeamento para o schema,
-  rejeição de saídas inválidas, limite N
+      rejeição de saídas inválidas, limite N
 - [ ] AGENTS.md invariantes nº1 e nº4 e "Out of scope" atualizados: LLM só no pipeline de conteúdo
-  em CI; receitas existentes imutáveis; cada adição aprovada pelo dono no merge do PR
+      em CI; receitas existentes imutáveis; cada adição aprovada pelo dono no merge do PR
 - [ ] Modelos de airfryer ficam fora do pipeline nesta fase (mudam raramente; os factos técnicos vêm
-  do dono — M12)
+      do dono — M12)
 
 #### Acceptance criteria
 
 - [ ] Um `workflow_dispatch` manual abre um PR com ≤ N receitas novas válidas, cada uma com `fonte`,
-  licença e a checklist de segurança alimentar
+      licença e a checklist de segurança alimentar
 - [ ] Nenhuma receita existente alterada (teste compara os ids existentes com o dataset anterior)
 - [ ] Sem `MISTRAL_API_KEY`, o workflow falha com mensagem clara e não abre PR
 - [ ] A app não faz chamadas de rede novas em runtime e não tem chaves no bundle
@@ -350,15 +350,15 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 #### Tasks
 
 - [ ] `lib/backup.ts`: exporta favoritas, ingredientes marcados e modelo ativo para JSON versionado
-  (`versao`, `criadoEm`, dados); importação validada com zod (fronteira de confiança), com escolha
-  entre juntar e substituir
+      (`versao`, `criadoEm`, dados); importação validada com zod (fronteira de confiança), com escolha
+      entre juntar e substituir
 - [ ] UI sem rota nova: diálogo "Os meus dados" acessível a partir do cabeçalho
 - [ ] Partilhar favoritas por link (`/?favs=1,5,9`): pergunta antes de importar, nunca importa sem
-  confirmação
+      confirmação
 - [ ] Strings pt-PT (propostas, a confirmar com o dono): "Os meus dados", "Exportar dados",
-  "Importar dados", "Juntar", "Substituir", "Partilhar favoritas", "Ficheiro inválido"
+      "Importar dados", "Juntar", "Substituir", "Partilhar favoritas", "Ficheiro inválido"
 - [ ] Testes: round-trip exportar → importar, ficheiros inválidos e versões futuras rejeitados,
-  juntar vs substituir
+      juntar vs substituir
 
 #### Acceptance criteria
 
@@ -371,11 +371,11 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 #### Tasks
 
 - [ ] `public/sw.js`: pedido "guardar offline" que pré-carrega as `/receita/[id]` (todas ou só as
-  favoritas) em lotes, com progresso via `postMessage`; versão da cache por build para invalidar
-  páginas antigas
+      favoritas) em lotes, com progresso via `postMessage`; versão da cache por build para invalidar
+      páginas antigas
 - [ ] UI sem rota nova: "Guardar para usar offline" com escolha entre todas as receitas e só as
-  favoritas, barra de progresso, espaço ocupado (`navigator.storage.estimate`) e "Remover dados
-  offline"
+      favoritas, barra de progresso, espaço ocupado (`navigator.storage.estimate`) e "Remover dados
+      offline"
 - [ ] Indicador quando não há ligação e a página vem da cache
 - [ ] Lógica do SW (lista de URLs, lotes, versão) extraída para um módulo testável + testes
 - [ ] Strings pt-PT novas registadas aqui
@@ -383,7 +383,7 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 #### Acceptance criteria
 
 - [ ] Depois de guardar todas as receitas, em modo avião: `/`, `/receita/1..N` e `/modelos` abrem e
-  os filtros funcionam
+      os filtros funcionam
 - [ ] Um deploy novo invalida a cache antiga sem páginas partidas
 
 ### M16 — Modo cozinhar melhorado
@@ -391,20 +391,20 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 #### Tasks
 
 - [ ] Vários temporizadores em paralelo: bandeja fixa com os temporizadores ativos (passo + tempo
-  restante) que continuam ao mudar de passo; baseados em `Date.now()` para ficarem certos com o
-  separador em segundo plano
+      restante) que continuam ao mudar de passo; baseados em `Date.now()` para ficarem certos com o
+      separador em segundo plano
 - [ ] "Ler passo" em voz alta com `speechSynthesis` (voz pt-PT se existir, senão outra `pt-*`; o
-  botão não aparece sem suporte); síntese local do browser, sem chamadas externas
+      botão não aparece sem suporte); síntese local do browser, sem chamadas externas
 - [ ] Ao terminar: som + vibração (já existe) + notificação do sistema se o utilizador der
-  permissão (pedida só ao iniciar o primeiro temporizador)
+      permissão (pedida só ao iniciar o primeiro temporizador)
 - [ ] Sem reconhecimento de voz (no Chrome o áudio vai para servidores externos — invariante nº4)
 - [ ] Strings pt-PT novas registadas aqui; testes em `lib/cook.ts` (vários temporizadores, tempo
-  restante depois de o separador ficar suspenso)
+      restante depois de o separador ficar suspenso)
 
 #### Acceptance criteria
 
 - [ ] Dois temporizadores ao mesmo tempo terminam à hora certa, mesmo com o separador em segundo
-  plano
+      plano
 - [ ] "Ler passo" lê o passo em pt-PT no Chrome, Edge e Safari; sem suporte, o botão não aparece
 
 ### M17 — Plano semanal de refeições (`/plano`)
@@ -412,16 +412,16 @@ atribuição. Depende de M12 (um ficheiro por receita = PRs fáceis de rever).
 #### Tasks
 
 - [ ] Rota nova `/plano` (AGENTS.md invariante nº4 e lista de rotas atualizadas; fora do sitemap,
-  como `/lista-compras`)
+      como `/lista-compras`)
 - [ ] 7 dias × almoço/jantar; "Adicionar ao plano" em `/receita/[id]` e nos cards (dia, refeição,
-  doses); guardado em `localStorage`
+      doses); guardado em `localStorage`
 - [ ] "Gerar lista de compras": soma as quantidades do mesmo ingrediente na mesma unidade entre
-  receitas (reutiliza o parser de `lib/doses.ts`, com as doses de cada entrada); o resto fica listado
-  por receita; alimenta `/lista-compras`
+      receitas (reutiliza o parser de `lib/doses.ts`, com as doses de cada entrada); o resto fica listado
+      por receita; alimenta `/lista-compras`
 - [ ] Plano incluído no backup de M14 (nova versão do formato)
 - [ ] WebMCP sem ferramentas novas (o plano é pessoal; as ferramentas continuam só sobre o dataset)
 - [ ] Strings pt-PT novas registadas aqui; testes da agregação (unidades iguais e diferentes,
-  frações, intervalos) e da persistência
+      frações, intervalos) e da persistência
 
 #### Acceptance criteria
 
@@ -452,11 +452,11 @@ deploy apanham-no).Tudo isto foi implementado em M4–M6 abaixo.
 
 - [x] `LICENSE` (MIT, © 2026 Tiago Maerck) + `README.md` com runbook (correr, atualizar dados, deploy)
 - [x] CI `.github/workflows/ci.yml` segundo `cicd-framework`: push/PR em `main`,
-  `permissions: contents: read`, `pnpm install --frozen-lockfile`, depois `lint` → `typecheck` →
-  `test` → `build` e, como extensão do repo, `pnpm check:data`
+      `permissions: contents: read`, `pnpm install --frozen-lockfile`, depois `lint` → `typecheck` →
+      `test` → `build` e, como extensão do repo, `pnpm check:data`
 - [x] SEO público: `app/sitemap.ts` (uma entrada por rota, incl. `/receita/1..N`), `app/robots.ts`,
-  `app/opengraph-image.tsx` (1200×630), `metadataBase` + Open Graph em `app/layout.tsx`
-  (`NEXT_PUBLIC_SITE_URL` em produção)
+      `app/opengraph-image.tsx` (1200×630), `metadataBase` + Open Graph em `app/layout.tsx`
+      (`NEXT_PUBLIC_SITE_URL` em produção)
 - [x] Deploy documentado no README (Vercel; `NEXT_PUBLIC_SITE_URL`); sem analytics/tracking
 
 #### Acceptance criteria
@@ -469,19 +469,19 @@ deploy apanham-no).Tudo isto foi implementado em M4–M6 abaixo.
 #### Tasks
 
 - [x] `lib/schemas.ts`: schemas zod partilhados + `validarReceitas`/`validarModelos` (ids únicos;
-  `data.ts`/`models.ts` passam a usá-los). O dataset pode crescer: `id` inteiro positivo único
-  (sem limite 200), array com `min(1)` — `TOTAL_RECEITAS` continua derivado
+      `data.ts`/`models.ts` passam a usá-los). O dataset pode crescer: `id` inteiro positivo único
+      (sem limite 200), array com `min(1)` — `TOTAL_RECEITAS` continua derivado
 - [x] `scripts/check-data.ts` + `pnpm check:data`: valida ambos os JSON e imprime resumo
-  (total, range de ids, contagens por método/categoria/dificuldade, modelos); exit 1 se inválido
+      (total, range de ids, contagens por método/categoria/dificuldade, modelos); exit 1 se inválido
 - [x] Testes de dados estruturais em `__tests__/data.test.ts` (ids únicos/sequenciais, somas dos
-  agregados = total, cobertura dos mapas de cores) + testes dos validadores (aceita 250
-  receitas, rejeita duplicados/enums inválidos); `filters.test.ts`/`m3.test.ts` sem contagens
-  hardcoded (usam `contarPorMetodo()`/`contarPorCategoria()`/`TOTAL_RECEITAS`)
+      agregados = total, cobertura dos mapas de cores) + testes dos validadores (aceita 250
+      receitas, rejeita duplicados/enums inválidos); `filters.test.ts`/`m3.test.ts` sem contagens
+      hardcoded (usam `contarPorMetodo()`/`contarPorCategoria()`/`TOTAL_RECEITAS`)
 - [x] Strings de UI com "200" hardcoded → dinâmicas via `TOTAL_RECEITAS` ("Ver as N receitas",
-  "Voltar às N receitas"); o título "200 Receitas · …" fica como marca
+      "Voltar às N receitas"); o título "200 Receitas · …" fica como marca
 - [x] CI corre `check:data` em todo push (M4)
 - [x] AGENTS.md invariant nº1 anotado: o dono pode substituir os ficheiros por re-upload; agentes
-  nunca alteram conteúdo
+      nunca alteram conteúdo
 
 #### Acceptance criteria
 
@@ -493,24 +493,24 @@ deploy apanham-no).Tudo isto foi implementado em M4–M6 abaixo.
 #### Tasks
 
 - [x] Filtros: `ord` passa a `padrao|tempo|tempo-desc|nome|dificuldade` (select "Ordenar";
-  `ord=1` legado mapeia para `tempo`), novos filtros `dif` (🎯 dificuldade) e `tmax` (⏱ ≤15/30/45/60 min)
-  em `lib/filters.ts` + chips no `FilterBar`; testes de round-trip e ordenação
+      `ord=1` legado mapeia para `tempo`), novos filtros `dif` (🎯 dificuldade) e `tmax` (⏱ ≤15/30/45/60 min)
+      em `lib/filters.ts` + chips no `FilterBar`; testes de round-trip e ordenação
 - [x] "Tenho em casa" com matching difuso: `contemTermo`/`ingredienteCoberto` em `lib/suggest.ts`
-  (limites de palavra Unicode — "frango" cobre "1 frango pequeno", "sal" não casa com "salmão")
+      (limites de palavra Unicode — "frango" cobre "1 frango pequeno", "sal" não casa com "salmão")
 - [x] Home: renderização progressiva (24 cards + "Mostrar mais"), botão voltar ao topo,
-  atalho "/" foca a pesquisa; "Surpreende-me" usa o conjunto filtrado completo
+      atalho "/" foca a pesquisa; "Surpreende-me" usa o conjunto filtrado completo
 - [x] `/receita/[id]`: checkboxes de ingredientes (contador x/y), botão ⭐, navegação
-  anterior/seguinte — tudo ligado às mesmas chaves `localStorage`
+      anterior/seguinte — tudo ligado às mesmas chaves `localStorage`
 - [x] `/lista-compras`: botões Imprimir e "Copiar lista" (`textoListaCompras` em `lib/shopping.ts`)
 - [x] Header: badge com nº de itens da lista de compras (`HeaderNav.tsx`, só após hidratação)
 - [x] Strings pt-PT novas registadas neste plano (select "Ordenar:", chips 🎯/⏱ ≤N min,
-  "Mostrar mais (X restantes)", "Voltar ao topo", "Copiar lista"/"Copiado!", "Imprimir")
+      "Mostrar mais (X restantes)", "Voltar ao topo", "Copiar lista"/"Copiado!", "Imprimir")
 
 #### Acceptance criteria
 
 - [x] `vitest run` 74/74; `tsc --noEmit` e `biome check` limpos; `next build` OK
 - [x] Smoke live (Playwright): home mostra 24 cards e "Mostrar mais"; filtros/ordenações por URL
-  funcionam; `/receita/1` com checkboxes/⭐/prev-next; lista de compras com imprimir/copiar
+      funcionam; `/receita/1` com checkboxes/⭐/prev-next; lista de compras com imprimir/copiar
 
 ### M7 — WebMCP: ferramentas de pesquisa para agentes de IA no navegador
 
@@ -521,12 +521,12 @@ WebMCP ativo, ou em qualquer navegador com o polyfill oficial carregado).
 #### Tasks
 
 - [x] `lib/webmcp.ts`: handlers puros + `FERRAMENTAS_WEBMCP` + `registrarFerramentasWebMCP()`
-  (feature-detect; no-op sem `document.modelContext`/`navigator.modelContext`; devolve unregister)
+      (feature-detect; no-op sem `document.modelContext`/`navigator.modelContext`; devolve unregister)
 - [x] Ferramentas (descrições pt-PT, `annotations.readOnlyHint: true`):
-  `search_recipes` (q/metodo/cat/dificuldade/tempoMax/ordem, máx. 25 resultados),
-  `get_recipe` (id → receita completa com passos e dica),
-  `suggest_recipes` (ingredientes → top 10 por cobertura, matching difuso),
-  `list_filters` (métodos/categorias/dificuldades com contagens)
+      `search_recipes` (q/metodo/cat/dificuldade/tempoMax/ordem, máx. 25 resultados),
+      `get_recipe` (id → receita completa com passos e dica),
+      `suggest_recipes` (ingredientes → top 10 por cobertura, matching difuso),
+      `list_filters` (métodos/categorias/dificuldades com contagens)
 - [x] `components/WebMCPTools.tsx` montado no `app/layout.tsx` (disponível em todas as páginas)
 - [x] `__tests__/webmcp.test.ts`: handlers, validação/erros, registo com mock e unregister
 - [x] README: secção WebMCP (como ativar no Chrome, polyfill noutros navegadores)
@@ -536,5 +536,5 @@ WebMCP ativo, ou em qualquer navegador com o polyfill oficial carregado).
 
 - [x] `vitest run` 86/86; `tsc --noEmit` e `biome check` limpos; `next build` OK
 - [x] Smoke live: a página carrega sem erros de consola quando o navegador não tem WebMCP (`document/navigator.modelContext`); com WebMCP ativo (Brave 157), as 4 ferramentas registam sem erros (no-op);
-  registo/execução verificados por testes com `modelContext` mock
+      registo/execução verificados por testes com `modelContext` mock
 - [x] Invariante nº4 intacta: sem backend, sem chaves, sem rotas novas — só cliente
